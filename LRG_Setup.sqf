@@ -36,7 +36,7 @@ CHVD_maxView = 12000; 						// Set maximum player view distance in meters. DEFAU
 CHVD_maxObj = 12000; 						// Set maximum player object distance in meters. DEFAULT: 12000.
 
 //================= Arsenal
-EnableArsenal = True;						// Enable Default LRG 3CB Arsenal. True to enable, false to disable. DEFAULT: True.
+EnableArsenal = True;						// Enable Default LRG Arsenal. True to enable, false to disable. DEFAULT: True.
 ArsenalType = "3CB";						// Default Arsenal Setup can be "VANILLA","3CB" or "RHS" DEFAULT: "3CB"
 ArsenalName = ["Box1"];						// Variable Name of Arsenal Boxes. Ignored if EnableArsenal = False.
 TimedArsenal = True;						// Remove the Arsenal after 'ArsenalExpiry'. True to enable, false to disable. DEFAULT: True.
@@ -55,8 +55,6 @@ AmmoBoxName = ["Ammo1","Ammo2","Ammo3"];	// Variable Name of Ammo Boxes. Ignored
 
 //================= TFAR Settings
 RadioRange = 1.5;							// Radio Range Multiplier. 2 = double radio range, 0.5 = half radio range, ect. DEFAULT: 1.5.
-TFAR_ON_Message = True;						// Announce TFAR ON message. True to enable, false to disable. DEFAULT: True.
-TFAR_Message_Time = 55;						// Time to TFAR ON message in Minutes. DEFAULT: 55mins.
 
 //======================================================================================//
 //================================ VANILLA ONLY SETTINGS ===============================//

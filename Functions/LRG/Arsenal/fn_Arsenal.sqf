@@ -6,7 +6,7 @@
 */
 
 if (EnableArsenal) then {
-
+diag_log format ["LRG_Logging: %1 Arsenal Enabled.", ArsenalType];
         {
                 _box = missionNamespace getVariable[_x, objNull];
 
