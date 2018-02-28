@@ -98,16 +98,14 @@ _QS_ST_iconColor_UNKNOWN = [0.7,0.6,0,0.5];					// ARRAY (NUMBER). RGBA color co
 
 //================= MEDICAL
 
+
+
 _QS_ST_showMedicalWounded = TRUE;							// BOOL. TRUE to show wounded on the map and GPS. FALSE to not show wounded on the map with this script. Default TRUE.
-_QS_ST_MedicalSystem = [									// ARRAY(STRING). The Active Medical System. Uncomment ONLY ONE. FIRST UNCOMMENTED ONE WILL BE USED. Comment the rest out as shown. Do not add commas and only allow 1 to be uncommented.
-	//'BIS'												// BIS Revive.
-	//'BTC'												// BTC Revive.
-	//'AIS'												// AIS Revive.
-	'ACE'												// ACE 3 Revive.
-	//'FAR'												// Farooq's Revive.
-	//'AWS'    											// A3 Wounding System by Psycho.
-	//'QS'												// Quiksilver's Revive
-];
+switch (MissionType) do {
+    case "ACE": 	{_QS_ST_MedicalSystem = ['ACE'];};
+    case "VANILLA": {_QS_ST_MedicalSystem = ['AIS'];};
+    default {_QS_ST_MedicalSystem = ['BIS'];};
+};
 _QS_ST_MedicalIconColor = [1,0.41,0,1];						// ARRAY (NUMBER). Color of medical icons in RGBA format. Default [1,0.41,0,1];
 _QS_ST_colorInjured = [0.75,0.55,0,0.75];					// ARRAY (NUMBER). RGBA color code. Color of units with > 10% damage, in map group interactive interface. Default [0.7,0.6,0,0.5];
 

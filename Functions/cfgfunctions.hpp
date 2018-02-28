@@ -5,8 +5,6 @@ class LR {
 
 				file = "Functions\Init";
 				class PreInit {preInit = 1;};
-//				class PostInit {postInit = 1;};
-
 			};
 			
 			class Arsenal {

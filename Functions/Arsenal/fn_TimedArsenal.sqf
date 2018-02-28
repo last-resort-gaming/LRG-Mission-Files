@@ -1,4 +1,4 @@
-if (EnableArsenal) then {
+if ((MissionType == "ACE") && (EnableArsenal)) then {
 
 if ((TimedArsenal) && (isServer)) then {
 

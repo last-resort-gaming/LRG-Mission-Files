@@ -18,10 +18,12 @@ class Header
 //------------------------- Admin
 
 enableDebugConsole = 0;	
-allowFunctionsLog = 0;
+allowFunctionsLog = 1;
 
 //------------------------- Misc
-
+briefing=0;
+debriefing=0;
+saving=0;
 disableChannels[]={{0,true,true},{1,true,true},{2,true,true},{3,true,true},{4,true,true},{5,false,true},{6,true,true}};
 disabledAI = 1;	
 aiKills = 0;
@@ -61,7 +63,7 @@ wreckRemovalMaxTime = 120;
 class CfgFunctions
 	{
 		#include "functions\CfgFunctions.hpp"
-		#include "functions\CHVD\CfgFunctions.hpp"		
+		#include "Functions\CHVD\CfgFunctions.hpp" 
 	};
 	
  class FETT {

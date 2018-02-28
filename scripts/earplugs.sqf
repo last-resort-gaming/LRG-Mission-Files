@@ -15,7 +15,7 @@ private _nextAction = "Insert";
 private _nextColor  = "#00FF00";
 
 // Don't load if ACE is detected - it contains plugs
-if (isClass(configFile >> "CfgPatches" >> "ace_main")) exitWith {};
+//if (isClass(configFile >> "CfgPatches" >> "ace_main")) exitWith {};
 
 // And wait for main display to be around
 waitUntil {!isNull (findDisplay 46)};
