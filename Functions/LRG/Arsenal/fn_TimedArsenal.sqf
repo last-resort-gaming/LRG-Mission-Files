@@ -1,6 +1,6 @@
 if ((EnableArsenal) && (isServer)) then {
 
-if (TimedArsenal) then {
+
 diag_log format ["LRG_Logging: TimedArsenal Enabled. Arsenal Expiry set at: %1 minutes.", ArsenalExpiry];
 
 	while {
@@ -32,7 +32,7 @@ diag_log format ["LRG_Logging: TimedArsenal Enabled. Arsenal Expiry set at: %1 m
 		_ArsenalRemoved = format["<t size='1.2' align='center' color='#d60007'>Arsenal Removed.</t>"];
 		[_ArsenalRemoved] remoteExec["LR_fnc_globalHint", 0, false];
 				
-	};
+
 
 
 };

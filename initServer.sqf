@@ -3,7 +3,9 @@
 
 //=================================== VANILLA ONLY =====================================================
 
-
+	if (TimedArsenal) 		then {call LR_Fnc_TimedArsenal;};
+	If (!Confirmation)		then {call LR_fnc_Confirmation;};
+	
 switch (MissionType) do {
 
     case "ACE": {};

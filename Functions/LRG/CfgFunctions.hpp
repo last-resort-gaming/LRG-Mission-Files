@@ -11,14 +11,22 @@ class LR {
 
 				file = "Functions\LRG\Arsenal";
 				class Arsenal {postInit = 1;};
-				class TimedArsenal {postInit = 1;};
-
+				class TimedArsenal {};
+				class ArsenalLoadSave {};
 			};
 
+			class General {
+
+				file = "Functions\LRG\General";
+				class SafeZone {};
+				class Confirmation {};				
+			};				
+			
 			class Messages {
 
 				file = "Functions\LRG\Messages";
 				class globalhint {};
+				class globalhintc {};				
 				class globalhintsilent {};				
 			};			
 			
