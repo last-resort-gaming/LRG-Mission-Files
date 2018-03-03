@@ -31,6 +31,8 @@ _AvailableArsenalWeapons = [];
 _AvailableArsenalBackpacks = [];
 _AvailableArsenalMagazines = [];
 
+if (isDedicated) exitWith {};
+
 switch (ArsenalType) do {
 
     case "VANILLA": {

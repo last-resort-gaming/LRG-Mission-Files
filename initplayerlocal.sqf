@@ -11,13 +11,20 @@ if (!hasInterface) exitWith {};
 	if (PilotCheck) then {_null = [] execVM "scripts\pilotCheck.sqf";};
 	if (ShowMapIcons) then {_null = [] execVM "scripts\misc\QS_icons.sqf";};
 
+
 	if (safezoneEnabled) then {
 
-	player addEventHandler ["Fired", {
-	params ["_unit", "_weapon", "", "", "", "", "_projectile"];
-	if (_unit distance2D (getMarkerPos "respawn_west") < safezoneDistance) then {
+	player addEventHandler["FiredMan", {
+    params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_mag", "_projectile", "_veh"];
+
+    if (_weapon in ["CMFlareLauncher", "CMFlareLauncher_Singles", "CMFlareLauncher_Triples","UK3CB_BAF_CMFlareLauncher","UK3CB_BAF_IRJammer"])  exitWith {true};
+    if !(cameraOn isEqualTo (vehicle player)) exitWith {true};
+
+    _checkObject = [_veh, _unit] select isNull _veh;
+	
+	if (_checkObject distance2D (getMarkerPos "respawn_west") < safezoneDistance) exitWith {
 		deleteVehicle _projectile;
-		hintC "Are you some kind of special? No using Weapon Systems at base! I've had to write this because of retards like you!";
+		hintC "Denied.";
 	}}];
 	
 	};
@@ -51,3 +58,4 @@ switch (MissionType) do {
 	
 		if (!EnableVanillaFatigue) then {player enableFatigue false;};};
 };
+
