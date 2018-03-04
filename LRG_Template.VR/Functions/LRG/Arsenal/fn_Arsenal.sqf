@@ -7,20 +7,18 @@
 
 if (EnableArsenal) then {
 diag_log format ["LRG_Logging: %1 Arsenal Enabled.", ArsenalType];
-        {
+ 
+	if (isServer) then {
+				{
                 _box = missionNamespace getVariable[_x, objNull];
-
-                if (isServer) then {
-                        ["AmmoboxInit", [_box, true]] call BIS_fnc_arsenal;
-                };
-
+                ["AmmoboxInit", [_box, true]] call BIS_fnc_arsenal;
                 [_box, [true], false] call BIS_fnc_removeVirtualItemCargo;
                 [_box, [true], false] call BIS_fnc_removeVirtualWeaponCargo;
                 [_box, [true], false] call BIS_fnc_removeVirtualBackpackCargo;
                 [_box, [true], false] call BIS_fnc_removeVirtualMagazineCargo;
-        }
-        foreach ArsenalName;
-
+				}
+				foreach ArsenalName;
+	};
 	if (isDedicated) exitWith {};
 
 _AvailableArsenalHeadGear = [];
@@ -1752,42 +1750,26 @@ switch (ArsenalType) do {
 				"Leupold_Mk4",
 				"rhsusf_lrf_Vector21"
 			];
-	};
+
 
 	};
 
-        {
+};
+	{
 
                 _box = missionNamespace getVariable[_x, objNull];
 
                 [_box, _AvailableArsenalHeadGear, false] call BIS_fnc_addVirtualItemCargo;
-
-
                 [_box, _AvailableArsenalGoggles, false] call BIS_fnc_addVirtualItemCargo;
-
-
                 [_box, _AvailableArsenalUniforms, false] call BIS_fnc_addVirtualItemCargo;
-
-
                 [_box, _AvailableArsenalVests, false] call BIS_fnc_addVirtualItemCargo;
-
-
                 [_box, _AvailableArsenalItems, false] call BIS_fnc_addVirtualItemCargo;
-
-
                 [_box, _AvailableArsenalAttachments, false] call BIS_fnc_addVirtualItemCargo;
-
-
                 [_box, _AvailableArsenalWeapons, false] call BIS_fnc_addVirtualWeaponCargo;
-
-
                 [_box, _AvailableArsenalBackpacks, false] call BIS_fnc_addVirtualBackpackCargo;
-
-
                 [_box, _AvailableArsenalMagazines, false] call BIS_fnc_addVirtualMagazineCargo;
 
         }
         foreach ArsenalName;
-
 
 };
