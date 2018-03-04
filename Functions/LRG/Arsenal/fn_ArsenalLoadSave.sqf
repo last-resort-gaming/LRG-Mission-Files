@@ -1,3 +1,5 @@
+diag_log format ["LRG_Logging: ArsenalLoadSave Function Enabled."];
+
 	[missionNamespace, "arsenalOpened", {
 		disableSerialization;
 		params ["_display"];

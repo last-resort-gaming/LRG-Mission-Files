@@ -20,6 +20,8 @@ diag_log format ["LRG_Logging: %1 AmmoBox Enabled.", ArsenalType];
                 [_box, [true], false] call BIS_fnc_removeVirtualMagazineCargo;
         }
         foreach AmmoBoxName;
+		
+if (isDedicated) exitWith {};
 
 _AvailableAmmoHeadGear = [];
 _AvailableAmmoGoggles = [];

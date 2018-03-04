@@ -21,6 +21,8 @@ diag_log format ["LRG_Logging: %1 Arsenal Enabled.", ArsenalType];
         }
         foreach ArsenalName;
 
+	if (isDedicated) exitWith {};
+
 _AvailableArsenalHeadGear = [];
 _AvailableArsenalGoggles = [];
 _AvailableArsenalUniforms = [];
@@ -31,7 +33,7 @@ _AvailableArsenalWeapons = [];
 _AvailableArsenalBackpacks = [];
 _AvailableArsenalMagazines = [];
 
-if (isDedicated) exitWith {};
+
 
 switch (ArsenalType) do {
 

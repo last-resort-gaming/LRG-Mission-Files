@@ -4,7 +4,7 @@
 //=================================== VANILLA ONLY =====================================================
 
 	if (TimedArsenal) 		then {call LR_Fnc_TimedArsenal;};
-	If (!Confirmation)		then {call LR_fnc_Confirmation;};
+	if (TFAR_ON_Message)	then {call LR_fnc_TFAR_ON_Message;};
 	
 switch (MissionType) do {
 
@@ -14,4 +14,5 @@ switch (MissionType) do {
 		
 		if (VanillaGroupManagement) then {["Initialize"] call BIS_fnc_dynamicGroups;};
 
+	};
 };

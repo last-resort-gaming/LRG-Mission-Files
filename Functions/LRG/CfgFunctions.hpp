@@ -27,7 +27,7 @@ class LR {
 				file = "Functions\LRG\Messages";
 				class globalhint {};
 				class globalhintc {};				
-				class globalhintsilent {};				
+				class globalhintsilent {};
 			};			
 			
 			class PreInit {

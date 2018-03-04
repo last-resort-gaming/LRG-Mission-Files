@@ -1,3 +1,4 @@
+diag_log format ["LRG_Logging: Safe Zone Enabled. Distance set to %1 meters.", safezoneDistance];
 
 	player addEventHandler["FiredMan", {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_mag", "_projectile", "_veh"];
