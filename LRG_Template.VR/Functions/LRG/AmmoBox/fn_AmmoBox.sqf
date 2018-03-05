@@ -7,21 +7,19 @@
 
 if (EnableAmmoBox) then {
 
-	if (isServer) then {
-	
-	["LRG_Logging: %1 AmmoBox Enabled.", ArsenalType] call BIS_fnc_logFormat;	
-	
-				{
+        {
                 _box = missionNamespace getVariable[_x, objNull];
-                ["AmmoboxInit", [_box, true]] call BIS_fnc_arsenal;
+
+                if (isServer) then {
+                        ["AmmoboxInit", [_box, true]] call BIS_fnc_arsenal;
+                };
+
                 [_box, [true], false] call BIS_fnc_removeVirtualItemCargo;
                 [_box, [true], false] call BIS_fnc_removeVirtualWeaponCargo;
                 [_box, [true], false] call BIS_fnc_removeVirtualBackpackCargo;
                 [_box, [true], false] call BIS_fnc_removeVirtualMagazineCargo;
-				}
-				foreach AmmoBoxName;
-	};
-	if (isDedicated) exitWith {};
+        }
+        foreach AmmoBoxName;
 
 _AvailableAmmoHeadGear = [];
 _AvailableAmmoGoggles = [];
