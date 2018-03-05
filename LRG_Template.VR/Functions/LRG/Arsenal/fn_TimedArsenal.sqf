@@ -1,7 +1,7 @@
 if ((EnableArsenal) && (isServer)) then {
 
 
-diag_log format ["LRG_Logging: TimedArsenal Enabled. Arsenal Expiry set at: %1 minutes.", ArsenalExpiry];
+["LRG_Logging: TimedArsenal Enabled. Arsenal Expiry set at: %1 minutes.", ArsenalExpiry] call BIS_fnc_logFormat;
 
 	while {
 		((ArsenalExpiry * 60) - round time) > 0

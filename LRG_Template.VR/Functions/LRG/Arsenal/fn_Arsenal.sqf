@@ -6,9 +6,10 @@
 */
 
 if (EnableArsenal) then {
-diag_log format ["LRG_Logging: %1 Arsenal Enabled.", ArsenalType];
  
 	if (isServer) then {
+	
+["LRG_Logging: %1 Arsenal Enabled.", ArsenalType] call BIS_fnc_logFormat;	
 				{
                 _box = missionNamespace getVariable[_x, objNull];
                 ["AmmoboxInit", [_box, true]] call BIS_fnc_arsenal;

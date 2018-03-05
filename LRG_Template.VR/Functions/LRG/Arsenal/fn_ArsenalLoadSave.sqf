@@ -1,4 +1,4 @@
-diag_log format ["LRG_Logging: ArsenalLoadSave Function Enabled."];
+["LRG_Logging: ArsenalLoadSave Function Enabled."] call BIS_fnc_logFormat;
 
 	[missionNamespace, "arsenalOpened", {
 		disableSerialization;
