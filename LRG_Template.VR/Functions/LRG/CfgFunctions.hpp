@@ -19,7 +19,8 @@ class LR {
 
 				file = "Functions\LRG\General";
 				class SafeZone {};
-				class Confirmation {};				
+				class Confirmation {};
+				class TFAR {postInit = 1;};
 			};				
 			
 			class Messages {
