@@ -8,12 +8,12 @@ private _freqs = [
 	"Recce"
   ],
   [
-    [0,9,["30","40","50","60","60","60","60","60","60"],0,nil,-1,0,false],
-    [0,9,["30","60","60","60","60","60","60","60","60"],0,nil,-1,0,false],
-    [0,9,["30","60","60","60","60","60","60","60","60"],0,nil,-1,0,false],
-    [0,9,["30","60","60","60","60","60","60","60","60"],0,nil,-1,0,false],
-    [0,9,["50","60","40","60","60","60","60","60","60"],0,nil,-1,0,false],
-    [0,9,["30","60","60","60","60","60","60","60","60"],0,nil,-1,0,false]	
+    [0,9,[LRFrequency_1,LRFrequency_2,LRFrequency_4,LRFrequency_3,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency],0,nil,-1,0,false],
+    [0,9,[LRFrequency_1,LRFrequency_4,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency],0,nil,-1,0,false],
+    [0,9,[LRFrequency_1,LRFrequency_4,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency],0,nil,-1,0,false],
+    [0,9,[LRFrequency_1,LRFrequency_4,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency],0,nil,-1,0,false],
+    [0,9,[LRFrequency_3,LRFrequency_4,LRFrequency_2,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency],0,nil,-1,0,false],
+    [0,9,[LRFrequency_1,LRFrequency_4,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency,LREmptyFrequency],0,nil,-1,0,false]	
   ]
 ];
 
