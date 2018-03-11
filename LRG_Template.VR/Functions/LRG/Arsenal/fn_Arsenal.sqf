@@ -2,7 +2,7 @@
 	LRG MISSION TEMPLATE
 	fn_Arsenal.sqf
 	Author: MitchJC
-
+	Description: Fills Arsenal with predefined equipment dependent on ArsenalType.
 */
 
 if (EnableArsenal) then {

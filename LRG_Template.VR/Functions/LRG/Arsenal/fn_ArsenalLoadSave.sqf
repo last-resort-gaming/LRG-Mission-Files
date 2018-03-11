@@ -1,3 +1,10 @@
+/*
+	LRG MISSION TEMPLATE
+	fn_ArsenalLoadSave.sqf
+	Author: MitchJC
+	Description: Removes Load/Save function from the Virtual Arsenal.
+*/
+
 ["LRG_Logging: ArsenalLoadSave Function Enabled."] call BIS_fnc_logFormat;
 
 	[missionNamespace, "arsenalOpened", {

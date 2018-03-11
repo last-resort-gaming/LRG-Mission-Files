@@ -1,6 +1,9 @@
-// Original pilotcheck by Kamaradski [AW]. 
-// Since then been tweaked by many hands!
-// Notable contributors: chucky [allFPS], Quiksilver.
+/*
+	LRG MISSION TEMPLATE
+	pilotcheck.sqf
+	Author: MitchJC, Kamaradski, chucky, Quiksilver
+	Description: Ejects players from pilot seat of aircraft if  (!player getUnitTrait "Pilot")
+*/
 
 _pilots = ["UK3CB_BAF_PILOT_RAF","B_Helipilot_F","B_Pilot_F","B_Fighter_Pilot_F"];
 _aircraft_nocopilot = [

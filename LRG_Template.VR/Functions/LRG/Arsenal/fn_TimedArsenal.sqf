@@ -1,4 +1,11 @@
-if ((EnableArsenal) && (isServer)) then {
+/*
+	LRG MISSION TEMPLATE
+	fn_TimedArsenal.sqf
+	Author: MitchJC
+	Description: If EnableArsenal and TimedArsenal true, Arsenal will be removed after ArsenalExpiry.
+*/
+if (!EnableArsenal) exitwith {};
+if ((TimedArsenal) && (isServer)) then {
 
 
 ["LRG_Logging: TimedArsenal Enabled. Arsenal Expiry set at: %1 minutes.", ArsenalExpiry] call BIS_fnc_logFormat;

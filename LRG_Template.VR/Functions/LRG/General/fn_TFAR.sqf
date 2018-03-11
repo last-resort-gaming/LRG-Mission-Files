@@ -1,3 +1,9 @@
+/*
+	LRG MISSION TEMPLATE
+	fn_TFAR.sqf
+	Author: MitchJC, MartinCo
+	Description: Sets Long range and short range TFAR radio presets dependent on group.
+*/
 
 if !(isClass (configFile >> "CfgPatches" >> "task_force_radio")) exitwith {diag_log "LRG_Logging: TFAR is disabled."};
 

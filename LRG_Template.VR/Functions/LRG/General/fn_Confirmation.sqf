@@ -1,3 +1,10 @@
+/*
+	LRG MISSION TEMPLATE
+	fn_Confirmation.sqf
+	Author: MitchJC
+	Description: Displays a message on joining if LRG_Setup is not configured.
+*/
+
 ["LRG_Logging: Mission not Configured in LRG Setup!"] call BIS_fnc_logFormat;
 
 sleep 5;

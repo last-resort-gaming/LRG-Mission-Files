@@ -1,3 +1,10 @@
+/*
+	LRG MISSION TEMPLATE
+	fn_SafeZone.sqf
+	Author: MitchJC, Flare exceptions by MartinCo
+	Description: Prevents players from using weapons within safezoneDistance of "respawn_west."
+*/
+
 ["LRG_Logging: Safe Zone Enabled. Distance set to %1 meters.", safezoneDistance] call BIS_fnc_logFormat;
 
 	player addEventHandler["FiredMan", {

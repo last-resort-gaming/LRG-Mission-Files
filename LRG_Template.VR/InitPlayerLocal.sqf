@@ -1,4 +1,9 @@
-
+/*
+	LRG MISSION TEMPLATE
+	InitPlayerLocal.sqf
+	Author: MitchJC
+	Description: Scripts executed on players only.
+*/
 
 if (!hasInterface) exitWith {};
 

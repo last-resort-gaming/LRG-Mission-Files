@@ -21,6 +21,7 @@ class LR {
 				class SafeZone {};
 				class Confirmation {};
 				class TFAR {postInit = 1;};
+				class MedicalFacility {postInit = 1;};				
 			};				
 			
 			class Messages {

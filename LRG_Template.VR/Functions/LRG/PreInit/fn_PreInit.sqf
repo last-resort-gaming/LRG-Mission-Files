@@ -2,7 +2,7 @@
 	LRG MISSION TEMPLATE
 	fn_PreInit.sqf
 	Author: MitchJC
-
+	Description: Calls LRG_Setup prior to functions.
 */
 
 

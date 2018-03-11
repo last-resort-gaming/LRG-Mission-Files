@@ -2,7 +2,7 @@
 	LRG MISSION TEMPLATE
 	fn_AmmoBox.sqf
 	Author: MitchJC
-
+	Description: Fills Ammoboxes with predefined equipment dependent on ArsenalType.
 */
 
 if (EnableAmmoBox) then {

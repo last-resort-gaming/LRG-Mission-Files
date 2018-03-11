@@ -1,6 +1,8 @@
 /*
-    Author: BACONMOP
-    For creating a global hint
+	LRG MISSION TEMPLATE
+	fn_globalhintsilent.sqf
+	Author: MitchJC
+	Description: Displays a silent hint via remote ex.
 */
 
 _GHint = _this select 0;
