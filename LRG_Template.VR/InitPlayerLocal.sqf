@@ -24,7 +24,7 @@ switch (MissionType) do {
 	
     case "VANILLA": {
 	
-		if (StandardEarplugs) 		then {[] execVM "scripts\earplugs.sqf";};
+		if (StandardEarplugs) 		then {[] execVM "scripts\YAINA\earplugs.sqf";};
 		if (VanillaGroupManagement) then {["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;};
 		if (!EnableVanillaFatigue) 	then {player enableFatigue false;};};
 };
