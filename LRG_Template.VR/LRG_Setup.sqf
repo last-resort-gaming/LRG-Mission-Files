@@ -60,6 +60,9 @@ LRFrequency_3 = 	"50";						// Pilot Net. 	Range: 30 - 87MHz						DEFAULT: "50"
 LRFrequency_4 = 	"60";						// FAC Net. 	Range: 30 - 87MHz						DEFAULT: "60"
 LREmptyFrequency = 	"82";						// Empty Channel Frequency. Range: 30 - 87MHz			DEFAULT: "82"
 
+//================= ACE Settings
+EnableLRGMedFacility = True;					// Enable use of auto heal/revive at Med Facilities.	DEFAULT: True
+LRGMedicalFacilities = ["MedicalFacility1"];	// Name of Medical Facilities.							DEFAULT: "MedicalFacility1"
 //======================================================================================//
 //================================ VANILLA ONLY SETTINGS ===============================//
 //=================== Settings ignored unless MissionType = "VANILLA"; ================//
