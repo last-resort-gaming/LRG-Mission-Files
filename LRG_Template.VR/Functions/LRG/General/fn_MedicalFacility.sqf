@@ -4,8 +4,9 @@
 	Author: MitchJC
 	Description: Creates an area around LRGMedicalFacilities where players are healed or revived after a time delay.
 */
-	if (!EnableLRGMedFacility) exitwith {};
-
+	if (!EnableLRGMedFacility) exitwith {diag_log "LRG_Logging: LRG Med Facility set to disabled."};
+	if !(isClass (configFile >> "CfgPatches" >> "ace_main")) exitwith {diag_log "LRG_Logging: ACE not enabled. Med Facility Disabled."};
+	
 LR_FNC_Medical = {
 
 if (player getVariable "ACE_isUnconscious") then {

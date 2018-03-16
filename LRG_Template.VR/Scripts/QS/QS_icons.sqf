@@ -101,11 +101,12 @@ _QS_ST_iconColor_UNKNOWN = [0.7,0.6,0,0.5];					// ARRAY (NUMBER). RGBA color co
 
 
 _QS_ST_showMedicalWounded = TRUE;							// BOOL. TRUE to show wounded on the map and GPS. FALSE to not show wounded on the map with this script. Default TRUE.
-switch (MissionType) do {
-    case "ACE": 	{_QS_ST_MedicalSystem = ['ACE'];};
-    case "VANILLA": {_QS_ST_MedicalSystem = ['AIS'];};
-    default {_QS_ST_MedicalSystem = ['BIS'];};
+
+_QS_ST_MedicalSystem = ['AIS'];
+if (isClass (configFile >> "CfgPatches" >> "ace_main")) then {
+_QS_ST_MedicalSystem = ['ACE'];
 };
+
 _QS_ST_MedicalIconColor = [1,0.41,0,1];						// ARRAY (NUMBER). Color of medical icons in RGBA format. Default [1,0.41,0,1];
 _QS_ST_colorInjured = [0.75,0.55,0,0.75];					// ARRAY (NUMBER). RGBA color code. Color of units with > 10% damage, in map group interactive interface. Default [0.7,0.6,0,0.5];
 

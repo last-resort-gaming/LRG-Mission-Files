@@ -9,15 +9,8 @@
 
 //=================================== VANILLA ONLY =====================================================
 
-	if (TimedArsenal) 		then {call LR_Fnc_TimedArsenal;};
+	if (TimedArsenal) 	then {call LR_Fnc_TimedArsenal;};
 	
-switch (MissionType) do {
-
-    case "ACE": {};
-	
-    case "VANILLA": {
-		
-		if (VanillaGroupManagement) then {["Initialize"] call BIS_fnc_dynamicGroups;};
-
+	if !(isClass (configFile >> "CfgPatches" >> "ace_main")) then {
+	["Initialize"] call BIS_fnc_dynamicGroups;
 	};
-};

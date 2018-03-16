@@ -7,7 +7,7 @@
 
 if !(isClass (configFile >> "CfgPatches" >> "task_force_radio")) exitwith {diag_log "LRG_Logging: TFAR is disabled."};
 
-diag_log "LRG_Logging: TFAR is enabled. Default frequencies set.";
+diag_log "LRG_Logging: TFAR is enabled. LRG frequencies set.";
 
 private _freqs = [
   [
@@ -43,7 +43,8 @@ private _freqs = [
     _idx = (_freqs select 0) find _section;
     if !(_idx isEqualTo -1) then {
       _x setVariable ["tf_lr_frequency", (_freqs select 1) select _idx, true];
-      _x setVariable ["tf_sw_frequency", (_freqs select 2) select _idx, true];	  
+      _x setVariable ["tf_sw_frequency", (_freqs select 2) select _idx, true];
+	  if (isClass (configFile >> "CfgPatches" >> "acex_headless")) then {_x setVariable ["acex_headless_blacklist", true];};
     };
   };
 } count allGroups;

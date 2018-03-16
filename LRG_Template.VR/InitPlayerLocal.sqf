@@ -18,14 +18,13 @@ if (!hasInterface) exitWith {};
 	if (safezoneEnabled)	then {call LR_fnc_SafeZone;};
 	if (!ArsenalLoadSave)	then {call LR_fnc_ArsenalLoadSave;};
 	
-switch (MissionType) do {
 
-    case "ACE": {player setVariable ["tf_sendingDistanceMultiplicator", RadioRange];};
-	
-    case "VANILLA": {
-	
-		if (StandardEarplugs) 		then {[] execVM "scripts\YAINA\earplugs.sqf";};
-		if (VanillaGroupManagement) then {["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;};
-		if (!EnableVanillaFatigue) 	then {player enableFatigue false;};};
-};
-
+	if !(isClass (configFile >> "CfgPatches" >> "ace_main")) then {
+		[] execVM "scripts\YAINA\earplugs.sqf";
+		["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
+		player enableFatigue false;
+	};
+	  
+	if (isClass (configFile >> "CfgPatches" >> "task_force_radio")) then {
+		player setVariable ["tf_sendingDistanceMultiplicator", RadioRange];
+	};	  
