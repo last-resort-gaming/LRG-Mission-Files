@@ -9,8 +9,9 @@
 
 //=================================== VANILLA ONLY =====================================================
 
-	if (TimedArsenal) 	then {call LR_Fnc_TimedArsenal;};
-	
 	if !(isClass (configFile >> "CfgPatches" >> "ace_main")) then {
 	["Initialize"] call BIS_fnc_dynamicGroups;
 	};
+	
+If (TimedArsenal) then {
+	call LR_Fnc_TimedArsenal};

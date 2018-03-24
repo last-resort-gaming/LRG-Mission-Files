@@ -15,7 +15,7 @@ private _nextAction = "Insert";
 private _nextColor  = "#00FF00";
 
 // Don't load if ACE is detected - it contains plugs
-//if (isClass(configFile >> "CfgPatches" >> "ace_main")) exitWith {};
+if (isClass(configFile >> "CfgPatches" >> "ace_main")) exitWith {};
 
 // And wait for main display to be around
 waitUntil {!isNull (findDisplay 46)};
@@ -44,5 +44,5 @@ if (YAINA_PlugsIn isEqualTo true) then {
 // Replace menu item
 _aid = player getVariable "YAINA_Earplugs_AID";
 if(!isNil "_aid") then { player removeAction _aid; };
-_aid = player addAction [("<t color=""" + _nextColor + """>" + _nextAction + " Earplugs</t>"),"Scripts\earplugs.sqf","",-98,false,true,"",'_target isEqualTo vehicle _this'];
+_aid = player addAction [("<t color=""" + _nextColor + """>" + _nextAction + " Earplugs</t>"),"Scripts\YAINA\earplugs.sqf","",-98,false,true,"",'_target isEqualTo vehicle _this'];
 player setVariable ["YAINA_Earplugs_AID", _aid];

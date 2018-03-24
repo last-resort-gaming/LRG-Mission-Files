@@ -1,12 +1,16 @@
-author = MitchJC;
+/*
+	LRG MISSION TEMPLATE
+	Description.ext
+	Author: MitchJC
+	Description: Used to set overall mission attributes.
+*/
+
+author = "Last Resort Gaming";
 onLoadName = "LRG Mission Template";
+briefingName = "LRG Mission Template";
 OnLoadMission = "LRG Mission Making Template";
 loadScreen = "media\images\billboard.paa";
 overviewPicture = "media\images\billboard.paa"; 
-
-onLoadIntro = "";
-onLoadIntroTime = 0;
-onLoadMissionTime = 0;
 
 class Header 
 	{
@@ -17,7 +21,7 @@ class Header
 
 //------------------------- Admin
 
-enableDebugConsole = 0;	
+enableDebugConsole = 1;	
 allowFunctionsLog = 1;
 
 //------------------------- Misc
@@ -44,12 +48,12 @@ respawnOnStart = -1;
 
 //------------------------- Garbage collector
 							
-minPlayerDistance = 0;
+minPlayerDistance = 50;
 
 corpseManagerMode = 1;
 corpseLimit = 1;
-corpseRemovalMinTime = 1800;
-corpseRemovalMaxTime = 1800;
+corpseRemovalMinTime = 900;
+corpseRemovalMaxTime = 1200;
 
 wreckManagerMode = 1;
 wreckLimit = 5;

@@ -17,7 +17,7 @@ if ((TimedArsenal) && (isServer)) then {
 	
 		if (((ArsenalExpiry * 60) - round time) > 60) then {
 		
-		[format ["<t color='#2f7c38' size = '.5'>Arsenal<br />%1 minutes remaining.</t>",round (((ArsenalExpiry * 60) - round time) /60)],1,-0.2,10,2,0,789] remoteExec ["BIS_fnc_dynamicText",0,false];	
+		[format ["<t color='#336B87' size = '.5'>Arsenal<br />%1 minutes remaining.</t>",round (((ArsenalExpiry * 60) - round time) /60)],1,-0.2,10,2,0,789] remoteExec ["BIS_fnc_dynamicText",0,false];	
 		sleep 60;
 		
 		
@@ -38,4 +38,3 @@ if ((TimedArsenal) && (isServer)) then {
 				
 
 };
-

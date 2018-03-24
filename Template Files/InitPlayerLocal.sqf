@@ -27,4 +27,11 @@ if (!hasInterface) exitWith {};
 	  
 	if (isClass (configFile >> "CfgPatches" >> "task_force_radio")) then {
 		player setVariable ["tf_sendingDistanceMultiplicator", RadioRange];
-	};	  
+	} else {
+	1 enableChannel [true, true];
+	2 enableChannel [true, true];
+	3 enableChannel [true, true];
+	4 enableChannel [true, true];
+	5 enableChannel [true, true];
+	};
+	
