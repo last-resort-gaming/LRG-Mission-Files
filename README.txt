@@ -13,6 +13,7 @@ It automatically detects if ACE/TFAR is in use and applies those settings accord
 * In your Missions folder you should now see your Mission.MapName folder.
 * Copy the contents of LRG Template\Template Files to your Mission.MapName folder.
 * Open LRG_Setup and configure it how you'd like.
+* Open Description.ext and change the Author/LoadName ect as required.
 
 * In the LRG Template Folder there are premade Missions such as LRG_3CB.VR or LRG_Vanilla.VR.
 * These Missions contain everything you need for a mission, such as loadouts, Arsenals, vehicle setups ect.
