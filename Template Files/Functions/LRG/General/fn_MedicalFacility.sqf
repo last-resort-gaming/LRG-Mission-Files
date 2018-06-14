@@ -20,8 +20,8 @@ if (player getVariable "ACE_isUnconscious") then {
 
 {
 _MedicalFacility = missionNamespace getVariable[_x, objNull];
-_trg = createTrigger ["EmptyDetector", getPos _MedicalFacility];
-_trg setTriggerArea [4.6, 5, getdir _MedicalFacility,true, 4.3];
+_trg = createTrigger ["EmptyDetector",_MedicalFacility];
+_trg setTriggerArea [5, 5, getdir _MedicalFacility,true, 5];
 _trg setTriggerActivation ["ANYPLAYER", "PRESENT", true];
 _trg setTriggerStatements ["player in thislist", "[player,player]call LR_fnc_Medical",""];
 } foreach LRGMedicalFacilities;
