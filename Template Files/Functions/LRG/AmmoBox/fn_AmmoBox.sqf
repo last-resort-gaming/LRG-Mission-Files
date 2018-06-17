@@ -265,6 +265,8 @@ switch (ArsenalType) do {
 
 
                 [_box, _AvailableAmmoMagazines, false] call BIS_fnc_addVirtualMagazineCargo;
+				
+				{_x addCuratorEditableObjects [[_box], false];} ForEach allcurators;
 
         }
         foreach AmmoBoxName;
