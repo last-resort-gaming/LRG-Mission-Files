@@ -19,7 +19,9 @@ class LR {
 
 				file = "Functions\LRG\General";
 				class SafeZone {};
+				class SideChat {};				
 				class Confirmation {};
+				class Diary { postInit = 1; };
 				class TFAR {postInit = 1;};
 				class MedicalFacility {postInit = 1;};				
 			};				

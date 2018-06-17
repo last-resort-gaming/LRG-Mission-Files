@@ -15,5 +15,6 @@
 	};
 	
 If (TimedArsenal) then {
-	call LR_Fnc_TimedArsenal};
-	
+	call LR_Fnc_TimedArsenal
+	};
+

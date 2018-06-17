@@ -777,10 +777,6 @@ switch (ArsenalType) do {
         ];
 
         _AvailableArsenalHeadgear = [
-                "UK3CB_BAF_H_Beret_RAF",
-                "UK3CB_BAF_H_Beret_RLC_Commando",
-                "UK3CB_BAF_H_Boonie_MTP",
-                "UK3CB_BAF_H_Boonie_MTP_PRR",
                 "UK3CB_BAF_H_CrewHelmet_A",
                 "UK3CB_BAF_H_CrewHelmet_ESS_A",
                 "UK3CB_BAF_H_CrewHelmet_B",
@@ -821,30 +817,10 @@ switch (ArsenalType) do {
                 "UK3CB_BAF_H_Mk7_Scrim_ESS_C",
                 "UK3CB_BAF_H_PilotHelmetHeli_A",
                 "UK3CB_BAF_H_Mk7_Win_A",
-                "UK3CB_BAF_H_Mk7_Win_ESS_A",
-                "UK3CB_BAF_H_Mk6_DPMT_A",
-                "UK3CB_BAF_H_Mk6_DPMT_B",
-                "UK3CB_BAF_H_Mk6_DPMT_C",
-                "UK3CB_BAF_H_Mk6_DPMT_D",
-                "UK3CB_BAF_H_Mk6_DPMT_E",
-                "UK3CB_BAF_H_Mk6_DPMT_F",
-                "UK3CB_BAF_H_CrewHelmet_DPMT_A",
-                "UK3CB_BAF_H_CrewHelmet_DPMT_ESS_A"
+                "UK3CB_BAF_H_Mk7_Win_ESS_A"
         ];
 
         _AvailableArsenalGoggles = [
-                "G_Balaclava_blk",
-                "G_Balaclava_combat",
-                "G_Balaclava_lowprofile",
-                "G_Balaclava_oli",
-                "G_Bandanna_aviator",
-                "G_Bandanna_beast",
-                "G_Bandanna_blk",
-                "G_Bandanna_khk",
-                "G_Bandanna_oli",
-                "G_Bandanna_shades",
-                "G_Bandanna_sport",
-                "G_Bandanna_tan",
                 "G_Combat",
                 "G_Lowprofile",
                 "G_Tactical_Black",
@@ -866,11 +842,6 @@ switch (ArsenalType) do {
                 "G_Sport_Red",
                 "G_B_Diving",
                 "G_Combat_Goggles_tna_F",
-                "G_Balaclava_oli",
-                "G_Balaclava_TI_blk_F",
-                "G_Balaclava_TI_G_blk_F",
-                "G_Balaclava_TI_G_tna_F",
-                "G_Balaclava_TI_tna_F",
                 "UK3CB_BAF_G_Tactical_Grey",
                 "UK3CB_BAF_G_Tactical_Orange",
                 "UK3CB_BAF_G_Tactical_Yellow",
@@ -880,20 +851,15 @@ switch (ArsenalType) do {
         ];
         _AvailableArsenalUniforms = [
                 "UK3CB_BAF_U_CombatUniform_Arctic_Ghillie_RM",
-                "UK3CB_BAF_U_CombatUniform_DPMT",
-                "UK3CB_BAF_U_CombatUniform_DPMT_Ghillie_RM",
-                "UK3CB_BAF_U_CombatUniform_DPMT_ShortSleeve",
                 "UK3CB_BAF_U_CombatUniform_MTP",
                 "UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM",
                 "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve",
                 "UK3CB_BAF_U_CombatUniform_MTP_TShirt",
                 "UK3CB_BAF_U_HeliPilotCoveralls_RAF",
                 "UK3CB_BAF_U_JumperUniform_Plain",
-                "UK3CB_BAF_U_JumperUniform_DPMT",
                 "UK3CB_BAF_U_JumperUniform_MTP",
                 "UK3CB_BAF_U_Smock_MTP",
                 "UK3CB_BAF_U_Smock_MTP_DPMW",
-                "UK3CB_BAF_U_Smock_DPMT",
                 "UK3CB_BAF_U_Smock_DPMW_OLI",
                 "UK3CB_BAF_U_Smock_DPMW_MTP",
                 "UK3CB_BAF_U_Smock_Arctic",
@@ -930,20 +896,7 @@ switch (ArsenalType) do {
                 "UK3CB_BAF_V_PLCE_Webbing_MTP",
                 "UK3CB_BAF_V_PLCE_Webbing_Plate_MTP",
                 "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter",
-                "UK3CB_BAF_V_PLCE_Webbing_Winter",
-                "UK3CB_BAF_V_Osprey_Winter",
-                "UK3CB_BAF_V_Osprey_DPMT1",
-                "UK3CB_BAF_V_Osprey_DPMT2",
-                "UK3CB_BAF_V_Osprey_DPMT3",
-                "UK3CB_BAF_V_Osprey_DPMT4",
-                "UK3CB_BAF_V_Osprey_DPMT5",
-                "UK3CB_BAF_V_Osprey_DPMT6",
-                "UK3CB_BAF_V_Osprey_DPMT7",
-                "UK3CB_BAF_V_Osprey_DPMT8",
-                "UK3CB_BAF_V_Osprey_DPMT9",
-                "UK3CB_BAF_V_Pilot_DPMT",
-                "UK3CB_BAF_V_PLCE_Webbing_DPMT",
-                "UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT"
+                "UK3CB_BAF_V_PLCE_Webbing_Winter"
         ];
 
         _AvailableArsenalBackpacks = [
@@ -990,14 +943,7 @@ switch (ArsenalType) do {
                 "UK3CB_BAF_B_Bergen_OLI_JTAC_A",
                 "UK3CB_BAF_B_Bergen_OLI_JTAC_H_A",
                 "UK3CB_BAF_B_Kitbag_OLI",
-                "UK3CB_BAF_B_Carryall_OLI",
-                "UK3CB_BAF_B_Bergen_DPMT_Rifleman_A",
-                "UK3CB_BAF_B_Bergen_DPMT_Rifleman_B",
-                "UK3CB_BAF_B_Bergen_DPMT_SL_A",
-                "UK3CB_BAF_B_Bergen_DPMT_JTAC_A",
-                "UK3CB_BAF_B_Bergen_DPMT_JTAC_H_A",
-                "UK3CB_BAF_B_Kitbag_DPMT",
-                "UK3CB_BAF_B_Carryall_DPMT"
+                "UK3CB_BAF_B_Carryall_OLI"
         ];
 
         _AvailableArsenalAttachments = [

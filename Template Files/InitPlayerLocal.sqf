@@ -18,7 +18,10 @@ if (!hasInterface) exitWith {};
 	if (!ArsenalLoadSave)	then {call LR_fnc_ArsenalLoadSave;};
 	
 
-	if !(isClass (configFile >> "CfgPatches" >> "ace_main")) then {
+	if (isClass (configFile >> "CfgPatches" >> "ace_main")) then {
+		call LR_fnc_SideChat;
+		} else {
+	
 		[] execVM "scripts\YAINA\earplugs.sqf";
 		["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 		player enableFatigue false;
