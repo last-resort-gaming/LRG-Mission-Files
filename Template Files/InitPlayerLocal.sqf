@@ -9,7 +9,6 @@ if (!hasInterface) exitWith {};
 
 //=================================== GENERAL =====================================================
 
-	if (VehicleCrewList) 	then {_null = [] execVM "scripts\LRG\crew\crew.sqf";};
 	if (PilotCheck) 		then {_null = [] execVM "scripts\LRG\pilotCheck.sqf";};
 	if (ShowMapIcons) 		then {_null = [] execVM "scripts\QS\QS_icons.sqf";};
 	If (!Confirmation)		then {call LR_fnc_Confirmation;};
