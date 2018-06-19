@@ -49,9 +49,9 @@ if ( isServer ) then {
 if (_source != "") then {
 
     if (_markerLocal) then {
-        _myfpsmarker = createMarkerLocal [ format ["localFPS%1", name player ], [ 500, 500 + (500 * _position) ] ];
-        _myfpsmarker setMarkerTypeLocal "mil_start";
-        _myfpsmarker setMarkerSizeLocal [ 0.7, 0.7 ];
+        _myfpsmarker = createMarkerLocal [ format ["localFPS%1", name player ], [ 250, 250 + (250 * _position) ] ];
+        _myfpsmarker setMarkerTypeLocal "mil_box";
+        _myfpsmarker setMarkerSizeLocal [ 0.5, 0.5 ];
 
         // Add PFH for 5 second intervals
         [{
@@ -63,19 +63,19 @@ if (_source != "") then {
             _localgroups = { local _x } count allGroups;
             _localvehicles = { local _x } count vehicles;
 
-            _myfpsmarker setMarkerColorLocal "ColorGREEN";
-            if ( _myfps < 30 ) then { _myfpsmarker setMarkerColorLocal "ColorYELLOW"; };
+            _myfpsmarker setMarkerColorLocal "ColorGUER";
+            if ( _myfps < 30 ) then { _myfpsmarker setMarkerColorLocal "ColorUNKNOWN"; };
             if ( _myfps < 20 ) then { _myfpsmarker setMarkerColorLocal "ColorORANGE"; };
-            if ( _myfps < 10 ) then { _myfpsmarker setMarkerColorLocal "ColorRED"; };
+            if ( _myfps < 10 ) then { _myfpsmarker setMarkerColorLocal "colorOPFOR"; };
 
             _myfpsmarker setMarkerTextLocal format [ "%1: %2 fps, %3 units, %4 groups, %5 vehicles", _source, ( round ( _myfps * 100.0 ) ) / 100.0 , _localunits, _localgroups, _localvehicles ];
 
         }, 5, [_source, _myfpsmarker]] call CBAP_fnc_addPerFrameHandler;
 
     } else {
-        _myfpsmarker = createMarker [ format ["fpsmarker%1", _source ], [ 500, 500 + (500 * _position) ] ];
-        _myfpsmarker setMarkerType "mil_start";
-        _myfpsmarker setMarkerSize [ 0.7, 0.7 ];
+        _myfpsmarker = createMarker [ format ["fpsmarker%1", _source ], [ 250, 250 + (250 * _position) ] ];
+        _myfpsmarker setMarkerType "mil_triangle";
+        _myfpsmarker setMarkerSize [ 0.5, 0.5 ];
 
         // Add PFH for 5 second intervals
         [{
@@ -87,10 +87,10 @@ if (_source != "") then {
             _localgroups = { local _x } count allGroups;
             _localvehicles = { local _x } count vehicles;
 
-            _myfpsmarker setMarkerColor "ColorGREEN";
-            if ( _myfps < 30 ) then { _myfpsmarker setMarkerColor "ColorYELLOW"; };
+            _myfpsmarker setMarkerColor "ColorGUER";
+            if ( _myfps < 30 ) then { _myfpsmarker setMarkerColor "ColorUNKNOWN"; };
             if ( _myfps < 20 ) then { _myfpsmarker setMarkerColor "ColorORANGE"; };
-            if ( _myfps < 10 ) then { _myfpsmarker setMarkerColor "ColorRED"; };
+            if ( _myfps < 10 ) then { _myfpsmarker setMarkerColor "colorOPFOR"; };
 
             _myfpsmarker setMarkerText format [ "%1: %2 fps, %3 units, %4 groups, %5 vehicles", _source, ( round ( _myfps * 100.0 ) ) / 100.0 , _localunits, _localgroups, _localvehicles ];
 
