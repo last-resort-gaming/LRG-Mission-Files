@@ -146,9 +146,10 @@ player createDiaryRecord ["LRG Commands", ["Introduction",
 <br/>From there hit Esc and you'll see the console.
 <br/>Be aware only 1 person can be logged in at any time so once you're done '#Logout'.
 <br/>
-<br/> In the following pages of this Section you'll see various commands. For each there's examples for you to use.
-<br/> Paste the code into the debug console and adjust as required.
-<br/> Once you're happy, your ready to execute. Unless stated otherwise you always SERVER EXEC!
+<br/>In the following pages of this Section you'll see various commands.
+<br/>For each there's examples for you to use.
+<br/>Copy the example into the debug console and adjust as required.
+<br/>Once you're happy, your ready to execute. Unless stated otherwise you always SERVER EXEC!
 <br/>
 <br/>As a general rule the server runs a check every 60 seconds for changes to these commands.
 <br/>That means from execution of your command till it being action there will be a delay. Ensure you plan for this if required.

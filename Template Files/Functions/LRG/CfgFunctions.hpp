@@ -24,7 +24,7 @@ class LR {
 				class Diary { postInit = 1; };
 				class TFAR {postInit = 1;};
 				class MedicalFacility {postInit = 1;};
-				class MissionMakerActions {postInit = 1;};						
+				class PlayerAddActions {postInit = 1;};						
 			};				
 			
 			class Messages {

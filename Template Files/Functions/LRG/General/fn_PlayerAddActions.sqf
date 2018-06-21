@@ -1,8 +1,8 @@
 /*
 	LRG MISSION TEMPLATE
-	fn_MissionMakerActions.sqf
+	fn_PlayerAddActions.sqf
 	Author: MitchJC
-	Description: Includes AddActions just for Mission Maker.
+	Description: Includes AddActions for players. Also called on respawn.
 */
 
 if ((!hasInterface) || !(player getUnitTrait "Mission Maker")) exitwith {};
@@ -37,4 +37,4 @@ false] call BIS_fnc_holdActionAdd;
 5,
 -96,
 true,
-false] call BIS_fnc_holdActionAdd;		
+false] call BIS_fnc_holdActionAdd;
