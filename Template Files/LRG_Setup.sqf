@@ -17,7 +17,7 @@ DynamicWeather = 	True;						// Random Weather. True to enable, false to disable
 
 //================= Safe Zone
 safezoneEnabled = 	True; 						// No shooting at base. True is ON, false is OFF. 					Default: True
-safezoneDistance = 	150; 						// No shooting at base distance in meters. 							Default: 150m
+safezoneArea = 	150; 							// No shooting at base distance in meters². 						Default: 150m
 
 //================= View Distance
 CHVD_allowNoGrass = True; 						// True = allow grass to be hidden.									DEFAULT: True.
@@ -28,8 +28,8 @@ CHVD_maxObj = 		12000; 						// Set maximum player object distance in meters. 		
 EnableArsenal = 	True;						// Enable Default LRG Arsenal. True to enable, false to disable. 	DEFAULT: True
 ArsenalType = 		"3CB";						// Default Arsenal Setup can be "VANILLA","3CB" or "RHS" 			DEFAULT: "3CB"
 ArsenalName = 		["Box1"];					// Variable Name of Arsenal.										DEFAULT: "Box1"
-TimedArsenal = 		True;						// Remove the Arsenal after 'ArsenalDuration'.						DEFAULT: True
 ArsenalDuration = 	50;							// How long in minutes from server start to remove the Arsenal. 	DEFAULT: 50
+												// Set to -1 to make it permanent.												
 ArsenalLoadSave = 	False;						// Allow Load/Save in the Arsenal/AmmoBox. 							DEFAULT: False
 
 //================= Ammo Boxes
@@ -46,6 +46,8 @@ LR0 = 	"82";									// Empty Channel Frequency. Range: 30 - 87MHz			DEFAULT: "8
 
 EnableSideChat = True;							// Enable Temp Side chat use for map drawing			DEFAULT: True
 SideChatDuration = 60;							// How Long SideChat is active for below Groups			DEFAULT: "60"
+												// Set to -1 to make it permanent.
+												
 SideChatGroups = ["Command", "909EAW"];			// Groups that use SideChat on the map.					DEFAULT: "Command", "909EAW"
 												// "Command","1Section","2Section",
 												// "3Section","909EAW","Recce"
