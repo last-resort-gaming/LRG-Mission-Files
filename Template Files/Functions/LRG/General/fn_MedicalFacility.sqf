@@ -4,8 +4,9 @@
 	Author: MitchJC
 	Description: Creates an area around LRGMedicalFacilities where players are healed or revived after a time delay.
 */
-	if (!EnableLRGMedFacility) exitwith {diag_log "LRG_Logging: LRG Med Facility set to disabled."};
-	if !(isClass (configFile >> "CfgPatches" >> "ace_main")) exitwith {diag_log "LRG_Logging: ACE not enabled. Med Facility Disabled."};
+
+	if (!(EnableLRGMedFacility) || !(isClass (configFile >> "CfgPatches" >> "ace_main"))) exitwith {};
+	
 	
 LR_FNC_Medical = {
 
@@ -23,6 +24,6 @@ _MedicalFacility = missionNamespace getVariable[_x, objNull];
 _trg = createTrigger ["EmptyDetector",_MedicalFacility];
 _trg setTriggerArea [5, 5, getdir _MedicalFacility,true, 5];
 _trg setTriggerActivation ["ANYPLAYER", "PRESENT", true];
-_trg setTriggerStatements ["player in thislist", "[player,player]call LR_fnc_Medical",""];
+_trg setTriggerStatements ["player in thislist", "call LR_fnc_Medical",""];
 } foreach LRGMedicalFacilities;
 
