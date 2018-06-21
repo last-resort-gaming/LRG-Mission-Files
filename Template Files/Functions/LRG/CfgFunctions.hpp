@@ -39,5 +39,11 @@ class LR {
 
 				file = "Functions\LRG\PreInit";
 				class PreInit {preInit = 1;};			
+			};
+			
+			class UsefulFuncs {
+
+				file = "Functions\LRG\UsefulFuncs";
+				class InitInspectableIntel {};			
 			};				
 };
