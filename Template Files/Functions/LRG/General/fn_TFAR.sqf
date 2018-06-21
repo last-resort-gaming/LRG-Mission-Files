@@ -7,8 +7,6 @@
 
 if !(isClass (configFile >> "CfgPatches" >> "task_force_radio")) exitwith {};
 
-diag_log "LRG_Logging: TFAR is enabled. Default frequencies set.";
-
 private _freqs = [
   [
 	"Command",

@@ -8,7 +8,7 @@
 	if (!(EnableSideChat) || !(isClass (configFile >> "CfgPatches" >> "task_force_radio"))) exitwith {};
 
 		
-	_PlayerGroup =  group player getVariable "LRG_section";
+	_PlayerGroup =  group player getVariable ["LRG_section","null"];
 
 
 if (_PlayerGroup in SideChatGroups) then { 1 enableChannel [true, false];};
