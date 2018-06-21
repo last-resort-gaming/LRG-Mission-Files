@@ -51,6 +51,10 @@ Examples:
 Author:
 	Mokka
 */
+
+// TODO: Change action for picking up to a hold action
+// TODO: Allow sharing the intel
+
 if (!isServer) exitWith {};
 
 _this params ["_object", "_args"];
@@ -73,18 +77,27 @@ _fnc_setAddAction = {
 			["_actionTitle", "Take Intel"]
 		];
 
-		_object addAction [
-
-			_actionTitle,
-			{[_this,"action"] spawn BIS_fnc_initIntelObject;},
-			[],
-			10,
-			true,
-			true,
-			"",
-			"isplayer _this && {_this distance _target < 2} &&
-			{(side group _this) in (_target getvariable ['RscAttributeOwners',[west,east,resistance,civilian]])}"
-		];
+		[
+			 _object
+			,_actionTitle
+			,"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"
+			,"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"
+			,"isplayer _this && {_this distance _target < 2} &&
+			 {
+			 	((side group _this) in (_target getvariable ['RscAttributeOwners',[west,east,resistance,civilian]])) ||
+			 	((_this getVariable ['LRG_section','Command']) in (_target getVariable ['RscAttributeOwners',['Command']]))
+			 }"
+			,"true"
+			,{ hint "You're picking up the intel." }
+			,{}
+			,{ [_this select 0,"action"] spawn BIS_fnc_initIntelObject; }
+			,{}
+			,[]
+			,5
+			,-97
+			,true
+			,false
+		] call BIS_fnc_holdActionAdd;
 	};
 };
 
@@ -109,6 +122,7 @@ _diaryRecord append [""];
 	//[ Title, Description, "" ]
 	_diaryRecord
 ] call BIS_fnc_setServerVariable;
+
 
 //Diary entry shared with.. follows BIS_fnc_MP target rules
 _object setVariable ["recipients", _sharedWith, true];
