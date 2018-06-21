@@ -11,19 +11,20 @@ class LR {
 
 				file = "Functions\LRG\Arsenal";
 				class Arsenal {postInit = 1;};
-				class TimedArsenal {};
-				class ArsenalLoadSave {};
+				class TimedArsenal {postInit = 1;};
+				class ArsenalLoadSave {postInit = 1;};
 			};
 
 			class General {
 
 				file = "Functions\LRG\General";
-				class SafeZone {};
-				class SideChat {};				
-				class Confirmation {};
+				class SafeZone {postInit = 1;};
+				class SideChat {postInit = 1;};				
+				class Confirmation {postInit = 1;};
 				class Diary { postInit = 1; };
 				class TFAR {postInit = 1;};
-				class MedicalFacility {postInit = 1;};				
+				class MedicalFacility {postInit = 1;};
+				class MissionMakerActions {postInit = 1;};						
 			};				
 			
 			class Messages {
