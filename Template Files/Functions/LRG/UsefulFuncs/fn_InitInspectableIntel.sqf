@@ -29,7 +29,24 @@ Return Values:
 	None
 
 Examples:
-    Nothing to see here
+    --- Code
+	// In the init field of an object in the editor (e.g. a Laptop or Documents)
+	[
+		this,
+		[
+			 "data\images\example.paa"
+			,"data\images\example_small.paa"
+			,[
+				 "Intel Report Nr 332-Charlie"
+				,"Lorem Ipsum dolor sit amet, etc etc"
+			]
+			,"Lorem Ipsum"
+			,"Search Files"
+			,west
+			,true
+		]
+	] call LR_fnc_initInspectableIntel;
+	---
 
 Author:
 	Mokka
@@ -38,8 +55,8 @@ if (!isServer) exitWith {};
 
 _this params ["_object", "_args"];
 _args params [
-	"_texture",
-	["_diaryPicture", "a3\structures_f_epc\Items\Documents\Data\document_secret_01_co.paa"],
+	["_texture","a3\data_f\clear_empty.paa"],
+	["_diaryPicture","a3\data_f\clear_empty.paa"],
 	"_diaryRecord",
 	["_fullScreenText", ""],
 	["_actionTitle", "Take Intel"],
@@ -57,7 +74,7 @@ _fnc_setAddAction = {
 		];
 
 		_object addAction [
-			//Custom addAction Title
+
 			_actionTitle,
 			{[_this,"action"] spawn BIS_fnc_initIntelObject;},
 			[],
@@ -95,7 +112,7 @@ _diaryRecord append [""];
 
 //Diary entry shared with.. follows BIS_fnc_MP target rules
 _object setVariable ["recipients", _sharedWith, true];
-	
+
 //Sides that can interact with intelObject
 _object setVariable ["RscAttributeOwners", [_sharedWith], true];
 
