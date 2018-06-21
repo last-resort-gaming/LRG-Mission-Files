@@ -85,12 +85,12 @@ _fnc_setAddAction = {
 			,"isplayer _this && {_this distance _target < 2} &&
 			 {
 			 	((side group _this) in (_target getvariable ['RscAttributeOwners',[west,east,resistance,civilian]])) ||
-			 	((_this getVariable ['LRG_section','Command']) in (_target getVariable ['RscAttributeOwners',['Command']]))
+			 	(((group _this) getVariable ['LRG_section','Command']) in (_target getVariable ['RscAttributeOwners',['Command']]))
 			 }"
 			,"true"
 			,{ hint "You're picking up the intel." }
 			,{}
-			,{ [_this select 0,"action"] spawn BIS_fnc_initIntelObject; }
+			,{ [_this,"action"] spawn BIS_fnc_initIntelObject; }
 			,{}
 			,[]
 			,5
@@ -124,8 +124,19 @@ _diaryRecord append [""];
 ] call BIS_fnc_setServerVariable;
 
 
+if (typeName _sharedWith == "STRING") then {
+	_recipients = [];
+	{
+		if (side _x == west && {_x getVariable ["LRG_section", "Command"] == _sharedWith}) then {
+			_recipients pushBackUnique _x;
+		};
+	} forEach allGroups;
+} else {
+	_recipients = _sharedWith;
+};
+
 //Diary entry shared with.. follows BIS_fnc_MP target rules
-_object setVariable ["recipients", _sharedWith, true];
+_object setVariable ["recipients", _recipients, true];
 
 //Sides that can interact with intelObject
 _object setVariable ["RscAttributeOwners", [_sharedWith], true];
