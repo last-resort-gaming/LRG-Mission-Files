@@ -2,15 +2,15 @@
 	LRG MISSION TEMPLATE
 	fn_TimedArsenal.sqf
 	Author: MitchJC
-	Description: If EnableArsenal and TimedArsenal true, Arsenal will be removed after ArsenalDuration.
+	Description: Arsenal will be removed after ArsenalDuration unless set to -1.
 */
-if (!EnableArsenal) exitwith {};
-if ((TimedArsenal) && (isServer)) then {
 
+if ((!EnableArsenal) || (!isServer)) exitwith {};
 _handle = [
 {
-
-if (servertime > (ArsenalDuration * 60)) exitwith {
+	if (ArsenalDuration == -1) exitwith {};
+	
+if ((time > (ArsenalDuration * 60)) || (!EnableArsenal)) exitwith {
 
 		{
 		deletevehicle(missionNamespace getVariable[_x, objNull]);
@@ -25,5 +25,3 @@ if (servertime > (ArsenalDuration * 60)) exitwith {
 		[format ["<t color='#336B87' size = '.5'>Arsenal<br />%1 minutes remaining.</t>",round (((ArsenalDuration * 60) - round time) /60)],1,-0.2,10,2,0,789] remoteExec ["BIS_fnc_dynamicText",0,false];
 		
 }, 60, []] call CBA_fnc_addPerFrameHandler;
-
-};
