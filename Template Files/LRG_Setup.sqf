@@ -11,9 +11,7 @@
 
 //================= Basic Stuff
 VehicleCrewList = 	True;						// Show crew manifest. True to show, false to hide. 				DEFAULT: True
-PilotCheck = 		True;						// Only Pilots allowed to fly. True to enable, false to disable. 	DEFAULT: True
 ShowMapIcons = 		True;						// Show player tracker on map. True to enable, false to disable. 	DEFAULT: True
-DynamicWeather = 	True;						// Random Weather. True to enable, false to disable. 				DEFAULT: True
 
 //================= Safe Zone
 safezoneEnabled = 	True; 						// No shooting at base. True is ON, false is OFF. 					Default: True
@@ -36,8 +34,12 @@ ArsenalLoadSave = 	False;						// Allow Load/Save in the Arsenal/AmmoBox. 						
 EnableAmmoBox = 	True;						// Enable predefined Ammo box based on ArsenalType. 				DEFAULT: True
 AmmoBoxName = 		["Ammo1", "Ammo2"];			// Variable Name of Ammo Boxes.										DEAFULT: "Ammo1", "Ammo2"
 
+//================= Dynamic Weather
+EnableDynamicWeather = 	True;					// Random Weather. True to enable, false to disable. 				DEFAULT: True
+StartingWeather = "RANDOM";						// Can be "CLEAR", "CLOUDY", "RAIN" or "RANDOM".					DEFAULT: "RANDOM"
+
 //================= TFAR ONLY Settings - Ignored when TFAR off.
-RadioRange = 		1.5;						// Radio Range Multiplier.								DEFAULT: 1.5.
+RadioRange = 		1.5;						// Radio Range Multiplier.								DEFAULT: 1.5
 LR1 = 	"30";									// Platoon Net. Range: 30 - 87MHz						DEFAULT: "30"
 LR2 = 	"40";									// Command Net. Range: 30 - 87MHz						DEFAULT: "40"
 LR3 = 	"50";									// Pilot Net. 	Range: 30 - 87MHz						DEFAULT: "50"
