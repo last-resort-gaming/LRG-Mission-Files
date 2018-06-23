@@ -88,10 +88,11 @@ _fnc_setAddAction = {
 			 	(((group _this) getVariable ['LRG_section','Command']) in (_target getVariable ['RscAttributeOwners',['Command']]))
 			 }"
 			,"true"
-			,{ hint "You're picking up the intel." }
+			,{ ["<t color='#FFBB00' size = '.5'>You're collecting the Intel.</t>",-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;}
 			,{}
-			,{ [_this,"action"] spawn BIS_fnc_initIntelObject; }
-			,{}
+			,{ 	[_this,"action"] spawn BIS_fnc_initIntelObject;
+				["<t color='#339900' size = '.5'>You've collected the Intel.</t>",-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;
+			},{["<t color='#cc3232' size = '.5'>You've stopped collecting the Intel.</t>",-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;}
 			,[]
 			,5
 			,-97
@@ -148,8 +149,7 @@ if (_notifySide) then {
 		"IntelObjectFound",
 		{
 			params[ "", "_foundBy" ];
-			private _msg = format[ "Intel Found by %1", name _foundBy ];
-			_msg remoteExec[ "systemChat" ];
+			[format ["<t color='#339900' size = '.5'>Intel collected by %1</t>", name _foundBy],1,-0.2,5,0,0,790] remoteExec ["BIS_fnc_dynamicText",0,false];	
 		}
 	 ] call BIS_fnc_addScriptedEventHandler;
 };
