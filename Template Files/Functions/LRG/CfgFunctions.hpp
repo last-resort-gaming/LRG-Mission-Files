@@ -18,13 +18,14 @@ class LR {
 			class General {
 
 				file = "Functions\LRG\General";
-				class SafeZone {postInit = 1;};
-				class SideChat {postInit = 1;};				
 				class Confirmation {postInit = 1;};
 				class Diary { postInit = 1; };
-				class TFAR {postInit = 1;};
 				class MedicalFacility {postInit = 1;};
-				class PlayerAddActions {postInit = 1;};						
+				class PlayerAddActions {postInit = 1;};					
+				class SafeZone {postInit = 1;};
+				class SideChat {postInit = 1;};				
+				class TFAR {postInit = 1;};
+				class PilotCheck {postInit = 1;};					
 			};				
 			
 			class Messages {

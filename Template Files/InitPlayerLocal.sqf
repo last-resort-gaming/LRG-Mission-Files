@@ -9,7 +9,6 @@ if (!hasInterface) exitWith {};
 
 //=================================== GENERAL =====================================================
 
-	if (PilotCheck) 		then {_null = [] execVM "scripts\LRG\pilotCheck.sqf";};
 	if (ShowMapIcons) 		then {_null = [] execVM "scripts\QS\QS_icons.sqf";};	
 
 	if !(isClass (configFile >> "CfgPatches" >> "ace_main")) then {
