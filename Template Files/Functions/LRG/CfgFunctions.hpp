@@ -46,6 +46,7 @@ class LR {
 			class UsefulFuncs {
 
 				file = "Functions\LRG\UsefulFuncs";
-				class InitInspectableIntel {};			
+				class InitInspectableIntel {};
+				class SetIntelAction {};
 			};				
 };

@@ -49,11 +49,13 @@ Examples:
 	---
 
 Author:
-	Mokka
+	Mokka,
+	MitchJC
 */
 
-// TODO: Change action for picking up to a hold action
-// TODO: Allow sharing the intel
+// TODO: Change action for picking up to a hold action (pretty much done)
+// TODO: Allow sharing the intel with specific groups, units and whatnot (needs
+// 		 testing, sharing with side and one specific LRG group works though)
 
 if (!isServer) exitWith {};
 
@@ -68,42 +70,12 @@ _args params [
 	["_notifySide", false]
 ];
 
-[_object, _texture, _fullScreenText] call BIS_fnc_initInspectable;
+// Make the object inspectable
+[_object, _texture, _fullScreenText] remoteExec ["BIS_fnc_initInspectable",0,true];
 
-_fnc_setAddAction = {
-	if ( hasInterface ) then {
-		_this params [
-			"_object",
-			["_actionTitle", "Take Intel"]
-		];
-
-		[
-			 _object
-			,_actionTitle
-			,"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"
-			,"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"
-			,"isplayer _this && {_this distance _target < 2} &&
-			 {
-			 	((side group _this) in (_target getvariable ['RscAttributeOwners',[west,east,resistance,civilian]])) ||
-			 	(((group _this) getVariable ['LRG_section','Command']) in (_target getVariable ['RscAttributeOwners',['Command']]))
-			 }"
-			,"true"
-			,{ ["<t color='#FFBB00' size = '.5'>You're collecting the Intel.</t>",-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;}
-			,{}
-			,{ 	[_this,"action"] spawn BIS_fnc_initIntelObject;
-				["<t color='#339900' size = '.5'>You've collected the Intel.</t>",-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;
-			},{["<t color='#cc3232' size = '.5'>You've stopped collecting the Intel.</t>",-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;}
-			,[]
-			,5
-			,-97
-			,true
-			,false
-		] call BIS_fnc_holdActionAdd;
-	};
-};
 
 // Add the action
-[[_object, _actionTitle], _fnc_setAddAction] remoteExec ["call"];
+[_object, _actionTitle, _diaryRecord select 0] remoteExec ["LR_fnc_SetIntelAction",0,true];
 
 
 // Set the diary picture
@@ -132,7 +104,14 @@ if (typeName _sharedWith == "STRING") then {
 			_recipients pushBackUnique _x;
 		};
 	} forEach allGroups;
-} else {
+} /*else if (typeName _sharedWith == "ARRAY") then {
+	_recipients = [];
+	{
+		if (side _x == west && {_x getVariable ["LRG_section", "Command"] in _sharedWith}) then {
+			_recipients pushBackUnique _x;
+		};
+	} forEach allGroups;
+} */else {
 	_recipients = _sharedWith;
 };
 
