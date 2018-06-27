@@ -21,7 +21,7 @@ class LR {
 				class Confirmation {postInit = 1;};
 				class Diary { postInit = 1; };
 				class MedicalFacility {postInit = 1;};
-				class PlayerAddActions {postInit = 1;};
+				class PlayerAddActions {};
 				class RealWeather {postInit = 1;};
 				class SafeZone {postInit = 1;};
 				class SideChat {postInit = 1;};

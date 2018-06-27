@@ -5,14 +5,21 @@
 	Description: Scripts executed when a player respawns.
 */
 
-{_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
-
-if !(isClass (configFile >> "CfgPatches" >> "ace_main")) then {
+	
+	call LR_fnc_PlayerAddActions;
+	
+	{_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
+	
+	if !(isClass (configFile >> "CfgPatches" >> "ace_main")) then {
 		[] execVM "scripts\earplugs.sqf";
 		player enableFatigue false;
+	};
+
+
+if (isNil { player getVariable "StartingPos"; } ) then {
+    player setVariable ["StartingPos", getPosATL player];
+    player setVariable ["StartingDir", getDir player];
+} else {
+    player setPosATL (player getVariable ["StartingPos", getPosATL player]);
+    player setDir (player getVariable ["StartingDir", 0]);
 };
-
-_RespawnHeight = 0;
-player setPosASL [getPosASL player select 0, getPosASL player select 1, _RespawnHeight]; 
-
-call LR_fnc_PlayerAddActions;
