@@ -4,7 +4,8 @@
 	Author: MitchJC
 	Description: Scripts executed when a player respawns.
 */
-
+	player disableConversation true;
+	[player ,"NoVoice"] remoteExec ["setSpeaker",0,true];
 	
 	call LR_fnc_PlayerAddActions;
 	
