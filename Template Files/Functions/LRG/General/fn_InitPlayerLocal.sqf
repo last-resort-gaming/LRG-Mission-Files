@@ -1,6 +1,6 @@
 /*
 	LRG MISSION TEMPLATE
-	InitPlayerLocal.sqf
+	fn_InitPlayerLocal.sqf
 	Author: MitchJC
 	Description: Scripts executed on players only.
 */

@@ -20,6 +20,8 @@ class LR {
 				file = "Functions\LRG\General";
 				class Confirmation {postInit = 1;};
 				class Diary { postInit = 1; };
+				class initPlayerLocal {postInit = 1;};
+				class initServer {postInit = 1;};
 				class MedicalFacility {postInit = 1;};
 				class PlayerAddActions {};
 				class RealWeather {postInit = 1;};

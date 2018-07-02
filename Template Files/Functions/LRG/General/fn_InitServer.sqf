@@ -1,9 +1,13 @@
 /*
 	LRG MISSION TEMPLATE
-	InitServer.sqf
+	fn_InitServer.sqf
 	Author: MitchJC
 	Description: Scripts executed on server only.
 */
+
+enableSaving [false, false];
+
+if (!isserver) exitwith {};
 
 {_x setSpeaker "NoVoice"} forEach playableUnits;
 
