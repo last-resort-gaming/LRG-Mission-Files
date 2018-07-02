@@ -5,7 +5,10 @@
 	Description: Prevents players from using weapons within safezoneArea of "respawn_west."
 */
 
-SafeZonePosition = (getMarkerPos "respawn_west");
+
+if !(safezoneEnabled) exitwith {};
+
+SafeZonePosition = (getMarkerPos "BASE");
 
 	
 _handle = [
@@ -38,6 +41,6 @@ _handle = [
   
   player setVariable ["SafezoneEH", _SafeZoneEH];
 	
-}, 1, []] call CBA_fnc_addPerFrameHandler;
+}, 60, []] call CBA_fnc_addPerFrameHandler;
 	
 	

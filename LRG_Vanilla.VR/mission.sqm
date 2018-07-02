@@ -8,11 +8,15 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=404;
+		nextID=405;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class Camera
 	{
-		pos[]={7801.6631,163.19559,2204.8381};
+		pos[]={7801.6011,143.04167,2213.3489};
 		dir[]={-0.0061969641,-0.57550377,0.81792617};
 		up[]={-0.0043581752,0.8175962,0.57560986};
 		aside[]={1.0000088,-4.0554596e-007,0.007575057};
@@ -254,7 +258,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=86;
+		items=87;
 		class Item0
 		{
 			dataType="Object";
@@ -12010,6 +12014,14 @@ class Mission
 			};
 			id=403;
 			type="EmptyDetector";
+		};
+		class Item86
+		{
+			dataType="Marker";
+			position[]={7787.1392,5,2349.5149};
+			name="BASE";
+			type="Empty";
+			id=404;
 		};
 	};
 	class Connections
