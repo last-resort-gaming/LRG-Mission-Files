@@ -42,7 +42,7 @@ _id = [
 	,"true"
 	,{ [format["<t color='#FFBB00' size = '.5'>You're collecting %1.</t>",(_this select 3) select 0],-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;}
 	,{}
-	,{ 	[_this,"action"] spawn BIS_fnc_initIntelObject;
+	,{ 	_this spawn LR_fnc_RunIntelAction;
 		[format["<t color='#339900' size = '.5'>You've collected %1.</t>",(_this select 3) select 0],-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;
 	},{[format["<t color='#cc3232' size = '.5'>You've stopped collecting %1.</t>",(_this select 3) select 0],-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;}
 	,[_itemName]
