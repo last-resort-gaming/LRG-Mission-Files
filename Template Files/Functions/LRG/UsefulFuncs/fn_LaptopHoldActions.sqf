@@ -3,11 +3,21 @@
 	fn_LaptopHoldActions.sqf
 	Author: MitchJC
 	Description: Adds Hold Add Actions to Laptop
+
 	
-	Example:
-	[_object, _title, _time] call LR_fnc_LaptopHoldActions;
+	Syntax
+	[_object, _title, _time, _sound] call LR_fnc_LaptopHoldActions;
 	
-	[this, "Download the Intel", 10] call LR_fnc_LaptopHoldActions;
+	Parameters
+	_object		Object the addaction is applied to.  <OBJECT>
+	_title		The name of the addaction, visable to players. <STRING>
+	_time		How long the action must be held to complete. <NUMBER>
+	_sound 		Path to Sound file. only A3 sound files supported. https://community.bistudio.com/wiki/Arma_3:_SoundFiles <STRING>
+	
+	Examples
+	Example 1:	[this] call LR_fnc_LaptopHoldActions;
+	Example 2:	[this, "Download the Intel"] call LR_fnc_LaptopHoldActions;
+	Example 3;	[this, "Trigger the Alarm", 5, "A3\Sounds_F\sfx\alarm_blufor.wss"] call LR_fnc_LaptopHoldActions;
 */
 
 
