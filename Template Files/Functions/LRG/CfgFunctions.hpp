@@ -49,7 +49,8 @@ class LR {
 
 				file = "Functions\LRG\UsefulFuncs";
 				class InitInspectableIntel {};
-				class SetIntelAction {};
+				class LaptopHoldActions {};
 				class RunIntelAction {};
+				class SetIntelAction {};			
 			};				
 };
