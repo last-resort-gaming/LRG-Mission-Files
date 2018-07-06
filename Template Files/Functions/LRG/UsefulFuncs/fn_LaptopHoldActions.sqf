@@ -57,3 +57,6 @@ params [
 	true,
 	false
 ] remoteExec ["BIS_fnc_holdActionAdd", 0, _object];
+{_x addCuratorEditableObjects [[_object], false];} ForEach allcurators;
+	[_object, false] remoteExec ["enableSimulationGlobal", 2];
+	[_object, false] remoteExec ["allowDamage", 2];
