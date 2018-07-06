@@ -48,15 +48,17 @@ params [
 	[_Newobject, false] remoteExec ["allowDamage", 2];
 	_Newobject SetPosATL _pos;
 	_Newobject setDir _dir;
-	playSound3D ["A3\Missions_F_Bootcamp\data\sounds\vr_shutdown.wss", _Newobject, false, getposATL _Newobject, 1, 1, 50];
+	{_x addCuratorEditableObjects [[_Newobject], false];} ForEach allcurators;
+	playSound3D [((_this select 3) select 3), _Newobject, false, getposATL _Newobject, 1, 1, 200];
 	},
 	{[format["<t color='#cc3232' size = '.5'>Aborted</t>",(_this select 3) select 1],-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;},
-	[_object, _Title, _Time],
+	[_object, _Title, _Time, _sound],
 	_Time,
 	0,
 	true,
 	false
 ] remoteExec ["BIS_fnc_holdActionAdd", 0, _object];
+
 {_x addCuratorEditableObjects [[_object], false];} ForEach allcurators;
 	[_object, false] remoteExec ["enableSimulationGlobal", 2];
 	[_object, false] remoteExec ["allowDamage", 2];
