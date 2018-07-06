@@ -32,7 +32,7 @@ params [
 
 [
 	_object,
-	_Title,
+	format ["<t color='#00FFFF'>%1</t>", _Title],
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 	"_this distance _target < 3",
