@@ -23,7 +23,12 @@
 
 if (!isServer) exitWith {};
 
-params ["_object", "_Title", "_Time"];
+params [
+		"_object",
+		["_Title", "Close the Laptop"],
+		["_Time", 10],
+		["_sound", "A3\Missions_F_Bootcamp\data\sounds\vr_shutdown.wss"]
+];
 
 [
 	_object,
