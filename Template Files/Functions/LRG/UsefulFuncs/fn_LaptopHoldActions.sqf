@@ -39,7 +39,8 @@ params [
 	"_caller distance _target < 3",
 	{ [format["<t color='#FFBB00' size = '.5'>Processing</t>",(_this select 3) select 1],-1,0.8,(_this select 3) select 2,2,0,789] spawn BIS_fnc_dynamicText;},
 	{},
-	{ [format["<t color='#339900' size = '.5'>Process Complete</t>",(_this select 3) select 1],-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;
+	{ [format["<t color='#339900' align='center' size = '.4'>%1</t><t color='#FFBB00' align='center' size = '.4'><br/>%2 has completed this action</t>",(_this select 3) select 1, (name _caller)],1,-0.2,10,0,0,789] remoteExec ["BIS_fnc_dynamicText",0,false];
+	
 	_pos = getPosATL ((_this select 3) select 0);
 	_dir = getDir ((_this select 3) select 0);
 	deleteVehicle ((_this select 3) select 0);
