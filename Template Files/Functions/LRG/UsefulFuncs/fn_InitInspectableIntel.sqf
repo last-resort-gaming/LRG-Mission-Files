@@ -104,14 +104,7 @@ if (typeName _sharedWith == "STRING") then {
 			_recipients pushBackUnique _x;
 		};
 	} forEach allGroups;
-}/*else if (typeName _sharedWith == "ARRAY") then {
-	_recipients = [];
-	{
-		if (side _x == west && {_x getVariable ["LRG_section", "Command"] in _sharedWith}) then {
-			_recipients pushBackUnique _x;
-		};
-	} forEach allGroups;
-}*/ else {
+} else {
 	_recipients = _sharedWith;
 };
 
