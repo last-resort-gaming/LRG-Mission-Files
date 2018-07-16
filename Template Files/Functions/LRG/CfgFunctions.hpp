@@ -42,7 +42,7 @@ class LR {
 			class PreInit {
 
 				file = "Functions\LRG\PreInit";
-				class PreInit {preInit = 1;};			
+				class PreInit {preInit = 1;};
 			};
 			
 			class UsefulFuncs {
@@ -51,6 +51,8 @@ class LR {
 				class InitInspectableIntel {};
 				class LaptopHoldActions {};
 				class RunIntelAction {};
-				class SetIntelAction {};			
-			};				
+				class SetIntelAction {};
+				class IEDVehicle {};
+				class SpawnExplosives {};
+			};
 };
