@@ -9,6 +9,9 @@ Description:
 	to true, an announcement will be made on the sideChat once the IED
 	has been armed, indicating the approximate time until detonation.
 
+	The armed IED vehicle can be disarmed through a mouse-wheel action. 
+	Once disarmed it cannot be primed again.
+
 Parameters:
 	_vehicle - The vehicle which shall be initialized
 	_detonationTime - The time in seconds after which the explosives will go off once armed
