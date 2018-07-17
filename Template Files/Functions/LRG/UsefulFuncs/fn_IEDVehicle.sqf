@@ -18,6 +18,7 @@ Parameters:
 	_proximityRadius - The IED will be armed if any player comes closer to the vehicle than this radius (in metres)
 	_secondaries - Set to true to have the detonation of the IED also produce a random amount of secondary explosions around the main detonation
 	_announceArmed - Set to true to make an announcement on the sideChat once the IED has been armed
+	_announceInterval - The interval in seconds in which players should be informed about the time left
 
 Return Values:
 	None
@@ -30,7 +31,8 @@ Examples:
 		120,
 		20,
 		true,
-		true
+		true,
+		30
 	] call LR_fnc_IEDVehicle;
 	---
 
@@ -43,7 +45,8 @@ params [
 	["_detonationTime", 120],
 	["_proximityRadius", 20],
 	["_secondaries", true],
-	["_announceArmed", true]
+	["_announceArmed", true],
+	["_announceInterval", 30]
 ];
 
 // Check if we are using a valid vehicle.
@@ -75,7 +78,7 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 // Add PFH to check for explosives armed
 [
 	{
-		(_this select 0) params ["_vehicle", "_detonationTime", "_secondaries"];
+		(_this select 0) params ["_vehicle", "_detonationTime", "_secondaries", "_announceInterval"];
 
 		_armed = _vehicle getVariable ["IEDarmed", false];
 		_disarmed = _vehicle getVariable ["IEDdisarmed", false];
@@ -90,10 +93,24 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 			_vehicle setVariable ["startTime",_startTime];
 		};
 
+		// Delta time since the IED has been armed
+		_deltaTime = time - _startTime;
+
+		// Calculate time left until detonation
+		_timeLeft = floor (_detonationTime - _deltaTime);
+
+		if ((_timeLeft % _announceInterval) == 0 && (not (_timeLeft == _detonationTime))) then {
+			if (_timeLeft == 0) then {
+				[[west, "HQ"], "Time's out, the IED could detonate any second!"] remoteExec ["sideChat",0];
+			} else {
+				[[west, "HQ"], format ["The IED will detonate in %1 seconds!",_timeLeft]] remoteExec ["sideChat",0];
+			};
+		};
+
 		// If the delta of startTime and current time exceeds the detonation timer,
 		// we blow the vehicle up!
 		// We do this check every frame since we want to be able to disarm the bomb.
-		if ((time - _startTime) >= _detonationTime) then {
+		if (_deltaTime >= _detonationTime) then {
 
 			_vehicle setVariable ["IEDdetonated", true, true];
 
@@ -114,7 +131,7 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 		};
 	},
 	1,
-	[_vehicle, _detonationTime, _secondaries]
+	[_vehicle, _detonationTime, _secondaries, _announceInterval]
 ] call CBA_fnc_addPerFrameHandler;
 
 // Add a holdAction for disarming the bomb.
