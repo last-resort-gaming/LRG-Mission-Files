@@ -2,14 +2,19 @@
 Function: LR_fnc_IEDVehicle
 
 Description:
-	Sets up a given vehicle as a driven IED. The explosive will be armed
-	and primed for detonation if any player comes within the given radius.
+	Sets up a given vehicle as a driven IED. The explosive will be armed and
+	primed for detonation if any player comes within the given radius.
 	The explosives will detonate roughly after the time given has passed.
-	The detonation may also produce smaller secondary detonations. If set
-	to true, an announcement will be made on the sideChat once the IED
-	has been armed, indicating the approximate time until detonation.
+	The detonation may also produce smaller secondary detonations. 
+	
+	If _announce is set to true, an announcement will be made on the sideChat 
+	once the IED has been armed, indicating the approximate time until 
+	detonation and when it is about to detonate. 
+	
+	Additionally, you can set the _announceInterval parameter to enable 
+	occasional announcements about the time left until detonation.
 
-	The armed IED vehicle can be disarmed through a mouse-wheel action. 
+	The armed IED vehicle can be disarmed through a mouse-wheel action.  
 	Once disarmed it cannot be primed again.
 
 Parameters:
