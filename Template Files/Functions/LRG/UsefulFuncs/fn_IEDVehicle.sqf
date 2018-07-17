@@ -100,6 +100,7 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 		_timeLeft = floor (_detonationTime - _deltaTime);
 
 		if ((_announce) 
+			&& (_announceInterval > 0)
 			&& (_timeLeft % _announceInterval) == 0 
 			&& (not (_timeLeft == _detonationTime)) 
 			&& (_timeLeft != 0)) then {
