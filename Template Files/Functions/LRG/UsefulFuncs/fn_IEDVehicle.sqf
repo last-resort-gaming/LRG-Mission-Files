@@ -17,7 +17,7 @@ Parameters:
 	_detonationTime - The time in seconds after which the explosives will go off once armed
 	_proximityRadius - The IED will be armed if any player comes closer to the vehicle than this radius (in metres)
 	_secondaries - Set to true to have the detonation of the IED also produce a random amount of secondary explosions around the main detonation
-	_announceArmed - Set to true to make an announcement on the sideChat once the IED has been armed
+	_announce - Set to true to enable announcements about the state of the IED
 	_announceInterval - The interval in seconds in which players should be informed about the time left
 
 Return Values:
@@ -45,7 +45,7 @@ params [
 	["_detonationTime", 120],
 	["_proximityRadius", 20],
 	["_secondaries", true],
-	["_announceArmed", true],
+	["_announce", true],
 	["_announceInterval", 30]
 ];
 
@@ -57,14 +57,14 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 // Add PFH for proximity checking
 [
 	{
-		(_this select 0) params ["_vehicle", "_proximityRadius", "_detonationTime", "_announceArmed"];
+		(_this select 0) params ["_vehicle", "_proximityRadius", "_detonationTime", "_announce"];
 		_armed = _vehicle getVariable ["IEDarmed", false];
 		_disarmed = _vehicle getVariable ["IEDdisarmed", false];
 		{
 			if ((_vehicle distance2D _x) < _proximityRadius && (not _disarmed) && (not _armed)) then {
 				_vehicle setVariable ["IEDarmed", true];
 
-				if (_announceArmed) then {
+				if (_announce) then {
 					// Tell everyone that this is a thing that happened if the user so wishes:
 					[[west, "HQ"], format ["The IED has been armed and will detonate in %1 seconds!",_detonationTime]] remoteExec ["sideChat",0];
 				};
@@ -72,13 +72,13 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 		} forEach allPlayers;
 	},
 	5,
-	[_vehicle, _proximityRadius, _detonationTime, _announceArmed]
+	[_vehicle, _proximityRadius, _detonationTime, _announce]
 ] call CBA_fnc_addPerFrameHandler;
 
 // Add PFH to check for explosives armed
 [
 	{
-		(_this select 0) params ["_vehicle", "_detonationTime", "_secondaries", "_announceInterval"];
+		(_this select 0) params ["_vehicle", "_detonationTime", "_secondaries", "_announce", "_announceInterval"];
 
 		_armed = _vehicle getVariable ["IEDarmed", false];
 		_disarmed = _vehicle getVariable ["IEDdisarmed", false];
@@ -99,12 +99,11 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 		// Calculate time left until detonation
 		_timeLeft = floor (_detonationTime - _deltaTime);
 
-		if ((_timeLeft % _announceInterval) == 0 && (not (_timeLeft == _detonationTime))) then {
-			if (_timeLeft == 0) then {
-				[[west, "HQ"], "Time's out, the IED could detonate any second!"] remoteExec ["sideChat",0];
-			} else {
-				[[west, "HQ"], format ["The IED will detonate in %1 seconds!",_timeLeft]] remoteExec ["sideChat",0];
-			};
+		if ((_announce) 
+			&& (_timeLeft % _announceInterval) == 0 
+			&& (not (_timeLeft == _detonationTime)) 
+			&& (_timeLeft != 0)) then {
+			[[west, "HQ"], format ["The IED will detonate in %1 seconds!",_timeLeft]] remoteExec ["sideChat",0];
 		};
 
 		// If the delta of startTime and current time exceeds the detonation timer,
@@ -113,6 +112,10 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 		if (_deltaTime >= _detonationTime) then {
 
 			_vehicle setVariable ["IEDdetonated", true, true];
+
+			if (_announce) then {
+				[[west, "HQ"], "Time's out, the IED could detonate any second!"] remoteExec ["sideChat",0];
+			};
 
 			// Set the amount of secondary explosions according to the param.
 			if (_secondaries) then {
@@ -123,15 +126,15 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 
 			// Detonate using LR_fnc_SpawnExplosives.
 			[
-				0, 
-				position _vehicle, 
+				0,
+				position _vehicle,
 				_secArray,
 				"R_TBG32V_F"							// This is an AP rocket warhead, bound to do some damage.
 			] call LR_fnc_SpawnExplosives;
 		};
 	},
 	1,
-	[_vehicle, _detonationTime, _secondaries, _announceInterval]
+	[_vehicle, _detonationTime, _secondaries, _announce, _announceInterval]
 ] call CBA_fnc_addPerFrameHandler;
 
 // Add a holdAction for disarming the bomb.
