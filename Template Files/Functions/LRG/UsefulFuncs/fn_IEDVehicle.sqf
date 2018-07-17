@@ -73,7 +73,10 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 
 				if (_announce) then {
 					// Tell everyone that this is a thing that happened if the user so wishes:
-					[[west, "HQ"], format ["The IED has been armed and will detonate in %1 seconds!",_detonationTime]] remoteExec ["sideChat",0];
+					[
+						format ["<t color='#cc3232' size = '.5'>The IED has been armed and will detonate in %1 seconds!</t>",_detonationTime],
+						-1,0.8,5,2,0,789
+					] remoteExec ["BIS_fnc_dynamicText", 0];
 				};
 			};
 		} forEach allPlayers;
@@ -111,18 +114,24 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 			&& (_timeLeft % _announceInterval) == 0 
 			&& (not (_timeLeft == _detonationTime)) 
 			&& (_timeLeft != 0)) then {
-			[[west, "HQ"], format ["The IED will detonate in %1 seconds!",_timeLeft]] remoteExec ["sideChat",0];
+			[
+				format ["<t color='#cc3232' size = '.5'>The IED will detonate in %1 seconds!</t>",_timeLeft],
+				-1,0.8,5,2,0,789
+			] remoteExec ["BIS_fnc_dynamicText", 0];
 		};
 
 		// If the delta of startTime and current time exceeds the detonation timer,
 		// we blow the vehicle up!
 		// We do this check every frame since we want to be able to disarm the bomb.
-		if (_deltaTime >= _detonationTime) then {
+		if (_timeLeft <= 5) then {
 
 			_vehicle setVariable ["IEDdetonated", true, true];
 
 			if (_announce) then {
-				[[west, "HQ"], "Time's out, the IED could detonate any second!"] remoteExec ["sideChat",0];
+				[
+					"<t color='#cc3232' size = '.5'>Time's out, the IED could detonate any second!</t>",
+					-1,0.8,5,2,0,789
+				] remoteExec ["BIS_fnc_dynamicText", 0];
 			};
 
 			// Set the amount of secondary explosions according to the param.
@@ -134,7 +143,7 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 
 			// Detonate using LR_fnc_SpawnExplosives.
 			[
-				0,
+				_timeLeft + (random 2) - 1,
 				position _vehicle,
 				_secArray,
 				"R_TBG32V_F"							// This is an AP rocket warhead, bound to do some damage.
@@ -151,7 +160,10 @@ if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 	,"Disarm IED"
 	,"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"
 	,"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"
-	,"isplayer _this && {_this distance _target < 5} && {_target getVariable [""IEDarmed"",false]}"
+	,"isplayer _this 
+	&& {_this distance _target < 5} 
+	&& {_target getVariable [""IEDarmed"",false]} 
+	&& {not (_target getVariable [""IEDdetonated"",false])}"
 	,"true"
 	,{ ["<t color='#FFBB00' size = '.5'>You're disarming the IED.</t>",-1,0.8,5,2,0,789] spawn BIS_fnc_dynamicText;}
 	,{}
