@@ -54,6 +54,8 @@ params [
 	["_announceInterval", 30]
 ];
 
+if (!isServer) exitWith {};
+
 // Check if we are using a valid vehicle.
 if (not (_vehicle isKindOf "LandVehicle")) exitWith {
 	systemChat "LR_fnc_IEDVehicle: Invalid vehicle passed, needs to be a land vehicle!";
