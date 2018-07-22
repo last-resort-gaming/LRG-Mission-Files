@@ -48,6 +48,7 @@ class LR {
 			class UsefulFuncs {
 
 				file = "Functions\LRG\UsefulFuncs";
+				class CrashSite {};
 				class InitInspectableIntel {};
 				class LaptopHoldActions {};
 				class RunIntelAction {};
