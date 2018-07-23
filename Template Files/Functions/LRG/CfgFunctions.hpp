@@ -1,6 +1,13 @@
 class LR {
 
 			tag = "LR";
+			class AI {
+				file = "Functions\LRG\AI";
+				class InfantryGarrison {};
+				class SetUnitSkill {};
+				class SpawnAI {};		
+			};
+			
 			class AmmoBox {
 
 				file = "Functions\LRG\AmmoBox";

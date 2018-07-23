@@ -19,8 +19,6 @@ Author:
 	Martin, inspired by Liberation's FPS meter
 */
 
-#include "defines.h"
-
 private _markerLocal = false;
 private _source = "";
 private _position  = 1;
@@ -31,7 +29,7 @@ if ( isServer ) then {
 
     // if we have not got our map display yet, retry when we do
     if(isNull (findDisplay 12)) exitWith {
-        [{!isNull (findDisplay 12)}, {call YFNC(showFPS)}, []] call CBAP_fnc_waitUntilAndExecute;
+        [{!isNull (findDisplay 12)}, {call YAINA_fnc_showFPS}, []] call CBAP_fnc_waitUntilAndExecute;
     };
 
     if (hasInterface) then {
