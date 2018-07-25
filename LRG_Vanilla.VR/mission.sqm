@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7801.6011,143.04167,2213.3489};
-		dir[]={-0.0061969641,-0.57550377,0.81792617};
-		up[]={-0.0043581752,0.8175962,0.57560986};
-		aside[]={1.0000088,-4.0554596e-007,0.007575057};
+		pos[]={7855.0352,27.241774,2280.2661};
+		dir[]={-0.017018728,-0.36634567,0.93045402};
+		up[]={-0.0067002657,0.93029875,0.36648688};
+		aside[]={0.99986678,-8.2114366e-007,0.018286943};
 	};
 };
 binarizationWanted=0;
@@ -10129,7 +10129,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7714.022,5.8253026,2344.7705};
+				position[]={7714.022,5.8253026,2344.771};
 				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
@@ -10137,7 +10137,7 @@ class Mission
 			class Attributes
 			{
 				ammo=0.2565293;
-				name="Box1";
+				init="[this, ""VANILLA""] call LR_fnc_Arsenal;";
 				dynamicSimulation=1;
 			};
 			id=244;
@@ -10757,7 +10757,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7714.0303,6.743187,2348.4097};
+				position[]={7714.0298,6.743187,2348.4099};
 			};
 			side="Empty";
 			flags=5;
@@ -10784,7 +10784,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="media\images\billboard.paa";
+							value="LRG Fundamentals\media\images\billboard.paa";
 						};
 					};
 				};
@@ -11104,14 +11104,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7714.9253,5.8924227,2340.8862};
+				position[]={7714.9248,5.8924227,2340.886};
 				angles[]={0,1.5885113,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="Ammo2";
+				init="[this, ""Vanilla""] call LR_fnc_Ammobox;";
 				dynamicSimulation=1;
 			};
 			id=298;
@@ -11152,7 +11152,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="Ammo1";
+				init="[this, ""Vanilla""] call LR_fnc_Ammobox;";
 				dynamicSimulation=1;
 			};
 			id=299;
@@ -11351,7 +11351,7 @@ class Mission
 			{
 				name="SA_UJH";
 				condition="call{_v = (thislist select 0); { _v isKindOf _x } count [""UAV"", ""Plane"", ""Helicopter""] > 0 && { speed _v < 1 } && { isTouchingGround _v };}";
-				onActivation="call{call {" \n "  _v = (thisList select 0);" \n "  if (_v isKindOf ""UAV"") exitWith { [_v] execVM ""Scripts\YAINA\Service\uav.sqf""; };" \n "  [[""Helicopter"", ""Plane""] select (_v isKindOf ""Plane""), _v, 30, 30] execVM ""scripts\YAINA\Service\general.sqf"";" \n "};}";
+				onActivation="call{call {" \n "  _v = (thisList select 0);" \n "  if (_v isKindOf ""UAV"") exitWith { [_v] execVM ""LRG Fundamentals\Scripts\YAINA\Service\uav.sqf""; };" \n "  [[""Helicopter"", ""Plane""] select (_v isKindOf ""Plane""), _v, 30, 30] execVM ""LRG Fundamentals\scripts\YAINA\Service\general.sqf"";" \n "};}";
 				sizeA=10;
 				sizeB=10;
 				sizeC=6;
@@ -11985,7 +11985,7 @@ class Mission
 			{
 				name="SA_UJH_1";
 				condition="call{_v = (thislist select 0); { _v isKindOf _x } count [""UAV"", ""Plane"", ""Helicopter""] > 0 && { speed _v < 1 } && { isTouchingGround _v };}";
-				onActivation="call{call {" \n "  _v = (thisList select 0);" \n "  if (_v isKindOf ""UAV"") exitWith { [_v] execVM ""Scripts\YAINA\Service\uav.sqf""; };" \n "  [[""Helicopter"", ""Plane""] select (_v isKindOf ""Plane""), _v, 30, 30] execVM ""scripts\YAINA\Service\general.sqf"";" \n "};}";
+				onActivation="call{call {" \n "  _v = (thisList select 0);" \n "  if (_v isKindOf ""UAV"") exitWith { [_v] execVM ""LRG Fundamentals\Scripts\YAINA\Service\uav.sqf""; };" \n "  [[""Helicopter"", ""Plane""] select (_v isKindOf ""Plane""), _v, 30, 30] execVM ""LRG Fundamentals\scripts\YAINA\Service\general.sqf"";" \n "};}";
 				sizeA=10;
 				sizeB=10;
 				sizeC=6;
@@ -12004,7 +12004,7 @@ class Mission
 			{
 				name="SA_UJH_2";
 				condition="call{_v = (thislist select 0); { _v isKindOf _x } count [""UAV"", ""Plane"", ""Helicopter""] > 0 && { speed _v < 1 } && { isTouchingGround _v };}";
-				onActivation="call{call {" \n "  _v = (thisList select 0);" \n "  if (_v isKindOf ""UAV"") exitWith { [_v] execVM ""Scripts\YAINA\Service\uav.sqf""; };" \n "  [[""Helicopter"", ""Plane""] select (_v isKindOf ""Plane""), _v, 30, 30] execVM ""scripts\YAINA\Service\general.sqf"";" \n "};}";
+				onActivation="call{call {" \n "  _v = (thisList select 0);" \n "  if (_v isKindOf ""UAV"") exitWith { [_v] execVM ""LRG Fundamentals\Scripts\YAINA\Service\uav.sqf""; };" \n "  [[""Helicopter"", ""Plane""] select (_v isKindOf ""Plane""), _v, 30, 30] execVM ""LRG Fundamentals\scripts\YAINA\Service\general.sqf"";" \n "};}";
 				sizeA=10;
 				sizeB=10;
 				sizeC=6;
