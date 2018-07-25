@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=10;
+	toggles=1034;
 	class ItemIDProvider
 	{
-		nextID=1555;
+		nextID=1560;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7734.3145,85.181999,2569.217};
-		dir[]={-0.0021643436,-0.64329892,0.76577568};
-		up[]={-0.0018173548,0.76544964,0.64332515};
-		aside[]={1.0000162,4.0349546e-006,0.0028201968};
+		pos[]={7732.7876,103.13316,2586.5649};
+		dir[]={0.012974414,-0.74226958,0.67015797};
+		up[]={0.014367295,0.66994828,0.74211699};
+		aside[]={0.99982339,2.7426395e-006,-0.019359533};
 	};
 };
 binarizationWanted=0;
@@ -19514,7 +19514,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7648.0527,5.8253026,2693.7952};
+				position[]={7648.0532,5.8253026,2693.7949};
 				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
@@ -19522,7 +19522,7 @@ class Mission
 			class Attributes
 			{
 				ammo=0.2565293;
-				name="Box1";
+				init="call{[this, ""3CB"", 50] call LR_fnc_Arsenal;}";
 				dynamicSimulation=1;
 			};
 			id=86;
@@ -20161,7 +20161,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7648.0396,5.6571445,2697.1167};
+				position[]={7648.04,5.657187,2697.1169};
 			};
 			side="Empty";
 			flags=5;
@@ -20171,7 +20171,7 @@ class Mission
 			};
 			id=363;
 			type="Land_Billboard_F";
-			atlOffset=-1.0860424;
+			atlOffset=-1.086;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20189,7 +20189,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="media\images\billboard.paa";
+							value="LRG Fundamentals\media\images\billboard.paa";
 						};
 					};
 				};
@@ -21213,14 +21213,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7649.0156,5.8924227,2689.9297};
+				position[]={7649.0161,5.8924227,2689.9299};
 				angles[]={0,1.5885113,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="Ammo2";
+				init="call{[this, ""3CB"", 0] call LR_fnc_Ammobox;}";
 				dynamicSimulation=1;
 			};
 			id=917;
@@ -21254,14 +21254,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7647.1025,5.8924227,2689.9556};
+				position[]={7647.103,5.8924227,2689.9561};
 				angles[]={0,1.5885113,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="Ammo1";
+				init="call{[this, ""3CB"", 0] call LR_fnc_Ammobox;}";
 				dynamicSimulation=1;
 			};
 			id=918;
@@ -38010,12 +38010,12 @@ class Mission
 		class Item69
 		{
 			dataType="Trigger";
-			position[]={7777.0757,5,2684.8191};
+			position[]={7777.0762,5,2684.8191};
 			class Attributes
 			{
 				name="SA_UJH";
 				condition="call{_v = (thislist select 0); { _v isKindOf _x } count [""UAV"", ""Plane"", ""Helicopter""] > 0 && { speed _v < 1 } && { isTouchingGround _v };}";
-				onActivation="call{call {" \n "  _v = (thisList select 0);" \n "  if (_v isKindOf ""UAV"") exitWith { [_v] execVM ""Scripts\YAINA\Service\uav.sqf""; };" \n "  [[""Helicopter"", ""Plane""] select (_v isKindOf ""Plane""), _v, 30, 30] execVM ""scripts\YAINA\Service\general.sqf"";" \n "};}";
+				onActivation="call{call {" \n "  _v = (thisList select 0);" \n "  if (_v isKindOf ""UAV"") exitWith { [_v] execVM ""LRG Fundamentals\Scripts\YAINA\Service\uav.sqf""; };" \n "  [[""Helicopter"", ""Plane""] select (_v isKindOf ""Plane""), _v, 30, 30] execVM ""LRG Fundamentals\scripts\YAINA\Service\general.sqf"";" \n "};}";
 				sizeA=10;
 				sizeB=10;
 				sizeC=6;
@@ -38755,7 +38755,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="MedicalFacility1";
+				init="call{[this] call LR_fnc_MedicalFacility;}";
 				dynamicSimulation=1;
 			};
 			id=1270;

@@ -23,16 +23,7 @@ CHVD_maxView = 		12000; 						// DEFAULT: 12000					Set maximum player view dist
 CHVD_maxObj = 		12000; 						// DEFAULT: 12000					Set maximum player object distance in meters.
 
 //================= Arsenal
-EnableArsenal = 	True;						// DEFAULT: True					Enable Default LRG Arsenal. True to enable, false to disable.
-ArsenalType = 		"3CB";						// DEFAULT: "3CB"					Default Arsenal Setup can be "VANILLA","3CB" or "RHS"
-ArsenalName = 		["Box1"];					// DEFAULT: "Box1"					Variable Name of Arsenal.
-ArsenalDuration = 	50;							// DEFAULT: 50						How long in minutes from server start to remove the Arsenal,
-												// 									set to -1 to make it permanent.
 ArsenalLoadSave = 	False;						// DEFAULT: False					Allow Load/Save in the Arsenal/AmmoBox.
-
-//================= Ammo Boxes
-EnableAmmoBox = 	True;						// DEFAULT: True					Enable predefined Ammo box based on ArsenalType.
-AmmoBoxName = 		["Ammo1", "Ammo2"];			// DEAFULT: "Ammo1", "Ammo2"		Variable Name of Ammo Boxes.
 
 //================= Dynamic Weather
 EnableDynamicWeather = 	True;					// DEFAULT: True					Random Weather. True to enable, false to disable.
@@ -52,11 +43,7 @@ SideChatDuration = 60;							// DEFAULT: "60"					How Long SideChat is active fo
 SideChatGroups = ["Command", "909EAW"];			// DEFAULT: "Command", "909EAW"		Groups that use SideChat on the map.
 												// 									"Command","1Section","2Section",
 												// 									"3Section","909EAW","Recce"
-												
-//================= ACE ONLY Settings
-EnableLRGMedFacility = True;					// DEFAULT: True					Enable use of auto heal/revive at Med Facilities.
-LRGMedicalFacilities = ["MedicalFacility1"];	// DEFAULT: "MedicalFacility1"		Name of Medical Facilities.
-
+											
 //==================================================================================//
 //=============================== FINAL CONFIRMATION ===============================//
 //==================================================================================//
