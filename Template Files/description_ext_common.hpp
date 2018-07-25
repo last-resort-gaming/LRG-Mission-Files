@@ -54,17 +54,3 @@ wreckManagerMode = 1;
 wreckLimit = 5;
 wreckRemovalMinTime = 60;
 wreckRemovalMaxTime = 120;
-//------------------------- Includes / Functions
-
-
-#include "Functions\CHVD\dialog.hpp"
-#include "Functions\AIS\Effects\BarDlg.hpp"
-#include "Functions\YAINA\General\crewNamesTitles.hpp"
-
-class CfgFunctions {
-    #include "Functions\AIS\cfgFunctions.hpp"
-    #include "Functions\CBA\CfgFunctions.hpp"
-	#include "Functions\CHVD\CfgFunctions.hpp"
-    #include "Functions\LRG\CfgFunctions.hpp"
-    #include "Functions\YAINA\CfgFunctions.hpp"
-};
