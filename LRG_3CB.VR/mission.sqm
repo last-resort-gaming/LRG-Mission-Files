@@ -8,7 +8,7 @@ class EditorData
 	toggles=1034;
 	class ItemIDProvider
 	{
-		nextID=1830;
+		nextID=1832;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7704.8936,81.79171,2610.8354};
-		dir[]={0.12771565,-0.62392062,0.771137};
-		up[]={0.10194664,0.78144205,0.61554193};
-		aside[]={0.98667634,2.6775524e-006,-0.16341783};
+		pos[]={7730.124,154.66411,2585.9063};
+		dir[]={-0.0051027951,-0.81821901,0.57509154};
+		up[]={-0.0072597372,0.57490778,0.81812352};
+		aside[]={1.0000696,4.7557987e-006,0.008867573};
 	};
 };
 binarizationWanted=0;
@@ -101,13 +101,14 @@ addons[]=
 	"ace_kestrel4500",
 	"RKSL_PMII",
 	"ace_spottingscope",
-	"ace_microdagr"
+	"ace_microdagr",
+	"UK3CB_BAF_Units_ACE"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=66;
+		items=67;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -558,6 +559,13 @@ class AddonsMetaData
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item66
+		{
+			className="UK3CB_BAF_Units_ACE";
+			name="3CB BAF Units - Ace3";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
 		};
 	};
 };
@@ -19300,7 +19308,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=101;
+		items=103;
 		class Item0
 		{
 			dataType="Object";
@@ -21345,7 +21353,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7722.0327,7.1106434,2727.707};
+				position[]={7722.0332,7.1106434,2727.7073};
 				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
@@ -21395,7 +21403,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""ACE_elasticBandage"",""ACE_bloodIV_500"",""ACE_epinephrine"",""ACE_morphine"",""ACE_packingBandage"",""ACE_tourniquet"",""ACE_quikclot""],[50,40,25,25,30,10,50]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACE_elasticBandage"",""ACE_bloodIV_500"",""ACE_epinephrine"",""ACE_morphine"",""ACE_packingBandage"",""ACE_tourniquet"",""ACE_quikclot""],[20,20,25,25,25,10,20]],[[],[]]],false]";
 						};
 					};
 				};
@@ -21426,7 +21434,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7713.249,7.3726029,2710.2148};
+				position[]={7713.249,7.3726029,2710.2151};
 				angles[]={0,3.1283455,0};
 			};
 			side="Empty";
@@ -21457,7 +21465,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -22132,7 +22140,6 @@ class Mission
 			};
 			id=1035;
 			type="UK3CB_BAF_Merlin_HC3_CSAR_MTP";
-			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22314,7 +22321,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""UK3CB_BAF_762_200Rnd_T""],[6]],[[""ACE_elasticBandage"",""ACE_bloodIV_500"",""ACE_epinephrine"",""ACE_morphine"",""ACE_packingBandage"",""ACE_tourniquet"",""ACE_quikclot""],[50,40,25,25,30,10,50]],[[],[]]],false]";
+							value="[[[[],[]],[[""UK3CB_BAF_762_200Rnd_T""],[6]],[[""ACE_elasticBandage"",""ACE_bloodIV_500"",""ACE_epinephrine"",""ACE_morphine"",""ACE_packingBandage"",""ACE_tourniquet"",""ACE_quikclot"",""ACE_bloodIV"",""adv_aceCPR_AED""],[50,20,25,25,30,10,50,20,1]],[[],[]]],false]";
 						};
 					};
 				};
@@ -37403,7 +37410,7 @@ class Mission
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=4;
+										count=7;
 									};
 									class Item3
 									{
@@ -37427,23 +37434,23 @@ class Mission
 									};
 									class Item7
 									{
-										name="ACE_bloodIV_500";
-										count=10;
-									};
-									class Item8
-									{
 										name="UK3CB_BAF_HMNVS";
 										count=1;
 									};
-									class Item9
+									class Item8
 									{
 										name="UK3CB_BAF_Silencer_L85";
 										count=1;
 									};
-									class Item10
+									class Item9
 									{
 										name="adv_aceCPR_AED";
 										count=1;
+									};
+									class Item10
+									{
+										name="ACE_bloodIV";
+										count=5;
 									};
 								};
 							};
@@ -37759,7 +37766,7 @@ class Mission
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=4;
+										count=7;
 									};
 									class Item3
 									{
@@ -37783,23 +37790,23 @@ class Mission
 									};
 									class Item7
 									{
-										name="ACE_bloodIV_500";
-										count=10;
-									};
-									class Item8
-									{
 										name="UK3CB_BAF_HMNVS";
 										count=1;
 									};
-									class Item9
+									class Item8
 									{
 										name="UK3CB_BAF_Silencer_L85";
 										count=1;
 									};
-									class Item10
+									class Item9
 									{
 										name="adv_aceCPR_AED";
 										count=1;
+									};
+									class Item10
+									{
+										name="ACE_bloodIV";
+										count=5;
 									};
 								};
 							};
@@ -38115,7 +38122,7 @@ class Mission
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=4;
+										count=7;
 									};
 									class Item3
 									{
@@ -38139,23 +38146,23 @@ class Mission
 									};
 									class Item7
 									{
-										name="ACE_bloodIV_500";
-										count=10;
-									};
-									class Item8
-									{
 										name="UK3CB_BAF_HMNVS";
 										count=1;
 									};
-									class Item9
+									class Item8
 									{
 										name="UK3CB_BAF_Silencer_L85";
 										count=1;
 									};
-									class Item10
+									class Item9
 									{
 										name="adv_aceCPR_AED";
 										count=1;
+									};
+									class Item10
+									{
+										name="ACE_bloodIV";
+										count=5;
 									};
 								};
 							};
@@ -38471,7 +38478,7 @@ class Mission
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=4;
+										count=7;
 									};
 									class Item3
 									{
@@ -38495,23 +38502,23 @@ class Mission
 									};
 									class Item7
 									{
-										name="ACE_bloodIV_500";
-										count=10;
-									};
-									class Item8
-									{
 										name="UK3CB_BAF_HMNVS";
 										count=1;
 									};
-									class Item9
+									class Item8
 									{
 										name="UK3CB_BAF_Silencer_L85";
 										count=1;
 									};
-									class Item10
+									class Item9
 									{
 										name="adv_aceCPR_AED";
 										count=1;
+									};
+									class Item10
+									{
+										name="ACE_bloodIV";
+										count=5;
 									};
 								};
 							};
@@ -42799,6 +42806,85 @@ class Mission
 			isPlayable=1;
 			id=1829;
 			type="HeadlessClient_F";
+		};
+		class Item101
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7648.8198,5.2840548,2685.2639};
+				angles[]={0,1.5876387,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1830;
+			type="UK3CB_BAF_Box_Medical_Supplies_ACE";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""ACE_elasticBandage"",""ACE_packingBandage"",""ACE_quikclot"",""ACE_epinephrine"",""ACE_morphine"",""ACE_bloodIV_250"",""ACE_bloodIV_500"",""ACE_tourniquet""],[20,20,20,20,20,5,5,10]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item102
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7647.1206,5.2840543,2685.2134};
+				angles[]={0,4.7102337,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1831;
+			type="UK3CB_BAF_Box_556_Ammo";
+			atlOffset=-4.7683716e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""UK3CB_BAF_556_200Rnd_T"",""UK3CB_BAF_556_30Rnd_T"",""UK3CB_BAF_762_20Rnd_T"",""UK3CB_BAF_SmokeShell"",""HandGrenade""],[4,25,10,10,10]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
