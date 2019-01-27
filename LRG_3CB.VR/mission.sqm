@@ -66,7 +66,7 @@ addons[]=
 	"UK3CB_BAF_Equipment_Vests",
 	"ace_medical",
 	"UK3CB_BAF_Equipment_NVG",
-	"UK3CB_BAF_Weapons_L119",
+	"UK3CB_BAF_Weapons_SmallArms",
 	"RKSL_LDS",
 	"UK3CB_BAF_Weapons_Accessories",
 	"UK3CB_BAF_Weapons_L131A1",
@@ -75,6 +75,7 @@ addons[]=
 	"UK3CB_BAF_Equipment_Helmets",
 	"ace_chemlights",
 	"ace_attach",
+	"UK3CB_BAF_Weapons_L119",
 	"UK3CB_BAF_Equipment_ACE",
 	"ace_minedetector",
 	"ace_optics",
@@ -84,7 +85,6 @@ addons[]=
 	"UK3CB_BAF_Weapons_L110",
 	"UK3CB_BAF_Weapons_L129",
 	"ace_rangecard",
-	"UK3CB_BAF_Weapons_SmallArms",
 	"ace_vector",
 	"ace_logistics_wirecutter",
 	"ace_trenches",
@@ -342,8 +342,8 @@ class AddonsMetaData
 		};
 		class Item34
 		{
-			className="UK3CB_BAF_Weapons_L119";
-			name="3CB BAF Weapons - L119";
+			className="UK3CB_BAF_Weapons_SmallArms";
+			name="3CB BAF Weapons - Small Arms";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
@@ -396,59 +396,59 @@ class AddonsMetaData
 		};
 		class Item42
 		{
+			className="UK3CB_BAF_Weapons_L119";
+			name="3CB BAF Weapons - L119";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item43
+		{
 			className="UK3CB_BAF_Equipment_ACE";
 			name="3CB BAF Equipment - Ace3";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item43
+		class Item44
 		{
 			className="ace_minedetector";
 			name="ACE3 - Mine Detector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item45
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item45
+		class Item46
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item46
+		class Item47
 		{
 			className="UK3CB_BAF_Weapons_L110";
 			name="3CB BAF Weapons - L110";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item47
+		class Item48
 		{
 			className="UK3CB_BAF_Weapons_L129";
 			name="3CB BAF Weapons - L129";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
-		};
-		class Item49
-		{
-			className="UK3CB_BAF_Weapons_SmallArms";
-			name="3CB BAF Weapons - Small Arms";
-			author="3 Commando Brigade";
-			url="www.3commandobrigade.com";
 		};
 		class Item50
 		{
@@ -595,7 +595,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -636,7 +636,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -28458,6 +28458,7 @@ class Mission
 			};
 			id=1035;
 			type="UK3CB_BAF_Merlin_HC3_CSAR_MTP";
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30645,7 +30646,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7680.1074,5.0014391,2676.0393};
+						position[]={7680.1069,5.0014391,2676.0391};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -30660,13 +30661,13 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="UK3CB_BAF_L119A1_UKUGL";
+								name="UK3CB_BAF_L85A2_UGL";
 								optics="RKSL_optic_LDS";
 								muzzle="UK3CB_BAF_SFFH";
 								flashlight="UK3CB_BAF_LLM_IR_Black";
 								class primaryMuzzleMag
 								{
-									name="UK3CB_BAF_556_30Rnd_T";
+									name="UK3CB_BAF_556_30Rnd";
 									ammoLeft=30;
 								};
 								class secondaryMuzzleMag
@@ -30696,7 +30697,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="UK3CB_BAF_U_CombatUniform_MTP";
+								typeName="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -30751,7 +30752,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=6;
+									items=7;
 									class Item0
 									{
 										name="HandGrenade";
@@ -30784,8 +30785,14 @@ class Mission
 									};
 									class Item5
 									{
+										name="1Rnd_HE_Grenade_shell";
+										count=8;
+										ammoLeft=1;
+									};
+									class Item6
+									{
 										name="UK3CB_BAF_556_30Rnd_T";
-										count=9;
+										count=5;
 										ammoLeft=30;
 									};
 								};
@@ -30814,9 +30821,9 @@ class Mission
 									};
 									class Item1
 									{
-										name="UK3CB_BAF_1Rnd_HEDP_Grenade_Shell";
-										count=10;
-										ammoLeft=1;
+										name="UK3CB_BAF_556_30Rnd_T";
+										count=6;
+										ammoLeft=30;
 									};
 								};
 								class ItemCargo
@@ -30840,7 +30847,7 @@ class Mission
 									class Item3
 									{
 										name="ACE_epinephrine";
-										count=1;
+										count=5;
 									};
 									class Item4
 									{
@@ -30869,7 +30876,7 @@ class Mission
 							watch="tf_microdagr";
 							radio="tf_anprc152";
 							gps="B_UavTerminal";
-							headgear="UK3CB_BAF_H_Mk7_Net_A";
+							headgear="UK3CB_BAF_H_Mk7_Camo_ESS_D";
 						};
 					};
 					id=1946;
@@ -30929,7 +30936,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
