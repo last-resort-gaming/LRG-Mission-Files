@@ -1,0 +1,51 @@
+author = "Last Resort Gaming";
+onLoadName = "LRG Warlords";
+briefingName = "LRG Warlords";
+loadScreen = "media\images\billboard.paa";
+overviewPicture = "media\images\billboard.paa";
+
+class Header
+{
+	gameType = Warlords;
+	minPlayers = 1;
+	maxPlayers = 32;
+};
+
+respawn = "BASE";
+respawnDelay = 20;
+
+//------------------------- Admin
+
+enableDebugConsole = 1;	
+allowFunctionsLog = 1;
+
+//------------------------- Misc
+briefing=0;
+debriefing=0;
+saving=0;
+disabledAI = 0;	
+aiKills = 0;
+enableItemsDropping = 1;
+joinUnassigned = 1;
+showUAVFeed = 1;
+showMap = 0;
+showNotePad = 0;
+showPad = 0;
+showSquadRadar = 0;
+
+//------------------------- Includes / Functions
+
+
+#include "Functions\CHVD\dialog.hpp"
+#include "Functions\YAINA\General\crewNamesTitles.hpp"
+
+class CfgFunctions {
+	#include "Functions\CHVD\CfgFunctions.hpp"
+    #include "Functions\YAINA\CfgFunctions.hpp"
+    #include "Functions\LRG\CfgFunctions.hpp"
+	#include "Functions\QS\CfgFunctions.hpp"	
+};
+
+class Params {
+	#include "params.hpp"
+};
