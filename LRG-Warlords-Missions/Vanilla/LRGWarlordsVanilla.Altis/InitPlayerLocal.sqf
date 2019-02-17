@@ -3,7 +3,7 @@ if (!hasInterface) exitWith {};
 
 _null = [] execVM "scripts\QS\QS_icons.sqf";
 [] execVM "scripts\YAINA\earplugs.sqf";
-
+_x = [] execVM "scripts\fn_voyagerCompass.sqf";
 0 enableChannel [true, false];
 1 enableChannel [true, true];
 2 enableChannel [false, false];
