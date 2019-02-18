@@ -5,10 +5,10 @@ sleep 10;
 private _messages = call {
 
     [
-        [ "Welcome to the LRG Public Training Server.", ["Learn the game, ask for help."] ],
+        [ "Welcome to the LRG Public Warlords Server.", ["Work as a team, win the mission."] ],
         [ "Server Rules are located on the Map.", ["Make sure you follow them!"] ],
         [ "Optional Mods are enabled on this server.", ["Check out the map for details!"] ],		
-        [ "No idea what you're doing?", ["Contact us on Discord.LastResortGamming.net"] ]
+        [ "No idea what you're doing?", ["Ask us on Discord.LastResortGamming.net"] ]
     ];
 };
 
