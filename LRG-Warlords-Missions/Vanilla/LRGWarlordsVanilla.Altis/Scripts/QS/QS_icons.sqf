@@ -85,7 +85,7 @@ _QS_ST_friendlySides_RESISTANCE = [							// ARRAY (NUMBER). Uncomment the relev
 _QS_ST_friendlySides_CIVILIAN = [							// ARRAY (NUMBER). Uncomment the relevant number(s). Remove comma after last used entry (important!).
 	//0,		//CIVILIAN is friendly to EAST
 	//1,	//CIVILIAN is friendly to WEST
-	//2		//CIVILIAN is friendly to INDEP/RESISTANCE
+	2		//CIVILIAN is friendly to INDEP/RESISTANCE
 ];
 
 //================= DEFAULT ICON COLORS by FACTION
@@ -119,7 +119,7 @@ _QS_ST_autonomousVehicles_Modded = [];						// OBSOLETE. ARRAY (STRING). If you 
 //==================================================================================//
 
 _QS_ST_showAll = 0;										// NUMBER. Intended for Debug / Development use only! Caution: Will cause lag if 1 or 2! Settings -  0 = Disabled (Recommended). 1 = Reveal all Units + vehicles. 2 = Reveal all mission objects + vehicles + units. May override below configurations if set at 1 or 2.
-_QS_ST_showFactionOnly = FALSE;								// BOOL. will override ST_showFriendlySides TRUE. If TRUE then will only show players faction. If FALSE then can show friendly factions. Default FALSE.
+_QS_ST_showFactionOnly = TRUE;								// BOOL. will override ST_showFriendlySides TRUE. If TRUE then will only show players faction. If FALSE then can show friendly factions. Default FALSE.
 _QS_ST_showAI = TRUE;										// BOOL. FALSE = players only, TRUE = players and AI. Default TRUE.
 _QS_ST_AINames = TRUE;									// BOOL. Set TRUE to show human names for AI with the map/vehicle icons. Set FALSE and will be named 'AI'. Default FALSE.
 _QS_ST_showCivilianIcons = FALSE;							// BOOL. Set TRUE to allow showing of civilians, only works if Dynamic Diplomacy is enabled above. Default FALSE.
