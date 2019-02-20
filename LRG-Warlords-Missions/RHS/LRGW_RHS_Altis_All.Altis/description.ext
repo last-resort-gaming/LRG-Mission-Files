@@ -1,0 +1,71 @@
+author = "Last Resort Gaming";
+onLoadName = "LRG Warlords";
+briefingName = "LRG Warlords";
+loadScreen = "z\LRG Fundamentals\Addons\media\images\billboard.paa";
+overviewPicture = "z\LRG Fundamentals\Addons\media\images\billboard.paa";
+
+class Header
+{
+	gameType = Warlords;
+	minPlayers = 1;
+	maxPlayers = 40;
+};
+//------------------------- Respawn
+respawn = "BASE";
+respawnDelay = 5;
+respawnOnStart = 0;
+
+//------------------------- Revive
+reviveMode = 1;
+reviveUnconsciousStateMode = 1;
+reviveRequiredTrait = 0;
+reviveRequiredItems = 0;
+reviveRequiredItemsFakConsumed = 0;
+
+reviveMedicSpeedMultiplier = 2;
+reviveDelay = 6;
+reviveForceRespawnDelay = 3;
+reviveBleedOutDelay = 120;
+
+//Corpse Manager
+corpseManagerMode = 1;
+corpseLimit = 15;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 1200;
+
+wreckManagerMode = 1;
+wreckLimit = 15;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 1800;
+
+minPlayerDistance = 200;
+
+//------------------------- Admin
+enableDebugConsole = 1;	
+allowFunctionsLog = 1;
+
+//------------------------- Misc
+briefing=0;
+debriefing=0;
+saving=0;
+disabledAI = 0;	
+aiKills = 0;
+enableItemsDropping = 1;
+joinUnassigned = 1;
+showUAVFeed = 1;
+showMap = 0;
+showNotePad = 0;
+showPad = 0;
+showSquadRadar = 0;
+
+//------------------------- Includes / Functions
+
+
+class CfgFunctions {
+    #include "Functions\LRG\CfgFunctions.hpp"
+};
+
+class Params {
+	#include "params.hpp"
+	#include "\a3\Functions_F\Params\paramRevive.hpp"
+};
