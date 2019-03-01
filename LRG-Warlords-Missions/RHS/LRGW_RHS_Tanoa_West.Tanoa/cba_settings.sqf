@@ -45,6 +45,7 @@ force LRG_Main_DynamicGroups = false;
 force LRG_Main_DynamicSim = false;
 force LRG_Main_Earplugs = true;
 force LRG_Main_FatigueVanilla = true;
+force LRG_Main_FlipVehicle = true;
 force LRG_Main_FPSCounter = true;
 force LRG_Main_Logging = false;
 force LRG_Main_PilotCheck = false;
@@ -58,11 +59,12 @@ force LRG_Main_ViewDistanceNoGrass = false;
 force LRG_Main_VoyagerCompass = true;
 
 
+
 // LRG QS Icons
-force LRG_QS_ST_gps_enableUnitIcons = true;
-force LRG_QS_ST_AINames = false;
+force LRG_QS_ST_AINames = true;
 force LRG_QS_ST_colorInjured = [0.75,0.55,0,0.75];
 force LRG_QS_ST_enableGroupIcons = true;
+force LRG_QS_ST_gps_enableUnitIcons = true;
 force LRG_QS_ST_GPSDist = 300;
 force LRG_QS_ST_GPSshowGroupOnly = true;
 force LRG_QS_ST_GPSshowNames = false;
@@ -74,23 +76,23 @@ force LRG_QS_ST_iconColor_UNKNOWN = [0.7,0.6,0,0.5];
 force LRG_QS_ST_iconColor_WEST = [0,0.3,0.6,0.65];
 force LRG_QS_ST_iconMapText = true;
 force LRG_QS_ST_iconTextFonts = 5;
-force LRG_QS_ST_iconUpdatePulseDelay = 1;
+force LRG_QS_ST_iconUpdatePulseDelay = 0;
 force LRG_QS_ST_map_enableUnitIcons = true;
 force LRG_QS_ST_MasterEnable = true;
 force LRG_QS_ST_MedicalIconColor = [1,0.41,0,1];
 force LRG_QS_ST_MedicalSystem = 0;
 force LRG_QS_ST_showAI = true;
 force LRG_QS_ST_showAIGroups = false;
-force LRG_QS_ST_showAINames = false;
+force LRG_QS_ST_showAINames = true;
 force LRG_QS_ST_showCivilianIcons = false;
 force LRG_QS_ST_showFactionOnly = true;
-force LRG_QS_ST_showGroupHudIcons = false;
+force LRG_QS_ST_showGroupHudIcons = true;
 force LRG_QS_ST_showGroupMapIcons = true;
 force LRG_QS_ST_showGroupOnly = false;
 force LRG_QS_ST_showMedicalWounded = true;
 force LRG_QS_ST_showMOS = true;
 force LRG_QS_ST_showMOS_range = 3500;
-force LRG_QS_ST_showOwnGroup = false;
+force LRG_QS_ST_showOwnGroup = true;
 
 // LRG Weather
 force LRG_Weather_DayTimeAcc = 1;
@@ -99,5 +101,5 @@ force LRG_Weather_MaxTime = 120;
 force LRG_Weather_MinTime = 1;
 force LRG_Weather_NightTimeAcc = 8;
 force LRG_Weather_RealTime = true;
-force LRG_Weather_StartWeather = 0;
-force LRG_Weather_SyncTime = 60;
+force LRG_Weather_StartWeather = 1;
+force LRG_Weather_SyncTime = 30;
