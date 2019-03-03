@@ -52,7 +52,7 @@ class BIS_WLArsenalEnabled
 	title = $STR_A3_Arsenal;
 	values[] = {1, 0};
 	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
-	default = 1;
+	default = 0;
 };
 class BIS_WLMarkersTransparency
 {

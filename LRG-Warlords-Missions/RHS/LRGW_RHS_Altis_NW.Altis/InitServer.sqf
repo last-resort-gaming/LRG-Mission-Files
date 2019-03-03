@@ -1,9 +1,2 @@
-/*
-	LRG MISSION TEMPLATE
-	InitServer.sqf
-	Author: MitchJC
-	Description: Scripts executed on server only.
-*/
-
-{_x setSpeaker "NoVoice"} forEach playableUnits;
-
+[west, 150] call BIS_fnc_respawnTickets;
+[east, 150] call BIS_fnc_respawnTickets;
