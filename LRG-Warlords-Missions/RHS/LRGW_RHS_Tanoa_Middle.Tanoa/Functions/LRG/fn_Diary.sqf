@@ -54,7 +54,7 @@ player createDiaryRecord ["Last Resort Gaming", ["Apply",
 <br/>
 <font face='PuristaLight' color='#D3D3D3'>LRG is always on the lookout for mature players that wish to join. If you think you have what it takes, submit an application and get involved! For more info, speak to a member or contact us on Discord.</font>
 <br/>
-<br/>Discord:<br/><font face='PuristaLight' color='#D3D3D3'>    <execute expression=""copyToClipboard 'https://goo.gl/forms/zyC8XDCFaU9o5y0k2'"">LRG Application Form</execute></font>
+<br/>Discord:<br/><font face='PuristaLight' color='#D3D3D3'>    <execute expression=""copyToClipboard 'http://Apply.LastResortGaming.net'"">Apply.LastResortGaming.net</execute></font>
 "
 ]];
 
