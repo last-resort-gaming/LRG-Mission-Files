@@ -1,0 +1,47 @@
+_pilot1 = (_this select 0);
+_pilot2 = (_this select 1);
+_chopper = (_this select 2);
+_landzone = (_this select 3);
+
+~1
+_pilot1 enableAI "Move";
+_pilot2 enableAI "Move";
+_pilot1 setSpeedMode "FULL";
+_pilot2 setSpeedMode "FULL";
+_pilot1 Move (getpos _landzone);
+
+#checkdistance
+~10
+if (_chopper distance (getpos _landzone)<800) then {goto "chopperarrived"} else {goto "checkdistance"};
+
+#chopperarrived
+_pilot1 Move (getpos _landzone);
+~10
+null = [] spawn {
+		_heli = _chopper;
+		_heliGrp = group _heli;
+		_posToLand = (getpos _landzone);
+		_wp = _heliGrp addWaypoint [_posToLand, 0];
+		_wp setWaypointType "MOVE";
+		_wp setWaypointBehaviour "CARELESS";
+		_wp setWaypointCombatMode "BLUE";
+		_wp setWaypointSpeed "LIMITED";
+		_wp setWaypointFormation "COLUMN";
+		_wp setWaypointStatements ["true", "(vehicle this) land 'Get In'"];	
+};
+
+#chopperlandedcheck
+~4
+if (damage takeoffbh_dummy >= 1) then {goto "chopperflyhome"} else {goto "chopperlandedcheck"};
+
+#chopperflyhome
+_pilot1 sideChat "Roger that, we are taking off now!";
+~5
+_pilot1 setSpeedMode "FULL";
+_pilot2 setSpeedMode "FULL";
+_pilot1 Move (getpos HOME_SWEET_HOME);
+
+ziel4done_dummy setDammage 1;
+
+exit
+

@@ -1,0 +1,25 @@
+if (!isServer) exitWith {};
+
+_start = random 1.5;
+
+? _start <= 1 : goto "P1";
+? _start <= 2 : goto "P2";
+
+#P1
+_jeeptyp = (selectRandom ["CUP_C_Skoda_Green_CIV","C_Offroad_02_unarmed_F","CUP_C_Ikarus_Chernarus","CUP_C_Skoda_Blue_CIV","C_Offroad_02_unarmed_F","C_Van_01_transport_F","CUP_C_Skoda_Red_CIV","CUP_C_Datsun_4seat","CUP_C_Datsun_Plain","CUP_C_Golf4_random_Civ","C_Offroad_02_unarmed_F","C_Offroad_01_F","CUP_C_V3S_Open_TKC","CUP_C_Golf4_random_Civ","CUP_C_Skoda_White_CIV","C_Van_02_transport_F","CUP_C_Ural_Open_Civ_01","C_IDAP_Offroad_02_unarmed_F","C_IDAP_Van_02_medevac_F","CUP_C_Skoda_Red_CIV","C_IDAP_Truck_02_transport_F","CUP_C_Golf4_random_Civ","C_Offroad_02_unarmed_F","C_Van_02_transport_F"]);
+_jeeppos = (_this select 0);
+_jeep = createVehicle [_jeeptyp, _jeeppos, [], 0, "CAN_COLLIDE"];
+_jeep setDir (random 359);
+_jeep setfuel ((random 0.6)+0.05);
+[_jeep] exec "scripts\random_veh_loadout.sqf";
+
+#check_player_close
+~120
+if ({_x distance _jeep <= 3000} count playableUnits > 0) then {goto "check_player_close"} else {goto "delete_vehicle"}
+
+#delete_vehicle
+deleteVehicle _jeep;
+exit;
+
+#P2
+exit;

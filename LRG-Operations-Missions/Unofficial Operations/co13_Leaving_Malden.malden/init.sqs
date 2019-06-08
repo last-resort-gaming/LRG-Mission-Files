@@ -1,0 +1,14 @@
+setViewDistance 1600;
+
+[] exec "intro\intro.sqs"
+
+[] execVM "briefing.sqf";
+
+playintromusic=false;
+
+? (paramsArray select 6) == 0 : [] execVM "gdtmod\gdtmod.sqf";
+
+? (paramsArray select 7) == 2 : nul = [0,0,0,true,true,false,"mixt",false] execVM "ALthunder\alias_thunderbolt.sqf";
+? (paramsArray select 7) == 1 : nul = [0,0,0,true,true,false,"none",false] execVM "ALthunder\alias_thunderbolt.sqf";
+
+exit;

@@ -1,0 +1,112 @@
+if (!isServer) exitWith {};
+
+_CPpos = (_this select 0);
+_CPmarker = (_this select 1);
+_dir = (_this select 2);
+_jeeptyp1 = (selectRandom ["CUP_O_UAZ_MG_RU","CUP_O_UAZ_Open_RU","CUP_O_UAZ_AGS30_RU","CUP_O_UAZ_Open_TKA","CUP_O_UAZ_AGS30_TKA","CUP_O_UAZ_MG_TKA","CUP_O_UAZ_Open_RU","CUP_O_UAZ_Open_TKA","CUP_O_UAZ_SPG9_RU","CUP_O_UAZ_Open_TKA"]);
+
+_start = random 3;
+
+? _start <= 1 : goto "P1";
+? _start <= 2 : goto "P2";
+? _start <= 3 : goto "P3";
+
+#P1
+_jeep1 = _jeeptyp1 createVehicle (position _CPpos);
+_jeep1 setfuel ((random 0.4)+0.25);
+_jeep1 setDir (_dir+(random 5));
+[_jeep1] exec "scripts\random_veh_loadout.sqf";
+~3
+_jeep1 setPos [(getPos _CPpos select 0)-5*sin(_dir),(getPos _CPpos select 1)-5*cos(_dir), 0];
+~1
+_fire = "Campfire_burning_F" createVehicle (position _CPpos);
+_fire setDir (_dir+(random 70));
+_fence1 = "Land_BagFence_Long_F" createVehicle (position _CPpos);
+_fence1 setDir (_dir)+90;
+_fence2 = "Land_BagFence_Long_F" createVehicle (position _CPpos);
+_fence2 setDir (_dir)+90;
+_fence3 = "Land_BagFence_Long_F" createVehicle (position _CPpos);
+_fence3 setDir (_dir)+90;
+_fence4 = "Land_BagFence_Long_F" createVehicle (position _CPpos);
+_fence4 setDir (_dir)+90;
+~3
+_fire setPosATL [(getPosATL _CPpos select 0)-9*sin(_dir),(getPosATL _CPpos select 1)+5*cos(_dir), 0.1];
+_fence1 setPosATL [(getPosATL _CPpos select 0)+4*sin(_dir),(getPosATL _CPpos select 1)+4*cos(_dir), -0.05];
+_fence2 setPosATL [(getPosATL _CPpos select 0)+6.5*sin(_dir),(getPosATL _CPpos select 1)+6.5*cos(_dir), -0.05];
+_fence3 setPosATL [(getPosATL _CPpos select 0)+9*sin(_dir),(getPosATL _CPpos select 1)+9*cos(_dir), -0.05];
+_fence4 setPosATL [(getPosATL _CPpos select 0)+11*sin(_dir),(getPosATL _CPpos select 1)+11*cos(_dir), -0.05];
+~3
+null = "Land_ClutterCutter_small_F" createVehicle (position _fence1);
+null = "Land_ClutterCutter_small_F" createVehicle (position _fence2);
+null = "Land_ClutterCutter_small_F" createVehicle (position _fence3);
+null = "Land_ClutterCutter_small_F" createVehicle (position _fence4);
+null = "Land_ClutterCutter_small_F" createVehicle (position _fire);
+
+~60
+#check_player_close1
+~120
+if ({_x distance _jeep1 <= 3000} count playableUnits > 0) then {goto "check_player_close1"} else {goto "delete_vehicle1"}
+
+#delete_vehicle1
+deleteVehicle _jeep1;
+deleteVehicle _fire;
+deleteVehicle _fence1;
+deleteVehicle _fence2;
+deleteVehicle _fence3;
+deleteVehicle _fence4;
+[[_CPmarker]] call EOS_deactivate;
+exit;
+
+
+
+#P2
+[[_CPmarker]] call EOS_deactivate;
+exit;
+
+
+
+#P3
+_jeep1 = _jeeptyp1 createVehicle (position _CPpos);
+_jeep1 setfuel ((random 0.4)+0.25);
+_jeep1 setDir (_dir+(random 5));
+[_jeep1] exec "scripts\random_veh_loadout.sqf";
+~3
+_jeep1 setPos [(getPos _CPpos select 0)-5*sin(_dir),(getPos _CPpos select 1)-5*cos(_dir), 0];
+~1
+_fire = "Campfire_burning_F" createVehicle (position _CPpos);
+_fire setDir (_dir+(random 70));
+_fence1 = "Land_BagFence_Long_F" createVehicle (position _CPpos);
+_fence1 setDir (_dir)+90;
+_fence2 = "Land_BagFence_Long_F" createVehicle (position _CPpos);
+_fence2 setDir (_dir)+90;
+_fence3 = "Land_BagFence_Long_F" createVehicle (position _CPpos);
+_fence3 setDir (_dir)+90;
+_fence4 = "Land_BagFence_Long_F" createVehicle (position _CPpos);
+_fence4 setDir (_dir)+90;
+~3
+_fire setPosATL [(getPosATL _CPpos select 0)-9*sin(_dir),(getPosATL _CPpos select 1)+5*cos(_dir), 0.1];
+_fence1 setPosATL [(getPosATL _CPpos select 0)+4*sin(_dir),(getPosATL _CPpos select 1)+4*cos(_dir), -0.05];
+_fence2 setPosATL [(getPosATL _CPpos select 0)+6.5*sin(_dir),(getPosATL _CPpos select 1)+6.5*cos(_dir), -0.05];
+_fence3 setPosATL [(getPosATL _CPpos select 0)+9*sin(_dir),(getPosATL _CPpos select 1)+9*cos(_dir), -0.05];
+_fence4 setPosATL [(getPosATL _CPpos select 0)+11*sin(_dir),(getPosATL _CPpos select 1)+11*cos(_dir), -0.05];
+~3
+null = "Land_ClutterCutter_small_F" createVehicle (position _fence1);
+null = "Land_ClutterCutter_small_F" createVehicle (position _fence2);
+null = "Land_ClutterCutter_small_F" createVehicle (position _fence3);
+null = "Land_ClutterCutter_small_F" createVehicle (position _fence4);
+null = "Land_ClutterCutter_small_F" createVehicle (position _fire);
+
+~60
+#check_player_close2
+~120
+if ({_x distance _jeep1 <= 3000} count playableUnits > 0) then {goto "check_player_close2"} else {goto "delete_vehicle2"}
+
+#delete_vehicle2
+deleteVehicle _jeep1;
+deleteVehicle _fire;
+deleteVehicle _fence1;
+deleteVehicle _fence2;
+deleteVehicle _fence3;
+deleteVehicle _fence4;
+[[_CPmarker]] call EOS_deactivate;
+exit;

@@ -1,0 +1,817 @@
+if (!isServer) exitWith {};
+? damage ziel2phone_dummy >= 1 : exit;
+
+#phone1start
+~1
+RND_phone1_number = Ceil random 15;
+publicVariable "RND_phone1_number";
+? (RND_phone1_number) <= 1 : goto "phone1_P1";
+? (RND_phone1_number) <= 2 : goto "phone1_P2";
+? (RND_phone1_number) <= 3 : goto "phone1_P3";
+? (RND_phone1_number) <= 4 : goto "phone1_P4";
+? (RND_phone1_number) <= 5 : goto "phone1_P5";
+? (RND_phone1_number) <= 6 : goto "phone1_P6";
+? (RND_phone1_number) <= 7 : goto "phone1_P7";
+? (RND_phone1_number) <= 8 : goto "phone1_P8";
+? (RND_phone1_number) <= 9 : goto "phone1_P9";
+? (RND_phone1_number) <= 10 : goto "phone1_P10";
+? (RND_phone1_number) <= 11 : goto "phone1_P11";
+? (RND_phone1_number) <= 12 : goto "phone1_P12";
+? (RND_phone1_number) <= 13 : goto "phone1_P13";
+? (RND_phone1_number) <= 14 : goto "phone1_P14";
+? (RND_phone1_number) <= 15 : goto "phone1_P15";
+
+#phone1_P1
+satphone1 setPosATL (getPosATL phonepos_01);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P2
+satphone1 setPosATL (getPosATL phonepos_02);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P3
+satphone1 setPosATL (getPosATL phonepos_03);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P4
+satphone1 setPosATL (getPosATL phonepos_04);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P5
+satphone1 setPosATL (getPosATL phonepos_05);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P6
+satphone1 setPosATL (getPosATL phonepos_06);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P7
+satphone1 setPosATL (getPosATL phonepos_07);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P8
+satphone1 setPosATL (getPosATL phonepos_08);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P9
+satphone1 setPosATL (getPosATL phonepos_09);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P10
+satphone1 setPosATL (getPosATL phonepos_10);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P11
+satphone1 setPosATL (getPosATL phonepos_11);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P12
+satphone1 setPosATL (getPosATL phonepos_12);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P13
+satphone1 setPosATL (getPosATL phonepos_13);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P14
+satphone1 setPosATL (getPosATL phonepos_14);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+#phone1_P15
+satphone1 setPosATL (getPosATL phonepos_15);
+~1
+if (satphone1 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone1start"};
+if ({_x distance satphone1 <= 1000} count playableUnits > 0) then {goto "phone1start"} else {goto "phone2start"}
+
+
+#phone2start
+~1
+RND_phone2_number = Ceil random 15;
+publicVariable "RND_phone2_number";
+? (RND_phone2_number) <= 1 : goto "phone2_P1";
+? (RND_phone2_number) <= 2 : goto "phone2_P2";
+? (RND_phone2_number) <= 3 : goto "phone2_P3";
+? (RND_phone2_number) <= 4 : goto "phone2_P4";
+? (RND_phone2_number) <= 5 : goto "phone2_P5";
+? (RND_phone2_number) <= 6 : goto "phone2_P6";
+? (RND_phone2_number) <= 7 : goto "phone2_P7";
+? (RND_phone2_number) <= 8 : goto "phone2_P8";
+? (RND_phone2_number) <= 9 : goto "phone2_P9";
+? (RND_phone2_number) <= 10 : goto "phone2_P10";
+? (RND_phone2_number) <= 11 : goto "phone2_P11";
+? (RND_phone2_number) <= 12 : goto "phone2_P12";
+? (RND_phone2_number) <= 13 : goto "phone2_P13";
+? (RND_phone2_number) <= 14 : goto "phone2_P14";
+? (RND_phone2_number) <= 15 : goto "phone2_P15";
+
+#phone2_P1
+satphone2 setPosATL (getPosATL phonepos_01);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P2
+satphone2 setPosATL (getPosATL phonepos_02);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P3
+satphone2 setPosATL (getPosATL phonepos_03);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P4
+satphone2 setPosATL (getPosATL phonepos_04);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P5
+satphone2 setPosATL (getPosATL phonepos_05);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P6
+satphone2 setPosATL (getPosATL phonepos_06);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P7
+satphone2 setPosATL (getPosATL phonepos_07);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P8
+satphone2 setPosATL (getPosATL phonepos_08);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P9
+satphone2 setPosATL (getPosATL phonepos_09);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P10
+satphone2 setPosATL (getPosATL phonepos_10);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P11
+satphone2 setPosATL (getPosATL phonepos_11);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P12
+satphone2 setPosATL (getPosATL phonepos_12);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P13
+satphone2 setPosATL (getPosATL phonepos_13);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P14
+satphone2 setPosATL (getPosATL phonepos_14);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+#phone2_P15
+satphone2 setPosATL (getPosATL phonepos_15);
+~1
+if (satphone2 distance (getpos satphone1)<10) then {goto "phone2start"};
+if (satphone2 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone2start"};
+if ({_x distance satphone2 <= 1000} count playableUnits > 0) then {goto "phone2start"} else {goto "phone3start"}
+
+
+
+#phone3start
+~1
+RND_phone3_number = Ceil random 15;
+publicVariable "RND_phone3_number";
+? (RND_phone3_number) <= 1 : goto "phone3_P1";
+? (RND_phone3_number) <= 2 : goto "phone3_P2";
+? (RND_phone3_number) <= 3 : goto "phone3_P3";
+? (RND_phone3_number) <= 4 : goto "phone3_P4";
+? (RND_phone3_number) <= 5 : goto "phone3_P5";
+? (RND_phone3_number) <= 6 : goto "phone3_P6";
+? (RND_phone3_number) <= 7 : goto "phone3_P7";
+? (RND_phone3_number) <= 8 : goto "phone3_P8";
+? (RND_phone3_number) <= 9 : goto "phone3_P9";
+? (RND_phone3_number) <= 10 : goto "phone3_P10";
+? (RND_phone3_number) <= 11 : goto "phone3_P11";
+? (RND_phone3_number) <= 12 : goto "phone3_P12";
+? (RND_phone3_number) <= 13 : goto "phone3_P13";
+? (RND_phone3_number) <= 14 : goto "phone3_P14";
+? (RND_phone3_number) <= 15 : goto "phone3_P15";
+
+#phone3_P1
+satphone3 setPosATL (getPosATL phonepos_01);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P2
+satphone3 setPosATL (getPosATL phonepos_02);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P3
+satphone3 setPosATL (getPosATL phonepos_03);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P4
+satphone3 setPosATL (getPosATL phonepos_04);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P5
+satphone3 setPosATL (getPosATL phonepos_05);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P6
+satphone3 setPosATL (getPosATL phonepos_06);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P7
+satphone3 setPosATL (getPosATL phonepos_07);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P8
+satphone3 setPosATL (getPosATL phonepos_08);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P9
+satphone3 setPosATL (getPosATL phonepos_09);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P10
+satphone3 setPosATL (getPosATL phonepos_10);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P11
+satphone3 setPosATL (getPosATL phonepos_11);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P12
+satphone3 setPosATL (getPosATL phonepos_12);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P13
+satphone3 setPosATL (getPosATL phonepos_13);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P14
+satphone3 setPosATL (getPosATL phonepos_14);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+#phone3_P15
+satphone3 setPosATL (getPosATL phonepos_15);
+~1
+if (satphone3 distance (getpos satphone1)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos satphone2)<10) then {goto "phone3start"};
+if (satphone3 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone3start"};
+if ({_x distance satphone3 <= 1000} count playableUnits > 0) then {goto "phone3start"} else {goto "phone4start"}
+
+
+
+#phone4start
+~1
+RND_phone4_number = Ceil random 15;
+publicVariable "RND_phone4_number";
+? (RND_phone4_number) <= 1 : goto "phone4_P1";
+? (RND_phone4_number) <= 2 : goto "phone4_P2";
+? (RND_phone4_number) <= 3 : goto "phone4_P3";
+? (RND_phone4_number) <= 4 : goto "phone4_P4";
+? (RND_phone4_number) <= 5 : goto "phone4_P5";
+? (RND_phone4_number) <= 6 : goto "phone4_P6";
+? (RND_phone4_number) <= 7 : goto "phone4_P7";
+? (RND_phone4_number) <= 8 : goto "phone4_P8";
+? (RND_phone4_number) <= 9 : goto "phone4_P9";
+? (RND_phone4_number) <= 10 : goto "phone4_P10";
+? (RND_phone4_number) <= 11 : goto "phone4_P11";
+? (RND_phone4_number) <= 12 : goto "phone4_P12";
+? (RND_phone4_number) <= 13 : goto "phone4_P13";
+? (RND_phone4_number) <= 14 : goto "phone4_P14";
+? (RND_phone4_number) <= 15 : goto "phone4_P15";
+
+#phone4_P1
+satphone4 setPosATL (getPosATL phonepos_01);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P2
+satphone4 setPosATL (getPosATL phonepos_02);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P3
+satphone4 setPosATL (getPosATL phonepos_03);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P4
+satphone4 setPosATL (getPosATL phonepos_04);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P5
+satphone4 setPosATL (getPosATL phonepos_05);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P6
+satphone4 setPosATL (getPosATL phonepos_06);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P7
+satphone4 setPosATL (getPosATL phonepos_07);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P8
+satphone4 setPosATL (getPosATL phonepos_08);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P9
+satphone4 setPosATL (getPosATL phonepos_09);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P10
+satphone4 setPosATL (getPosATL phonepos_10);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P11
+satphone4 setPosATL (getPosATL phonepos_11);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P12
+satphone4 setPosATL (getPosATL phonepos_12);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P13
+satphone4 setPosATL (getPosATL phonepos_13);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P14
+satphone4 setPosATL (getPosATL phonepos_14);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+#phone4_P15
+satphone4 setPosATL (getPosATL phonepos_15);
+~1
+if (satphone4 distance (getpos satphone1)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone2)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos satphone3)<10) then {goto "phone4start"};
+if (satphone4 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone4start"};
+if ({_x distance satphone4 <= 1000} count playableUnits > 0) then {goto "phone4start"} else {goto "phone5start"}
+
+
+#phone5start
+~1
+RND_phone5_number = Ceil random 15;
+publicVariable "RND_phone5_number";
+? (RND_phone5_number) <= 1 : goto "phone5_P1";
+? (RND_phone5_number) <= 2 : goto "phone5_P2";
+? (RND_phone5_number) <= 3 : goto "phone5_P3";
+? (RND_phone5_number) <= 4 : goto "phone5_P4";
+? (RND_phone5_number) <= 5 : goto "phone5_P5";
+? (RND_phone5_number) <= 6 : goto "phone5_P6";
+? (RND_phone5_number) <= 7 : goto "phone5_P7";
+? (RND_phone5_number) <= 8 : goto "phone5_P8";
+? (RND_phone5_number) <= 9 : goto "phone5_P9";
+? (RND_phone5_number) <= 10 : goto "phone5_P10";
+? (RND_phone5_number) <= 11 : goto "phone5_P11";
+? (RND_phone5_number) <= 12 : goto "phone5_P12";
+? (RND_phone5_number) <= 13 : goto "phone5_P13";
+? (RND_phone5_number) <= 14 : goto "phone5_P14";
+? (RND_phone5_number) <= 15 : goto "phone5_P15";
+
+#phone5_P1
+satphone5 setPosATL (getPosATL phonepos_01);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P2
+satphone5 setPosATL (getPosATL phonepos_02);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P3
+satphone5 setPosATL (getPosATL phonepos_03);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P4
+satphone5 setPosATL (getPosATL phonepos_04);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P5
+satphone5 setPosATL (getPosATL phonepos_05);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P6
+satphone5 setPosATL (getPosATL phonepos_06);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P7
+satphone5 setPosATL (getPosATL phonepos_07);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P8
+satphone5 setPosATL (getPosATL phonepos_08);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P9
+satphone5 setPosATL (getPosATL phonepos_09);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P10
+satphone5 setPosATL (getPosATL phonepos_10);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P11
+satphone5 setPosATL (getPosATL phonepos_11);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P12
+satphone5 setPosATL (getPosATL phonepos_12);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P13
+satphone5 setPosATL (getPosATL phonepos_13);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P14
+satphone5 setPosATL (getPosATL phonepos_14);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+#phone5_P15
+satphone5 setPosATL (getPosATL phonepos_15);
+~1
+if (satphone5 distance (getpos satphone1)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone2)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone3)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos satphone4)<10) then {goto "phone5start"};
+if (satphone5 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone5start"};
+if ({_x distance satphone5 <= 1000} count playableUnits > 0) then {goto "phone5start"} else {goto "phone6start"}
+
+
+
+#phone6start
+~1
+RND_phone6_number = Ceil random 15;
+publicVariable "RND_phone6_number";
+? (RND_phone6_number) <= 1 : goto "phone6_P1";
+? (RND_phone6_number) <= 2 : goto "phone6_P2";
+? (RND_phone6_number) <= 3 : goto "phone6_P3";
+? (RND_phone6_number) <= 4 : goto "phone6_P4";
+? (RND_phone6_number) <= 5 : goto "phone6_P5";
+? (RND_phone6_number) <= 6 : goto "phone6_P6";
+? (RND_phone6_number) <= 7 : goto "phone6_P7";
+? (RND_phone6_number) <= 8 : goto "phone6_P8";
+? (RND_phone6_number) <= 9 : goto "phone6_P9";
+? (RND_phone6_number) <= 10 : goto "phone6_P10";
+? (RND_phone6_number) <= 11 : goto "phone6_P11";
+? (RND_phone6_number) <= 12 : goto "phone6_P12";
+? (RND_phone6_number) <= 13 : goto "phone6_P13";
+? (RND_phone6_number) <= 14 : goto "phone6_P14";
+? (RND_phone6_number) <= 15 : goto "phone6_P15";
+
+#phone6_P1
+satphone6 setPosATL (getPosATL phonepos_01);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P2
+satphone6 setPosATL (getPosATL phonepos_02);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P3
+satphone6 setPosATL (getPosATL phonepos_03);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P4
+satphone6 setPosATL (getPosATL phonepos_04);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P5
+satphone6 setPosATL (getPosATL phonepos_05);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P6
+satphone6 setPosATL (getPosATL phonepos_06);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P7
+satphone6 setPosATL (getPosATL phonepos_07);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P8
+satphone6 setPosATL (getPosATL phonepos_08);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P9
+satphone6 setPosATL (getPosATL phonepos_09);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P10
+satphone6 setPosATL (getPosATL phonepos_10);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P11
+satphone6 setPosATL (getPosATL phonepos_11);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P12
+satphone6 setPosATL (getPosATL phonepos_12);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P13
+satphone6 setPosATL (getPosATL phonepos_13);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P14
+satphone6 setPosATL (getPosATL phonepos_14);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+#phone6_P15
+satphone6 setPosATL (getPosATL phonepos_15);
+~1
+if (satphone6 distance (getpos satphone1)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone2)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone3)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone4)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos satphone5)<10) then {goto "phone6start"};
+if (satphone6 distance (getpos DONT_PLACE_HERE)<10) then {goto "phone6start"};
+if ({_x distance satphone6 <= 1000} count playableUnits > 0) then {goto "phone6start"} else {goto "phoneendstart"}
+
+
+#phoneendstart
+~2
+ziel2phone_dummy setdammage 1;
+exit;

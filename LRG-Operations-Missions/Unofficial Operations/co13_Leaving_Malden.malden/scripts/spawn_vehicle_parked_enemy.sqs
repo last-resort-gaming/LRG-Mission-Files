@@ -1,0 +1,25 @@
+if (!isServer) exitWith {};
+
+_start = random 1.5;
+
+? _start <= 1 : goto "P1";
+? _start <= 2 : goto "P2";
+
+#P1
+_jeeptyp = (selectRandom ["CUP_O_UAZ_MG_RU","CUP_O_UAZ_Open_RU","CUP_O_UAZ_AGS30_RU","CUP_O_UAZ_Open_TKA","CUP_O_UAZ_AGS30_TKA","CUP_O_UAZ_MG_TKA","CUP_O_UAZ_Open_RU","CUP_O_UAZ_Open_TKA","CUP_O_UAZ_SPG9_RU","CUP_O_UAZ_Open_TKA"]);
+_jeeppos = (_this select 0);
+_jeep = createVehicle [_jeeptyp, _jeeppos, [], 0, "CAN_COLLIDE"];
+_jeep setDir (random 359);
+_jeep setfuel ((random 0.65)+0.15);
+[_jeep] exec "scripts\random_veh_loadout.sqf";
+
+#check_player_close
+~120
+if ({_x distance _jeep <= 3000} count playableUnits > 0) then {goto "check_player_close"} else {goto "delete_vehicle"}
+
+#delete_vehicle
+deleteVehicle _jeep;
+exit;
+
+#P2
+exit;

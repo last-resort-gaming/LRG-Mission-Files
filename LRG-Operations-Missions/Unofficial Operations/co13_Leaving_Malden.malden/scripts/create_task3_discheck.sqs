@@ -1,0 +1,10 @@
+if (!isServer) exitWith {};
+? damage ziel3done_dummy >= 1 : exit;
+
+#checkagain
+~20
+if ({_x distance end_LZ_pos <= 200} count playableUnits > 0) then {goto "reachedLZ"} else {goto "checkagain"}
+
+#reachedLZ
+ziel3done_dummy setDammage 1;
+exit;

@@ -1,0 +1,220 @@
+// Title that appears on screen at beginning of mission
+
+onloadmission = "You barly survived this crash...";
+author="RueLight, Ace System by Essex";
+OnLoadName = "Leaving Malden";
+loadScreen = "pics\main.paa";
+overviewPicture = "pics\main.paa";
+
+//Indicate desired spawn condition and delay
+
+respawn = "BIRD";
+respawnDelay = 10;
+
+// Disable AI
+
+disabledAI=1;
+
+// equitment
+
+WeaponCursor = 0;
+ShowCompass = 1;
+ShowMap = 1;
+ShowGPS = 1;
+ShowWatch = 1;
+
+// Parameter
+
+class Params
+{
+	class Daytime
+	{
+		title = "Time";
+		texts[] = {"Morning (with fog)","Afternoon","Evening","Night","Night (with fog)"};
+		values[] = {5,15,19,23,24};
+		default = 15;
+		function = "BIS_fnc_paramDaytime";
+ 		isGlobal = 0;
+	};
+	class Weather
+	{
+		title = "Weather";
+		texts[] = {"Clear","Sunny","Cloudy","Stormy","Random"};
+		values[] = {0,30,60,100,200};
+		default = 30;
+ 		isGlobal = 0;
+	};
+	class Difficulty
+	{
+		title = "Difficulty";
+		texts[] = {"Normal","Hard"};
+		values[] = {0,1};
+		default = 0;
+ 		isGlobal = 0;
+	};
+	class Stamina
+	{
+		title = "Stamina";
+		texts[] = {"Enable","Disable"};
+		values[] = {0,1};
+		default = 0;
+ 		isGlobal = 1;
+	};
+	class Equipment
+	{
+		title = "Equipment";
+		texts[] = {"Bad Equipment         (2x Pistols)","Good Equipment       (4x Pistols, 2x Rifles, 1x Backpack+Vest)","Nice Equipment        (8x Pistols, 5x Rifles, 3x Backpack+Vest, 2x NVG)","Random Equipment"};
+		values[] = {1,2,3,10};
+		default = 2;
+ 		isGlobal = 0;
+	};
+	class Chopper
+	{
+		title = "Enemy Choppers";
+		texts[] = {"Disable","Normal","Hard"};
+		values[] = {0,1,2};
+		default = 1;
+ 		isGlobal = 0;
+	};
+	class 3rd_Person
+	{
+		title = "3rd Person View On Foot";
+		texts[] = {"Enable","Disable"};
+		values[] = {1,0};
+		default = 0;
+ 		isGlobal = 1;
+	};
+	class Rain_Effect
+	{
+		title = "Rain Effect Script (by ALIAS)";
+		texts[] = {"Enable (rain splash with screen effect)","Enable (rain splash)","Disable"};
+		values[] = {2,1,0};
+		default = 2;
+ 		isGlobal = 1;
+	};
+};
+
+// Header
+
+class Header
+{
+  gameType = COOP;
+  minPlayers = 1;
+  maxPlayers = 13;
+};
+
+// Debriefing
+
+class CfgDebriefing
+{
+    class Loser
+    {
+        title = "You Failed!";
+        subtitle = "Everybody is dead or unconscious.";
+        description = "";
+        pictureBackground = "pics\main.paa";
+        picture = "KIA";
+        pictureColor[] = {0.6,0.1,0.,1};
+    };
+    class endDeath
+    {
+        title = "You Failed!";
+        subtitle = "Everybody is dead.";
+        description = "";
+        pictureBackground = "pics\main.paa";
+        picture = "KIA";
+        pictureColor[] = {0.6,0.1,0.,1};
+    };
+    class End1
+    {
+        title = "We were saved...";
+        subtitle = "Hopefully we will not get shot down again.";
+        description = "Damn, you did it! Good job guys!  -  Feedback on my workshop is welcome. Greets RueLight";
+        pictureBackground = "pics\main.paa";
+        picture = "";
+        pictureColor[] = {1,1,1,1};
+    };
+    class End2
+    {
+        title = "Failed!";
+        subtitle = "The rescue helicopter was shot down! Now you're lost...";
+        description = "Hopefully he didn't crashed into a tree ;)";
+        pictureBackground = "pics\main.paa";
+        picture = "KIA";
+        pictureColor[] = {0.6,0.1,0.,1};
+    };
+};
+
+// RscTitles
+
+class RscTitles 
+{
+
+titles[] = {"byrue"};
+
+  class byrue
+  {
+    controls[]={"Picture"};
+    duration = 8;
+    fadein = 3;
+    fadeout = 6;
+    idd = -1;
+    movingEnable = 0;
+    name="byrue";
+    class Picture
+    {
+      colorBackground[]={0,0,0,0};
+      colorText[]={1,1,1,1};
+      font="puristaMedium";
+      h=1;
+      idc=-1;
+      sizeEx = 1;
+      style=48;
+      text="pics\ruelight_madeby.paa"; // should be 256 x 256 px
+      type=0;
+      w=0.75;
+      x=0.68;
+      y=0.2;
+    };
+  };
+};
+
+class CfgSounds
+{	
+	class fl_start_1
+	{
+		name = "fl_start_1";
+		sound[] = {"\sound\fl_start_1.ogg", 1, 1};
+		titles[] = {1, ""};
+	};	
+	class fl_burn_1
+	{
+		name = "fl_burn_1";
+		sound[] = {"\sound\fl_burn_1.ogg", 0.8, 1};
+		titles[] = {1, ""};
+	};
+	class fl_start_2
+	{
+		name = "fl_start_2";
+		sound[] = {"\sound\fl_start_2.ogg", 1, 1};
+		titles[] = {1, ""};
+	};	
+	class fl_burn_2
+	{
+		name = "fl_burn_2";
+		sound[] = {"\sound\fl_burn_2.ogg", 0.8, 1};
+		titles[] = {1, ""};
+	};
+	class fl_start_3
+	{
+		name = "fl_start_3";
+		sound[] = {"\sound\fl_start_3.ogg", 1, 1};
+		titles[] = {1, ""};
+	};	
+	class fl_burn_3
+	{
+		name = "fl_burn_3";
+		sound[] = {"\sound\fl_burn_3.ogg", 0.8, 1};
+		titles[] = {1, ""};
+	};		
+};

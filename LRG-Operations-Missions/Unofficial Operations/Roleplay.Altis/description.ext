@@ -1,0 +1,78 @@
+author = Victor A.;
+onLoadName = "Back From The Future";
+OnLoadMission = "Roleplay scenario series located on Altis in the year 2017.";
+loadScreen = "media\images\billboard.paa";
+overviewPicture = "media\images\billboard.paa"; 
+
+onLoadIntro = "";
+onLoadIntroTime = 0;
+onLoadMissionTime = 0;
+
+class Header 
+	{
+		gameType = COOP;
+		minPlayers = 1;	
+		maxPlayers = 16;
+	}; 
+
+//------------------------- Admin
+
+enableDebugConsole = 0;	
+allowFunctionsLog = 0;
+
+//------------------------- Misc
+
+disabledAI = 1;	
+aiKills = 0;
+enableItemsDropping = 1;
+joinUnassigned = 1;
+showUAVFeed = 1;
+showMap = 0;
+showNotePad = 0;
+showPad = 0;
+showSquadRadar = 0;
+
+//------------------------- Respawn
+
+Respawn = 3;
+RespawnDelay = 4;
+RespawnDialog = 0;
+respawnOnStart = -1;
+
+//------------------------- Garbage collector
+							
+corpseManagerMode = 1;
+corpseLimit = 20;
+corpseRemovalMinTime = 60;			
+corpseRemovalMaxTime = 120;							
+
+wreckManagerMode = 1;
+wreckLimit = 5;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 120;
+
+//------------------------- Includes / Functions
+
+
+#include "Functions\CHVD\dialog.hpp"
+#include "scripts\vehicle\crew\common.hpp"
+
+class CfgFunctions
+	{
+		#include "functions\CfgFunctions.hpp"
+  
+	};
+	
+ class FETT {
+	        class curator {
+	            class eventHandlers {postInit = 1;};
+	            class objPlaced {};
+	            class grpPlaced {};
+	        };
+		};
+		
+
+class RscTitles
+{
+    #include "scripts\vehicle\crew\namesleft.hpp"
+};

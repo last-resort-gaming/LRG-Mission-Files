@@ -1,0 +1,29 @@
+_camera = "camera" camcreate [4727.76,9933.28,15.43]
+_camera cameraeffect ["internal", "back"]
+_camera camSetFOV  0.520;
+
+enableRadio false;
+[] exec "outro\outrotext.sqs";
+
+;comment "berg auf straﬂe";
+_camera camPrepareTarget [-33223.84,-82163.35,-8678.66];
+_camera camPreparePos [4727.76,9933.28,15.43];
+_camera camPrepareFOV 0.520;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "12:18:14";
+_camera camPrepareTarget [-55408.80,-68623.72,-14255.12];
+_camera camPreparePos [4771.75,9921.00,51.33];
+_camera camPrepareFOV 0.692;
+_camera camCommitPrepared 35
+@camCommitted _camera
+
+;
+_camera cameraeffect ["terminate", "back"]
+
+TitleCut ["    ","Black in",0.5]
+enableRadio true
+camdestroy _camera
+forceEnd
+exit

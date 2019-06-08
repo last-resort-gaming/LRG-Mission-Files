@@ -1,0 +1,40 @@
+? damage intro_dummy >= 1 : exit
+
+TitleCut ["    ","black out",0.01]
+enableRadio false
+0 fadeSound 0
+0 fademusic 0
+_blurred = ppEffectCreate ["DynamicBlur", 250];
+_blurred ppeffectenable true;
+_blurred ppeffectadjust [15];
+_blurred ppeffectcommit 2;
+
+blackhawkD1 disableAI "Move";
+blackhawkD2 disableAI "Move";
+
+~4
+removeBackpack player;
+playintromusic=true; publicVariable "playintromusic";
+~3
+20 fadeSound 1
+10 fademusic 0.65
+"JIP_SPAWN_MARKER" setMarkerPos (getPos SPAWN_MAIN_ALL);
+
+~8
+TitleCut ["    ","Black in",6]
+enableRadio true
+_blurred ppEffectAdjust[0];
+_blurred ppEffectCommit 4;
+chmlight1 = "Chemlight_yellow" createVehicle [0,0,0]; chmlight1 attachTo [box1_low,[-0.55,-0.5,-0.15]];
+chmlight2 = "Chemlight_yellow" createVehicle [0,0,0]; chmlight2 attachTo [box1_normal,[-0.55,-0.5,-0.15]];
+chmlight3 = "Chemlight_yellow" createVehicle [0,0,0]; chmlight3 attachTo [box1_high,[-0.55,-0.5,-0.15]];
+
+~8
+intro_dummy setdammage 1;
+titleRsc ["byrue","PLAIN",0.6]
+_blurred ppEffectEnable false;
+~15
+["TaskAssigned",["","Find a nearby village and locate a map of Malden!"]] call BIS_fnc_showNotification;
+player setCurrentTask tskobj1;
+
+exit

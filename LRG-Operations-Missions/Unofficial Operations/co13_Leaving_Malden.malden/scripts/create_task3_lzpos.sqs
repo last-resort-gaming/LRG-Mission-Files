@@ -1,0 +1,132 @@
+if (!isServer) exitWith {};
+? damage end_LZ_dummy >= 1 : exit;
+
+#endLZstart
+~2
+RND_endLZ_number = Ceil random 15;
+publicVariable "RND_endLZ_number";
+? (RND_endLZ_number) <= 1 : goto "endLZ_P1";
+? (RND_endLZ_number) <= 2 : goto "endLZ_P2";
+? (RND_endLZ_number) <= 3 : goto "endLZ_P3";
+? (RND_endLZ_number) <= 4 : goto "endLZ_P4";
+? (RND_endLZ_number) <= 5 : goto "endLZ_P5";
+? (RND_endLZ_number) <= 6 : goto "endLZ_P6";
+? (RND_endLZ_number) <= 7 : goto "endLZ_P7";
+? (RND_endLZ_number) <= 8 : goto "endLZ_P8";
+? (RND_endLZ_number) <= 9 : goto "endLZ_P9";
+? (RND_endLZ_number) <= 10 : goto "endLZ_P10";
+? (RND_endLZ_number) <= 11 : goto "endLZ_P11";
+? (RND_endLZ_number) <= 12 : goto "endLZ_P12";
+? (RND_endLZ_number) <= 13 : goto "endLZ_P13";
+? (RND_endLZ_number) <= 14 : goto "endLZ_P14";
+? (RND_endLZ_number) <= 15 : goto "endLZ_P15";
+
+#endLZ_P1
+end_LZ_pos setPos (getPos end_LZ_pos_01);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P2
+end_LZ_pos setPos (getPos end_LZ_pos_02);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P3
+end_LZ_pos setPos (getPos end_LZ_pos_03);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P4
+end_LZ_pos setPos (getPos end_LZ_pos_04);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P5
+end_LZ_pos setPos (getPos end_LZ_pos_05);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P6
+end_LZ_pos setPos (getPos end_LZ_pos_06);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P7
+end_LZ_pos setPos (getPos end_LZ_pos_07);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P8
+end_LZ_pos setPos (getPos end_LZ_pos_08);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P9
+end_LZ_pos setPos (getPos end_LZ_pos_09);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P10
+end_LZ_pos setPos (getPos end_LZ_pos_10);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P11
+end_LZ_pos setPos (getPos end_LZ_pos_11);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P12
+end_LZ_pos setPos (getPos end_LZ_pos_12);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P13
+end_LZ_pos setPos (getPos end_LZ_pos_13);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P14
+end_LZ_pos setPos (getPos end_LZ_pos_14);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endLZ_P15
+end_LZ_pos setPos (getPos end_LZ_pos_15);
+~3
+if ({_x distance end_LZ_pos <= 1500} count playableUnits > 0) then {goto "endLZstart"};
+~3
+if ({_x distance end_LZ_pos <= 4500} count playableUnits > 0) then {goto "endcheckLZ"} else {goto "endLZstart"}
+
+#endcheckLZ
+~3
+end_LZ_dummy setdammage 1;
+exit;

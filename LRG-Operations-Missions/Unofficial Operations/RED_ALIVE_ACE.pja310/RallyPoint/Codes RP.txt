@@ -1,0 +1,40 @@
+Military House: "wmed" voor de PlatoonRally
+this addAction ["Move to Platoon RallyPoint","RallyPoint\teleport.sqf",[RP_west],1,false,true,"","side player == WEST",6]; 
+
+medichouse: 
+Variable name= wmed of eigen naam init code:  
+this addAction["<t color='#00CDFF'>Heal Thyself</t>","player setDamage 0",[],1.5,false,true,"","side player == WEST",6];
+
+PlatoonRP
+Variable name: RP_west 
+this addAction ["Retreat","RallyPoint\retreat.sqf",[wmed],1,false,true,"","side player == WEST",4]; 
+
+
+this addAction ["Move to Squad RP","RallyPoint\teleport.sqf",[WsquadRP1],1.5,false,true,"","groupId(group wsl1) == groupId(group player)",4]; 
+this addAction ["Move to Squad RP","RallyPoint\teleport.sqf",[WsquadRP2],1.5,false,true,"","groupId(group wsl2) == groupId(group player)",4]; 
+this addAction ["Move to Squad RP","RallyPoint\teleport.sqf",[WsquadRP3],1.5,false,true,"","groupId(group wsl3) == groupId(group player)",4]; 
+this addAction ["Move to Squad RP","RallyPoint\teleport.sqf",[WsquadRP4],1.5,false,true,"","groupId(group wsl4) == groupId(group player)",4]; 
+
+Rallypoint in het object
+Variable name: wsquadRP1
+Variable name: wsquadRP2
+Variable name: wsquadRP3
+Variable name: wsquadRP4
+
+
+Sqauds
+PlatoonLeader Alpha 1-1
+Variable name: wsl1
+null = [this] execVM "RallyPoint\wsquadRP1.sqf";  this addeventhandler ["respawn","_this execVM 'RallyPoint\wsquadRP1.sqf'"]; null = [this] execVM "RallyPoint\platoonRP.sqf";  this addeventhandler ["respawn","_this execVM 'RallyPoint\platoonRP.sqf'"];
+
+SqaudLeader Alpha 1-2
+Variable name: wsl2
+null = [this] execVM "RallyPoint\wsquadRP2.sqf";  this addeventhandler ["respawn","_this execVM 'RallyPoint\wsquadRP2.sqf'"];
+
+SqaudLeader Alpha 1-3
+Variable name: wsl3
+null = [this] execVM "RallyPoint\wsquadRP3.sqf";  this addeventhandler ["respawn","_this execVM 'RallyPoint\wsquadRP3.sqf'"];
+
+SqaudLeader Alpha 1-4
+Variable name: wsl4
+null = [this] execVM "RallyPoint\wsquadRP4.sqf";  this addeventhandler ["respawn","_this execVM 'RallyPoint\wsquadRP4.sqf'"];

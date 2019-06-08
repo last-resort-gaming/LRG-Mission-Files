@@ -1,0 +1,52 @@
+uitleg: kopie 
+============
+Platoon Leader: 
+init plaatsen:  null = [this] execVM "RallyPoint\wsquadRP1.sqf";  this addeventhandler ["respawn","_this execVM 'RallyPoint\wsquadRP1.sqf'"]; null = [this] execVM "RallyPoint\platoonRP.sqf";  this addeventhandler ["respawn","_this execVM 'RallyPoint\platoonRP.sqf'"];
+Variable name: wsl1
+-------------------
+Squadleader:
+init plaatsen: null = [this] execVM "RallyPoint\wsquadRP2.sqf";  this addeventhandler ["respawn","_this execVM 'RallyPoint\wsquadRP2.sqf'"];
+
+Variable name: wsl2
+
+---------------------- 
+PlatoonRP
+Variable name: RP_west
+init: this addAction ["Retreat","RallyPoint\retreat.sqf",[wmed],1,false,true,"","side player == WEST",4];this addAction ["Move to Squad RP","RallyPoint\teleport.sqf",[WsquadRP1],1.5,false,true,"","groupId(group wsl1) == groupId(group player)",4]; 
+this addAction ["Move to Squad RP","RallyPoint\teleport.sqf",[WsquadRP2],1.5,false,true,"","groupId(group wsl2) == groupId(group player)",4];
+of
+this addAction ["Retreat","RallyPoint\retreat.sqf",[HQ],1,false,true,"","side player == WEST",4];this addAction ["Move to Squad RP","RallyPoint\teleport.sqf",[WsquadRP1],1.5,false,true,"","groupId(group wsl1) == groupId(group player)",4]; 
+this addAction ["Move to Squad RP","RallyPoint\teleport.sqf",[WsquadRP2],1.5,false,true,"","groupId(group wsl2) == groupId(group player)",4];
+
+medichouse: Variable name= wmed of eigen naam init code:  this addAction["<t color='#00CDFF'>Heal Thyself</t>","player setDamage 0",[],1.5,false,true,"","side player == WEST",6];
+-----------------------
+
+startposition "letop de Variable namen dat die het zelfde zijn".
+
+Military House: Variable name = : this addAction ["Move to Platoon RallyPoint","RallyPoint\teleport.sqf",[RP_west],1,false,true,"","side player == WEST",6]; 
+
+startposition "letop de Variable namen dat die het zelfde zijn".
+this addAction ["Move to Platoon RallyPoint","RallyPoint\teleport.sqf",[RP_west],1,false,true,"","side player == WEST",6]; 
+
+Rallypiont in hety object
+Variable name: wsquadRP1
+Variable name: wsquadRP2
+Variable name: wsquadRP3
+ect ect
+
+markers: markers in de editor plaasten met de namen RP1,RP2,RP3,PRP
+plaatsen in de init.sqf
+
+//Rallepiont
+[] spawn {
+  while {not isnull wsquadRP1} do { "RP1" setmarkerpos getpos wsquadRP1; sleep 0.5; };
+};
+[] spawn {
+  while {not isnull wsquadRP2} do { "RP2" setmarkerpos getpos wsquadRP2; sleep 0.5; };
+};
+[] spawn {
+  while {not isnull wsquadRP3} do { "RP3" setmarkerpos getpos wsquadRP3; sleep 0.5; };
+};
+[] spawn {
+  while {not isnull RP_west} do { "PRP" setmarkerpos getpos RP_west; sleep 0.5; };
+};

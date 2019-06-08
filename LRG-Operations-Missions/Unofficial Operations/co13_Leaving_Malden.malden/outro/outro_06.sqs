@@ -1,0 +1,29 @@
+_camera = "camera" camcreate [8476.66,9054.06,18.53]
+_camera cameraeffect ["internal", "back"]
+_camera camSetFOV  0.491;
+
+enableRadio false;
+[] exec "outro\outrotext.sqs";
+
+;comment "leuchtturm";
+_camera camPrepareTarget [11193.85,107790.16,-15581.74];
+_camera camPreparePos [8476.66,9054.06,18.53];
+_camera camPrepareFOV 0.491;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "12:22:13";
+_camera camPrepareTarget [-24467.38,102565.10,-12944.84];
+_camera camPreparePos [8524.46,9064.14,61.20];
+_camera camPrepareFOV 0.643;
+_camera camCommitPrepared 35
+@camCommitted _camera
+
+;
+_camera cameraeffect ["terminate", "back"]
+
+TitleCut ["    ","Black in",0.5]
+enableRadio true
+camdestroy _camera
+forceEnd
+exit

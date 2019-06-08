@@ -1,0 +1,11 @@
+tskobj4 = player createSimpleTask["Secure the evacuation zone!"];
+tskobj4 setSimpleTaskDescription["Spread out and secure the Helicopter Landing Site until the rescue chopper arrives!", "Secure the evacuation zone!", "Secure the evacuation zone!"];
+tskobj4 setSimpleTaskDestination (getMarkerPos "LZ");
+
+["TaskAssigned",["","Secure the evacuation zone!"]] call BIS_fnc_showNotification;
+player setCurrentTask tskobj4;
+
+~30
+JIP_RUNNER disableAI "Move";
+
+exit

@@ -1,0 +1,99 @@
+? ((paramsArray select 5) == 0) : exit;
+if (!isServer) exitWith {};
+
+_chopper = (_this select 0);
+_pilot = (_this select 1);
+_gunner1 = (_this select 2);
+_gunner2 = (_this select 3);
+
+~((random 120)+30)
+_pilot enableAI "Move";
+_gunner1 enableAI "Move";
+_gunner2 enableAI "Move";
+
+
+#checkstart
+~((random 20)+10)
+_chopper setfuel 1;
+_chopper setVehicleAmmo 1;
+_chopper setDamage 0;
+_chopper setPilotLight true;
+_pilot flyInHeight ((random 40)+80);
+_pilot setSpeedMode "FULL";
+_pilot Move [(getMarkerPos "JIP_SPAWN_MARKER" select 0)-(random 200)*sin(random 359),(getMarkerPos "JIP_SPAWN_MARKER" select 1)-(random 200)*cos(random 359),0];
+? damage _chopper >= 1 : exit;
+? damage _pilot >= 1 : exit;
+if ({_x distance _chopper <= 1200} count playableUnits > 0) then {goto "check1"} else {goto "checkstart"};
+
+
+#check1
+~((random 30)+30)
+_chopper setPilotLight true;
+_pilot flyInHeight ((random 40)+60);
+_pilot setSpeedMode "LIMITED";
+_pilot Move [(getMarkerPos "JIP_SPAWN_MARKER" select 0)-(random 400)*sin(random 359),(getMarkerPos "JIP_SPAWN_MARKER" select 1)-(random 400)*cos(random 359),0];
+? damage _chopper >= 1 : exit;
+? damage _pilot >= 1 : exit;
+
+~((random 60)+20)
+_pilot flyInHeight ((random 40)+60);
+_pilot setSpeedMode "NORMAL";
+_pilot Move [(getMarkerPos "JIP_SPAWN_MARKER" select 0)-(random 100)*sin(random 359),(getMarkerPos "JIP_SPAWN_MARKER" select 1)-(random 100)*cos(random 359),0];
+? damage _chopper >= 1 : exit;
+? damage _pilot >= 1 : exit;
+
+~((random 30)+10)
+_chopper setPilotLight true;
+_pilot flyInHeight ((random 40)+60);
+_pilot setSpeedMode "LIMITED";
+_pilot Move [(getMarkerPos "JIP_SPAWN_MARKER" select 0)-(random 700)*sin(random 359),(getMarkerPos "JIP_SPAWN_MARKER" select 1)-(random 700)*cos(random 359),0];
+? damage _chopper >= 1 : exit;
+? damage _pilot >= 1 : exit;
+
+~((random 60)+30)
+_pilot flyInHeight ((random 40)+60);
+_pilot setSpeedMode "NORMAL";
+_pilot Move [(getMarkerPos "JIP_SPAWN_MARKER" select 0)-(random 500)*sin(random 359),(getMarkerPos "JIP_SPAWN_MARKER" select 1)-(random 500)*cos(random 359),0];
+? damage _chopper >= 1 : exit;
+? damage _pilot >= 1 : exit;
+~((random 150)+90)
+
+~((random 30)+10)
+_chopper setPilotLight true;
+_pilot flyInHeight ((random 40)+60);
+_pilot setSpeedMode "LIMITED";
+_pilot Move [(getMarkerPos "JIP_SPAWN_MARKER" select 0)-(random 100)*sin(random 359),(getMarkerPos "JIP_SPAWN_MARKER" select 1)-(random 100)*cos(random 359),0];
+? damage _chopper >= 1 : exit;
+? damage _pilot >= 1 : exit;
+
+~((random 30)+30)
+_chopper setPilotLight true;
+_pilot flyInHeight ((random 40)+60);
+_pilot setSpeedMode "LIMITED";
+_pilot Move [(getMarkerPos "JIP_SPAWN_MARKER" select 0)-(random 300)*sin(random 359),(getMarkerPos "JIP_SPAWN_MARKER" select 1)-(random 300)*cos(random 359),0];
+? damage _chopper >= 1 : exit;
+? damage _pilot >= 1 : exit;
+
+
+#check2
+~((random 30)+30)
+_chopper setPilotLight true;
+_pilot flyInHeight ((random 40)+60);
+_pilot setSpeedMode "LIMITED";
+_pilot Move [(getMarkerPos "JIP_SPAWN_MARKER" select 0)-(random 80)*sin(random 359),(getMarkerPos "JIP_SPAWN_MARKER" select 1)-(random 80)*cos(random 359),0];
+? damage _chopper >= 1 : exit;
+? damage _pilot >= 1 : exit;
+if ({_x distance _chopper <= 500} count playableUnits > 0) then {goto "checkhome"} else {goto "check2"};
+
+
+#checkhome
+_chopper setPilotLight true;
+_pilot flyInHeight ((random 40)+80);
+_pilot setSpeedMode "FULL";
+_pilot Move [(getMarkerPos "CHOPPER_BASE" select 0)-(random 300)*sin(random 359),(getMarkerPos "CHOPPER_BASE" select 1)-(random 300)*cos(random 359),0];
+? damage _chopper >= 1 : exit;
+? damage _pilot >= 1 : exit;
+~60
+if (_chopper distance (getpos ENEMY_CHOPPER_BASE)<= 1500) then {goto "checkstart"} else {goto "checkhome"};
+
+

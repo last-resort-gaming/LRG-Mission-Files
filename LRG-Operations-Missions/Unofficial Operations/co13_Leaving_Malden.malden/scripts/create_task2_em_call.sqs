@@ -1,0 +1,10 @@
+? damage ziel2done_dummy >= 1 : exit;
+
+_setsoundpos = (_this select 0);
+
+_missiondir = call { private "_arr"; _arr = toArray str missionConfigFile; _arr resize (count _arr - 15); toString _arr };
+playSound3D [_missiondir + "sound\satcallsound.ogg",_setsoundpos,true,getPosASL _setsoundpos,2,1,30];
+
+~3
+ziel2done_dummy setDammage 1;
+exit;

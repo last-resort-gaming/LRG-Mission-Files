@@ -1,0 +1,73 @@
+/*
+	LRG MISSION TEMPLATE
+	Description.ext
+	Author: MitchJC
+	Description: Used to set overall mission attributes.
+*/
+
+author = "2Lt. Mimmi";
+onLoadName = "Exercise Panic Stations";
+briefingName = "Exercise Panic Stations";
+OnLoadMission = "The LRG are deployed to put down a rebellion by the AAF";
+loadScreen = "media\images\DP.jpg";
+overviewPicture = "media\images\DP.jpg"; 
+
+class Header 
+	{
+		gameType = COOP;
+		minPlayers = 1;	
+		maxPlayers = 60;
+	}; 
+
+//------------------------- Admin
+
+enableDebugConsole = 1;	
+allowFunctionsLog = 1;
+
+//------------------------- Misc
+briefing=0;
+debriefing=0;
+saving=0;
+disableChannels[]={{0,true,true},{1,true,true},{2,true,true},{3,true,true},{4,true,true},{5,false,true},{6,true,true}};
+disabledAI = 1;	
+aiKills = 0;
+enableItemsDropping = 1;
+joinUnassigned = 1;
+showUAVFeed = 1;
+showMap = 0;
+showNotePad = 0;
+showPad = 0;
+showSquadRadar = 0;
+
+//------------------------- Respawn
+
+Respawn = 3;
+RespawnDelay = 10;
+RespawnDialog = 0;
+respawnOnStart = -1;
+
+//------------------------- Garbage collector
+							
+minPlayerDistance = 50;
+
+corpseManagerMode = 1;
+corpseLimit = 1;
+corpseRemovalMinTime = 900;
+corpseRemovalMaxTime = 1200;
+
+wreckManagerMode = 1;
+wreckLimit = 5;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 120;
+//------------------------- Includes / Functions
+
+
+#include "Functions\CHVD\dialog.hpp"
+
+class CfgFunctions {
+    #include "Functions\AIS\cfgFunctions.hpp"
+    #include "Functions\CBA\CfgFunctions.hpp"
+	#include "Functions\CHVD\CfgFunctions.hpp"
+    #include "Functions\LRG\CfgFunctions.hpp"
+    #include "Functions\YAINA\CfgFunctions.hpp"
+};

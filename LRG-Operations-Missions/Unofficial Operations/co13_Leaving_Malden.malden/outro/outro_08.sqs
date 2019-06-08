@@ -1,0 +1,29 @@
+_camera = "camera" camcreate [8126.94,3426.30,14.58]
+_camera cameraeffect ["internal", "back"]
+_camera camSetFOV  0.480;
+
+enableRadio false;
+[] exec "outro\outrotext.sqs";
+
+;comment "groﬂe stadt industrie";
+_camera camPrepareTarget [-62754.46,-63284.99,-22808.81];
+_camera camPreparePos [8126.94,3426.30,14.58];
+_camera camPrepareFOV 0.480;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "12:25:01";
+_camera camPrepareTarget [-84144.44,-23795.73,-27139.04];
+_camera camPreparePos [8143.31,3402.68,45.48];
+_camera camPrepareFOV 0.796;
+_camera camCommitPrepared 35
+@camCommitted _camera
+
+;
+_camera cameraeffect ["terminate", "back"]
+
+TitleCut ["    ","Black in",0.5]
+enableRadio true
+camdestroy _camera
+forceEnd
+exit

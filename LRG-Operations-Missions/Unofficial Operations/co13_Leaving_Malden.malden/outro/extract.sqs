@@ -1,0 +1,19 @@
+
+#check1
+~3
+blackhawk setfuel 1;
+if ({_x distance HOME_SWEET_HOME <= 2500} count playableUnits > 0) then {goto "check2"}
+~2
+goto "check1"
+
+#check2
+~3
+blackhawk setfuel 1;
+if (blackhawk distance (getpos HOME_SWEET_HOME)<= 2500) then {goto "missionisdone"};
+~2
+goto "check2"
+
+#missionisdone
+arrived_home_dummy setDammage 1;
+ziel4done_dummy setDammage 1;
+exit;

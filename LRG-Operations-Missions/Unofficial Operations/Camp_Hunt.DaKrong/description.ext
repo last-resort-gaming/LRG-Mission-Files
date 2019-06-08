@@ -1,0 +1,298 @@
+Author="Baton";
+OnLoadName = "UNS Camp hunt";
+OnLoadMission = "MACV-SOG";
+
+loadScreen = "pic\logo1.jpg";
+overviewPicture = "pic\logo1.jpg";
+
+forceRotorLibSimulation = 0; 
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 20;
+};
+
+DisabledAI = true;
+respawn = 3;
+respawndelay = 10;
+
+#include "CHVD\dialog.hpp"
+#include "G_Revive\G_Desc_Include.hpp"
+
+//BON
+#include "bon_recruit_units\dialog\common.hpp"
+#include "bon_recruit_units\dialog\recruitment.hpp"
+
+#include "outlw_magRepack\MagRepack_Config.hpp"
+
+class CfgFunctions 
+	{
+		#include "CHVD\CfgFunctions.hpp"			
+	};
+	
+
+
+class Params
+{
+
+class Daytime
+{
+title = "Time";
+texts[] = {"Early Morning","Morning","Day","Evening","Night"};
+values[] = {5,6,12,17,0};
+default = 12;
+function = "BIS_fnc_paramDaytime"; // (Optional) Function called when player joins, selected value is passed as an argument
+isGlobal = 0; // (Optional) 1 to execute script / function locally for every player who joins, 0 to do it only on server
+};
+
+class Timeacc
+{
+title = "Time Acceleration";
+values[] = {1,5,10,15,20,25,30,35,40,45,50,55,60};
+texts[] = {"1x (1game min. = 1real min.)","5x","10x","15x","20x","25x","30x (1game min. = 2real sec.)","35x","40x","45x","50x","55x","60x (1game min. = 1real sec.)"};
+default = 1;
+function = "BIS_fnc_paramTimeAcceleration";
+};
+
+class SAVES
+{
+title = "Game saving";
+values[]={0,1};
+texts[]={"Disabled","Enabled"};
+default = 0;
+};
+
+class MAGREPACK
+{
+title = "Magrepack script";
+values[]={0,1};
+texts[]={"Disabled","Enabled"};
+default = 1;
+};
+
+class AIrecruit
+{
+title = "AI recruitment";
+values[]={0,1};
+texts[]={"Disabled","Enabled"};
+default = 1;
+};
+
+class G_revive
+{
+title = "Revive/nametags (disable if using ACE mod)";
+values[]={0,1};
+texts[]={"Disabled","Enabled"};
+default = 1;
+};
+
+class Icons_map
+{
+title = "Squad markers on map";
+values[]={0,1};
+texts[]={"Disabled","Enabled"};
+default = 1;
+};
+
+
+
+
+
+   class ace_medical_level { 
+        title = "ACE Medical Level"; 
+        ACE_setting = 1;
+        values[] = {1, 2}; 
+        texts[] =  {"Basic", "Advanced"}; 
+        default = 2; 
+    };
+    class ace_medical_medicSetting { 
+        title = "ACE Medical Setting";
+        ACE_setting = 1;
+        values[] = {1, 2, 3}; 
+        texts[] =  {"Disabled", "normal", "Advanced"}; 
+        default = 3; 
+    };
+    class ace_medical_medicSetting_basicEpi { 
+        title = "ACE Who can use Epinephrine for full heal (basic medical only)"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3}; 
+        texts[] =  {"Anyone", "Medics only", "Doctors only"};
+        default = 1;
+    };
+    class ace_medical_useLocation_basicEpi { 
+        title = "ACE Locations Epinephrine (basic medical only)"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3, 4, 5}; 
+        texts[] =  {"Anywhere", "Medical vehicles", "medical facility", "Vehicles and facility", "Disabled"};
+        default = 1;
+    };
+    class ace_medical_medicSetting_PAK { 
+        title = "ACE Who can use PAK for full heal"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3}; 
+        texts[] =  {"Anyone", "Medics only", "Doctors only"};
+        default = 1;
+    };
+    class ace_medical_useLocation_PAK { 
+        title = "ACE Locations PAK"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3, 4, 5}; 
+        texts[] =  {"Anywhere", "Medical vehicles", "medical facility", "Vehicles and facility", "Disabled"};
+        default = 1;
+    };
+    class ace_medical_useCondition_PAK { 
+        title = "ACE When can PAK be used";
+        ACE_setting = 1;
+        values[] = {1, 2}; 
+        texts[] =  {"Anytime", "Stable"};
+        default = 1;
+    };
+    class ace_medical_medicSetting_SurgicalKit { 
+        title = "ACE Who can use Surgical Kit (Advance medical only)"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3}; 
+        texts[] =  {"Anyone", "Medics only", "Doctors only"};
+        default = 1;
+    };
+    class ace_medical_useLocation_SurgicalKit { 
+        title = "ACE Where can Surgical kit be used"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3, 4, 5}; 
+        texts[] =  {"Anywhere", "Medical vehicles", "medical facility", "Vehicles and facility", "Disabled"};
+        default = 1;
+    };
+    class ace_medical_useCondition_SurgicalKit { 
+        title = "ACE When can Surgical kit be used";
+        ACE_setting = 1;
+        values[] = {1, 2}; 
+        texts[] =  {"Anytime", "Stable"};
+        default = 1;
+    };
+    class ace_medical_increaseTrainingInLocations { 
+        title = "ACE Locations boost training"; 
+        ACE_setting = 1;
+        values[] = {0, 1}; 
+        texts[] =  {"No", "Yes"};
+        default = 0;
+    };
+    class ace_medical_enableAirway { 
+        title = "ACE Enable Airway"; 
+        ACE_setting = 1;
+        values[] = {0, 1}; 
+        texts[] =  {"No", "Yes"};
+        default = 0;
+    };
+    class ace_medical_enableFractures { 
+        title = "ACE Enable Fractures"; 
+        ACE_setting = 1;
+        values[] = {0, 1}; 
+        texts[] =  {"No", "Yes"};
+        default = 0;
+    };
+    class ace_medical_enableAdvancedWounds { 
+        title = "ACE Enable Advanced wounds"; 
+        ACE_setting = 1;
+        values[] = {0, 1}; 
+        texts[] =  {"No", "Yes"};
+        default = 1;
+    };
+    class ace_advanced_fatigue_enabled { 
+        title = "ACE Show Stamina Bar";
+        ACE_setting = 1;
+        values[] = {0, 1}; 
+        texts[] =  {"No", "Yes"};
+        default = 1;
+    };
+    class ace_nametags_showPlayerNames { 
+        title = "ACE Show player names"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3, 4, 5, 6}; 
+        texts[] =  {"Disabled", "Enabled", "Only on cursor", "Only on keypress", "Only on cursor and keypress", "Fade on screen border"};
+        default = 5;
+    };
+    class ace_map_BFT_Enabled { 
+        title = "ACE Enable Blue Force Tracking"; 
+        ACE_setting = 1;
+        values[] = {0, 1}; 
+        texts[] =  {"No", "Yes"};
+        default = 0;
+    };
+    class ace_repair_engineerSetting_repair { 
+        title = "ACE Who can perform repair"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3}; 
+        texts[] =  {"Anyone", "Engineer", "Advanced engineer"};
+        default = 1;
+    };
+    class ace_repair_engineerSetting_wheel { 
+        title = "ACE Who can remove and replace wheels"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3}; 
+        texts[] =  {"Anyone", "Engineer", "Advanced engineer"};
+        default = 1;
+    };
+    class ace_repair_fullRepairLocation { 
+        title = "ACE Locations for full vehicle repair"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3, 4 , 5}; 
+        texts[] =  {"Anywhere", "Repair vehicle only", "repair facility only", "Repair facility or vehicle", "Disabled"};
+        default = 1;
+    };
+    class ace_repair_engineerSetting_fullRepair { 
+        title = "ACE Who can perform full vehicle repair"; 
+        ACE_setting = 1;
+        values[] = {1, 2, 3}; 
+        texts[] =  {"Anyone", "Engineer", "Advanced engineer"};
+        default = 1;
+    };
+    class ace_repair_addSpareParts { 
+        title = "ACE Add Spare Parts"; 
+        ACE_setting = 1;
+        values[] = {0, 1}; 
+        texts[] =  {"False", "True"};
+        default = 1;
+    };
+    class ace_finger_enabled {
+        title = "ACE Point finger";
+        ACE_setting = 1; 
+        values[] = {0, 1};
+        texts[] =  {"False", "True"};
+        default = 1;
+};
+
+class ace_medical_preventInstaDeath {
+    title = "ACE Prevent Instant Death";
+    ACE_setting = 1; 
+    values[] = {0;1};
+    texts[] =  {"False", "True"};
+    default = 1;
+};
+
+class ace_medical_enableRevive {
+    title = "ACE Enable Revive";
+    ACE_setting = 1; 
+    values[] = {0;1};
+    texts[] =  {"False", "True"};
+    default = 1;
+};
+class ace_medical_maxReviveTime {
+    title = "ACE Revive Time";
+    ACE_setting = 1; 
+        values[] = {100;300;900};
+    texts[] =  {"100","300","900"};
+    default = 900;
+};
+class ace_medical_amountOfReviveLives {
+    title = "ACE Amount of revivese";
+    ACE_setting = 1; 
+    values[] = {-1;0;5};
+    texts[] =  {"infinitive","0","5"};
+    default = -1;
+};
+
+
+
+
+
+};

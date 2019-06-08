@@ -1,0 +1,29 @@
+_camera = "camera" camcreate [5648.87,6998.57,13.27]
+_camera cameraeffect ["internal", "back"]
+_camera camSetFOV  0.754;
+
+enableRadio false;
+[] exec "outro\outrotext.sqs";
+
+;comment "kurvige straﬂe";
+_camera camPrepareTarget [96065.13,39372.04,-27520.69];
+_camera camPreparePos [5648.87,6998.57,13.27];
+_camera camPrepareFOV 0.754;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "12:13:58";
+_camera camPrepareTarget [86874.88,59994.98,-23981.22];
+_camera camPreparePos [5659.70,6978.42,39.79];
+_camera camPrepareFOV 0.527;
+_camera camCommitPrepared 35
+@camCommitted _camera
+
+;
+_camera cameraeffect ["terminate", "back"]
+
+TitleCut ["    ","Black in",0.5]
+enableRadio true
+camdestroy _camera
+forceEnd
+exit

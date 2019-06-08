@@ -1,0 +1,29 @@
+_camera = "camera" camcreate [3486.31,8553.01,19.41]
+_camera cameraeffect ["internal", "back"]
+_camera camSetFOV  0.574;
+
+enableRadio false;
+[] exec "outro\outrotext.sqs";
+
+;comment "kleine stadt kirche";
+_camera camPrepareTarget [82463.86,-51471.47,-12492.77];
+_camera camPreparePos [3486.31,8553.01,19.41];
+_camera camPrepareFOV 0.574;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "12:26:27";
+_camera camPrepareTarget [98949.28,-20250.69,-7424.05];
+_camera camPreparePos [3480.38,8527.68,35.54];
+_camera camPrepareFOV 0.722;
+_camera camCommitPrepared 35
+@camCommitted _camera
+
+;
+_camera cameraeffect ["terminate", "back"]
+
+TitleCut ["    ","Black in",0.5]
+enableRadio true
+camdestroy _camera
+forceEnd
+exit

@@ -1,0 +1,89 @@
+OnLoadName = "JAGC-Alrayak";
+loadScreen = "images\Zeus.jpg";
+onLoadMission="War May Be Fought With Weapons, But They Are Won By Men.";
+overviewPicture = "images\Zeus.jpg";
+overviewText = MCC Dynamic Mission has a lot of fun;
+respawn=3;
+respawnDelay=10;
+respawnOnStart=-1;
+disabledAI=1;
+joinUnassigned = 0;
+enableDebugConsole = 1;
+allowFunctionsLog = 1;
+author = "Heatcs";
+
+class Header
+{
+	gameType = coop;
+	minPlayers = 1;
+	maxPlayers = 60;
+};
+
+//////////////////////////////////////////#Include Files//////////////////////////////////////////////////////
+
+//#include "CHVD\dialog.hpp"
+#include "ProgressBar\defines.hpp"
+#include "ProgressBar\Functions.hpp"
+class CfgFunctions
+{ 
+       	#include "ProgressBar\Functions.hpp"
+	    //#include "CHVD\CfgFunctions.hpp"
+};
+
+//////////////////////////////////////////Class///////////////////////////////////////////////////////////////
+
+class RscTitles
+{ 
+//        #include "CHVD\dialog.hpp"
+	
+class HGF_ProgressBar
+	{
+		idd = -1; 
+		onLoad = "uiNamespace setVariable [""HGF_ProgressBar"", _this select 0];";   
+		duration = 999999999;
+		movingEnable = false; 
+		class controls 
+	{	
+			class HGF_UI_ProgressBarBackground: IGUIBack
+			{
+				idc = 22200;
+				x = 0.259375 * safezoneW + safezoneX;
+				y = 0.247042 * safezoneH + safezoneY;
+				w = 0.48125 * safezoneW;
+				h = "1 * ((((safezoneW / safezoneH) min 1.2) / 0.9) / 25)";
+				colorBackground[] = {"0","0.0863","0",0.3};
+			}; 
+			class HGF_UI_ProgressBar: RscProgress
+			{
+				idc = 22202;
+				text = "";
+				x = 0.259375 * safezoneW + safezoneX;
+				y = 0.247042 * safezoneH + safezoneY;
+				w = 0.48125 * safezoneW;
+				zzh = 0.032 * safezoneH;
+				h = "1 * ((((safezoneW / safezoneH) min 1.2) / 0.9) / 25)";
+				colorFrame[] = {0,0,0,1};
+				colorBar[]={"(profilenamespace getvariable ['GUI_BCG_RGB_R',0])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0])","(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+				texture = "#(argb,8,8,3)color(1,1,1,1)";
+			}; 
+			class HGF_UI_ProgressBarText: RscText
+			{
+				idc = 22201;
+				text = "";
+				x = 0.259375 * safezoneW + safezoneX;
+				y = 0.247042 * safezoneH + safezoneY;
+				w = 0.48125 * safezoneW;
+				h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.05) / 25)";
+				sizeEx = "2 * (0.021)";
+			style = ST_CENTER;
+			}; 
+		};
+	};
+};
+
+////////////////////////////////////
+// End of Needed for Progress Bar//
+//////////////////////////////////
+
+///////////////////////////////////////////Parameters/////////////////////////////////////////////////////////////////////
+

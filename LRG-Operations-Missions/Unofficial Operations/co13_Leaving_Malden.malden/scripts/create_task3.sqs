@@ -1,0 +1,19 @@
+"LZ" setMarkerPos (getPos end_LZ_pos);
+"LZ" setMarkerAlpha 1;
+
+~3
+
+tskobj3 = player createSimpleTask["Move to the evacuation zone!"];
+tskobj3 setSimpleTaskDescription["We got it! Help is on way to <marker name='LZ'>the evacuation zone!</marker><br/> <br/>Time is of the essence. Move out!", "Move to the evacuation zone!", "Move to the evacuation zone!"];
+tskobj3 setSimpleTaskDestination (getMarkerPos "LZ");
+
+["TaskAssigned",["","Move to the evacuation zone!"]] call BIS_fnc_showNotification;
+player setCurrentTask tskobj3;
+hint "Done. Check map.";
+
+~15
+"LZ" setMarkerPos (getPos end_LZ_pos);
+"LZ" setMarkerAlpha 1;
+tskobj3 setSimpleTaskDestination (getMarkerPos "LZ");
+
+exit

@@ -1,0 +1,1 @@
+adminCurators = allCurators;

@@ -1,0 +1,43 @@
+tskobj2 = player createSimpleTask["Get to a radio tower!"];
+tskobj2 setSimpleTaskDescription["Ok, we have got a map. Check your location and move to a radio tower marked on the map.<br/> <br/>It is our best chance to find a satellite phone to call for help.<br/><img image='pics\phone_brief.paa' width='200' height='100'/>", "Get to a radio tower!", "Get to a radio tower!"];
+
+["TaskAssigned",["","Get to a radio tower!"]] call BIS_fnc_showNotification;
+player setCurrentTask tskobj2;
+hint "Done. Check map.";
+
+satphone1_obj setPosATL (getPosATL satphone1);
+satphone2_obj setPosATL (getPosATL satphone2);
+satphone3_obj setPosATL (getPosATL satphone3);
+satphone4_obj setPosATL (getPosATL satphone4);
+satphone5_obj setPosATL (getPosATL satphone5);
+satphone6_obj setPosATL (getPosATL satphone6);
+
+~3
+"satphone1_marker" setMarkerPos (getPos satphone1_obj);
+"satphone2_marker" setMarkerPos (getPos satphone2_obj);
+"satphone3_marker" setMarkerPos (getPos satphone3_obj);
+"satphone4_marker" setMarkerPos (getPos satphone4_obj);
+"satphone5_marker" setMarkerPos (getPos satphone5_obj);
+"satphone6_marker" setMarkerPos (getPos satphone6_obj);
+
+"satphone1_marker" setMarkerAlpha 1;
+"satphone2_marker" setMarkerAlpha 1;
+"satphone3_marker" setMarkerAlpha 1;
+"satphone4_marker" setMarkerAlpha 1;
+"satphone5_marker" setMarkerAlpha 1;
+"satphone6_marker" setMarkerAlpha 1;
+
+~3
+if (satphone1_obj distance (getpos DONT_PLACE_HERE)<10) then {"satphone1_marker" setMarkerAlpha 0;};
+~3
+if (satphone2_obj distance (getpos DONT_PLACE_HERE)<10) then {"satphone2_marker" setMarkerAlpha 0;};
+~3
+if (satphone3_obj distance (getpos DONT_PLACE_HERE)<10) then {"satphone3_marker" setMarkerAlpha 0;};
+~3
+if (satphone4_obj distance (getpos DONT_PLACE_HERE)<10) then {"satphone4_marker" setMarkerAlpha 0;};
+~3
+if (satphone5_obj distance (getpos DONT_PLACE_HERE)<10) then {"satphone5_marker" setMarkerAlpha 0;};
+~3
+if (satphone6_obj distance (getpos DONT_PLACE_HERE)<10) then {"satphone6_marker" setMarkerAlpha 0;};
+
+exit
