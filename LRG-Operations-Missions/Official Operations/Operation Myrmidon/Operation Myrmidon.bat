@@ -56,7 +56,6 @@ set server_mod_list=^
 C:\Mods\@Advanced Rappelling;^
 C:\Mods\@Advanced Sling Loading;^
 C:\Mods\@Advanced Urban Rappelling;^
-C:\Mods\@LRG CBA Ops Settings;^
 C:\Mods\@A3Log
 
 :: Call MitchJC's Awesome Launch Configurator
