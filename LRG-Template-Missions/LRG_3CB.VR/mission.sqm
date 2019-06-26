@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7636.8804,11.811353,2687.8394};
-		dir[]={-0.0015189778,-0.74509919,0.66713113};
-		up[]={-0.0016922732,0.66680437,0.74512446};
-		aside[]={1.0001085,-4.4018805e-007,0.0022802155};
+		pos[]={7735.3916,160.10907,2568.8762};
+		dir[]={0.0036329569,-0.76374447,0.64569217};
+		up[]={0.0043022898,0.64537311,0.76375413};
+		aside[]={1.0000974,-1.2253408e-006,-0.0056228973};
 	};
 };
 binarizationWanted=0;
@@ -613,7 +613,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -654,7 +654,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -26076,7 +26076,7 @@ class Mission
 				class Attribute0
 				{
 					property="QUOTE(LRG_Arsenal_Select)";
-					expression="if (_value > -1) then {[_this, _value] call LR_fnc_Arsenal;}";
+					expression="if (_value > -1) then {[_this, _value] call LR_fnc_FullArsenal;}";
 					class Value
 					{
 						class data
@@ -27364,7 +27364,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -27425,7 +27425,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item46
@@ -27449,7 +27468,7 @@ class Mission
 				class Attribute0
 				{
 					property="QUOTE(LRG_Ammo_Select)";
-					expression="if (_value > -1) then {[_this, _value] call LR_fnc_Ammobox;}";
+					expression="if (_value > -1) then {[_this, _value] call LR_fnc_LimitedArsenal;}";
 					class Value
 					{
 						class data
@@ -27508,7 +27527,7 @@ class Mission
 				class Attribute0
 				{
 					property="QUOTE(LRG_Ammo_Select)";
-					expression="if (_value > -1) then {[_this, _value] call LR_fnc_Ammobox;}";
+					expression="if (_value > -1) then {[_this, _value] call LR_fnc_LimitedArsenal;}";
 					class Value
 					{
 						class data
@@ -27582,7 +27601,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -28152,7 +28171,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7648.8774,5.1867056,2687.5708};
+				position[]={7648.877,5.1867056,2687.571};
 			};
 			side="Empty";
 			flags=4;
@@ -28224,7 +28243,6 @@ class Mission
 			};
 			id=1035;
 			type="UK3CB_BAF_Merlin_HC3_CSAR_MTP";
-			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28406,7 +28424,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
@@ -28909,7 +28927,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -28970,7 +28988,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item68
@@ -29009,7 +29046,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -29070,7 +29107,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item69
@@ -29109,7 +29165,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -29170,7 +29226,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item70
@@ -29209,7 +29284,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -29270,7 +29345,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item71
@@ -29309,7 +29403,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -29370,7 +29464,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item72
@@ -29409,7 +29522,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
@@ -29491,7 +29604,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -29552,7 +29665,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item74
@@ -29592,7 +29724,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -29653,7 +29785,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item75
@@ -29692,7 +29843,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -29753,7 +29904,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item76
@@ -29793,7 +29963,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -29854,7 +30024,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item77
@@ -29934,6 +30123,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="QUOTE(LRG_LimitedAmmoSelect)";
+					expression="_this setVariable ['LRG_LimitedAmmoSelect',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -29947,11 +30155,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""UK3CB_BAF_556_200Rnd_T"",""UK3CB_BAF_556_30Rnd_T"",""UK3CB_BAF_SmokeShell"",""HandGrenade"",""UK3CB_BAF_762_L42A1_20Rnd_T""],[4,25,10,10,10]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item79
