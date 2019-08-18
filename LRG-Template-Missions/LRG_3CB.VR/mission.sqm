@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7735.3916,160.10907,2568.8762};
-		dir[]={0.0036329569,-0.76374447,0.64569217};
-		up[]={0.0043022898,0.64537311,0.76375413};
-		aside[]={1.0000974,-1.2253408e-006,-0.0056228973};
+		pos[]={7671.5273,26.568262,2671.5803};
+		dir[]={0.087641008,-0.55451262,0.8276912};
+		up[]={0.058405392,0.83200401,0.55154759};
+		aside[]={0.99455571,-3.4409823e-007,-0.10530636};
 	};
 };
 binarizationWanted=0;
@@ -85,10 +85,10 @@ addons[]=
 	"A3_Weapons_F_Items",
 	"UK3CB_BAF_Weapons_L110",
 	"UK3CB_BAF_Weapons_L129",
-	"ace_vector",
 	"ace_logistics_wirecutter",
 	"ace_trenches",
 	"ace_rangecard",
+	"ace_vector",
 	"ace_yardage450",
 	"UK3CB_BAF_Weapons_L115",
 	"RKSL_PMII_525",
@@ -460,29 +460,29 @@ class AddonsMetaData
 		};
 		class Item51
 		{
-			className="ace_vector";
-			name="ACE3 - Vector";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item52
-		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item53
+		class Item52
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item54
+		class Item53
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item54
+		{
+			className="ace_vector";
+			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -613,7 +613,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -654,7 +654,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -28243,6 +28243,7 @@ class Mission
 			};
 			id=1035;
 			type="UK3CB_BAF_Merlin_HC3_CSAR_MTP";
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31293,7 +31294,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -31735,7 +31736,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -32168,7 +32169,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -32601,7 +32602,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -33090,7 +33091,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -33483,7 +33484,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -33728,7 +33729,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -34177,7 +34178,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -34223,7 +34224,12 @@ class Mission
 							};
 							class binocular
 							{
-								name="ACE_Vector";
+								name="UK3CB_BAF_Soflam_Laserdesignator";
+								class primaryMuzzleMag
+								{
+									name="Laserbatteries";
+									ammoLeft=1;
+								};
 							};
 							class uniform
 							{
@@ -34287,7 +34293,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
+								typeName="UK3CB_BAF_B_Bergen_MTP_Radio_L_A";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -34319,22 +34325,22 @@ class Mission
 									class Item4
 									{
 										name="UK3CB_BAF_556_100Rnd_T";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
 								class ItemCargo
 								{
-									items=13;
+									items=12;
 									class Item0
 									{
 										name="ACE_elasticBandage";
-										count=5;
+										count=15;
 									};
 									class Item1
 									{
 										name="ACE_quikclot";
-										count=5;
+										count=15;
 									};
 									class Item2
 									{
@@ -34349,7 +34355,7 @@ class Mission
 									class Item4
 									{
 										name="ACE_packingBandage";
-										count=5;
+										count=10;
 									};
 									class Item5
 									{
@@ -34385,11 +34391,6 @@ class Mission
 									{
 										name="ACE_RangeCard";
 										count=1;
-									};
-									class Item12
-									{
-										name="ACE_fieldDressing";
-										count=30;
 									};
 								};
 							};
@@ -34515,7 +34516,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -34772,7 +34773,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -35242,7 +35243,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -35487,7 +35488,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -35936,7 +35937,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -36274,7 +36275,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -36531,7 +36532,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -37038,7 +37039,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -37283,7 +37284,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -37732,7 +37733,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -37778,7 +37779,12 @@ class Mission
 							};
 							class binocular
 							{
-								name="ACE_Vector";
+								name="UK3CB_BAF_Soflam_Laserdesignator";
+								class primaryMuzzleMag
+								{
+									name="Laserbatteries";
+									ammoLeft=1;
+								};
 							};
 							class uniform
 							{
@@ -37842,7 +37848,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
+								typeName="UK3CB_BAF_B_Bergen_MTP_Radio_L_A";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -37874,22 +37880,22 @@ class Mission
 									class Item4
 									{
 										name="UK3CB_BAF_556_100Rnd_T";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
 								class ItemCargo
 								{
-									items=13;
+									items=12;
 									class Item0
 									{
 										name="ACE_elasticBandage";
-										count=5;
+										count=15;
 									};
 									class Item1
 									{
 										name="ACE_quikclot";
-										count=5;
+										count=15;
 									};
 									class Item2
 									{
@@ -37904,7 +37910,7 @@ class Mission
 									class Item4
 									{
 										name="ACE_packingBandage";
-										count=5;
+										count=10;
 									};
 									class Item5
 									{
@@ -37940,11 +37946,6 @@ class Mission
 									{
 										name="ACE_RangeCard";
 										count=1;
-									};
-									class Item12
-									{
-										name="ACE_fieldDressing";
-										count=30;
 									};
 								};
 							};
@@ -38070,7 +38071,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -38327,7 +38328,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -38797,7 +38798,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -39042,7 +39043,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -39491,7 +39492,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -39829,7 +39830,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -40086,7 +40087,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -40593,7 +40594,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -40838,7 +40839,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -41287,7 +41288,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -41333,7 +41334,12 @@ class Mission
 							};
 							class binocular
 							{
-								name="ACE_Vector";
+								name="UK3CB_BAF_Soflam_Laserdesignator";
+								class primaryMuzzleMag
+								{
+									name="Laserbatteries";
+									ammoLeft=1;
+								};
 							};
 							class uniform
 							{
@@ -41397,7 +41403,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
+								typeName="UK3CB_BAF_B_Bergen_MTP_Radio_L_A";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -41429,22 +41435,22 @@ class Mission
 									class Item4
 									{
 										name="UK3CB_BAF_556_100Rnd_T";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
 								class ItemCargo
 								{
-									items=13;
+									items=12;
 									class Item0
 									{
 										name="ACE_elasticBandage";
-										count=5;
+										count=15;
 									};
 									class Item1
 									{
 										name="ACE_quikclot";
-										count=5;
+										count=15;
 									};
 									class Item2
 									{
@@ -41459,7 +41465,7 @@ class Mission
 									class Item4
 									{
 										name="ACE_packingBandage";
-										count=5;
+										count=10;
 									};
 									class Item5
 									{
@@ -41495,11 +41501,6 @@ class Mission
 									{
 										name="ACE_RangeCard";
 										count=1;
-									};
-									class Item12
-									{
-										name="ACE_fieldDressing";
-										count=30;
 									};
 								};
 							};
@@ -41625,7 +41626,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -41882,7 +41883,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -42352,7 +42353,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -42597,7 +42598,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -43046,7 +43047,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -43384,7 +43385,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -43641,7 +43642,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -44039,7 +44040,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -44420,7 +44421,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -44801,7 +44802,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -45182,7 +45183,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -45563,7 +45564,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -45975,7 +45976,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -46387,7 +46388,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -46799,7 +46800,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -47211,7 +47212,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -47732,7 +47733,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -48075,7 +48076,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -48356,7 +48357,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -48715,7 +48716,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -48875,7 +48876,12 @@ class Mission
 							};
 							class binocular
 							{
-								name="ACE_Vector";
+								name="UK3CB_BAF_Soflam_Laserdesignator";
+								class primaryMuzzleMag
+								{
+									name="Laserbatteries";
+									ammoLeft=1;
+								};
 							};
 							class uniform
 							{
@@ -48939,7 +48945,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
+								typeName="UK3CB_BAF_B_Bergen_MTP_Radio_L_A";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -48971,22 +48977,22 @@ class Mission
 									class Item4
 									{
 										name="UK3CB_BAF_556_100Rnd_T";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
 								class ItemCargo
 								{
-									items=13;
+									items=12;
 									class Item0
 									{
 										name="ACE_elasticBandage";
-										count=5;
+										count=15;
 									};
 									class Item1
 									{
 										name="ACE_quikclot";
-										count=5;
+										count=15;
 									};
 									class Item2
 									{
@@ -49001,7 +49007,7 @@ class Mission
 									class Item4
 									{
 										name="ACE_packingBandage";
-										count=5;
+										count=10;
 									};
 									class Item5
 									{
@@ -49037,11 +49043,6 @@ class Mission
 									{
 										name="ACE_RangeCard";
 										count=1;
-									};
-									class Item12
-									{
-										name="ACE_fieldDressing";
-										count=30;
 									};
 								};
 							};
@@ -49167,7 +49168,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -49505,7 +49506,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -49762,7 +49763,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -50133,7 +50134,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -50582,7 +50583,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -50917,7 +50918,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -51120,7 +51121,7 @@ class Mission
 			{
 				position[]={7635.5991,5,2695.8291};
 			};
-			name="Que";
+			name="Nik0";
 			id=2436;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -51159,7 +51160,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="76561198140143933";
 						};
 					};
 				};
