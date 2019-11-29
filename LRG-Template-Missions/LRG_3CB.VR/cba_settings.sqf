@@ -14,8 +14,8 @@ force ace_advanced_ballistics_simulationInterval = 0.05;
 
 
 
-// ACE Advanced Fatigue
-force 
+// ACE Advanced Fatigue force 
+
 ace_advanced_fatigue_enabled = true;
 
 force ace_advanced_fatigue_enableStaminaBar = true;
@@ -32,8 +32,8 @@ force ace_advanced_fatigue_terrainGradientFactor = 0.2;
 
 
 
-// ACE Advanced Throwing
-force 
+// ACE Advanced Throwing force
+
 ace_advanced_throwing_enabled = true;
 
 force ace_advanced_throwing_enablePickUp = true;
@@ -47,8 +47,8 @@ force ace_advanced_throwing_showThrowArc = true;
 
 
 // ACE Arsenal
-force 
-ace_arsenal_allowDefaultLoadouts = false;
+
+force ace_arsenal_allowDefaultLoadouts = false;
 
 force ace_arsenal_allowSharedLoadouts = false;
 
@@ -65,6 +65,7 @@ force ace_arsenal_fontHeight = 4.5;
 
 
 // ACE Captives
+
 force ace_captives_allowHandcuffOwnSide = true;
 
 force ace_captives_allowSurrender = true;
@@ -76,8 +77,8 @@ force ace_captives_requireSurrenderAi = false;
 
 
 // ACE Common
-force 
-ace_common_allowFadeMusic = true;
+
+force ace_common_allowFadeMusic = true;
 
 force ace_common_checkPBOsAction = 0;
 
@@ -283,8 +284,8 @@ force ace_markers_moveRestriction = 0;
 
 
 
-// ACE Map 
-Gestures
+// ACE Map Gestures
+
 force ace_map_gestures_defaultColor = [1,0.88,0,0.7];
 
 force ace_map_gestures_defaultLeadColor = [1,0.88,0,0.95];
@@ -308,8 +309,8 @@ ace_maptools_rotateModifierKey = 1;
 
 
 // ACE Medical
-force 
-ace_medical_ai_enabledFor = 2;
+
+force ace_medical_ai_enabledFor = 2;
 
 force ace_medical_AIDamageThreshold = 1.5;
 
@@ -737,7 +738,7 @@ force ace_weather_enabled = false;
 
 force ace_weather_updateInterval = 300;
 
-force ace_weather_windSimulation = true;
+force ace_weather_windSimulation = false;
 
 
 
