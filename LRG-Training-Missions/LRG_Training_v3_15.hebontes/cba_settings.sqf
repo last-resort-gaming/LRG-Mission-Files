@@ -14,11 +14,13 @@ force ace_advanced_ballistics_simulationInterval = 0.05;
 
 
 
-// ACE Advanced Fatigue force 
+// ACE Advanced Fatigue
 
-ace_advanced_fatigue_enabled = true;
+force ace_advanced_fatigue_enabled = true;
 
 force ace_advanced_fatigue_enableStaminaBar = true;
+
+force ace_advanced_fatigue_fadeStaminaBar = true;
 
 force ace_advanced_fatigue_loadFactor = 0.5;
 
@@ -32,9 +34,9 @@ force ace_advanced_fatigue_terrainGradientFactor = 0.2;
 
 
 
-// ACE Advanced Throwing force
+// ACE Advanced Throwing
 
-ace_advanced_throwing_enabled = true;
+force ace_advanced_throwing_enabled = true;
 
 force ace_advanced_throwing_enablePickUp = true;
 
@@ -61,6 +63,22 @@ force ace_arsenal_enableModIcons = true;
 force ace_arsenal_EnableRPTLog = true;
 
 force ace_arsenal_fontHeight = 4.5;
+
+
+
+// ACE Artillery
+
+force ace_artillerytables_advancedCorrections = false;
+
+force ace_artillerytables_disableArtilleryComputer = false;
+
+force ace_mk6mortar_airResistanceEnabled = false;
+
+force ace_mk6mortar_allowCompass = true;
+
+force ace_mk6mortar_allowComputerRangefinder = false;
+
+force ace_mk6mortar_useAmmoHandling = true;
 
 
 
@@ -104,13 +122,27 @@ force ace_parachute_hideAltimeter = false;
 
 force ace_cookoff_ammoCookoffDuration = 0.1;
 
-force ace_cookoff_enable = true;
+force ace_cookoff_enable = 2;
 
 force ace_cookoff_enableAmmobox = true;
 
 force ace_cookoff_enableAmmoCookoff = true;
 
 force ace_cookoff_probabilityCoef = 0.4;
+
+
+
+// ACE Crew Served Weapons
+
+force ace_csw_ammoHandling = 2;
+
+force ace_csw_defaultAssemblyMode = false;
+
+force ace_csw_dragAfterDeploy = false;
+
+force ace_csw_handleExtraMagazines = true;
+
+force ace_csw_progressBarTimeCoefficent = 1;
 
 
 
@@ -141,6 +173,8 @@ force ace_frag_spallEnabled = true;
 // ACE Goggles
 
 force ace_goggles_effects = 2;
+
+force ace_goggles_showClearGlasses = true;
 
 force ace_goggles_showInThirdPerson = false;
 
@@ -194,9 +228,13 @@ ace_interact_menu_colorTextMin = [1,1,1,0.25];
 
 ace_interact_menu_cursorKeepCentered = false;
 
+ace_interact_menu_cursorKeepCenteredSelfInteraction = false;
+
 ace_interact_menu_menuAnimationSpeed = 0;
 
 ace_interact_menu_menuBackground = 0;
+
+ace_interact_menu_menuBackgroundSelf = 0;
 
 ace_interact_menu_selectorColor = [0.96,0.71,0];
 
@@ -205,6 +243,8 @@ ace_interact_menu_shadowSetting = 2;
 ace_interact_menu_textSize = 2;
 
 force ace_interact_menu_useListMenu = true;
+
+ace_interact_menu_useListMenuSelf = false;
 
 
 
@@ -216,13 +256,15 @@ force ace_cargo_loadTimeCoefficient = 5;
 
 force ace_cargo_paradropTimeCoefficent = 0.2;
 
+force ace_rearm_distance = 15;
+
 force ace_rearm_level = 0;
 
 force ace_rearm_supply = 0;
 
 force ace_refuel_hoseLength = 36;
 
-force ace_refuel_rate = 1;
+force ace_refuel_rate = 2;
 
 force ace_repair_addSpareParts = true;
 
@@ -240,11 +282,15 @@ force ace_repair_engineerSetting_wheel = 0;
 
 force ace_repair_fullRepairLocation = 0;
 
+force ace_repair_fullRepairRequiredItems = ["ToolKit"];
+
+force ace_repair_miscRepairRequiredItems = [];
+
 force ace_repair_repairDamageThreshold = 0.6;
 
 force ace_repair_repairDamageThreshold_engineer = 0.4;
 
-force ace_repair_wheelRepairRequiredItems = 0;
+force ace_repair_wheelRepairRequiredItems = [];
 
 
 
@@ -314,107 +360,97 @@ force ace_medical_ai_enabledFor = 2;
 
 force ace_medical_AIDamageThreshold = 1.5;
 
-force ace_medical_allowLitterCreation = true;
-
-force ace_medical_allowUnconsciousAnimationOnTreatment = true;
-
-force ace_medical_amountOfReviveLives = -1;
-
 force ace_medical_bleedingCoefficient = 1;
+
+force ace_medical_blood_bloodLifetime = 600;
 
 force ace_medical_blood_enabledFor = 2;
 
-force ace_medical_consumeItem_PAK = 0;
+force ace_medical_blood_maxBloodObjects = 500;
 
-force ace_medical_consumeItem_SurgicalKit = 0;
+force ace_medical_fatalDamageSource = 0;
 
-ace_medical_convertItems = 0;
+ace_medical_feedback_painEffectType = 0;
 
-force ace_medical_delayUnconCaptive = 3;
+force ace_medical_fractures = 0;
 
-force ace_medical_enableAdvancedWounds = true;
+ace_medical_gui_enableActions = 0;
 
-force ace_medical_enableFor = 0;
+force ace_medical_gui_enableMedicalMenu = 1;
 
-force ace_medical_enableOverdosing = true;
+ace_medical_gui_enableSelfActions = true;
 
-force ace_medical_enableRevive = 1;
+force ace_medical_gui_maxDistance = 3;
 
-force ace_medical_enableScreams = true;
+ace_medical_gui_openAfterTreatment = true;
 
-force ace_medical_enableUnconsciousnessAI = 0;
+force ace_medical_ivFlowRate = 2;
 
-force ace_medical_enableVehicleCrashes = true;
-
-force ace_medical_healHitPointAfterAdvBandage = true;
-
-force ace_medical_increaseTrainingInLocations = false;
-
-force ace_medical_keepLocalSettingsSynced = true;
-
-force ace_medical_level = 2;
-
-force ace_medical_litterCleanUpDelay = 60;
-
-force ace_medical_litterSimulationDetail = 3;
-
-force ace_medical_maxReviveTime = 1200;
-
-force ace_medical_medicSetting = 2;
-
-force ace_medical_medicSetting_basicEpi = 1;
-
-force ace_medical_medicSetting_PAK = 1;
-
-force ace_medical_medicSetting_SurgicalKit = 1;
-
-force ace_medical_menu_allow = 1;
-
-force ace_medical_menu_maxRange = 6.03832;
-
-force ace_medical_menu_openAfterTreatment = true;
-
-force ace_medical_menu_useMenu = 1;
-
-ace_medical_menuTypeStyle = 0;
-
-ace_medical_menuTypeStyleSelf = true;
-
-force ace_medical_moveUnitsFromGroupOnUnconscious = true;
+force ace_medical_limping = 1;
 
 force ace_medical_painCoefficient = 1;
 
-ace_medical_painEffectType = 0;
-
-force ace_medical_painIsOnlySuppressed = true;
-
 force ace_medical_playerDamageThreshold = 2;
 
-force ace_medical_preventInstaDeath = true;
+force ace_medical_spontaneousWakeUpChance = 0.33;
 
-force ace_medical_remoteControlledAI = true;
+force ace_medical_spontaneousWakeUpEpinephrineBoost = 1;
 
-force ace_medical_useCondition_PAK = 1;
+force ace_medical_statemachine_AIUnconsciousness = false;
 
-force ace_medical_useCondition_SurgicalKit = 0;
+force ace_medical_statemachine_cardiacArrestTime = 600;
 
-force ace_medical_useLocation_basicEpi = 0;
+force ace_medical_statemachine_fatalInjuriesAI = 0;
 
-force ace_medical_useLocation_PAK = 0;
+force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 
-force ace_medical_useLocation_SurgicalKit = 0;
+force ace_medical_treatment_advancedBandages = true;
 
+force ace_medical_treatment_advancedDiagnose = true;
 
+force ace_medical_treatment_advancedMedication = false;
 
-// ACE Mk6 Mortar
+force ace_medical_treatment_allowLitterCreation = true;
 
-force ace_mk6mortar_airResistanceEnabled = false;
+force ace_medical_treatment_allowSelfIV = 1;
 
-force ace_mk6mortar_allowCompass = true;
+force ace_medical_treatment_allowSelfStitch = 1;
 
-force ace_mk6mortar_allowComputerRangefinder = false;
+force ace_medical_treatment_allowSharedEquipment = 1;
 
-force ace_mk6mortar_useAmmoHandling = true;
+force ace_medical_treatment_clearTraumaAfterBandage = true;
+
+force ace_medical_treatment_consumePAK = 0;
+
+force ace_medical_treatment_consumeSurgicalKit = 0;
+
+force ace_medical_treatment_convertItems = 0;
+
+force ace_medical_treatment_cprSuccessChance = 0.4;
+
+force ace_medical_treatment_holsterRequired = 2;
+
+force ace_medical_treatment_litterCleanupDelay = 500;
+
+force ace_medical_treatment_locationEpinephrine = 0;
+
+force ace_medical_treatment_locationPAK = 3;
+
+force ace_medical_treatment_locationsBoostTraining = false;
+
+force ace_medical_treatment_locationSurgicalKit = 0;
+
+force ace_medical_treatment_maxLitterObjects = 500;
+
+force ace_medical_treatment_medicEpinephrine = 0;
+
+force ace_medical_treatment_medicPAK = 2;
+
+force ace_medical_treatment_medicSurgicalKit = 1;
+
+force ace_medical_treatment_timeCoefficientPAK = 1;
+
+force ace_medical_treatment_woundReopening = false;
 
 
 
@@ -568,6 +604,8 @@ force ace_scopes_zeroReferenceTemperature = 15;
 
 force ace_spectator_enableAI = false;
 
+force ace_spectator_maxFollowDistance = 5;
+
 force ace_spectator_restrictModes = 0;
 
 force ace_spectator_restrictVisions = 0;
@@ -592,15 +630,9 @@ force ace_switchunits_switchToWest = false;
 
 
 
-// ACE Tagging
-
-force ace_tagging_quickTag = 1;
-
-
-
 // ACE Uncategorized
 
-ace_fastroping_requireRopeItems = false;
+force ace_fastroping_requireRopeItems = false;
 
 force ace_gforces_enabledFor = 0;
 
@@ -617,6 +649,8 @@ force ace_microdagr_waypointPrecision = 3;
 force ace_optionsmenu_showNewsOnMainMenu = true;
 
 force ace_overpressure_distanceCoefficient = 1;
+
+force ace_tagging_quickTag = 1;
 
 
 
@@ -698,9 +732,17 @@ force ace_ui_zeroing = true;
 
 force ace_vehiclelock_defaultLockpickStrength = 10;
 
-force ace_vehiclelock_lockVehicleInventory = false;
+force ace_vehiclelock_lockVehicleInventory = true;
 
 force ace_vehiclelock_vehicleStartingLockState = -1;
+
+
+
+// ACE Vehicles
+
+force ace_vehicles_hideEjectAction = true;
+
+force ace_vehicles_keepEngineRunning = false;
 
 
 
@@ -728,6 +770,8 @@ force ace_laserpointer_enabled = true;
 
 force ace_reload_displayText = true;
 
+ace_reload_showCheckAmmoSelf = false;
+
 force ace_weaponselect_displayText = true;
 
 
@@ -735,6 +779,8 @@ force ace_weaponselect_displayText = true;
 // ACE Weather
 
 force ace_weather_enabled = false;
+
+force ace_weather_showCheckAirTemperature = false;
 
 force ace_weather_updateInterval = 300;
 
@@ -772,7 +818,7 @@ force ace_zeus_zeusBird = false;
 
 // ACEX Field Rations
 
-acex_field_rations_affectAdvancedFatigue = true;
+force acex_field_rations_affectAdvancedFatigue = true;
 
 force acex_field_rations_enabled = false;
 
@@ -782,9 +828,9 @@ force acex_field_rations_hudTransparency = -1;
 
 force acex_field_rations_hudType = 0;
 
-acex_field_rations_hungerSatiated = 1;
+force acex_field_rations_hungerSatiated = 1;
 
-acex_field_rations_thirstQuenched = 1;
+force acex_field_rations_thirstQuenched = 1;
 
 force acex_field_rations_timeWithoutFood = 2;
 
@@ -962,7 +1008,7 @@ cba_ui_StorePasswords = 1;
 
 cba_disposable_dropUsedLauncher = 2;
 
-cba_disposable_replaceDisposableLauncher = true;
+force cba_disposable_replaceDisposableLauncher = true;
 
 cba_events_repetitionMode = 1;
 
@@ -980,25 +1026,23 @@ force diwako_ragdoll_server_only = true;
 
 
 
-// Diwako's Punish unknown weapon
+// LAxemann's Suppress
 
-force diwako_unknownwp_add_weapons = "UK3CB_BAF_L105A1,UK3CB_BAF_L105A2,UK3CB_BAF_L107A1,UK3CB_BAF_L117A1,UK3CB_BAF_L131A1,UK3CB_BAF_L9A1,UK3CB_BAF_L1A1,UK3CB_BAF_L1A1_Wood,UK3CB_BAF_L110A1,UK3CB_BAF_L110A2,UK3CB_BAF_L110A2RIS,UK3CB_BAF_L110A3,UK3CB_BAF_L110_762,UK3CB_BAF_L110A2_FIST,UK3CB_BAF_L115A3,UK3CB_BAF_L115A3_BL,UK3CB_BAF_L115A3_DE,UK3CB_BAF_L115A3_Ghillie,UK3CB_BAF_L115A3_DE_Ghillie,UK3CB_BAF_L115A3_BL_Ghillie,UK3CB_BAF_L118A1_Covert,UK3CB_BAF_L118A1_Covert_BL,UK3CB_BAF_L118A1_Covert_DE,UK3CB_BAF_L119A1,UK3CB_BAF_L119A1_CQB,UK3CB_BAF_L119A1_FG,UK3CB_BAF_L119A1_UKUGL,UK3CB_BAF_L22,UK3CB_BAF_L22A2,UK3CB_BAF_L7A2,UK3CB_BAF_L7A2_FIST,UK3CB_BAF_L135A1,UK3CB_BAF_L85A2,UK3CB_BAF_L85A2_UGL,UK3CB_BAF_L85A2_UGL_HWS,UK3CB_BAF_L85A2_RIS,UK3CB_BAF_L85A2_RIS_Tan,UK3CB_BAF_L85A2_RIS_Green,UK3CB_BAF_L85A2_EMAG,UK3CB_BAF_L85A2_RIS_AFG,UK3CB_BAF_L85A2_RIS_AFG_Tan,UK3CB_BAF_L85A2_RIS_AFG_Green,UK3CB_BAF_L86A2,UK3CB_BAF_L86A3,UK3CB_BAF_L91A1,UK3CB_BAF_L92A1,UK3CB_BAF_L103A2,UK3CB_BAF_L128A1,UK3CB_BAF_L129A1,UK3CB_BAF_L129A1_Grippod,UK3CB_BAF_L129A1_AFG,UK3CB_BAF_L129A1_FGrip,UK3CB_BAF_L82A1,UK3CB_BAF_AT4_CS_AT_Launcher,UK3CB_BAF_AT4_CS_AP_Launcher,UK3CB_BAF_AT4_Launcher_Used,UK3CB_BAF_AT4_CS_Launcher_Used,UK3CB_BAF_Javelin_Slung_Tube,UK3CB_BAF_Javelin_CLU,UK3CB_BAF_NLAW_Launcher,UK3CB_BAF_NLAW_Launcher_Used,UK3CB_BAF_Tripod,UK3CB_BAF_L16_Tripod,UK3CB_BAF_L111A1,UK3CB_BAF_L134A1,UK3CB_BAF_L16,UK3CB_BAF_M6,rhs_weap_hk416d10,rhs_weap_hk416d10_m320,rhs_weap_hk416d10_LMT,rhs_weap_hk416d10_LMT_d,rhs_weap_hk416d10_LMT_wd,rhs_weap_hk416d145,rhs_weap_hk416d145_d,rhs_weap_hk416d145_d_2,rhs_weap_hk416d145_m320,rhs_weap_hk416d145_wd,rhs_weap_hk416d145_wd_2,rhs_weap_M107,rhs_weap_M107_d,rhs_weap_M107_w,rhs_weap_m14ebrri,rhs_weap_m16a4,rhs_weap_m16a4_carryhandle,rhs_weap_m16a4_carryhandle_M203,rhs_weap_m16a4_carryhandle_pmag,rhs_weap_m16a4_pmag,rhs_weap_XM2010,rhs_weap_XM2010_wd,rhs_weap_XM2010_d,rhs_weap_XM2010_sa,rhs_weap_m24sws,rhs_weap_m24sws_blk,rhs_weap_m24sws_ghillie,rhs_weap_m240B,rhs_weap_m240B_CAP,rhs_weap_m240G,rhs_weap_m249,rhs_weap_m249_pip_L,rhs_weap_m249_pip_L_para,rhs_weap_m249_pip_L_vfg,rhs_weap_m249_pip_S,rhs_weap_m249_pip_S_para,rhs_weap_m249_pip_S_vfg,rhs_weap_m249_pip,rhs_weap_m27iar,rhs_weap_m27iar_grip,rhs_weap_m32,rhs_weap_m4,rhs_weap_m4_carryhandle,rhs_weap_m4_carryhandle_pmag,rhs_weap_m4_carryhandle_mstock,rhs_weap_m4_m203,rhs_weap_m4_m203S,rhs_weap_m4_m320,rhs_weap_m4_pmag,rhs_weap_m4_mstock,rhs_weap_m40a5,rhs_weap_m40a5_d,rhs_weap_m40a5_wd,rhs_weap_m4a1_carryhandle,rhs_weap_m4a1_carryhandle_m203,rhs_weap_m4a1_carryhandle_m203S,rhs_weap_m4a1_carryhandle_pmag,rhs_weap_m4a1_carryhandle_mstock,rhs_weap_m4a1_blockII,rhs_weap_m4a1_blockII_bk,rhs_weap_m4a1_blockII_M203_bk,rhs_weap_m4a1_blockII_KAC_bk,rhs_weap_m4a1_blockII_d,rhs_weap_m4a1_blockII_M203_d,rhs_weap_m4a1_blockII_KAC_d,rhs_weap_m4a1_blockII_M203,rhs_weap_m4a1_blockII_KAC,rhs_weap_m4a1_blockII_wd,rhs_weap_m4a1_blockII_M203_wd,rhs_weap_m4a1_blockII_KAC_wd,rhs_weap_m4a1,rhs_weap_m4a1_d,rhs_weap_m4a1_m203s_d,rhs_weap_m4a1_d_mstock,rhs_weap_m4a1_m203,rhs_weap_m4a1_m203s,rhs_weap_m4a1_m320,rhs_weap_m4a1_pmag,rhs_weap_m4a1_mstock,rhs_weap_m4a1_wd,rhs_weap_m4a1_m203s_wd,rhs_weap_m4a1_wd_mstock,rhs_weap_M590_8RD,rhs_weap_M590_5RD,rhs_weap_sr25,rhs_weap_sr25_d,rhs_weap_sr25_ec,rhs_weap_sr25_ec_d,rhs_weap_sr25_ec_wd,rhs_weap_sr25_wd,rhs_weap_mk18,rhs_weap_mk18_bk,rhs_weap_mk18_KAC_bk,rhs_weap_mk18_d,rhs_weap_mk18_KAC_d,rhs_weap_mk18_m320,rhs_weap_mk18_KAC,rhs_weap_mk18_wd,rhs_weap_mk18_KAC_wd,rhsusf_weap_MP7A2,rhsusf_weap_MP7A2_aor1,rhsusf_weap_MP7A2_desert,rhsusf_weap_MP7A2_winter,rhs_weap_fgm148,rhs_weap_fim92,rhs_weap_M136,rhs_weap_M136_hedp,rhs_weap_M136_hp,rhs_weap_maaws,rhs_weap_m72a7,rhs_weap_smaw,rhs_weap_smaw_green,rhsusf_weap_glock17g4,rhsusf_weap_m1911a1,rhs_weap_M320,rhsusf_weap_m9";
+force L_Suppress_buildup = 0.75;
 
-force diwako_unknownwp_briefing = true;
+force L_Suppress_enabled = true;
 
-force diwako_unknownwp_cooldown = 120;
+force L_Suppress_flyByEffects = true;
 
-force diwako_unknownwp_dispersion_add = 25;
+force L_Suppress_flyByIntensity = 0.5;
 
-force diwako_unknownwp_enable = true;
+force L_Suppress_halting = true;
 
-force diwako_unknownwp_jam_explosion = 1;
+force L_Suppress_intensity = 1;
 
-force diwako_unknownwp_jamchance_add = 1;
+force L_Suppress_playerSwabEnabled = false;
 
-force diwako_unknownwp_propagation = true;
-
-force diwako_unknownwp_reload_failure = 10;
+force L_Suppress_recovery = 1.25;
 
 
 
@@ -1068,7 +1112,7 @@ force LRG_Channels_VehicleVoice = false;
 
 // LRG Main
 
-LRG_Main_AISRevive = false;
+force LRG_Main_AISRevive = false;
 
 force LRG_Main_ArsenalSaveLoad = false;
 
@@ -1088,9 +1132,11 @@ force LRG_Main_Earplugs = false;
 
 force LRG_Main_FatigueVanilla = false;
 
-LRG_Main_FlipVehicle = false;
+force LRG_Main_FlipVehicle = false;
 
 force LRG_Main_FPSCounter = true;
+
+force LRG_Main_LockCamVehicle = false;
 
 force LRG_Main_Logging = true;
 
@@ -1204,6 +1250,10 @@ force LRG_Weather_SyncTime = 60;
 
 // STUI Settings
 
+STGI_Settings_Enabled = true;
+
+STGI_Settings_UnconsciousFadeEnabled = true;
+
 STHud_Settings_ColourBlindMode = "Normal";
 
 STHud_Settings_Font = "PuristaSemibold";
@@ -1217,3 +1267,6 @@ STHud_Settings_RemoveDeadViaProximity = true;
 STHud_Settings_SquadBar = false;
 
 STHud_Settings_TextShadow = 1;
+
+STHud_Settings_UnconsciousFadeEnabled = true;
+
