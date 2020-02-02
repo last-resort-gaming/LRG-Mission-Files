@@ -208,15 +208,15 @@ force ace_interaction_enableTeamManagement = true;
 
 // ACE Interaction Menu
 
-force ace_gestures_showOnInteractionMenu = 2;
+ace_gestures_showOnInteractionMenu = 2;
 
 ace_interact_menu_actionOnKeyRelease = true;
 
-force ace_interact_menu_addBuildingActions = true;
+ace_interact_menu_addBuildingActions = true;
 
-force ace_interact_menu_alwaysUseCursorInteraction = true;
+ace_interact_menu_alwaysUseCursorInteraction = true;
 
-force ace_interact_menu_alwaysUseCursorSelfInteraction = true;
+ace_interact_menu_alwaysUseCursorSelfInteraction = true;
 
 ace_interact_menu_colorShadowMax = [0,0,0,1];
 
@@ -242,7 +242,7 @@ ace_interact_menu_shadowSetting = 2;
 
 ace_interact_menu_textSize = 2;
 
-force ace_interact_menu_useListMenu = true;
+ace_interact_menu_useListMenu = true;
 
 ace_interact_menu_useListMenuSelf = false;
 
@@ -360,7 +360,7 @@ force ace_medical_ai_enabledFor = 2;
 
 force ace_medical_AIDamageThreshold = 1.5;
 
-force ace_medical_bleedingCoefficient = 1;
+force ace_medical_bleedingCoefficient = 0.1;
 
 force ace_medical_blood_bloodLifetime = 600;
 
@@ -368,7 +368,7 @@ force ace_medical_blood_enabledFor = 2;
 
 force ace_medical_blood_maxBloodObjects = 500;
 
-force ace_medical_fatalDamageSource = 2;
+force ace_medical_fatalDamageSource = 0;
 
 ace_medical_feedback_painEffectType = 0;
 
@@ -384,15 +384,15 @@ force ace_medical_gui_maxDistance = 3;
 
 ace_medical_gui_openAfterTreatment = true;
 
-force ace_medical_ivFlowRate = 2;
+force ace_medical_ivFlowRate = 1;
 
 force ace_medical_limping = 1;
 
 force ace_medical_painCoefficient = 0.5;
 
-force ace_medical_playerDamageThreshold = 2;
+force ace_medical_playerDamageThreshold = 2.5;
 
-force ace_medical_spontaneousWakeUpChance = 0.33;
+force ace_medical_spontaneousWakeUpChance = 0.2;
 
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 2;
 
@@ -426,7 +426,7 @@ force ace_medical_treatment_consumeSurgicalKit = 0;
 
 force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.4;
+force ace_medical_treatment_cprSuccessChance = 0.15;
 
 force ace_medical_treatment_holsterRequired = 0;
 
