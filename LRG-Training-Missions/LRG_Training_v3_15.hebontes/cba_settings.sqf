@@ -28,7 +28,7 @@ force ace_advanced_fatigue_performanceFactor = 5;
 
 force ace_advanced_fatigue_recoveryFactor = 5;
 
-force ace_advanced_fatigue_swayFactor = 1;
+force ace_advanced_fatigue_swayFactor = 0.5;
 
 force ace_advanced_fatigue_terrainGradientFactor = 0.2;
 
@@ -358,7 +358,7 @@ ace_maptools_rotateModifierKey = 1;
 
 force ace_medical_ai_enabledFor = 2;
 
-force ace_medical_AIDamageThreshold = 1.5;
+force ace_medical_AIDamageThreshold = 1;
 
 force ace_medical_bleedingCoefficient = 0.1;
 
@@ -392,7 +392,7 @@ force ace_medical_painCoefficient = 0.5;
 
 force ace_medical_playerDamageThreshold = 2.5;
 
-force ace_medical_spontaneousWakeUpChance = 0.2;
+force ace_medical_spontaneousWakeUpChance = 0.4;
 
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 2;
 
@@ -426,7 +426,7 @@ force ace_medical_treatment_consumeSurgicalKit = 0;
 
 force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.15;
+force ace_medical_treatment_cprSuccessChance = 0.33;
 
 force ace_medical_treatment_holsterRequired = 0;
 
@@ -448,7 +448,7 @@ force ace_medical_treatment_medicPAK = 2;
 
 force ace_medical_treatment_medicSurgicalKit = 1;
 
-force ace_medical_treatment_timeCoefficientPAK = 1;
+force ace_medical_treatment_timeCoefficientPAK = 2;
 
 force ace_medical_treatment_woundReopening = true;
 
