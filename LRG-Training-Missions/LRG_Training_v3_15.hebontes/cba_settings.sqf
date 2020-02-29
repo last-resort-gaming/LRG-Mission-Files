@@ -384,7 +384,7 @@ force ace_medical_gui_maxDistance = 3;
 
 ace_medical_gui_openAfterTreatment = true;
 
-force ace_medical_ivFlowRate = 1;
+force ace_medical_ivFlowRate = 2.5;
 
 force ace_medical_limping = 1;
 
@@ -448,7 +448,7 @@ force ace_medical_treatment_medicPAK = 2;
 
 force ace_medical_treatment_medicSurgicalKit = 1;
 
-force ace_medical_treatment_timeCoefficientPAK = 2;
+force ace_medical_treatment_timeCoefficientPAK = 0.1;
 
 force ace_medical_treatment_woundReopening = true;
 
@@ -1026,6 +1026,76 @@ force diwako_ragdoll_server_only = true;
 
 
 
+// LAMBS Danger
+
+force lambs_danger_autoAddArtillery = false;
+
+force lambs_danger_CQB_formations_COLUMN = false;
+
+force lambs_danger_CQB_formations_DIAMOND = true;
+
+force lambs_danger_CQB_formations_ECH LEFT = false;
+
+force lambs_danger_CQB_formations_ECH RIGHT = false;
+
+force lambs_danger_CQB_formations_FILE = true;
+
+force lambs_danger_CQB_formations_LINE = false;
+
+force lambs_danger_CQB_formations_STAG COLUMN = false;
+
+force lambs_danger_CQB_formations_VEE = false;
+
+force lambs_danger_CQB_formations_WEDGE = false;
+
+force lambs_danger_CQB_range = 50;
+
+force lambs_danger_debug_Drawing = false;
+
+force lambs_danger_debug_FSM = false;
+
+force lambs_danger_debug_FSM_civ = false;
+
+force lambs_danger_debug_functions = false;
+
+force lambs_danger_disableAIAutonomousManoeuvres = false;
+
+force lambs_danger_disableAIHideFromTanksAndAircraft = true;
+
+force lambs_danger_disableAIPlayerGroup = false;
+
+force lambs_danger_disableAIPlayerGroupReaction = false;
+
+force lambs_danger_disableAIPlayerGroupSuppression = false;
+
+force lambs_danger_minSuppression_range = 25;
+
+force lambs_danger_panic_chance = 10;
+
+force lambs_danger_radio_backpack = 2000;
+
+force lambs_danger_radio_disabled = false;
+
+force lambs_danger_radio_EAST = 1000;
+
+force lambs_danger_radio_GUER = 1000;
+
+force lambs_danger_radio_shout = 50;
+
+force lambs_danger_radio_WEST = 1000;
+
+force lambs_danger_RenderExpectedDestination = false;
+
+
+
+// LAMBS Danger Eventhandlers
+
+force lambs_eventhandlers_ExplosionEventHandlerEnabled = true;
+
+force lambs_eventhandlers_ExplosionReactionTime = 10;
+
+
+
 // LAxemann's Suppress
 
 force L_Suppress_buildup = 0.75;
@@ -1270,3 +1340,58 @@ STHud_Settings_TextShadow = 1;
 
 STHud_Settings_UnconsciousFadeEnabled = true;
 
+
+
+// Zeus Enhanced
+
+force zen_camera_adaptiveSpeed = true;
+
+force zen_camera_defaultSpeedCoef = 1;
+
+force zen_camera_fastSpeedCoef = 1;
+
+force zen_camera_followTerrain = true;
+
+force zen_common_autoAddObjects = true;
+
+force zen_common_darkMode = false;
+
+force zen_common_disableGearAnim = false;
+
+force zen_common_preferredArsenal = 1;
+
+force zen_context_menu_enabled = 2;
+
+force zen_editor_declutterEmptyTree = true;
+
+force zen_editor_disableLiveSearch = true;
+
+force zen_editor_moveDisplayToEdge = true;
+
+force zen_editor_parachuteSounds = true;
+
+force zen_editor_previews_enabled = true;
+
+force zen_editor_removeWatermark = true;
+
+force zen_editor_unitRadioMessages = 2;
+
+force zen_visibility_enabled = false;
+
+force zen_vision_enableBlackHot = true;
+
+force zen_vision_enableBlackHotGreenCold = false;
+
+force zen_vision_enableBlackHotRedCold = false;
+
+force zen_vision_enableGreenHotCold = false;
+
+force zen_vision_enableNVG = true;
+
+force zen_vision_enableRedGreenThermal = false;
+
+force zen_vision_enableRedHotCold = false;
+
+force zen_vision_enableWhiteHot = true;
+
+force zen_vision_enableWhiteHotRedCold = false;
