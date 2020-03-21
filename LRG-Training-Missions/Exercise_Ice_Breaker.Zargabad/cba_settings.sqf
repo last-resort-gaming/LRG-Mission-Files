@@ -370,31 +370,35 @@ force ace_medical_blood_maxBloodObjects = 500;
 
 force ace_medical_fatalDamageSource = 0;
 
+ace_medical_feedback_bloodVolumeEffectType = 0;
+
 ace_medical_feedback_painEffectType = 0;
+
+force ace_medical_fractureChance = 0.8;
 
 force ace_medical_fractures = 0;
 
-ace_medical_gui_enableActions = 0;
+force ace_medical_gui_enableActions = 0;
 
 force ace_medical_gui_enableMedicalMenu = 1;
 
-ace_medical_gui_enableSelfActions = true;
+force ace_medical_gui_enableSelfActions = true;
 
 force ace_medical_gui_maxDistance = 3;
 
-ace_medical_gui_openAfterTreatment = true;
+force ace_medical_gui_openAfterTreatment = true;
 
 force ace_medical_ivFlowRate = 2.5;
 
 force ace_medical_limping = 1;
 
-force ace_medical_painCoefficient = 0.5;
+force ace_medical_painCoefficient = 1;
 
-force ace_medical_playerDamageThreshold = 2.5;
+force ace_medical_playerDamageThreshold = 2;
 
-force ace_medical_spontaneousWakeUpChance = 0.4;
+force ace_medical_spontaneousWakeUpChance = 0.2;
 
-force ace_medical_spontaneousWakeUpEpinephrineBoost = 2;
+force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
 force ace_medical_statemachine_AIUnconsciousness = false;
 
@@ -404,15 +408,17 @@ force ace_medical_statemachine_fatalInjuriesAI = 0;
 
 force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 
-force ace_medical_treatment_advancedBandages = true;
+force ace_medical_treatment_advancedBandages = 2;
 
 force ace_medical_treatment_advancedDiagnose = true;
 
-force ace_medical_treatment_advancedMedication = true;
+force ace_medical_treatment_advancedMedication = false;
 
 force ace_medical_treatment_allowLitterCreation = true;
 
 force ace_medical_treatment_allowSelfIV = 1;
+
+force ace_medical_treatment_allowSelfPAK = 1;
 
 force ace_medical_treatment_allowSelfStitch = 1;
 
@@ -426,7 +432,7 @@ force ace_medical_treatment_consumeSurgicalKit = 0;
 
 force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.33;
+force ace_medical_treatment_cprSuccessChance = 0.20;
 
 force ace_medical_treatment_holsterRequired = 0;
 
@@ -444,13 +450,13 @@ force ace_medical_treatment_maxLitterObjects = 500;
 
 force ace_medical_treatment_medicEpinephrine = 0;
 
+force ace_medical_treatment_medicIV = 1;
+
 force ace_medical_treatment_medicPAK = 2;
 
 force ace_medical_treatment_medicSurgicalKit = 1;
 
 force ace_medical_treatment_timeCoefficientPAK = 0.1;
-
-force ace_medical_treatment_woundReopening = true;
 
 
 
@@ -1028,8 +1034,6 @@ force diwako_ragdoll_server_only = true;
 
 // LAMBS Danger
 
-force lambs_danger_autoAddArtillery = false;
-
 force lambs_danger_CQB_formations_COLUMN = false;
 
 force lambs_danger_CQB_formations_DIAMOND = true;
@@ -1060,7 +1064,15 @@ force lambs_danger_debug_functions = false;
 
 force lambs_danger_disableAIAutonomousManoeuvres = false;
 
+force lambs_danger_disableAICallouts = true;
+
+force lambs_danger_disableAIFleeing = true;
+
+force lambs_danger_disableAIGestures = true;
+
 force lambs_danger_disableAIHideFromTanksAndAircraft = true;
+
+force lambs_danger_disableAIImediateAction = false;
 
 force lambs_danger_disableAIPlayerGroup = false;
 
@@ -1080,7 +1092,7 @@ force lambs_danger_radio_EAST = 1000;
 
 force lambs_danger_radio_GUER = 1000;
 
-force lambs_danger_radio_shout = 50;
+force lambs_danger_radio_shout = 100;
 
 force lambs_danger_radio_WEST = 1000;
 
@@ -1093,6 +1105,12 @@ force lambs_danger_RenderExpectedDestination = false;
 force lambs_eventhandlers_ExplosionEventHandlerEnabled = true;
 
 force lambs_eventhandlers_ExplosionReactionTime = 10;
+
+
+
+// LAMBS Danger WP
+
+force lambs_wp_autoAddArtillery = false;
 
 
 
