@@ -4,7 +4,7 @@ $Clear_Logs = 1			# (0,1) 		DEFAULT: 1	If set to 1 will clear all previous serve
 $verifySignatures = 0	# (0,1)			DEFAULT: 0	Check the client has the same mods loaded as the server. Enable for public servers.			
 $EnableVON = 0			# (0,1)			DEFAULT: 0	Enable in game VON channels (Side chat, command chat ect). Enable for non TFAR servers.		
 $EnableBattleye = 0		# (0,1)			DEFAULT: 0	Enabled Battleye anti-cheat. Should always be on for public servers, optional on Ops.			
-$Headless_Clients = 1	# (0,1)			DEFAULT: 1	Number of Headless Clients to boot on the server. 											
+$Headless_Clients = 2	# (0,1)			DEFAULT: 1	Number of Headless Clients to boot on the server. 											
 $Enable3rdPerson  = 0	# (0,1)			DEFAULT: 0	Usually disabled on Ops, enabled on public server.											
 
 #Mission Parameters
