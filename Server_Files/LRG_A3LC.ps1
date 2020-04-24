@@ -13,27 +13,27 @@ $Master_Server_Key='C:\Program Files (x86)\Steam\steamapps\common\Arma 3\Keys\a3
 
 #Set Server Specific Locations
 If ($Server -eq 1) {
-    $Server_Dir='C:\Servers\Arma 3\1'
+    $Server_Dir='C:\Servers\Arma 3\EU1'
 	$Server_port='2302'
 	$Server_Hostname='[LRG] Last Resort Gaming || EU 1 || Public Server'
 }
 If ($Server -eq 2) {
-	$Server_Dir='C:\Servers\Arma 3\2'
+	$Server_Dir='C:\Servers\Arma 3\EU2'
 	$Server_port='2402'
 	$Server_Hostname='[LRG] Last Resort Gaming || EU 2 || Public Server'
 }
 If ($Server -eq 3) {
-	$Server_Dir='C:\Servers\Arma 3\3'
+	$Server_Dir='C:\Servers\Arma 3\EU3'
 	$Server_port='2502'
 	$Server_Hostname='[LRG] Last Resort Gaming || EU 3 || Operations Server'
 }
 If ($Server -eq 4) {
-	$Server_Dir='C:\Servers\Arma 3\4'
+	$Server_Dir='C:\Servers\Arma 3\EU4'
 	$Server_port='2602'
 	$Server_Hostname='[LRG] Last Resort Gaming || EU 4 || Training Server'
 }
 If ($Server -eq 5) {
-	$Server_Dir='C:\Servers\Arma 3\5'
+	$Server_Dir='C:\Servers\Arma 3\EU5'
 	$Server_port='2702'
 	$Server_Hostname='[LRG] Last Resort Gaming || EU 5 || Public Event'
 }
