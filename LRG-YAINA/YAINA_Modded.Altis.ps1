@@ -11,11 +11,10 @@ $Headless_Clients = 0										#Number if Headless Clients to boot on the server
 $ClientMods = 'C:\Mods\@3CB BAF Equipment;C:\Mods\@3CB BAF Units;C:\Mods\@3CB BAF Units (ACE Compatibility);C:\Mods\@3CB BAF Vehicles;C:\Mods\@3CB BAF Weapons;C:\Mods\@ace;C:\Mods\@CBA_A3;C:\Mods\@LRG Fundamentals;C:\Mods\@RKSL Studios- Attachments v3.01;C:\Mods\@task_force_radio'
 $ServerMods = 'C:\Mods\@a3graphite;C:\Mods\@A3Log;C:\Mods\@Achilles;C:\Mods\@Advanced Rappelling;C:\Mods\@Advanced Sling Loading;C:\Mods\@Advanced Towing;C:\Mods\@Advanced Urban Rappelling;C:\Mods\@asct;C:\Mods\@CBA_A3;C:\Mods\@infiSTAR_A3;C:\Mods\@infiSTAR_A3_vision EU1;C:\Mods\@inidbi2;C:\Mods\@Server side smoke (for Blastcore Edited);C:\Mods\@yaina_Modded'
 
-#set-location -path 'C:\Servers\Arma 3\YAINA'
-#git fetch
-#git pull
-#pause
-#Start-Process -NoNewWindow -Wait -Filepath "bin\yaina.bat" -ArgumentList "generate -a -v Modded"
+set-location -path 'C:\Servers\Arma 3\YAINA'
+git fetch
+git pull
+Start-Process -NoNewWindow -Wait -Filepath "bin\yaina.bat" -ArgumentList "generate -a -v Modded"
 
 
 D:\LoginDetails.ps1 $Server $Clear_Logs $Copy_Keys $Password $MissionFolder $Headless_Clients $ClientMods $ServerMods

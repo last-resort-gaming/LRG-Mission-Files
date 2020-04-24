@@ -90,7 +90,7 @@ Write-Host "Packing Mission into Pbo and moving to selected server." -Foreground
 Remove-Item $Server_mpmissions\*.pbo*
 $MissionDir=Get-ChildItem $Repo_Dir -attributes D -Recurse -include $MissionFolder
 set-location "C:\Program Files (x86)\Mikero\DePboTools\bin" 
-.\MakePbo.exe -P -B -G $MissionDir $Server_mpmissions
+.\MakePbo.exe -P -X thumbs.db,*.cpp,*.bak,*.png,*.dep,*.log -B -G $MissionDir $Server_mpmissions
 
 #Boot the Server
 Write-Host "Booting the Server." -ForegroundColor red -BackgroundColor white
