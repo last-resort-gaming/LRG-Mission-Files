@@ -1,5 +1,5 @@
 #Get params from Mission Params and Master Info
-param ($steamcmd_username, $steamcmd_Password, $Arma3_AdminPass, $Arma3_CommandPass, $Server, $Clear_Logs, $verifySignatures, $EnableVON, $EnableBattleye, $Headless_Clients, $Enable3rdPerson, $Password, $MissionFolder, $ClientMods, $ServerMods)
+param ($steamcmd_username, $steamcmd_Password, $Arma3_AdminPass, $Arma3_CommandPass, $Server, $Clear_Logs, $verifySignatures, $EnableVON, $EnableBattleye, $Headless_Clients, $Enable3rdPerson, $Password, $MissionFolder, $ClientMods, $ServerMods, $OptionalMods)
 
 #Variables
 $steamcmd_Dir = 'C:\steamcmd'
@@ -19,32 +19,20 @@ $Master_Server_Profile= 'C:\LRG-Mission-Files\Server_Files\LRGServer.Arma3Profil
 If ($Server -eq 1) {
     $Server_Dir='C:\Servers\Arma 3\EU1'
 	$Server_port='2302'
-	$Server_Hostname='[LRG] Last Resort Gaming || EU 1 || Public Server'
+	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 1 || Public Server'
 	$RCON_Port = 2307
 }
 If ($Server -eq 2) {
 	$Server_Dir='C:\Servers\Arma 3\EU2'
 	$Server_port='2402'
-	$Server_Hostname='[LRG] Last Resort Gaming || EU 2 || Public Server'
+	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 2 || Private Server'
 	$RCON_Port = 2407
 }
 If ($Server -eq 3) {
 	$Server_Dir='C:\Servers\Arma 3\EU3'
 	$Server_port='2502'
-	$Server_Hostname='[LRG] Last Resort Gaming || EU 3 || Operations Server'
+	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 3 || Testing Server'
 	$RCON_Port = 2507
-}
-If ($Server -eq 4) {
-	$Server_Dir='C:\Servers\Arma 3\EU4'
-	$Server_port='2602'
-	$Server_Hostname='[LRG] Last Resort Gaming || EU 4 || Training Server'
-	$RCON_Port = 2607
-}
-If ($Server -eq 5) {
-	$Server_Dir='C:\Servers\Arma 3\EU5'
-	$Server_port='2702'
-	$Server_Hostname='[LRG] Last Resort Gaming || EU 5 || Public Event'
-	$RCON_Port = 2707
 }
 
 $Server_mpmissions=Join-Path -Path $Server_Dir -ChildPath "\mpmissions"
@@ -74,13 +62,27 @@ Remove-Item $Server_Keys\*.bikey*
 Copy-Item $Master_Server_Key $Server_Keys
 
 if ($verifySignatures -eq 1){
-    Get-ChildItem -path $Mod_Dir -Filter "*.bikey" -File -Recurse | Foreach {
-         if ([System.IO.File]::Exists([System.IO.Path]::Combine($Server_Keys, $_.Name))) {
-            $_.FullName + " already exists in destination folder." }
-         else {
-          Copy-Item $_.FullName $Server_Keys
-         }
-    }
+	#Always manually copy TFAR till I think of a better way
+	get-childitem -path C:\Mods\@task_force_radio\keys *.bikey -recurse | copy-item -destination $Server_Keys
+	
+	#Client Mods
+	$ClientModsArray = $ClientMods.split(";")
+	Get-ChildItem -path $ClientModsArray -Filter "*.bikey" -File -Recurse | Foreach {
+		if ([System.IO.File]::Exists([System.IO.Path]::Combine($Server_Keys, $_.Name))) {
+			$_.FullName + " already exists in destination folder." }
+		else {
+		Copy-Item $_.FullName $Server_Keys
+		}
+}
+	#Optional Mods
+	$OptionalModsArray = $OptionalMods.split(";")
+	Get-ChildItem -path $OptionalModsArray -Filter "*.bikey" -File -Recurse | Foreach {
+		if ([System.IO.File]::Exists([System.IO.Path]::Combine($Server_Keys, $_.Name))) {
+			$_.FullName + " already exists in destination folder." }
+		else {
+		Copy-Item $_.FullName $Server_Keys
+		}
+}
 	$verifySignatures = 2
 	} else {
 	$verifySignatures = 0
