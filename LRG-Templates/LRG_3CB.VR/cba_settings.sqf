@@ -358,7 +358,7 @@ ace_maptools_rotateModifierKey = 1;
 
 force ace_medical_ai_enabledFor = 2;
 
-force ace_medical_AIDamageThreshold = 1;
+force ace_medical_AIDamageThreshold = 0.8;
 
 force ace_medical_bleedingCoefficient = 0.1;
 
@@ -368,7 +368,7 @@ force ace_medical_blood_enabledFor = 2;
 
 force ace_medical_blood_maxBloodObjects = 500;
 
-force ace_medical_fatalDamageSource = 0;
+force ace_medical_fatalDamageSource = 1;
 
 ace_medical_feedback_bloodVolumeEffectType = 0;
 
@@ -394,7 +394,7 @@ force ace_medical_limping = 1;
 
 force ace_medical_painCoefficient = 1;
 
-force ace_medical_playerDamageThreshold = 2;
+force ace_medical_playerDamageThreshold = 1.8;
 
 force ace_medical_spontaneousWakeUpChance = 0.2;
 
@@ -888,15 +888,15 @@ force acex_viewrestriction_preserveView = false;
 
 // ACEX Volume
 
-force acex_volume_enabled = false;
+force acex_volume_enabled = true;
 
 force acex_volume_fadeDelay = 1;
 
 force acex_volume_lowerInVehicles = true;
 
-force acex_volume_reduction = 6;
+force acex_volume_reduction = 7;
 
-force acex_volume_remindIfLowered = false;
+force acex_volume_remindIfLowered = true;
 
 force acex_volume_showNotification = true;
 
