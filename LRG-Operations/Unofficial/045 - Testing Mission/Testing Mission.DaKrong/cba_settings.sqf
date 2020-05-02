@@ -33,7 +33,6 @@ force ace_advanced_fatigue_swayFactor = 0.5;
 force ace_advanced_fatigue_terrainGradientFactor = 0.2;
 
 
-
 // ACE Advanced Throwing
 
 force ace_advanced_throwing_enabled = true;
