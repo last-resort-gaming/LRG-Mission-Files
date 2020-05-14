@@ -1092,7 +1092,7 @@ force CBRN_factionMask_OPF_V_F = "G_CBRN_M50";
 
 force CBRN_factionMask_rhs_faction_insurgents = "G_CBRN_M50";
 
-force CBRN_factionMask_rhs_faction_msv = "";
+force CBRN_factionMask_rhs_faction_msv = "G_CBRN_M50";
 
 force CBRN_factionMask_rhs_faction_rva = "G_CBRN_M50";
 
