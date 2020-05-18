@@ -1,6 +1,6 @@
 #Server Parameters
 $Server = 1				# (1,2,3) 		DEFAULT: 2	1 Public, 2 Private, 3 Testing/Spare.													
-$Clear_Logs = 1			# (0,1) 		DEFAULT: 1	If set to 1 will clear all previous server logs. Should be enabled unless fault finding. 		
+
 $verifySignatures = 1	# (0,1)			DEFAULT: 0	Check the client has the same mods loaded as the server. Enable for public servers.			
 $EnableVON = 0			# (0,1)			DEFAULT: 0	Enable in game VON channels (Side chat, command chat ect). Enable for non TFAR servers.		
 $EnableBattleye = 1		# (0,1)			DEFAULT: 0	Enabled Battleye anti-cheat. Should always be on for public servers, optional on Ops.			
@@ -20,4 +20,4 @@ git pull --recurse-submodules
 git submodule update --remote
 Start-Process -NoNewWindow -Wait -Filepath "src\bin\yaina.bat" -ArgumentList "generate -a -v Modded"
 
-D:\LoginDetails.ps1 $Server $Clear_Logs $verifySignatures $EnableVON $EnableBattleye $Headless_Clients $Enable3rdPerson $Password $MissionFolder $ClientMods $ServerMods $OptionalMods
+D:\LoginDetails.ps1 $Server $verifySignatures $EnableVON $EnableBattleye $Headless_Clients $Enable3rdPerson $Password $MissionFolder $ClientMods $ServerMods $OptionalMods

@@ -1,5 +1,5 @@
 #Get params from Mission Params and Master Info
-param ($steamcmd_username, $steamcmd_Password, $Arma3_AdminPass, $Arma3_CommandPass, $Server, $Clear_Logs, $verifySignatures, $EnableVON, $EnableBattleye, $Headless_Clients, $Enable3rdPerson, $Password, $MissionFolder, $ClientMods, $ServerMods, $OptionalMods)
+param ($steamcmd_username, $steamcmd_Password, $Arma3_AdminPass, $Arma3_CommandPass, $Server, $verifySignatures, $EnableVON, $EnableBattleye, $Headless_Clients, $Enable3rdPerson, $Password, $MissionFolder, $ClientMods, $ServerMods, $OptionalMods)
 
 #Variables
 $steamcmd_Dir = 'C:\steamcmd'
@@ -21,18 +21,21 @@ If ($Server -eq 1) {
 	$Server_port='2302'
 	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 1 || Public Server'
 	$RCON_Port = 2307
+	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU1'
 }
 If ($Server -eq 2) {
 	$Server_Dir='C:\Servers\Arma 3\EU2'
 	$Server_port='2402'
 	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 2 || Private Server'
 	$RCON_Port = 2407
+	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU2'	
 }
 If ($Server -eq 3) {
 	$Server_Dir='C:\Servers\Arma 3\EU3'
 	$Server_port='2502'
 	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 3 || Testing Server'
 	$RCON_Port = 2507
+	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU3'	
 }
 
 $Server_mpmissions=Join-Path -Path $Server_Dir -ChildPath "\mpmissions"
@@ -88,14 +91,18 @@ if ($verifySignatures -eq 1){
 	$verifySignatures = 0
 }
 
-#Clear the Logs
-Write-Host "Clearing Logs" -ForegroundColor red -BackgroundColor white
-if ($Clear_Logs -eq 1) {
-	Remove-Item $Server_Profiles\*.log*
-	Remove-Item $Server_Profiles\*.mdmp*
-	Remove-Item $Server_Profiles\*.bidmp*
-	Remove-Item $Server_Profiles\*.RPT*
-}
+#Handle the Logs
+Write-Host "Handling Logs" -ForegroundColor red -BackgroundColor white
+
+	Move-Item -Path $Server_Profiles\*.log* -Destination $LogsDir
+	Move-Item -Path $Server_Profiles\*.mdmp* -Destination $LogsDir
+	Move-Item -Path $Server_Profiles\*.bidmp* -Destination $LogsDir
+	Move-Item -Path $Server_Profiles\*.RPT* -Destination $LogsDir
+	
+	$Keepfor = "-30"
+	$Date = Get-Date
+	$DatetoDelete = $Date.AddDays($Keepfor)
+	Get-ChildItem $LogsDir -Recurse ( | Where-Object { $_.LastWriteTime -lt $DatetoDelete } | Remove-Item
 
 #Server Config Setup	
 if ($EnableVON -eq 1) {
