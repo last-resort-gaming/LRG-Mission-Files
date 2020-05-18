@@ -21,6 +21,7 @@ If ($Server -eq 1) {
 	$Server_port='2302'
 	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 1 || Public Server'
 	$RCON_Port = 2307
+	$ServerLocalMods = 'C:\Mods\@infiSTAR_A3_vision EU1;'
 	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU1'
 }
 If ($Server -eq 2) {
@@ -28,6 +29,7 @@ If ($Server -eq 2) {
 	$Server_port='2402'
 	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 2 || Private Server'
 	$RCON_Port = 2407
+	$ServerLocalMods = 'C:\Mods\@infiSTAR_A3_vision EU2;'
 	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU2'	
 }
 If ($Server -eq 3) {
@@ -35,8 +37,11 @@ If ($Server -eq 3) {
 	$Server_port='2502'
 	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 3 || Testing Server'
 	$RCON_Port = 2507
+	$ServerLocalMods = ''
 	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU3'	
 }
+
+$ServerMods = $ServerMods +";" +$ServerLocalMods
 
 $Server_mpmissions=Join-Path -Path $Server_Dir -ChildPath "\mpmissions"
 $Server_Profiles=Join-Path -Path $Server_Dir -ChildPath "\Profiles"
