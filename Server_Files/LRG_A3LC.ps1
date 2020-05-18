@@ -1,5 +1,5 @@
 #Get params from Mission Params and Master Info
-param ($steamcmd_username, $steamcmd_Password, $Arma3_AdminPass, $Arma3_CommandPass, $Server, $verifySignatures, $EnableVON, $EnableBattleye, $Headless_Clients, $Enable3rdPerson, $Password, $MissionFolder, $ClientMods, $ServerMods, $OptionalMods)
+param ($Server, $verifySignatures, $EnableVON, $EnableBattleye, $Headless_Clients, $Enable3rdPerson, $Password, $MissionFolder, $ClientMods, $ServerMods, $OptionalMods, $steamcmd_username, $steamcmd_Password, $Arma3_AdminPass, $Arma3_CommandPass)
 
 #Variables
 $steamcmd_Dir = 'C:\steamcmd'
@@ -99,15 +99,13 @@ if ($verifySignatures -eq 1){
 #Handle the Logs
 Write-Host "Handling Logs" -ForegroundColor red -BackgroundColor white
 
-	Move-Item -Path $Server_Profiles\*.log* -Destination $LogsDir
-	Move-Item -Path $Server_Profiles\*.mdmp* -Destination $LogsDir
-	Move-Item -Path $Server_Profiles\*.bidmp* -Destination $LogsDir
-	Move-Item -Path $Server_Profiles\*.RPT* -Destination $LogsDir
-	
-	$Keepfor = "-30"
-	$Date = Get-Date
-	$DatetoDelete = $Date.AddDays($Keepfor)
-	Get-ChildItem $LogsDir -Recurse ( | Where-Object { $_.LastWriteTime -lt $DatetoDelete } | Remove-Item
+Move-Item -Path $Server_Profiles\*.log* -Destination $LogsDir
+Move-Item -Path $Server_Profiles\*.mdmp* -Destination $LogsDir
+Move-Item -Path $Server_Profiles\*.bidmp* -Destination $LogsDir
+Move-Item -Path $Server_Profiles\*.RPT* -Destination $LogsDir
+
+$limit = (Get-Date).AddDays(-30)
+Get-ChildItem -Path $LogsDir -Recurse -Force | Where-Object { !$_.PSIsContainer -and $_.CreationTime -lt $limit } | Remove-Item -Force
 
 #Server Config Setup	
 if ($EnableVON -eq 1) {
