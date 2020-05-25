@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.78539819;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1;
 	class ItemIDProvider
 	{
 		nextID=1124;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={5166.228,91.233658,11620.757};
-		dir[]={-0.25044012,-0.56703544,-0.78471756};
-		up[]={-0.17240764,0.82368189,-0.54020977};
-		aside[]={-0.95267504,-2.0166044e-007,0.30404589};
+		pos[]={17387.426,69.986023,5920.4741};
+		dir[]={-0.8442663,-0.49172559,0.21313675};
+		up[]={-0.47676954,0.87074971,0.12036107};
+		aside[]={0.24477276,-6.6473149e-008,0.9695847};
 	};
 };
 binarizationWanted=0;
@@ -450,7 +450,10 @@ class ScenarioData
 		gameType="Coop";
 		maxPlayers=60;
 	};
+	wreckManagerMode=1;
 	wreckRemovalMaxTime=3600;
+	corpseManagerMode=1;
+	minPlayerDistance=200;
 };
 class CustomAttributes
 {
@@ -541,6 +544,7 @@ class CustomAttributes
 };
 class Mission
 {
+	assetType="Free";
 	class Intel
 	{
 		briefingName="Operation Unified Front";
@@ -609,8 +613,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="misfit";
-				dynamicSimulation=1;
 				pylons="PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;";
 			};
 			id=31;
@@ -863,8 +867,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="Skull";
-				dynamicSimulation=1;
 				pylons="PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;";
 			};
 			id=32;
@@ -1117,8 +1121,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="Wampa";
-				dynamicSimulation=1;
 				pylons="PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;";
 			};
 			id=33;
@@ -1371,8 +1375,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="jetporg";
-				dynamicSimulation=1;
 				pylons="PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;PylonRack_12Rnd_missiles;";
 			};
 			id=34;
@@ -13767,6 +13771,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=136;
 			type="SWLB_turbotank";
@@ -13783,6 +13788,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=161;
 			type="JLTS_GH_intel_holocron_jedi";
@@ -14029,6 +14035,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=247;
 					type="SWLB_b1_Geo";
@@ -14106,6 +14113,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=248;
 					type="SWLB_b1_GeoHeavy";
@@ -14183,6 +14191,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=249;
 					type="SWLB_b1_Geo";
@@ -14260,6 +14269,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=250;
 					type="SWLB_b1_GeoAT";
@@ -14353,6 +14363,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=252;
 					type="SWLB_b1_Geo";
@@ -14430,6 +14441,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=253;
 					type="SWLB_b1_GeoHeavy";
@@ -14507,6 +14519,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=254;
 					type="SWLB_b1_Geo";
@@ -14584,6 +14597,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=255;
 					type="SWLB_b1_GeoAT";
@@ -14677,6 +14691,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=257;
 					type="SWLB_b1_Geo";
@@ -14754,6 +14769,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=258;
 					type="SWLB_b1_GeoHeavy";
@@ -14831,6 +14847,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=259;
 					type="SWLB_b1_Geo";
@@ -14908,6 +14925,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=260;
 					type="SWLB_b1_GeoAT";
@@ -15001,6 +15019,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=262;
 					type="SWLB_b1_Geo";
@@ -15078,6 +15097,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=263;
 					type="SWLB_b1_GeoHeavy";
@@ -15155,6 +15175,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=264;
 					type="SWLB_b1_Geo";
@@ -15232,6 +15253,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=265;
 					type="SWLB_b1_GeoAT";
@@ -15325,6 +15347,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=267;
 					type="SWLB_b1_Geo";
@@ -15402,6 +15425,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=268;
 					type="SWLB_b1_GeoHeavy";
@@ -15479,6 +15503,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=269;
 					type="SWLB_b1_Geo";
@@ -15556,6 +15581,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=270;
 					type="SWLB_b1_GeoAT";
@@ -15650,6 +15676,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=272;
 					type="SWLB_b1_Geo";
@@ -15727,6 +15754,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=273;
 					type="SWLB_b1_GeoHeavy";
@@ -15804,6 +15832,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=274;
 					type="SWLB_b1_Geo";
@@ -15882,6 +15911,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=275;
 					type="SWLB_b1_GeoAT";
@@ -15975,6 +16005,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=277;
 					type="SWLB_b1_Geo";
@@ -16052,6 +16083,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=278;
 					type="SWLB_b1_GeoHeavy";
@@ -16129,6 +16161,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=279;
 					type="SWLB_b1_Geo";
@@ -16206,6 +16239,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=280;
 					type="SWLB_b1_GeoAT";
@@ -16299,6 +16333,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=282;
 					type="SWLB_b1_Geo";
@@ -16376,6 +16411,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=283;
 					type="SWLB_b1_GeoHeavy";
@@ -16453,6 +16489,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=284;
 					type="SWLB_b1_Geo";
@@ -16530,6 +16567,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=285;
 					type="SWLB_b1_GeoAT";
@@ -16623,6 +16661,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=287;
 					type="SWLB_b1_Geo";
@@ -16700,6 +16739,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=288;
 					type="SWLB_b1_GeoHeavy";
@@ -16777,6 +16817,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=289;
 					type="SWLB_b1_Geo";
@@ -16854,6 +16895,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=290;
 					type="SWLB_b1_GeoAT";
@@ -16947,6 +16989,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=292;
 					type="SWLB_b1_Geo";
@@ -17024,6 +17067,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=293;
 					type="SWLB_b1_GeoHeavy";
@@ -17101,6 +17145,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=294;
 					type="SWLB_b1_Geo";
@@ -17178,6 +17223,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=295;
 					type="SWLB_b1_GeoAT";
@@ -17271,6 +17317,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=297;
 					type="SWLB_b1_Geo";
@@ -17348,6 +17395,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=298;
 					type="SWLB_b1_GeoHeavy";
@@ -17425,6 +17473,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=299;
 					type="SWLB_b1_Geo";
@@ -17502,6 +17551,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=300;
 					type="SWLB_b1_GeoAT";
@@ -17595,6 +17645,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=302;
 					type="SWLB_b1_Geo";
@@ -17672,6 +17723,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=303;
 					type="SWLB_b1_GeoHeavy";
@@ -17749,6 +17801,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=304;
 					type="SWLB_b1_Geo";
@@ -17826,6 +17879,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=305;
 					type="SWLB_b1_GeoAT";
@@ -17919,6 +17973,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=307;
 					type="SWLB_b1_Geo";
@@ -17996,6 +18051,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=308;
 					type="SWLB_b1_GeoHeavy";
@@ -18073,6 +18129,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=309;
 					type="SWLB_b1_Geo";
@@ -18150,6 +18207,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=310;
 					type="SWLB_b1_GeoAT";
@@ -18261,6 +18319,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=317;
 					type="SWLB_b1_Geo";
@@ -18278,6 +18337,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=318;
 					type="SWLB_b1_GeoHeavy";
@@ -18295,6 +18355,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=320;
 					type="SWLB_b1_GeoAT";
@@ -18372,6 +18433,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=322;
 					type="SWLB_b1_Geo";
@@ -18389,6 +18451,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=323;
 					type="SWLB_b1_GeoHeavy";
@@ -18406,6 +18469,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=324;
 					type="SWLB_b1_GeoAT";
@@ -18500,6 +18564,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=327;
 					type="SWLB_b1_Geo";
@@ -18517,6 +18582,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=328;
 					type="SWLB_b1_GeoHeavy";
@@ -18534,6 +18600,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=329;
 					type="SWLB_b1_GeoAT";
@@ -18628,6 +18695,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=332;
 					type="SWLB_b1_Geo";
@@ -18645,6 +18713,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=333;
 					type="SWLB_b1_GeoHeavy";
@@ -18662,6 +18731,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=334;
 					type="SWLB_b1_GeoAT";
@@ -18756,6 +18826,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=337;
 					type="SWLB_b1_Geo";
@@ -18773,6 +18844,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=338;
 					type="SWLB_b1_GeoHeavy";
@@ -18790,6 +18862,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=339;
 					type="SWLB_b1_GeoAT";
@@ -18885,6 +18958,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=342;
 					type="SWLB_b1_Geo";
@@ -18903,6 +18977,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=343;
 					type="SWLB_b1_GeoHeavy";
@@ -18921,6 +18996,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=344;
 					type="SWLB_b1_GeoAT";
@@ -19016,6 +19092,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=347;
 					type="SWLB_b1_Geo";
@@ -19033,6 +19110,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=348;
 					type="SWLB_b1_GeoHeavy";
@@ -19050,6 +19128,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=349;
 					type="SWLB_b1_GeoAT";
@@ -19144,6 +19223,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=352;
 					type="SWLB_b1_Geo";
@@ -19221,6 +19301,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=353;
 					type="SWLB_b1_GeoHeavy";
@@ -19298,6 +19379,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=354;
 					type="SWLB_b1_Geo";
@@ -19375,6 +19457,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=355;
 					type="SWLB_b1_GeoAT";
@@ -19468,6 +19551,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=357;
 					type="SWLB_b1_Geo";
@@ -19545,6 +19629,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=358;
 					type="SWLB_b1_GeoHeavy";
@@ -19622,6 +19707,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=359;
 					type="SWLB_b1_Geo";
@@ -19699,6 +19785,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=360;
 					type="SWLB_b1_GeoAT";
@@ -19792,6 +19879,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=362;
 					type="SWLB_b1_Geo";
@@ -19869,6 +19957,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=363;
 					type="SWLB_b1_GeoHeavy";
@@ -19946,6 +20035,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=364;
 					type="SWLB_b1_Geo";
@@ -20023,6 +20113,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=365;
 					type="SWLB_b1_GeoAT";
@@ -20116,6 +20207,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=367;
 					type="SWLB_b1_Geo";
@@ -20193,6 +20285,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=368;
 					type="SWLB_b1_GeoHeavy";
@@ -20270,6 +20363,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=369;
 					type="SWLB_b1_Geo";
@@ -20347,6 +20441,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=370;
 					type="SWLB_b1_GeoAT";
@@ -20440,6 +20535,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=372;
 					type="SWLB_b1_Geo";
@@ -20517,6 +20613,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=373;
 					type="SWLB_b1_GeoHeavy";
@@ -20594,6 +20691,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=374;
 					type="SWLB_b1_Geo";
@@ -20671,6 +20769,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=375;
 					type="SWLB_b1_GeoAT";
@@ -20764,6 +20863,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=377;
 					type="SWLB_b1_Geo";
@@ -20841,6 +20941,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=378;
 					type="SWLB_b1_GeoHeavy";
@@ -20918,6 +21019,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=379;
 					type="SWLB_b1_Geo";
@@ -20995,6 +21097,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=380;
 					type="SWLB_b1_GeoAT";
@@ -21088,6 +21191,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=382;
 					type="SWLB_b1_Geo";
@@ -21165,6 +21269,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=383;
 					type="SWLB_b1_GeoHeavy";
@@ -21242,6 +21347,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=384;
 					type="SWLB_b1_Geo";
@@ -21319,6 +21425,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=385;
 					type="SWLB_b1_GeoAT";
@@ -21412,6 +21519,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=387;
 					type="SWLB_b1_Geo";
@@ -21489,6 +21597,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=388;
 					type="SWLB_b1_GeoHeavy";
@@ -21566,6 +21675,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=389;
 					type="SWLB_b1_Geo";
@@ -21643,6 +21753,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=390;
 					type="SWLB_b1_GeoAT";
@@ -21736,6 +21847,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=392;
 					type="SWLB_b1_Geo";
@@ -21813,6 +21925,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=393;
 					type="SWLB_b1_GeoHeavy";
@@ -21890,6 +22003,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=394;
 					type="SWLB_b1_Geo";
@@ -21967,6 +22081,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=395;
 					type="SWLB_b1_GeoAT";
@@ -22060,6 +22175,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=397;
 					type="SWLB_b1_Geo";
@@ -22137,6 +22253,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=398;
 					type="SWLB_b1_GeoHeavy";
@@ -22215,6 +22332,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=399;
 					type="SWLB_b1_Geo";
@@ -22292,6 +22410,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=400;
 					type="SWLB_b1_GeoAT";
@@ -22385,6 +22504,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=402;
 					type="SWLB_b1_Geo";
@@ -22462,6 +22582,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=403;
 					type="SWLB_b1_GeoHeavy";
@@ -22539,6 +22660,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=404;
 					type="SWLB_b1_Geo";
@@ -22616,6 +22738,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=405;
 					type="SWLB_b1_GeoAT";
@@ -22709,6 +22832,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=407;
 					type="SWLB_b1_Geo";
@@ -22786,6 +22910,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=408;
 					type="SWLB_b1_GeoHeavy";
@@ -22863,6 +22988,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=409;
 					type="SWLB_b1_Geo";
@@ -22940,6 +23066,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=410;
 					type="SWLB_b1_GeoAT";
@@ -23033,6 +23160,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=412;
 					type="SWLB_b1_Geo";
@@ -23110,6 +23238,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=413;
 					type="SWLB_b1_GeoHeavy";
@@ -23187,6 +23316,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=414;
 					type="SWLB_b1_Geo";
@@ -23264,6 +23394,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=415;
 					type="SWLB_b1_GeoAT";
@@ -23357,6 +23488,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=417;
 					type="SWLB_b1_Geo";
@@ -23434,6 +23566,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=418;
 					type="SWLB_b1_GeoHeavy";
@@ -23511,6 +23644,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=419;
 					type="SWLB_b1_Geo";
@@ -23588,6 +23722,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=420;
 					type="SWLB_b1_GeoAT";
@@ -23681,6 +23816,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=422;
 					type="SWLB_b1_Geo";
@@ -23758,6 +23894,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=423;
 					type="SWLB_b1_GeoHeavy";
@@ -23835,6 +23972,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=424;
 					type="SWLB_b1_Geo";
@@ -23912,6 +24050,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=425;
 					type="SWLB_b1_GeoAT";
@@ -24005,6 +24144,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=427;
 					type="SWLB_b1_Geo";
@@ -24082,6 +24222,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=428;
 					type="SWLB_b1_GeoHeavy";
@@ -24159,6 +24300,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=429;
 					type="SWLB_b1_Geo";
@@ -24236,6 +24378,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=430;
 					type="SWLB_b1_GeoAT";
@@ -24329,6 +24472,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=432;
 					type="SWLB_b1_Geo";
@@ -24406,6 +24550,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=433;
 					type="SWLB_b1_GeoHeavy";
@@ -24483,6 +24628,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=434;
 					type="SWLB_b1_Geo";
@@ -24560,6 +24706,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=435;
 					type="SWLB_b1_GeoAT";
@@ -24654,6 +24801,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=437;
 					type="SWLB_b1_Geo";
@@ -24672,6 +24820,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=438;
 					type="SWLB_b1_GeoHeavy";
@@ -24690,6 +24839,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=439;
 					type="SWLB_b1_GeoAT";
@@ -24785,6 +24935,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=442;
 					type="SWLB_b1_Geo";
@@ -24801,6 +24952,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=443;
 					type="SWLB_b1_GeoHeavy";
@@ -24817,6 +24969,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=444;
 					type="SWLB_b1_GeoAT";
@@ -24909,6 +25062,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=447;
 					type="SWLB_b1_Geo";
@@ -24927,6 +25081,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=448;
 					type="SWLB_b1_GeoHeavy";
@@ -24945,6 +25100,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=449;
 					type="SWLB_b1_GeoAT";
@@ -25041,6 +25197,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=452;
 					type="SWLB_b1_Geo";
@@ -25059,6 +25216,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=453;
 					type="SWLB_b1_GeoHeavy";
@@ -25077,6 +25235,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=454;
 					type="SWLB_b1_GeoAT";
@@ -25172,6 +25331,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=457;
 					type="SWLB_b1_Geo";
@@ -25189,6 +25349,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=458;
 					type="SWLB_b1_GeoHeavy";
@@ -25206,6 +25367,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=459;
 					type="SWLB_b1_GeoAT";
@@ -25301,6 +25463,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=462;
 					type="SWLB_b1_Geo";
@@ -25319,6 +25482,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=463;
 					type="SWLB_b1_GeoHeavy";
@@ -25337,6 +25501,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=464;
 					type="SWLB_b1_GeoAT";
@@ -25432,6 +25597,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=467;
 					type="SWLB_b1_Geo";
@@ -25449,6 +25615,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=468;
 					type="SWLB_b1_GeoHeavy";
@@ -25466,6 +25633,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=469;
 					type="SWLB_b1_GeoAT";
@@ -25560,6 +25728,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=472;
 					type="SWLB_b1_Geo";
@@ -25577,6 +25746,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=473;
 					type="SWLB_b1_GeoHeavy";
@@ -25594,6 +25764,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=474;
 					type="SWLB_b1_GeoAT";
@@ -26708,6 +26879,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=618;
 					type="SWLB_b1_base";
@@ -26724,6 +26896,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=619;
 					type="SWLB_b1_heavy_base";
@@ -26740,6 +26913,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=620;
 					type="SWLB_b1_base";
@@ -26756,6 +26930,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=621;
 					type="SWLB_b1_at_base";
@@ -26763,6 +26938,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=617;
 		};
@@ -26785,6 +26961,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=623;
 					type="SWLB_b1_base";
@@ -26801,6 +26978,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=624;
 					type="SWLB_b1_heavy_base";
@@ -26817,6 +26995,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=625;
 					type="SWLB_b1_base";
@@ -26833,6 +27012,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=626;
 					type="SWLB_b1_at_base";
@@ -26840,6 +27020,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=622;
 		};
@@ -26862,6 +27043,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=628;
 					type="SWLB_b1_base";
@@ -26878,6 +27060,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=629;
 					type="SWLB_b1_heavy_base";
@@ -26894,6 +27077,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=630;
 					type="SWLB_b1_base";
@@ -26910,6 +27094,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=631;
 					type="SWLB_b1_at_base";
@@ -26917,6 +27102,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=627;
 		};
@@ -26939,6 +27125,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=633;
 					type="SWLB_b1_base";
@@ -26955,6 +27142,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=634;
 					type="SWLB_b1_heavy_base";
@@ -26971,6 +27159,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=635;
 					type="SWLB_b1_base";
@@ -26987,6 +27176,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=636;
 					type="SWLB_b1_at_base";
@@ -26994,6 +27184,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=632;
 		};
@@ -27016,6 +27207,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=638;
 					type="SWLB_b1_base";
@@ -27032,6 +27224,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=639;
 					type="SWLB_b1_heavy_base";
@@ -27048,6 +27241,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=640;
 					type="SWLB_b1_base";
@@ -27064,6 +27258,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=641;
 					type="SWLB_b1_at_base";
@@ -27071,6 +27266,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=637;
 		};
@@ -27093,6 +27289,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=643;
 					type="SWLB_b1_base";
@@ -27109,6 +27306,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=644;
 					type="SWLB_b1_heavy_base";
@@ -27125,6 +27323,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=645;
 					type="SWLB_b1_base";
@@ -27141,6 +27340,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=646;
 					type="SWLB_b1_at_base";
@@ -27148,6 +27348,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=642;
 		};
@@ -27170,6 +27371,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=648;
 					type="SWLB_b1_base";
@@ -27186,6 +27388,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=649;
 					type="SWLB_b1_heavy_base";
@@ -27202,6 +27405,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=650;
 					type="SWLB_b1_base";
@@ -27218,6 +27422,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=651;
 					type="SWLB_b1_at_base";
@@ -27225,6 +27430,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=647;
 		};
@@ -27247,6 +27453,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=653;
 					type="SWLB_b1_base";
@@ -27263,6 +27470,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=654;
 					type="SWLB_b1_heavy_base";
@@ -27279,6 +27487,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=655;
 					type="SWLB_b1_base";
@@ -27295,6 +27504,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=656;
 					type="SWLB_b1_at_base";
@@ -27302,6 +27512,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=652;
 		};
@@ -27324,6 +27535,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=658;
 					type="SWLB_b1_base";
@@ -27340,6 +27552,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=659;
 					type="SWLB_b1_heavy_base";
@@ -27356,6 +27569,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=660;
 					type="SWLB_b1_base";
@@ -27372,6 +27586,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=661;
 					type="SWLB_b1_at_base";
@@ -27379,6 +27594,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=657;
 		};
@@ -27401,6 +27617,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=663;
 					type="SWLB_b1_base";
@@ -27417,6 +27634,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=664;
 					type="SWLB_b1_heavy_base";
@@ -27433,6 +27651,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=665;
 					type="SWLB_b1_base";
@@ -27449,6 +27668,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=666;
 					type="SWLB_b1_at_base";
@@ -27456,6 +27676,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=662;
 		};
@@ -27478,6 +27699,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=668;
 					type="SWLB_b1_base";
@@ -27494,6 +27716,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=669;
 					type="SWLB_b1_heavy_base";
@@ -27510,6 +27733,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=670;
 					type="SWLB_b1_base";
@@ -27526,6 +27750,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=671;
 					type="SWLB_b1_at_base";
@@ -27533,6 +27758,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=667;
 		};
@@ -27555,6 +27781,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=673;
 					type="SWLB_b1_base";
@@ -27571,6 +27798,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=674;
 					type="SWLB_b1_heavy_base";
@@ -27587,6 +27815,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=675;
 					type="SWLB_b1_base";
@@ -27603,6 +27832,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=676;
 					type="SWLB_b1_at_base";
@@ -27610,6 +27840,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=672;
 		};
@@ -27632,6 +27863,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=678;
 					type="SWLB_b1_base";
@@ -27648,6 +27880,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=679;
 					type="SWLB_b1_heavy_base";
@@ -27664,6 +27897,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=680;
 					type="SWLB_b1_base";
@@ -27680,6 +27914,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=681;
 					type="SWLB_b1_at_base";
@@ -27687,6 +27922,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=677;
 		};
@@ -27709,6 +27945,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=683;
 					type="SWLB_b1_base";
@@ -27725,6 +27962,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=684;
 					type="SWLB_b1_heavy_base";
@@ -27741,6 +27979,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=685;
 					type="SWLB_b1_base";
@@ -27757,6 +27996,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=686;
 					type="SWLB_b1_at_base";
@@ -27764,6 +28004,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=682;
 		};
@@ -27786,6 +28027,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=688;
 					type="SWLB_b1_base";
@@ -27802,6 +28044,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=689;
 					type="SWLB_b1_heavy_base";
@@ -27818,6 +28061,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=690;
 					type="SWLB_b1_base";
@@ -27834,6 +28078,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=691;
 					type="SWLB_b1_at_base";
@@ -27841,6 +28086,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=687;
 		};
@@ -27863,6 +28109,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=693;
 					type="SWLB_b1_base";
@@ -27879,6 +28126,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=694;
 					type="SWLB_b1_heavy_base";
@@ -27895,6 +28143,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=695;
 					type="SWLB_b1_base";
@@ -27911,6 +28160,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=696;
 					type="SWLB_b1_at_base";
@@ -27918,6 +28168,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=692;
 		};
@@ -27940,6 +28191,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=698;
 					type="SWLB_b1_base";
@@ -27956,6 +28208,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=699;
 					type="SWLB_b1_heavy_base";
@@ -27972,6 +28225,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=700;
 					type="SWLB_b1_base";
@@ -27988,6 +28242,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=701;
 					type="SWLB_b1_at_base";
@@ -27995,6 +28250,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=697;
 		};
@@ -28017,6 +28273,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=703;
 					type="SWLB_b1_base";
@@ -28033,6 +28290,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=704;
 					type="SWLB_b1_heavy_base";
@@ -28049,6 +28307,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=705;
 					type="SWLB_b1_base";
@@ -28065,6 +28324,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=706;
 					type="SWLB_b1_at_base";
@@ -28072,6 +28332,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=702;
 		};
@@ -28094,6 +28355,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=708;
 					type="SWLB_b1_base";
@@ -28110,6 +28372,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=709;
 					type="SWLB_b1_heavy_base";
@@ -28126,6 +28389,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=710;
 					type="SWLB_b1_base";
@@ -28142,6 +28406,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=711;
 					type="SWLB_b1_at_base";
@@ -28149,6 +28414,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=707;
 		};
@@ -28171,6 +28437,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=713;
 					type="SWLB_b1_base";
@@ -28187,6 +28454,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=714;
 					type="SWLB_b1_heavy_base";
@@ -28203,6 +28471,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=715;
 					type="SWLB_b1_base";
@@ -28219,6 +28488,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=716;
 					type="SWLB_b1_at_base";
@@ -28226,6 +28496,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=712;
 		};
@@ -28248,6 +28519,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=718;
 					type="SWLB_b1_base";
@@ -28264,6 +28536,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=719;
 					type="SWLB_b1_heavy_base";
@@ -28280,6 +28553,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=720;
 					type="SWLB_b1_base";
@@ -28296,6 +28570,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=721;
 					type="SWLB_b1_at_base";
@@ -28303,6 +28578,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=717;
 		};
@@ -28325,6 +28601,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=723;
 					type="SWLB_b1_base";
@@ -28341,6 +28618,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=724;
 					type="SWLB_b1_heavy_base";
@@ -28357,6 +28635,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=725;
 					type="SWLB_b1_base";
@@ -28373,6 +28652,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=726;
 					type="SWLB_b1_at_base";
@@ -28380,6 +28660,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=722;
 		};
@@ -28402,6 +28683,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=728;
 					type="SWLB_b1_base";
@@ -28418,6 +28700,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=729;
 					type="SWLB_b1_heavy_base";
@@ -28434,6 +28717,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=730;
 					type="SWLB_b1_base";
@@ -28450,6 +28734,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=731;
 					type="SWLB_b1_at_base";
@@ -28457,6 +28742,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=727;
 		};
@@ -28479,6 +28765,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=733;
 					type="SWLB_b1_base";
@@ -28495,6 +28782,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=734;
 					type="SWLB_b1_heavy_base";
@@ -28511,6 +28799,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=735;
 					type="SWLB_b1_base";
@@ -28527,6 +28816,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=736;
 					type="SWLB_b1_at_base";
@@ -28534,6 +28824,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=732;
 		};
@@ -28556,6 +28847,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=738;
 					type="SWLB_b1_base";
@@ -28572,6 +28864,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=739;
 					type="SWLB_b1_heavy_base";
@@ -28588,6 +28881,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=740;
 					type="SWLB_b1_base";
@@ -28604,6 +28898,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=741;
 					type="SWLB_b1_at_base";
@@ -28611,6 +28906,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=737;
 		};
@@ -28633,6 +28929,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=743;
 					type="SWLB_b1_base";
@@ -28649,6 +28946,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=744;
 					type="SWLB_b1_heavy_base";
@@ -28665,6 +28963,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=745;
 					type="SWLB_b1_base";
@@ -28681,6 +28980,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=746;
 					type="SWLB_b1_at_base";
@@ -28688,6 +28988,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=742;
 		};
@@ -28710,6 +29011,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=748;
 					type="SWLB_b1_base";
@@ -28726,6 +29028,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=749;
 					type="SWLB_b1_heavy_base";
@@ -28742,6 +29045,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=750;
 					type="SWLB_b1_base";
@@ -28758,6 +29062,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=751;
 					type="SWLB_b1_at_base";
@@ -28765,6 +29070,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=747;
 		};
@@ -28787,6 +29093,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=753;
 					type="SWLB_b1_base";
@@ -28803,6 +29110,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=754;
 					type="SWLB_b1_heavy_base";
@@ -28819,6 +29127,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=755;
 					type="SWLB_b1_base";
@@ -28835,6 +29144,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=756;
 					type="SWLB_b1_at_base";
@@ -28842,6 +29152,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=752;
 		};
@@ -28864,6 +29175,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=758;
 					type="SWLB_b1_base";
@@ -28880,6 +29192,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=759;
 					type="SWLB_b1_heavy_base";
@@ -28896,6 +29209,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=760;
 					type="SWLB_b1_base";
@@ -28912,6 +29226,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=761;
 					type="SWLB_b1_at_base";
@@ -28919,6 +29234,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=757;
 		};
@@ -28941,6 +29257,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=763;
 					type="SWLB_b1_base";
@@ -28957,6 +29274,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=764;
 					type="SWLB_b1_heavy_base";
@@ -28973,6 +29291,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=765;
 					type="SWLB_b1_base";
@@ -28989,6 +29308,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=766;
 					type="SWLB_b1_at_base";
@@ -28996,6 +29316,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=762;
 		};
@@ -29018,6 +29339,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=768;
 					type="SWLB_b1_base";
@@ -29034,6 +29356,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=769;
 					type="SWLB_b1_heavy_base";
@@ -29050,6 +29373,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=770;
 					type="SWLB_b1_base";
@@ -29066,6 +29390,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=771;
 					type="SWLB_b1_at_base";
@@ -29073,6 +29398,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=767;
 		};
@@ -29095,6 +29421,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=773;
 					type="SWLB_b1_base";
@@ -29111,6 +29438,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=774;
 					type="SWLB_b1_heavy_base";
@@ -29127,6 +29455,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=775;
 					type="SWLB_b1_base";
@@ -29143,6 +29472,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=776;
 					type="SWLB_b1_at_base";
@@ -29150,6 +29480,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=772;
 		};
@@ -29172,6 +29503,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=778;
 					type="SWLB_b1_base";
@@ -29188,6 +29520,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=779;
 					type="SWLB_b1_heavy_base";
@@ -29204,6 +29537,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=780;
 					type="SWLB_b1_base";
@@ -29220,6 +29554,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=781;
 					type="SWLB_b1_at_base";
@@ -29227,6 +29562,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=777;
 		};
@@ -29249,6 +29585,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=853;
 					type="SWLB_b1_base";
@@ -29265,6 +29602,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=854;
 					type="SWLB_b1_heavy_base";
@@ -29281,6 +29619,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=855;
 					type="SWLB_b1_base";
@@ -29297,6 +29636,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=856;
 					type="SWLB_b1_at_base";
@@ -29304,6 +29644,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=852;
 		};
@@ -29326,6 +29667,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=858;
 					type="SWLB_b1_base";
@@ -29342,6 +29684,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=859;
 					type="SWLB_b1_heavy_base";
@@ -29358,6 +29701,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=860;
 					type="SWLB_b1_base";
@@ -29374,6 +29718,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=861;
 					type="SWLB_b1_at_base";
@@ -29381,6 +29726,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=857;
 		};
@@ -29403,6 +29749,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=863;
 					type="SWLB_b1_base";
@@ -29419,6 +29766,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=864;
 					type="SWLB_b1_heavy_base";
@@ -29435,6 +29783,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=865;
 					type="SWLB_b1_base";
@@ -29451,6 +29800,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=866;
 					type="SWLB_b1_at_base";
@@ -29458,6 +29808,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=862;
 		};
@@ -29480,6 +29831,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=868;
 					type="SWLB_b1_base";
@@ -29496,6 +29848,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=869;
 					type="SWLB_b1_heavy_base";
@@ -29512,6 +29865,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=870;
 					type="SWLB_b1_base";
@@ -29528,6 +29882,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=871;
 					type="SWLB_b1_at_base";
@@ -29535,6 +29890,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=867;
 		};
@@ -29557,6 +29913,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=873;
 					type="SWLB_b1_base";
@@ -29573,6 +29930,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=874;
 					type="SWLB_b1_heavy_base";
@@ -29589,6 +29947,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=875;
 					type="SWLB_b1_base";
@@ -29605,6 +29964,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=876;
 					type="SWLB_b1_at_base";
@@ -29612,6 +29972,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=872;
 		};
@@ -29634,6 +29995,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=878;
 					type="SWLB_b1_base";
@@ -29650,6 +30012,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=879;
 					type="SWLB_b1_heavy_base";
@@ -29666,6 +30029,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=880;
 					type="SWLB_b1_base";
@@ -29682,6 +30046,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=881;
 					type="SWLB_b1_at_base";
@@ -29689,6 +30054,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=877;
 		};
@@ -29711,6 +30077,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=883;
 					type="SWLB_b1_base";
@@ -29727,6 +30094,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=884;
 					type="SWLB_b1_heavy_base";
@@ -29743,6 +30111,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=885;
 					type="SWLB_b1_base";
@@ -29759,6 +30128,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=886;
 					type="SWLB_b1_at_base";
@@ -29766,6 +30136,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=882;
 		};
@@ -29788,6 +30159,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=888;
 					type="SWLB_b1_base";
@@ -29804,6 +30176,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=889;
 					type="SWLB_b1_heavy_base";
@@ -29820,6 +30193,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=890;
 					type="SWLB_b1_base";
@@ -29836,6 +30210,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=891;
 					type="SWLB_b1_at_base";
@@ -29843,6 +30218,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=887;
 		};
@@ -29865,6 +30241,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=893;
 					type="SWLB_b1_base";
@@ -29881,6 +30258,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=894;
 					type="SWLB_b1_heavy_base";
@@ -29897,6 +30275,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=895;
 					type="SWLB_b1_base";
@@ -29913,6 +30292,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=896;
 					type="SWLB_b1_at_base";
@@ -29920,6 +30300,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=892;
 		};
@@ -29942,6 +30323,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=898;
 					type="SWLB_b1_base";
@@ -29958,6 +30340,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=899;
 					type="SWLB_b1_heavy_base";
@@ -29974,6 +30357,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=900;
 					type="SWLB_b1_base";
@@ -29990,6 +30374,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=901;
 					type="SWLB_b1_at_base";
@@ -29997,6 +30382,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=897;
 		};
@@ -30019,6 +30405,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=903;
 					type="SWLB_b1_base";
@@ -30035,6 +30422,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=904;
 					type="SWLB_b1_heavy_base";
@@ -30051,6 +30439,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=905;
 					type="SWLB_b1_base";
@@ -30067,6 +30456,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=906;
 					type="SWLB_b1_at_base";
@@ -30074,6 +30464,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=902;
 		};
@@ -30096,6 +30487,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=908;
 					type="SWLB_b1_base";
@@ -30112,6 +30504,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=909;
 					type="SWLB_b1_heavy_base";
@@ -30128,6 +30521,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=910;
 					type="SWLB_b1_base";
@@ -30144,6 +30538,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=911;
 					type="SWLB_b1_at_base";
@@ -30151,6 +30546,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=907;
 		};
@@ -30173,6 +30569,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=913;
 					type="SWLB_b1_base";
@@ -30189,6 +30586,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=914;
 					type="SWLB_b1_heavy_base";
@@ -30205,6 +30603,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=915;
 					type="SWLB_b1_base";
@@ -30221,6 +30620,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=916;
 					type="SWLB_b1_at_base";
@@ -30228,6 +30628,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=912;
 		};
@@ -30250,6 +30651,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=918;
 					type="SWLB_b1_base";
@@ -30266,6 +30668,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=919;
 					type="SWLB_b1_heavy_base";
@@ -30282,6 +30685,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=920;
 					type="SWLB_b1_base";
@@ -30298,6 +30702,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=921;
 					type="SWLB_b1_at_base";
@@ -30305,6 +30710,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=917;
 		};
@@ -30327,6 +30733,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=923;
 					type="SWLB_b1_base";
@@ -30343,6 +30750,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=924;
 					type="SWLB_b1_heavy_base";
@@ -30359,6 +30767,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=925;
 					type="SWLB_b1_base";
@@ -30375,6 +30784,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=926;
 					type="SWLB_b1_at_base";
@@ -30382,6 +30792,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=922;
 		};
@@ -30404,6 +30815,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=928;
 					type="SWLB_b1_base";
@@ -30420,6 +30832,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=929;
 					type="SWLB_b1_heavy_base";
@@ -30436,6 +30849,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=930;
 					type="SWLB_b1_base";
@@ -30452,6 +30866,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=931;
 					type="SWLB_b1_at_base";
@@ -30459,6 +30874,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=927;
 		};
@@ -30481,6 +30897,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=933;
 					type="SWLB_b1_base";
@@ -30497,6 +30914,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=934;
 					type="SWLB_b1_heavy_base";
@@ -30513,6 +30931,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=935;
 					type="SWLB_b1_base";
@@ -30529,6 +30948,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=936;
 					type="SWLB_b1_at_base";
@@ -30536,6 +30956,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=932;
 		};
@@ -30558,6 +30979,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=938;
 					type="SWLB_b1_base";
@@ -30574,6 +30996,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=939;
 					type="SWLB_b1_heavy_base";
@@ -30590,6 +31013,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=940;
 					type="SWLB_b1_base";
@@ -30606,6 +31030,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=941;
 					type="SWLB_b1_at_base";
@@ -30613,6 +31038,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=937;
 		};
@@ -30635,6 +31061,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=943;
 					type="SWLB_b1_base";
@@ -30651,6 +31078,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=944;
 					type="SWLB_b1_heavy_base";
@@ -30667,6 +31095,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=945;
 					type="SWLB_b1_base";
@@ -30683,6 +31112,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=946;
 					type="SWLB_b1_at_base";
@@ -30690,6 +31120,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=942;
 		};
@@ -30704,6 +31135,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=948;
 			type="ls_disabled_b1";
@@ -30719,6 +31151,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=955;
 			type="ls_disabled_b1";
@@ -30734,6 +31167,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=956;
 			type="ls_disabled_b1";
@@ -30749,6 +31183,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=957;
 			type="ls_disabled_b1";
@@ -30764,6 +31199,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=958;
 			type="ls_disabled_b1";
@@ -30779,6 +31215,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=959;
 			type="ls_disabled_b1";
@@ -30794,6 +31231,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=960;
 			type="ls_disabled_b1";
@@ -30809,6 +31247,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=961;
 			type="ls_disabled_b1";
@@ -30824,6 +31263,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=962;
 			type="ls_disabled_b1";
@@ -30839,6 +31279,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=963;
 			type="ls_disabled_b1";
@@ -30854,6 +31295,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=964;
 			type="ls_disabled_b1";
@@ -30869,6 +31311,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=965;
 			type="ls_disabled_b1";
@@ -30884,6 +31327,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=966;
 			type="ls_disabled_b1";
@@ -30899,6 +31343,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=967;
 			type="ls_disabled_b1";
@@ -30914,6 +31359,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=968;
 			type="ls_disabled_b1";
@@ -30929,6 +31375,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=969;
 			type="ls_disabled_b1";
@@ -30944,6 +31391,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=970;
 			type="ls_disabled_b1";
@@ -30959,6 +31407,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=971;
 			type="ls_disabled_b1";
@@ -30974,6 +31423,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=972;
 			type="ls_disabled_b1";
@@ -30989,6 +31439,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=973;
 			type="ls_disabled_b1";
@@ -31004,6 +31455,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=974;
 			type="ls_disabled_b1";
@@ -31019,6 +31471,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=975;
 			type="ls_disabled_b1";
@@ -31034,6 +31487,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=976;
 			type="ls_disabled_b1";
@@ -31049,6 +31503,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=977;
 			type="ls_disabled_b1";
@@ -31065,6 +31520,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=978;
 			type="ls_disabled_b1";
@@ -31081,6 +31537,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=979;
 			type="ls_disabled_b1";
@@ -31097,6 +31554,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=980;
 			type="ls_disabled_b1";
@@ -31113,6 +31571,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=981;
 			type="ls_disabled_b1";
@@ -31129,6 +31588,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=982;
 			type="ls_disabled_b1";
@@ -31145,6 +31605,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=983;
 			type="ls_disabled_b1";
@@ -31161,6 +31622,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=984;
 			type="ls_disabled_b1";
@@ -31177,6 +31639,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=985;
 			type="ls_disabled_b1";
@@ -31193,6 +31656,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=986;
 			type="ls_disabled_b1";
@@ -31209,6 +31673,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=987;
 			type="ls_disabled_b1";
@@ -31225,6 +31690,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=988;
 			type="ls_disabled_b1";
@@ -31241,6 +31707,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=989;
 			type="ls_disabled_b1";
@@ -31257,6 +31724,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=990;
 			type="ls_disabled_b1";
@@ -31273,6 +31741,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=991;
 			type="ls_disabled_b1";
@@ -31289,6 +31758,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=992;
 			type="ls_disabled_b1";
@@ -31305,6 +31775,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=993;
 			type="ls_disabled_b1";
@@ -31321,6 +31792,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=994;
 			type="ls_disabled_b1";
@@ -31337,6 +31809,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=995;
 			type="ls_disabled_b1";
@@ -31353,6 +31826,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=996;
 			type="ls_disabled_b1";
@@ -31369,6 +31843,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=997;
 			type="ls_disabled_b1";
@@ -31385,6 +31860,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=998;
 			type="ls_disabled_b1";
@@ -31401,6 +31877,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=999;
 			type="ls_disabled_b1";
@@ -31417,6 +31894,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1000;
 			type="ls_disabled_b1";
@@ -31433,6 +31911,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1001;
 			type="ls_disabled_b1";
@@ -31455,6 +31934,7 @@ class Mission
 					flags=2;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1037;
 					type="SWLB_b1_pilot_base";
@@ -31470,6 +31950,7 @@ class Mission
 					side="East";
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1038;
 					type="SWLB_b1_pilot_base";
@@ -31485,6 +31966,7 @@ class Mission
 					side="East";
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1039;
 					type="SWLB_b1_pilot_base";
@@ -31500,6 +31982,7 @@ class Mission
 					side="East";
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1040;
 					type="SWLB_b1_pilot_base";
@@ -31577,6 +32060,7 @@ class Mission
 			flags=2;
 			class Attributes
 			{
+				pylons=";;";
 			};
 			id=1036;
 			type="ls_hmp";
@@ -31600,6 +32084,7 @@ class Mission
 					flags=2;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1042;
 					type="SWLB_b1_pilot_base";
@@ -31615,6 +32100,7 @@ class Mission
 					side="East";
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1043;
 					type="SWLB_b1_pilot_base";
@@ -31630,6 +32116,7 @@ class Mission
 					side="East";
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1044;
 					type="SWLB_b1_pilot_base";
@@ -31645,6 +32132,7 @@ class Mission
 					side="East";
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1045;
 					type="SWLB_b1_pilot_base";
@@ -31722,6 +32210,7 @@ class Mission
 			flags=2;
 			class Attributes
 			{
+				pylons=";;";
 			};
 			id=1046;
 			type="ls_hmp";
@@ -31745,6 +32234,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1049;
 					type="SWLB_b1_pilot_base";
@@ -31760,6 +32250,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1050;
 					type="SWLB_b1_pilot_base";
@@ -31775,6 +32266,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1051;
 					type="SWLB_b1_pilot_base";
@@ -31790,6 +32282,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1052;
 					type="SWLB_b1_pilot_base";
@@ -31865,6 +32358,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
+				pylons=";;";
 			};
 			id=1048;
 			type="ls_hmp";
@@ -31887,6 +32381,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1055;
 					type="SWLB_b1_pilot_base";
@@ -31902,6 +32397,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1056;
 					type="SWLB_b1_pilot_base";
@@ -31917,6 +32413,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1057;
 					type="SWLB_b1_pilot_base";
@@ -31932,6 +32429,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						ignoreByDynSimulGrid=1;
 					};
 					id=1058;
 					type="SWLB_b1_pilot_base";
@@ -32007,6 +32505,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
+				pylons=";;";
 			};
 			id=1054;
 			type="ls_hmp";
@@ -32030,6 +32529,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1060;
 					type="SWLB_b1_base";
@@ -32046,6 +32546,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1061;
 					type="SWLB_b1_heavy_base";
@@ -32062,6 +32563,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1062;
 					type="SWLB_b1_base";
@@ -32078,6 +32580,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1063;
 					type="SWLB_b1_at_base";
@@ -32085,6 +32588,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1059;
 		};
@@ -32107,6 +32611,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1065;
 					type="SWLB_b1_base";
@@ -32123,6 +32628,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1066;
 					type="SWLB_b1_heavy_base";
@@ -32139,6 +32645,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1067;
 					type="SWLB_b1_base";
@@ -32155,6 +32662,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1068;
 					type="SWLB_b1_at_base";
@@ -32162,6 +32670,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1064;
 		};
@@ -32184,6 +32693,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1070;
 					type="SWLB_b1_base";
@@ -32200,6 +32710,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1071;
 					type="SWLB_b1_heavy_base";
@@ -32216,6 +32727,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1072;
 					type="SWLB_b1_base";
@@ -32232,6 +32744,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1073;
 					type="SWLB_b1_at_base";
@@ -32239,6 +32752,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1069;
 		};
@@ -32261,6 +32775,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1075;
 					type="SWLB_b1_base";
@@ -32277,6 +32792,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1076;
 					type="SWLB_b1_heavy_base";
@@ -32293,6 +32809,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1077;
 					type="SWLB_b1_base";
@@ -32309,6 +32826,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1078;
 					type="SWLB_b1_at_base";
@@ -32316,6 +32834,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1074;
 		};
@@ -32338,6 +32857,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1080;
 					type="SWLB_b1_base";
@@ -32354,6 +32874,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1081;
 					type="SWLB_b1_heavy_base";
@@ -32370,6 +32891,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1082;
 					type="SWLB_b1_base";
@@ -32386,6 +32908,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1083;
 					type="SWLB_b1_at_base";
@@ -32393,6 +32916,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1079;
 		};
@@ -32415,6 +32939,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1085;
 					type="SWLB_b1_base";
@@ -32431,6 +32956,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1086;
 					type="SWLB_b1_heavy_base";
@@ -32447,6 +32973,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1087;
 					type="SWLB_b1_base";
@@ -32463,6 +32990,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1088;
 					type="SWLB_b1_at_base";
@@ -32470,6 +32998,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1084;
 		};
@@ -32492,9 +33021,11 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1090;
 					type="SWLB_b1_base";
+					atlOffset=3.0517578e-005;
 				};
 				class Item1
 				{
@@ -32508,9 +33039,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1091;
 					type="SWLB_b1_heavy_base";
+					atlOffset=3.0517578e-005;
 				};
 				class Item2
 				{
@@ -32524,9 +33057,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1092;
 					type="SWLB_b1_base";
+					atlOffset=2.0980835e-005;
 				};
 				class Item3
 				{
@@ -32540,15 +33075,19 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1093;
 					type="SWLB_b1_at_base";
+					atlOffset=0.00010871887;
 				};
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1089;
+			atlOffset=3.0517578e-005;
 		};
 		class Item273
 		{
@@ -32569,6 +33108,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1095;
 					type="SWLB_b1_base";
@@ -32585,6 +33125,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1096;
 					type="SWLB_b1_heavy_base";
@@ -32601,6 +33142,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1097;
 					type="SWLB_b1_base";
@@ -32617,6 +33159,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1098;
 					type="SWLB_b1_at_base";
@@ -32624,6 +33167,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1094;
 		};
@@ -32646,6 +33190,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1100;
 					type="SWLB_b1_base";
@@ -32662,6 +33207,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1101;
 					type="SWLB_b1_heavy_base";
@@ -32678,6 +33224,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1102;
 					type="SWLB_b1_base";
@@ -32694,6 +33241,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1103;
 					type="SWLB_b1_at_base";
@@ -32701,6 +33249,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1099;
 		};
@@ -32723,6 +33272,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1105;
 					type="SWLB_b1_base";
@@ -32739,6 +33289,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1106;
 					type="SWLB_b1_heavy_base";
@@ -32755,6 +33306,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1107;
 					type="SWLB_b1_base";
@@ -32771,6 +33323,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1108;
 					type="SWLB_b1_at_base";
@@ -32778,6 +33331,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1104;
 		};
@@ -32800,6 +33354,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1110;
 					type="SWLB_b1_base";
@@ -32816,6 +33371,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1111;
 					type="SWLB_b1_heavy_base";
@@ -32832,6 +33388,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1112;
 					type="SWLB_b1_base";
@@ -32848,6 +33405,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1113;
 					type="SWLB_b1_at_base";
@@ -32855,6 +33413,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1109;
 		};
@@ -32877,6 +33436,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1115;
 					type="SWLB_b1_base";
@@ -32893,6 +33453,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1116;
 					type="SWLB_b1_heavy_base";
@@ -32909,6 +33470,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1117;
 					type="SWLB_b1_base";
@@ -32925,6 +33487,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1118;
 					type="SWLB_b1_at_base";
@@ -32932,6 +33495,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1114;
 		};
@@ -32954,6 +33518,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						ignoreByDynSimulGrid=1;
 					};
 					id=1120;
 					type="SWLB_b1_base";
@@ -32970,6 +33535,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1121;
 					type="SWLB_b1_heavy_base";
@@ -32986,6 +33552,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1122;
 					type="SWLB_b1_base";
@@ -33002,6 +33569,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1123;
 					type="SWLB_b1_at_base";
@@ -33009,6 +33577,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1119;
 		};
