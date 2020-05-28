@@ -440,7 +440,7 @@ force ace_medical_treatment_litterCleanupDelay = 500;
 
 force ace_medical_treatment_locationEpinephrine = 0;
 
-force ace_medical_treatment_locationPAK = 0;
+force ace_medical_treatment_locationPAK = 3;
 
 force ace_medical_treatment_locationsBoostTraining = false;
 
