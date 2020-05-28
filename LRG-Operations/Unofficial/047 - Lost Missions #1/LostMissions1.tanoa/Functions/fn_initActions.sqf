@@ -90,7 +90,7 @@ _action = [
 	"<t color='#f05050'>Jump (Short)</t>",
 	"",
 	{
-		player setVelocityModelSpace [0,10,5];
+		player setVelocityModelSpace [0,10,10];
 	},
 	{_player getVariable ["LR_GodMode_On", false]}
 ] call ACE_interact_menu_fnc_createAction;
@@ -103,7 +103,7 @@ _action = [
 	"<t color='#f05050'>Jump (Medium)</t>",
 	"",
 	{
-		player setVelocityModelSpace [0,20,6];
+		player setVelocityModelSpace [0,20,15];
 	},
 	{_player getVariable ["LR_GodMode_On", false]}
 ] call ACE_interact_menu_fnc_createAction;
@@ -116,7 +116,7 @@ _action = [
 	"<t color='#f05050'>Jump (Long)</t>",
 	"",
 	{
-		player setVelocityModelSpace [0,50,8];
+		player setVelocityModelSpace [0,50,25];
 	},
 	{_player getVariable ["LR_GodMode_On", false]}
 ] call ACE_interact_menu_fnc_createAction;
@@ -248,6 +248,40 @@ _action = [
 		} forEach allPlayers;
 	},
 	{true}
+] call ace_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
+	"FlashlightsKillPerm",
+	"Disable Flashlights (Permanent)",
+	"",
+	{
+		LR_flashlightsDead = true;
+		{
+			if !(_x getUnitTrait "Mission Maker") then {
+				[100] remoteExec ["LR_Sec_fnc_killFlashlight", _x];
+			};
+		} forEach allPlayers;
+	},
+	{not (LR_flashlightsDead)}
+] call ace_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
+	"FlashlightsEnable",
+	"Enable Flashlights",
+	"",
+	{
+		LR_flashlightsDead = false;
+	},
+	{LR_flashlightsDead}
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;

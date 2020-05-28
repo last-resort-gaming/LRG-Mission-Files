@@ -9,7 +9,7 @@ if (player getUnitTrait "Mission Maker") then {
 			{
 				if !(_x getUnitTrait "Mission Maker") then {
 					drawIcon3D [
-						"targetIcon.paa",
+						"a3\ui_f\data\IGUI\Cfg\Cursors\attack_ca.paa",
 						[1,0,0,1],
 						_x modelToWorldVisual [0, 0, 0],
 						1,
