@@ -11,6 +11,7 @@ LR_Tasks_05_active = false;
 LR_Tasks_06_active = false;
 LR_Tasks_07_active = false;
 LR_Tasks_08_active = false;
+LR_Tasks_09_active = false;
 
 
 LR_Tasks_01_ready = false;
@@ -21,6 +22,7 @@ LR_Tasks_05_ready = false;
 LR_Tasks_06_ready = false;
 LR_Tasks_07_ready = false;
 LR_Tasks_08_ready = false;
+LR_Tasks_09_ready = false;
 
 LR_Sec_fnc_disCarGlitch = {
 	if (not canSuspend) exitWith {[] spawn LR_Sec_fnc_disCarGlitch};

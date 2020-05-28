@@ -9,7 +9,6 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"MiscActions",
@@ -20,7 +19,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"MissionStart",
@@ -31,7 +30,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"MissionEndSuccess",
@@ -42,7 +41,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"MissionEndFailure",
@@ -53,7 +52,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"GodModeOn",
@@ -68,7 +67,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"GodModeOff",
@@ -83,7 +82,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"JumpShort",
@@ -96,7 +95,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"JumpMed",
@@ -109,7 +108,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"JumpLong",
@@ -122,7 +121,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // SPAWNS
 
@@ -135,7 +134,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"SpawnSL",
@@ -146,7 +145,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "SpawnActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SpawnActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "SpawnActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"SpawnEng",
@@ -157,7 +156,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "SpawnActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SpawnActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "SpawnActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"SpawnMedic",
@@ -168,7 +167,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "SpawnActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SpawnActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "SpawnActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // LAMPS/FLASHLIGHTS
 
@@ -181,7 +180,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"FlashlightsOff",
@@ -198,7 +197,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"FlashlightsFlicker",
@@ -215,7 +214,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"FlashlightsFlickerRnd",
@@ -234,7 +233,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"FlashlightsKill",
@@ -251,10 +250,10 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"FlashlightsKillPerm",
@@ -272,7 +271,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"FlashlightsEnable",
@@ -285,7 +284,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // VISUALS
 
@@ -298,7 +297,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"changeVision",
@@ -311,7 +310,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"hidePlayer",
@@ -325,7 +324,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"unhidePlayer",
@@ -339,7 +338,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"GlitchAll",
@@ -352,7 +351,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"GlitchRnd",
@@ -371,7 +370,7 @@ _action = [
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "VisualActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // SOUNDS
 
@@ -384,7 +383,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"LocalSounds",
@@ -395,9 +394,28 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
+	"LocalSounds2",
+	"Local Sounds #2",
+	"",
+	{diag_log "running local sound parent"},
+	{true}
+] call ACE_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 {
+	private ["_subpath"];
+
+	if ((round (_forEachIndex % 2)) == 0) then {
+		_subpath = "LocalSounds";
+	} else {
+		_subpath = "LocalSounds2";
+	};
+
 	_cfgName = getText (configFile >> "CfgSounds" >> _x >> "name");
 	_action = [
 		format ["playSound3D%1", _forEachIndex],
@@ -414,8 +432,8 @@ _action = [
 		[_x]
 	] call ACE_interact_menu_fnc_createAction;
 
-	[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions", "LocalSounds"], _action] call ACE_interact_menu_fnc_addActionToObject;
-	[["ACE_ZeusActions", "CreatureActions", "SoundActions", "LocalSounds"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+	[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions", _subpath], _action] call ACE_interact_menu_fnc_addActionToObject;
+	[["ACE_ZeusActions", "SoundActions", _subpath], _action] call ACE_interact_menu_fnc_addActionToZeus;
 } forEach [
 	"alien_horn_1",
 	"reverse_voice_female",
@@ -455,7 +473,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"playDrone",
@@ -489,7 +507,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"playAmbient",
@@ -520,7 +538,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"stopAllSounds",
@@ -538,7 +556,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // ==================
 //      TASKS
@@ -554,7 +572,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // TASK 0
 
@@ -572,7 +590,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // TASK 1
 
@@ -601,7 +619,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"completeTask01",
@@ -616,7 +634,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // TASK 2
 
@@ -643,7 +661,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"completeTask02",
@@ -658,7 +676,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // TASK 3
 
@@ -685,7 +703,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"completeTask03",
@@ -700,7 +718,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // TASK 4
 
@@ -727,7 +745,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"completeTask04",
@@ -742,7 +760,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // TASK 5
 
@@ -769,7 +787,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"completeTask05",
@@ -784,7 +802,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // TASK 6
 
@@ -798,7 +816,7 @@ _action = [
 			"secTask06",
 			[
 				"Look for the research team. Search the higher levels of the temple thoroughly to locate the source of the extraneous signals picked up by the research team.",
-				"Find Research Team & Signal Source",
+				"Find extraneous Signal Source",
 				"obj_marker_3"
 			],
 			getMarkerPos "obj_marker_3",
@@ -811,7 +829,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"completeTask06",
@@ -826,7 +844,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // TASK 7
 
@@ -853,7 +871,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"completeTask07",
@@ -868,7 +886,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 // TASK 8
 
@@ -881,13 +899,14 @@ _action = [
 			west,
 			"secTask08",
 			[
-				"Escape the island from the Civilian Heliport.",
-				"Escape!",
-				"obj_marker_4"
+				"Destroy the Device and all evidence of the secret project. CSAT must never recover this information!",
+				"Destroy all evidence",
+				"obj_marker_3"
 			],
-			getMarkerPos "obj_marker_4",
+			getMarkerPos "obj_marker_3",
 			"ASSIGNED"
 		] call BIS_fnc_taskCreate;
+
 		LR_Tasks_08_active = true;
 		LR_Tasks_08_ready = false;
 	},
@@ -895,7 +914,7 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"completeTask08",
@@ -910,19 +929,66 @@ _action = [
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+// TASK 9
 
 _action = [
-	"failTask08",
-	"<t color='#ff0000'>Fail Task 8</t>",
+	"startTask08",
+	"<t color='#0099ff'>Start Task 9</t>",
 	"",
 	{
-		["secTask08", "FAILED"] call BIS_fnc_taskSetState;
-		LR_Tasks_08_active = false;
-		LR_Tasks_09_ready = true;
+		[
+			west,
+			"secTask09",
+			[
+				"Escape the island from the Civilian Heliport.",
+				"Escape!",
+				"obj_marker_4"
+			],
+			getMarkerPos "obj_marker_4",
+			"ASSIGNED"
+		] call BIS_fnc_taskCreate;
+
+		"LeadTrack01_F" remoteExec ["playMusic", 0];
+
+		[99] call LR_Sec_fnc_setRespawn;
+
+		LR_Tasks_09_active = true;
+		LR_Tasks_09_ready = false;
 	},
-	{LR_Tasks_08_active}
+	{LR_Tasks_09_ready}
 ] call ACE_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
+	"completeTask08",
+	"<t color='#ff9900'>Complete Task 9</t>",
+	"",
+	{
+		["secTask09", "SUCCEEDED"] call BIS_fnc_taskSetState;
+		LR_Tasks_09_active = false;
+		LR_Tasks_10_ready = true;
+	},
+	{LR_Tasks_09_active}
+] call ACE_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
+	"failTask08",
+	"<t color='#ff0000'>Fail Task 9</t>",
+	"",
+	{
+		["secTask09", "FAILED"] call BIS_fnc_taskSetState;
+		LR_Tasks_09_active = false;
+		LR_Tasks_10_ready = true;
+	},
+	{LR_Tasks_09_active}
+] call ACE_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;

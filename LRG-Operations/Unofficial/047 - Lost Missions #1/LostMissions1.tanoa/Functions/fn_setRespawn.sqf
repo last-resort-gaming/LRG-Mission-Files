@@ -2,6 +2,7 @@
 // 0 - spawn camp
 // 1 - mission start village
 // 2 - camp near plantation
+// 3 - ded
 
 params [["_idx", 0]];
 
