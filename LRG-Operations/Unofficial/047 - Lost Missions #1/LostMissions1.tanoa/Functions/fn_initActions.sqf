@@ -387,32 +387,10 @@ _action = [
 [["ACE_ZeusActions", "CreatureActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
-	"GlobalSounds",
-	"Global Sounds",
-	"",
-	{diag_log "running global sound parent"},
-	{true}
-] call ACE_interact_menu_fnc_createAction;
-
-[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
-
-_action = [
 	"LocalSounds",
 	"Local Sounds",
 	"",
 	{diag_log "running local sound parent"},
-	{true}
-] call ACE_interact_menu_fnc_createAction;
-
-[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
-
-_action = [
-	"GlitchSounds",
-	"Glitch Sounds",
-	"",
-	{diag_log "running glitch sound parent"},
 	{true}
 ] call ACE_interact_menu_fnc_createAction;
 
@@ -444,67 +422,105 @@ _action = [
 	"reverse_voice_male",
 	"slow_male_breathing",
 	"woman_breathing",
-	"glitched_vinyl"
-];
-
-{
-	_cfgName = getText (configFile >> "CfgSounds" >> _x >> "name");
-	_action = [
-		format ["playSound%1", _forEachIndex],
-		format ["<t color='#ff00ff'>Play %1</t>", _cfgName],
-		"",
-		{
-			params ["_target", "_caller", "_args"];
-			_args params ["_sound"];
-
-			_sound remoteExec ["playMusic", 0];
-		},
-		{true},
-		{},
-		[_x]
-	] call ACE_interact_menu_fnc_createAction;
-
-	[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions", "GlobalSounds"], _action] call ACE_interact_menu_fnc_addActionToObject;
-	[["ACE_ZeusActions", "CreatureActions", "SoundActions", "GlobalSounds"], _action] call ACE_interact_menu_fnc_addActionToZeus;
-} forEach [
-	"ambient_sound_1",
-	"ambient_sound_2",
+	"glitched_vinyl",
+	"tornado_siren",
+	"tornado_siren_2",
 	"fast_heartbeat",
-	"low_drone_ambient",
-	"low_drone_ambient_2",
 	"slow_heartbeat",
-	"out_for_a_walk"
+	"teeth_chatter"
 ];
 
-{
-	_cfgName = getText (configFile >> "CfgSounds" >> _x >> "name");
-	_action = [
-		format ["playSound%1", _forEachIndex],
-		format ["<t color='#ff00ff'>Play %1</t>", _cfgName],
-		"",
-		{
-			params ["_target", "_caller", "_args"];
-			_args params ["_sound"];
+_action = [
+	"playGlitch",
+	"<t color='#ff00ff'>Play Random Glitch</t>",
+	"",
+	{
+		_sound = selectRandom [
+			"short_glitch_1",
+			"short_glitch_2",
+			"short_glitch_3",
+			"short_glitch_4",
+			"short_glitch_5",
+			"short_glitch_6",
+			"short_glitch_7",
+			"short_glitch_8",
+			"crazy_brain"
+		];
 
-			_sound remoteExec ["playMusic", 0];
-		},
-		{true},
-		{},
-		[_x]
-	] call ACE_interact_menu_fnc_createAction;
+		_sound remoteExec ["playMusic", 0];
+	},
+	{true},
+	{},
+	[]
+] call ACE_interact_menu_fnc_createAction;
 
-	[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions", "GlitchSounds"], _action] call ACE_interact_menu_fnc_addActionToObject;
-	[["ACE_ZeusActions", "CreatureActions", "SoundActions", "GlitchSounds"], _action] call ACE_interact_menu_fnc_addActionToZeus;
-} forEach [
-	"short_glitch_1",
-	"short_glitch_2",
-	"short_glitch_3",
-	"short_glitch_4",
-	"short_glitch_5",
-	"short_glitch_6",
-	"short_glitch_7",
-	"short_glitch_8"
-];
+[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
+	"playDrone",
+	"<t color='#ff00ff'>Play Random Drone</t>",
+	"",
+	{
+		_sound = selectRandom [
+			"drone_1",
+			"drone_2",
+			"drone_3",
+			"drone_4",
+			"drone_5",
+			"drone_6",
+			"drone_7",
+			"drone_8",
+			"drone_9",
+			"drone_10",
+			"disturbing_drone",
+			"fearful_drone",
+			"broken_drone",
+			"death_drone",
+			"low_drone_ambient",
+			"low_drone_ambient_2"
+		];
+
+		_sound remoteExec ["playMusic", 0];
+	},
+	{true},
+	{},
+	[]
+] call ACE_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
+	"playAmbient",
+	"<t color='#ff00ff'>Play Random Ambient</t>",
+	"",
+	{
+		_sound = selectRandom [
+			"alien_ambient",
+			"hate_ambient",
+			"night_sky_ambient",
+			"particles_ambient",
+			"scare_ambient",
+			"tension_ambient",
+			"tensity_ambient",
+			"warnings_ambient",
+			"bends_ambient",
+			"chiller_ambient",
+			"dismay_ambient",
+			"filth_ambient",
+			"growl_ambient"
+		];
+
+		_sound remoteExec ["playMusic", 0];
+	},
+	{true},
+	{},
+	[]
+] call ACE_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
 	"stopAllSounds",
