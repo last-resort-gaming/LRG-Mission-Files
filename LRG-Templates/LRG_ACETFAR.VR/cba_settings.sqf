@@ -396,9 +396,9 @@ force ace_medical_painCoefficient = 1;
 
 force ace_medical_playerDamageThreshold = 1.8;
 
-force ace_medical_spontaneousWakeUpChance = 0.2;
+force ace_medical_spontaneousWakeUpChance = 0.05;
 
-force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
+force ace_medical_spontaneousWakeUpEpinephrineBoost = 30;
 
 force ace_medical_statemachine_AIUnconsciousness = false;
 
@@ -432,13 +432,13 @@ force ace_medical_treatment_consumeSurgicalKit = 0;
 
 force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.20;
+force ace_medical_treatment_cprSuccessChance = 0.30;
 
 force ace_medical_treatment_holsterRequired = 0;
 
 force ace_medical_treatment_litterCleanupDelay = 500;
 
-force ace_medical_treatment_locationEpinephrine = 0;
+force ace_medical_treatment_locationEpinephrine = 3;
 
 force ace_medical_treatment_locationPAK = 3;
 
