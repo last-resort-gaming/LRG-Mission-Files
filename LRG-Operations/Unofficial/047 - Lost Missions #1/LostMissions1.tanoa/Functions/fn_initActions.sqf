@@ -252,9 +252,6 @@ _action = [
 [player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
 [["ACE_ZeusActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
-[player, 1, ["ACE_SelfActions", "CreatureActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
-[["ACE_ZeusActions", "LightActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
-
 _action = [
 	"FlashlightsKillPerm",
 	"Disable Flashlights (Permanent)",
@@ -613,7 +610,7 @@ _action = [
 		LR_Tasks_01_active = true;
 		LR_Tasks_01_ready = false;
 
-		[1] call LR_Sec_fnc_setRespawn;
+		[1] remoteExec ["LR_Sec_fnc_setRespawn", 2];
 	},
 	{LR_Tasks_01_ready}
 ] call ACE_interact_menu_fnc_createAction;
@@ -713,6 +710,19 @@ _action = [
 		["secTask03", "SUCCEEDED"] call BIS_fnc_taskSetState;
 		LR_Tasks_03_active = false;
 		LR_Tasks_04_ready = true;
+	},
+	{LR_Tasks_03_active}
+] call ACE_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "TaskActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
+	"updateTask03",
+	"<t color='#ff9900'>Task 3 Respawn Position</t>",
+	"",
+	{
+		[2] remoteExec ["LR_Sec_fnc_setRespawn", 2];
 	},
 	{LR_Tasks_03_active}
 ] call ACE_interact_menu_fnc_createAction;
@@ -824,6 +834,7 @@ _action = [
 		] call BIS_fnc_taskCreate;
 		LR_Tasks_06_active = true;
 		LR_Tasks_06_ready = false;
+		[3] remoteExec ["LR_Sec_fnc_setRespawn", 2];
 	},
 	{LR_Tasks_06_ready}
 ] call ACE_interact_menu_fnc_createAction;

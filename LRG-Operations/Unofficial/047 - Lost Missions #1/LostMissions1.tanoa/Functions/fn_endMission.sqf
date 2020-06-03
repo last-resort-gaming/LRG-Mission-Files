@@ -20,7 +20,7 @@ ace_hearing_disableVolumeUpdate = true;
 
 [
 	{
-		[parseText "You played<br /><t font='PuristaBold' size='1.7'>Return Of Dakuwaqa</t>", true, [15, 15], 15, 2.5, 0] remoteExec ["BIS_fnc_textTiles", 0];
+		[parseText "You played<br /><t font='PuristaBold' size='1.7'>Lost Missions #1<br />Task Force Echelon</t>", true, [15, 15], 15, 2.5, 0] remoteExec ["BIS_fnc_textTiles", 0];
 	},
 	[],
 	_textTimes select 0

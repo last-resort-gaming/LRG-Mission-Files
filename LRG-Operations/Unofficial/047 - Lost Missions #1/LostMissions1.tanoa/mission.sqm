@@ -8,22 +8,22 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3027;
+		nextID=3039;
 	};
 	class MarkerIDProvider
 	{
-		nextID=28;
+		nextID=29;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1416;
+		nextID=1476;
 	};
 	class Camera
 	{
-		pos[]={1208.3936,13.661713,644.93146};
-		dir[]={0.024119401,-0.87296581,-0.48728701};
-		up[]={0.043159246,0.48773214,-0.87192464};
-		aside[]={-0.99882835,-7.7347795e-007,-0.049442112};
+		pos[]={10940.053,198.74722,8423.1816};
+		dir[]={-0.74163616,-0.58068985,-0.33582532};
+		up[]={-0.52898544,0.81412387,-0.23953353};
+		aside[]={-0.4124985,-8.2916813e-008,0.91096032};
 	};
 };
 binarizationWanted=0;
@@ -1346,7 +1346,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=630;
+		items=640;
 		class Item0
 		{
 			dataType="Object";
@@ -8776,7 +8776,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{ [ " \n "  this, " \n "  ""setResp2"", " \n "  ""Save"", " \n "  {[2] remoteExec [""LR_Sec_fnc_setRespawn""]}, " \n "  [], " \n "  ""true"", " \n "  True, " \n "  15, " \n "  false " \n " ] call LR_fnc_AddAction;}";
 			};
 			id=1085;
 			type="Land_TentDome_F";
@@ -8807,11 +8806,10 @@ class Mission
 		class Item170
 		{
 			dataType="Marker";
-			position[]={11086.196,107.381,7992.9399};
+			position[]={10965.519,91.972961,7850.7437};
 			name="resp_mkr_2";
 			type="Empty";
 			id=1086;
-			atlOffset=-0.00032043457;
 		};
 		class Item171
 		{
@@ -9088,7 +9086,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1210.4066,0.95661455,635.19672};
+						position[]={1211,0.8841027,636.04999};
 						angles[]={0.071876638,3.1415927,6.2645183};
 					};
 					side="West";
@@ -9463,7 +9461,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1212.813,1.2864095,632.06};
+						position[]={1213,1.2887683,632.04999};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -9878,7 +9876,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1216.512,0.9359042,634.63599};
+						position[]={1215,0.83943504,636.04999};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -10283,7 +10281,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1214.813,1.0122384,634.06};
+						position[]={1215,1.0100992,634.04999};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -10726,8 +10724,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1214.4919,1.2807524,632.078};
-						angles[]={0.14301229,3.1415927,6.2805147};
+						position[]={1215,1.2834322,632.04999};
+						angles[]={0.14301692,3.1415927,6.2591896};
 					};
 					side="West";
 					flags=4;
@@ -10948,7 +10946,6 @@ class Mission
 					};
 					id=1119;
 					type="UK3CB_BAF_Engineer_MTP";
-					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11149,7 +11146,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1213.92,0.88691968,635.69598};
+						position[]={1213,0.87143636,636.04999};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -11592,7 +11589,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1212.743,1.0273018,633.94098};
+						position[]={1213,1.0187683,634.04999};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -19566,8 +19563,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1396.5897,1.7612671,540.38318};
-				angles[]={6.1349478,1.4421384,6.2245865};
+				position[]={1396.5902,1.7614782,540.3833};
+				angles[]={6.1349545,1.4421306,6.2245946};
 			};
 			side="Empty";
 			flags=4;
@@ -19577,7 +19574,7 @@ class Mission
 			};
 			id=1457;
 			type="Land_FMradio_F";
-			atlOffset=-0.0062209368;
+			atlOffset=-0.006000042;
 		};
 		class Item274
 		{
@@ -29708,7 +29705,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11062.989,216.77144,8454.459};
+						position[]={11002.903,202.54863,8408.8467};
 						angles[]={0,5.8697515,0};
 					};
 					side="East";
@@ -35863,6 +35860,321 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item630
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10962.71,92.103424,7843.4688};
+				angles[]={6.2778587,0,6.2432079};
+			};
+			id=3027;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item631
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10961.987,92.149864,7845.8506};
+				angles[]={6.2805109,0,6.2405462};
+			};
+			id=3028;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item632
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10963.384,92.11113,7848.6104};
+				angles[]={6.2805109,0,6.2405462};
+			};
+			id=3029;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item633
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10965.576,91.959328,7851.5127};
+				angles[]={6.2805109,0,6.2405462};
+			};
+			id=3030;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item634
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10969.802,91.606285,7853.5479};
+				angles[]={6.2805109,0,6.2405462};
+			};
+			id=3031;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item635
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10979.331,90.692764,7854.5732};
+				angles[]={6.2805109,0,6.2405462};
+			};
+			id=3032;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item636
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10989.594,89.708923,7856.9063};
+				angles[]={6.2805109,0,6.2405462};
+			};
+			id=3033;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item637
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11013.144,88.061287,7854.8384};
+				angles[]={6.2805109,0,6.2405462};
+			};
+			id=3034;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item638
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11031.99,86.90773,7860.9019};
+				angles[]={6.2805109,0,6.2405462};
+			};
+			id=3035;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item639
+		{
+			dataType="Marker";
+			position[]={10935.059,191.2439,8421.3643};
+			name="resp_mkr_3";
+			type="Empty";
+			id=3038;
+			atlOffset=-3.9370422;
 		};
 	};
 	class Connections
