@@ -10,8 +10,8 @@ if (!isServer) exitWith {};
 
 {
 	if !(_x getUnitTrait "Mission Maker") then {
-		_x setVariable ["StartingPos", getMarkerPos (format ["resp_mkr_%1", _idx])];
-    	_x setVariable ["StartingDir", getDir _x];
+		_x setVariable ["StartingPos", getMarkerPos (format ["resp_mkr_%1", _idx]), true];
+    	_x setVariable ["StartingDir", getDir _x, true];
 	};
 
 	if (_idx > 0) then {
