@@ -22,6 +22,17 @@ _action = [
 [["ACE_ZeusActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
 _action = [
+	"DisCar",
+	"<t color='#00ff00'>Disable Car</t>",
+	"",
+	{remoteExec ["LR_Sec_fnc_disableCar", 2]},
+	{true}
+] call ace_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "MiscActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
 	"MissionStart",
 	"Start Mission",
 	"",

@@ -11,6 +11,6 @@ if (hasInterface) then {
 
 if (isServer) then {
 	{
-		_X enableGunLights "ForceOn";
+		_x enableGunLights "ForceOn";
 	} forEach allGroups;
 };
