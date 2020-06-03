@@ -16,7 +16,7 @@ force ace_advanced_ballistics_simulationInterval = 0.05;
 
 // ACE Advanced Fatigue
 
-force ace_advanced_fatigue_enabled = true;
+force ace_advanced_fatigue_enabled = false;
 
 force ace_advanced_fatigue_enableStaminaBar = true;
 
@@ -398,7 +398,7 @@ force ace_medical_playerDamageThreshold = 1.8;
 
 force ace_medical_spontaneousWakeUpChance = 0.4;
 
-force ace_medical_spontaneousWakeUpEpinephrineBoost = 10;
+force ace_medical_spontaneousWakeUpEpinephrineBoost = 40;
 
 force ace_medical_statemachine_AIUnconsciousness = false;
 
@@ -440,7 +440,7 @@ force ace_medical_treatment_litterCleanupDelay = 500;
 
 force ace_medical_treatment_locationEpinephrine = 0;
 
-force ace_medical_treatment_locationPAK = 3;
+force ace_medical_treatment_locationPAK = 0;
 
 force ace_medical_treatment_locationsBoostTraining = false;
 
