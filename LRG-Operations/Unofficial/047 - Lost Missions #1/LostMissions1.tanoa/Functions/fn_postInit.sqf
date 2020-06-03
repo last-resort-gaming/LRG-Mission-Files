@@ -8,3 +8,9 @@ if (hasInterface) then {
 	player removeItem "UK3CB_BAF_HMNVS";
 	player removeItem "optic_NVS";
 };
+
+if (isServer) then {
+	{
+		_X enableGunLights "ForceOn";
+	} forEach allGroups;
+};
