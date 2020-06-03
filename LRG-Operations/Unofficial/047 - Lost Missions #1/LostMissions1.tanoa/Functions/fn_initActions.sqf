@@ -38,7 +38,7 @@ _action = [
 	"",
 	{
 		hint "Mission started!";
-		remoteExec ["LR_Sec_fnc_startMission", 2]
+		remoteExec ["LR_Sec_fnc_startMission", 2];
 		LR_MissionStarted = true;
 		LR_Tasks_00_active = true;
 	},
