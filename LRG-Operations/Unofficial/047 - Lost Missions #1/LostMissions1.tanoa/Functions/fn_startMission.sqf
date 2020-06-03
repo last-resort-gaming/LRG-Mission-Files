@@ -129,7 +129,6 @@ switch (_stage) do {
 		] call BIS_fnc_taskCreate;
 
 		LR_Tasks_00_active = true;
-
 		LR_MissionStarted = true;
 
 		// setRespawn

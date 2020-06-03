@@ -36,7 +36,12 @@ _action = [
 	"MissionStart",
 	"Start Mission",
 	"",
-	{hint "Mission started!"; remoteExec ["LR_Sec_fnc_startMission", 2]},
+	{
+		hint "Mission started!";
+		remoteExec ["LR_Sec_fnc_startMission", 2]
+		LR_MissionStarted = true;
+		LR_Tasks_00_active = true;
+	},
 	{not LR_MissionStarted}
 ] call ace_interact_menu_fnc_createAction;
 
