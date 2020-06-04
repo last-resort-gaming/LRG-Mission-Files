@@ -412,7 +412,7 @@ force ace_medical_treatment_advancedBandages = 2;
 
 force ace_medical_treatment_advancedDiagnose = true;
 
-force ace_medical_treatment_advancedMedication = flase;
+force ace_medical_treatment_advancedMedication = false;
 
 force ace_medical_treatment_allowLitterCreation = true;
 
@@ -906,7 +906,7 @@ force acex_volume_showNotification = true;
 
 force force adv_aceCPR_addTime = 20;
 
-force force adv_aceCPR_AED_stationType = ""Land_Defibrillator_F"";
+force force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
 
 force force adv_aceCPR_chance_0 = 3;
 
