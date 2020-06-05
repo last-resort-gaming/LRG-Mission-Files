@@ -1338,6 +1338,20 @@ force LRG_Weather_SyncTime = 60;
 
 
 
+// MRHSatellite Options
+
+force MRH_SAT_allowFullscreen = true;
+
+force MRH_SAT_allowLasering = false;
+
+force MRH_SAT_allowTargetDetection = true;
+
+force MRH_SAT_allowTargetTracking = false;
+
+force MRH_SAT_MaxSatAltitude = 1000;
+
+
+
 // STUI Settings
 
 STGI_Settings_Enabled = true;
