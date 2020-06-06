@@ -420,6 +420,17 @@ _action = [
 [player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
 [["ACE_ZeusActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
 
+_action = [
+	"speechSounds",
+	"Speech",
+	"",
+	{diag_log "running speech parent"},
+	{true}
+] call ACE_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
 {
 	private ["_subpath"];
 
@@ -459,6 +470,33 @@ _action = [
 	"fast_heartbeat",
 	"slow_heartbeat",
 	"teeth_chatter"
+];
+
+{
+	_cfgName = getText (configFile >> "CfgSounds" >> _x >> "name");
+	_action = [
+		format ["playSound3D%1", _forEachIndex],
+		format ["<t color='#ff00ff'>Play %1</t>", _cfgName],
+		"",
+		{
+			params ["_target", "_caller", "_args"];
+			_args params ["_sound"];
+
+			[_target, _sound, 250, 1, 3] remoteExec ["LR_fnc_Sound3dOnObject", 2];
+		},
+		{true},
+		{},
+		[_x]
+	] call ACE_interact_menu_fnc_createAction;
+
+	[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions", "speechSounds"], _action] call ACE_interact_menu_fnc_addActionToObject;
+	[["ACE_ZeusActions", "SoundActions", "speechSounds"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+} forEach [
+	"tippers",
+	"nicky",
+	"shiny",
+	"kingy",
+	"john"
 ];
 
 _action = [
@@ -544,6 +582,21 @@ _action = [
 		];
 
 		_sound remoteExec ["playMusic", 0];
+	},
+	{true},
+	{},
+	[]
+] call ACE_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions", "CreatureActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToObject;
+[["ACE_ZeusActions", "SoundActions"], _action] call ACE_interact_menu_fnc_addActionToZeus;
+
+_action = [
+	"playSpeech",
+	"<t color='#ff00ff'>Play Speech</t>",
+	"",
+	{
+		"speech_1" remoteExec ["playMusic", 0];
 	},
 	{true},
 	{},
