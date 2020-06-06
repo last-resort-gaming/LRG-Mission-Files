@@ -278,7 +278,7 @@ class List(Command):
         self.logger.debug("Building Client from Source: %s" % self.source)
 
         # We start with a complete copy of the client tree
-        self.build_dir = os.path.join(self.yaina.tmpdir, os.path.basename(self.source))
+        self.build_dir = os.path.join(self.yaina.tmpdir, "YAINA_%s.%s" % (yaina.args.variant, yaina.args.map))
 
         # If we are building a variant other than base_map, we need to copy over the other files, too
         shutil.copytree(self.base_source, self.build_dir, ignore=ignore_patterns('*.sqm'))
@@ -496,7 +496,7 @@ class List(Command):
                 shutil.copyfile(src, dst)
 
             # And zip it all up
-            zip_fn = os.path.join(self.yaina.root, 'Output', 'ZeusTemplate_%s.%s.zip' % (self.yaina.args.variant, self.yaina.args.map))
+            zip_fn = os.path.join(self.yaina.config.get('server', 'output'), 'ZeusTemplate_%s.%s.zip' % (self.yaina.args.variant, self.yaina.args.map))
             try:
                 os.makedirs(os.path.dirname(zip_fn))
             except: pass
