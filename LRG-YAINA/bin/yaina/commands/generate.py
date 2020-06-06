@@ -278,7 +278,7 @@ class List(Command):
         self.logger.debug("Building Client from Source: %s" % self.source)
 
         # We start with a complete copy of the client tree
-        self.build_dir = os.path.join(self.yaina.tmpdir, "YAINA_%s.%s" % (yaina.args.variant, yaina.args.map))
+        self.build_dir = os.path.join(self.yaina.tmpdir, "YAINA_%s.%s" % (self.yaina.args.variant, self.yaina.args.map))
 
         # If we are building a variant other than base_map, we need to copy over the other files, too
         shutil.copytree(self.base_source, self.build_dir, ignore=ignore_patterns('*.sqm'))
