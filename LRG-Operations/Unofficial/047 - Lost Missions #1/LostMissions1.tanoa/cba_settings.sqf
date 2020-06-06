@@ -1208,13 +1208,13 @@ force LRG_Main_CHViewDistance = true;
 
 force LRG_Main_CreatorActions = false;
 
-force LRG_Main_CueCards = true;
+force LRG_Main_CueCards = false;
 
 force LRG_Main_Diary = true;
 
 force LRG_Main_DynamicGroups = false;
 
-force LRG_Main_DynamicSim = true;
+force LRG_Main_DynamicSim = false;
 
 force LRG_Main_Earplugs = false;
 
