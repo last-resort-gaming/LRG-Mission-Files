@@ -53,7 +53,7 @@ class Params
           title = "Allow PvP Slots";
           values[] = {1,0};
           texts[] = {"Yes","No"};
-          default = 1;
+          default = 0;
      };
      class pMarkers
      {
