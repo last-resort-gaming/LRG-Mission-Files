@@ -116,9 +116,9 @@ call A3A_fnc_initGarrisons;
 if (loadLastSave) then {
 	[] spawn A3A_fnc_loadServer;
 	waitUntil {!isNil"statsLoaded"};
-	if (!isNil "as_fnc_getExternalMemberListUIDs") then {
+	if (!isNil "asms_fnc_getExternalMemberListUIDs") then {
 		membersX = [];
-		{membersX pushBackUnique _x} forEach (call as_fnc_getExternalMemberListUIDs);
+		{membersX pushBackUnique _x} forEach (call asms_fnc_getExternalMemberListUIDs);
 		publicVariable "membersX";
 	};
 	if (membershipEnabled and (membersX isEqualTo [])) then {
@@ -142,8 +142,8 @@ if (loadLastSave) then {
 else {
 	theBoss = objNull;
 	membersX = [];
-	if (!isNil "as_fnc_getExternalMemberListUIDs") then {
-		{membersX pushBackUnique _x} forEach (call as_fnc_getExternalMemberListUIDs);
+	if (!isNil "asms_fnc_getExternalMemberListUIDs") then {
+		{membersX pushBackUnique _x} forEach (call asms_fnc_getExternalMemberListUIDs);
 			{
 				if (([_x] call A3A_fnc_isMember) and (side _x == teamPlayer)) exitWith {theBoss = _x};
 			} forEach playableUnits;
