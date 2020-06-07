@@ -66,7 +66,7 @@
 	[//Item
 		"ItemMap",											//Map
 		"ItemGPS",											//Terminal
-		["TF_PNR1000A_26"] call _fnc_tfarRadio,				//Radio
+		"tf_anprc148jem",									//Radio
 		"ItemCompass",										//Compass
 		_tfarMicroDAGRNoArray,										//Watch
 		""													//Goggles
