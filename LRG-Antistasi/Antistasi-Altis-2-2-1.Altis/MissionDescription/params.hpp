@@ -26,7 +26,7 @@ class Params
           title = "Enable Server Membership";
           texts[] = {"Yes","No"};
           values[] = {1,0};
-          default = 1;
+          default = 0;
      };
      class switchComm
      {
