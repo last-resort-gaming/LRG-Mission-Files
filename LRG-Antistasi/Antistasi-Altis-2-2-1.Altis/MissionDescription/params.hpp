@@ -254,7 +254,7 @@ class Params
 		  title = "Logging Level (Amount of detail in .rpt file)";
 		  values[] = {1,2,3};
 		  texts[] = {"Error", "Info", "Debug"};
-		  default = 3;
+		  default = 1;
 	 };
      class CrateOptions
      {
