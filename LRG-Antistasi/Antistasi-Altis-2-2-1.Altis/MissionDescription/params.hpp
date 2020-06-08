@@ -33,7 +33,7 @@ class Params
           title = "Enable Commander Switch (highest ranked player)";
           values[] = {1,0};
           texts[] = {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class tkPunish
      {
