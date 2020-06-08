@@ -134,7 +134,7 @@ Write-Host "Configuring Battleye" -ForegroundColor red -BackgroundColor white
 
 #Server.Arma3Profile Setup
 Write-Host "Configuring Server Profile" -ForegroundColor red -BackgroundColor white
-Remove-Item $Server_Profile\*.Arma3Profile*
+Remove-Item $Server_Profile\*LRGServer.Arma3Profile*
 (get-content $Master_Server_Profile).replace('PSthirdPersonView', $Enable3rdPerson) | Set-Content $Server_Profile\LRGServer.Arma3Profile
 
 #Move Network Config across, just in case removed during A3 Update
