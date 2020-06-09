@@ -1,5 +1,6 @@
 //Saves the Mission within 2 mins of 8 hour shutdown. 
 
+if !(isserver) exitwith {};
 [{
 	params ["_args", "_pfhID"];
 	_args params [];
