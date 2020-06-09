@@ -120,6 +120,8 @@ if (loadLastSave) then {
 		membersX = [];
 		{membersX pushBackUnique _x} forEach (call asms_fnc_getExternalMemberListUIDs);
 		publicVariable "membersX";
+		call A3A_fnc_FinalSave;
+		
 	};
 	if (membershipEnabled and (membersX isEqualTo [])) then {
 		[petros,"hint","Membership is enabled but members list is empty. Current players will be added to the member list"] remoteExec ["A3A_fnc_commsMP"];
