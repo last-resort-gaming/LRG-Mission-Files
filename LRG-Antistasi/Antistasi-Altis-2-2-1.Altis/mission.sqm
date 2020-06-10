@@ -8,22 +8,22 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=2231;
+		nextID=2250;
 	};
 	class MarkerIDProvider
 	{
-		nextID=204;
+		nextID=206;
 	};
 	class LayerIndexProvider
 	{
-		nextID=533;
+		nextID=543;
 	};
 	class Camera
 	{
-		pos[]={3623.6111,32.547077,10234.438};
-		dir[]={-0.10449508,-0.48265138,0.86962575};
-		up[]={-0.057588592,0.87576854,0.4792707};
-		aside[]={0.99291009,5.793845e-007,0.11930902};
+		pos[]={10800.793,25.899641,10790.907};
+		dir[]={-5.9344534e-006,-0.70710683,0.70710683};
+		up[]={-5.9344534e-006,0.70710677,0.70710677};
+		aside[]={0.99999994,0,8.3925834e-006};
 	};
 };
 binarizationWanted=0;
@@ -239,7 +239,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=409;
+		items=413;
 		class Item0
 		{
 			dataType="Marker";
@@ -3890,7 +3890,7 @@ class Mission
 					colorName="ColorGreen";
 					a=35.460999;
 					b=6;
-					angle=225.25732;
+					angle=225.25725;
 					id=1626;
 				};
 				class Item11
@@ -4304,7 +4304,7 @@ class Mission
 					colorName="ColorGreen";
 					a=15.529018;
 					b=5.5;
-					angle=56.906124;
+					angle=56.906105;
 					id=1646;
 					atlOffset=-0.15297318;
 				};
@@ -9222,6 +9222,7 @@ class Mission
 					};
 					id=2079;
 					type="I_G_Soldier_TL_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10039,6 +10040,7 @@ class Mission
 			{
 			};
 			id=2122;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11841,6 +11843,248 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item409
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3632.7539,14.398728,10270.197};
+				angles[]={6.2605309,0,6.2605309};
+			};
+			id=2232;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="QUOTE(LRG_Config_Zeus)";
+					expression="if (_value isequalto true) then {[_this] call LR_fnc_ConfigZeus;}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198192369291";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MitchJC";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item410
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3634.877,14.351172,10270.265};
+				angles[]={6.2671809,0,6.2538638};
+			};
+			id=2233;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="QUOTE(LRG_Config_Zeus)";
+					expression="if (_value isequalto true) then {[_this] call LR_fnc_ConfigZeus;}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198120665981";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Mokka";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item411
+		{
+			dataType="Marker";
+			position[]={13479.641,-139.58667,26133.559};
+			name="marker_215";
+			text="For everything else: Discord.LastResortGaming.net";
+			type="mil_triangle";
+			colorName="ColorUNKNOWN";
+			id=2246;
+			atlOffset=45.548645;
+		};
+		class Item412
+		{
+			dataType="Marker";
+			position[]={13479.954,-135.28127,28132.188};
+			name="marker_216";
+			text="For TFAR: TS.LastResortGaming.net";
+			type="mil_triangle";
+			colorName="ColorUNKNOWN";
+			id=2247;
+			atlOffset=50.688736;
 		};
 	};
 	class Connections
