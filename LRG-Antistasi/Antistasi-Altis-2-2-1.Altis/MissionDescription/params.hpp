@@ -12,7 +12,7 @@ class Params
           title = "Game Mode";
           values[] = {1,2,3,4};
           texts[] = {"Reb vs Gov vs Inv","Reb vs Gov & Inv","Reb vs Gov","Reb vs Inv"};
-          default = 1;
+          default = 3;
      };
      class autoSave
      {
@@ -73,7 +73,7 @@ class Params
      {
           title = "Number of the same weapons required to unlock";
           values[] = {15,25,40};
-          default = 25;
+          default = 40;
      };
      class memberOnlyMagLimit
      {
@@ -93,7 +93,7 @@ class Params
           title = "Percentage of Reserved Slots for Members";
           values[] = {0,20,40,60,80,100};
           texts[] = {"None","20%","40%","60%","80%","All"};
-          default = 20;
+          default = 0;
      };
      class memberDistance
      {
@@ -114,7 +114,7 @@ class Params
           title = "Limited Fast Travel";
           values[] = {0,1};
           texts[] = {"No","Yes"};
-          default = 1;
+          default = 0;
      };
      class napalmEnabled
      {
@@ -142,14 +142,14 @@ class Params
           title = "Should Guided Launchers become unlocked?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class allowUnlockedExplosives
      {
           title = "Should Explosives become unlocked?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class startWithLongRangeRadio
      {
