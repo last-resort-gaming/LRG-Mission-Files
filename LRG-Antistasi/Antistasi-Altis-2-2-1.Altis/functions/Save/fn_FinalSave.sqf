@@ -4,7 +4,7 @@ if !(isserver) exitwith {};
 [{
 	params ["_args", "_pfhID"];
 	_args params [];
-		if (time > 28680) then {
+		if (time > 28620) then {
 			_nul = [] execVM "statSave\saveLoop.sqf";
 			[_pfhID] call CBA_fnc_removePerFrameHandler;
 		};
