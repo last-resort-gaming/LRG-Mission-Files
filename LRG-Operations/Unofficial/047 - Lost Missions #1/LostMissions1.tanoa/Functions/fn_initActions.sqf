@@ -596,7 +596,7 @@ _action = [
 	"<t color='#ff00ff'>Play Speech</t>",
 	"",
 	{
-		"speech_1" remoteExec ["playMusic", 0];
+		"speech_2" remoteExec ["playMusic", 0];
 	},
 	{true},
 	{},
