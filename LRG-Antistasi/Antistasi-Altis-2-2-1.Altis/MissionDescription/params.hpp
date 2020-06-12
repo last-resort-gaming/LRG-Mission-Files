@@ -114,7 +114,7 @@ class Params
           title = "Limited Fast Travel";
           values[] = {0,1};
           texts[] = {"No","Yes"};
-          default = 0;
+          default = 1;
      };
      class napalmEnabled
      {
