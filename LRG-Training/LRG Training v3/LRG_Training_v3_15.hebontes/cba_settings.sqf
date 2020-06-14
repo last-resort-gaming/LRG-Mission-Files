@@ -134,9 +134,9 @@ force ace_cookoff_probabilityCoef = 0.4;
 
 // ACE Crew Served Weapons
 
-force ace_csw_ammoHandling = 2;
+force ace_csw_ammoHandling = 1;
 
-force ace_csw_defaultAssemblyMode = false;
+force ace_csw_defaultAssemblyMode = true;
 
 force ace_csw_dragAfterDeploy = false;
 
@@ -368,7 +368,7 @@ force ace_medical_blood_enabledFor = 2;
 
 force ace_medical_blood_maxBloodObjects = 500;
 
-force ace_medical_fatalDamageSource = 0;
+force ace_medical_fatalDamageSource = 1;
 
 ace_medical_feedback_bloodVolumeEffectType = 0;
 
@@ -396,13 +396,13 @@ force ace_medical_painCoefficient = 1;
 
 force ace_medical_playerDamageThreshold = 1.8;
 
-force ace_medical_spontaneousWakeUpChance = 0.2;
+force ace_medical_spontaneousWakeUpChance = 0.15;
 
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
 force ace_medical_statemachine_AIUnconsciousness = false;
 
-force ace_medical_statemachine_cardiacArrestTime = 900;
+force ace_medical_statemachine_cardiacArrestTime = 1200;
 
 force ace_medical_statemachine_fatalInjuriesAI = 0;
 
@@ -432,7 +432,7 @@ force ace_medical_treatment_consumeSurgicalKit = 0;
 
 force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.20;
+force ace_medical_treatment_cprSuccessChance = 0.30;
 
 force ace_medical_treatment_holsterRequired = 0;
 
@@ -904,23 +904,25 @@ force acex_volume_showNotification = true;
 
 // ADV - ACE CPR
 
-force adv_aceCPR_addTime = 20;
+force force adv_aceCPR_addTime = 20;
 
-force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
+force force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
 
-force adv_aceCPR_chance_0 = 3;
+force force adv_aceCPR_chance_0 = 3;
 
-force adv_aceCPR_chance_1 = 12;
+force force adv_aceCPR_chance_1 = 12;
 
-force adv_aceCPR_chance_2 = 35;
+force force adv_aceCPR_chance_2 = 35;
 
-force adv_aceCPR_chance_aed = 60;
+force force adv_aceCPR_chance_aed = 60;
 
-force adv_aceCPR_enable = false;
+force force adv_aceCPR_enable = true;
 
-force adv_aceCPR_maxTime = 1200;
+force force adv_aceCPR_maxTime = 600;
 
-force adv_aceCPR_useLocation_AED = 3;
+force force adv_aceCPR_onlyDoctors = 2;
+
+force force adv_aceCPR_useLocation_AED = 3;
 
 
 
@@ -1020,6 +1022,15 @@ cba_events_repetitionMode = 1;
 
 cba_optics_usePipOptics = true;
 
+
+
+// Diwako's ACE Ragdolling
+
+force diwako_ragdoll_ai = true;
+
+force diwako_ragdoll_ragdolling = true;
+
+force diwako_ragdoll_server_only = true;
 
 
 
