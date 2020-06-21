@@ -356,107 +356,107 @@ ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 
-force ace_medical_ai_enabledFor = 2;
+force force ace_medical_ai_enabledFor = 2;
 
-force ace_medical_AIDamageThreshold = 1;
+force force ace_medical_AIDamageThreshold = 0.1;
 
-force ace_medical_bleedingCoefficient = 0.1;
+force force ace_medical_bleedingCoefficient = 0.3;
 
-force ace_medical_blood_bloodLifetime = 600;
+force force ace_medical_blood_bloodLifetime = 300;
 
-force ace_medical_blood_enabledFor = 2;
+force force ace_medical_blood_enabledFor = 2;
 
-force ace_medical_blood_maxBloodObjects = 500;
+force force ace_medical_blood_maxBloodObjects = 500;
 
-force ace_medical_fatalDamageSource = 0;
+force force ace_medical_fatalDamageSource = 2;
 
 ace_medical_feedback_bloodVolumeEffectType = 0;
 
-ace_medical_feedback_painEffectType = 0;
+ace_medical_feedback_painEffectType = 2;
 
 force ace_medical_fractureChance = 0.8;
 
-force ace_medical_fractures = 0;
+force force ace_medical_fractures = 0;
 
-force ace_medical_gui_enableActions = 0;
+ace_medical_gui_enableActions = 0;
 
-force ace_medical_gui_enableMedicalMenu = 1;
+force force ace_medical_gui_enableMedicalMenu = 1;
 
-force ace_medical_gui_enableSelfActions = true;
+force force ace_medical_gui_enableSelfActions = true;
 
-force ace_medical_gui_maxDistance = 3;
+force force ace_medical_gui_maxDistance = 4;
 
-force ace_medical_gui_openAfterTreatment = true;
+force force ace_medical_gui_openAfterTreatment = true;
 
-force ace_medical_ivFlowRate = 2.5;
+force force ace_medical_ivFlowRate = 1.5;
 
-force ace_medical_limping = 1;
+force force ace_medical_limping = 1;
 
-force ace_medical_painCoefficient = 1;
+force force ace_medical_painCoefficient = 0.4;
 
-force ace_medical_playerDamageThreshold = 2.5;
+force force ace_medical_playerDamageThreshold = 1.6;
 
-force ace_medical_spontaneousWakeUpChance = 0.7;
+force force ace_medical_spontaneousWakeUpChance = 0.7;
 
-force ace_medical_spontaneousWakeUpEpinephrineBoost = 30;
+force force ace_medical_spontaneousWakeUpEpinephrineBoost = 2.45;
 
-force ace_medical_statemachine_AIUnconsciousness = false;
+force force ace_medical_statemachine_AIUnconsciousness = true;
 
-force ace_medical_statemachine_cardiacArrestTime = 900;
+force force ace_medical_statemachine_cardiacArrestTime = 900;
 
-force ace_medical_statemachine_fatalInjuriesAI = 0;
+force force ace_medical_statemachine_fatalInjuriesAI = 0;
 
-force ace_medical_statemachine_fatalInjuriesPlayer = 2;
+force force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 
-force ace_medical_treatment_advancedBandages = 2;
+force force ace_medical_treatment_advancedBandages = 2;
 
-force ace_medical_treatment_advancedDiagnose = true;
+force force ace_medical_treatment_advancedDiagnose = true;
 
-force ace_medical_treatment_advancedMedication = false;
+force force ace_medical_treatment_advancedMedication = true;
 
-force ace_medical_treatment_allowLitterCreation = true;
+force force ace_medical_treatment_allowLitterCreation = true;
 
-force ace_medical_treatment_allowSelfIV = 1;
+force force ace_medical_treatment_allowSelfIV = 1;
 
-force ace_medical_treatment_allowSelfPAK = 1;
+force ace_medical_treatment_allowSelfPAK = 0;
 
-force ace_medical_treatment_allowSelfStitch = 1;
+force force ace_medical_treatment_allowSelfStitch = 0;
 
-force ace_medical_treatment_allowSharedEquipment = 1;
+force force ace_medical_treatment_allowSharedEquipment = 0;
 
-force ace_medical_treatment_clearTraumaAfterBandage = true;
+force force ace_medical_treatment_clearTraumaAfterBandage = false;
 
-force ace_medical_treatment_consumePAK = 0;
+force force ace_medical_treatment_consumePAK = 1;
 
-force ace_medical_treatment_consumeSurgicalKit = 0;
+force force ace_medical_treatment_consumeSurgicalKit = 0;
 
-force ace_medical_treatment_convertItems = 0;
+force force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.30;
+force force ace_medical_treatment_cprSuccessChance = 0.65;
 
-force ace_medical_treatment_holsterRequired = 0;
+force force ace_medical_treatment_holsterRequired = 0;
 
-force ace_medical_treatment_litterCleanupDelay = 500;
+force force ace_medical_treatment_litterCleanupDelay = 150;
 
-force ace_medical_treatment_locationEpinephrine = 0;
+force force ace_medical_treatment_locationEpinephrine = 0;
 
-force ace_medical_treatment_locationPAK = 3;
+force force ace_medical_treatment_locationPAK = 0;
 
-force ace_medical_treatment_locationsBoostTraining = false;
+force force ace_medical_treatment_locationsBoostTraining = true;
 
-force ace_medical_treatment_locationSurgicalKit = 0;
+force force ace_medical_treatment_locationSurgicalKit = 0;
 
-force ace_medical_treatment_maxLitterObjects = 500;
+force force ace_medical_treatment_maxLitterObjects = 50;
 
-force ace_medical_treatment_medicEpinephrine = 0;
+force force ace_medical_treatment_medicEpinephrine = 0;
 
 force ace_medical_treatment_medicIV = 1;
 
-force ace_medical_treatment_medicPAK = 2;
+force force ace_medical_treatment_medicPAK = 1;
 
-force ace_medical_treatment_medicSurgicalKit = 1;
+force force ace_medical_treatment_medicSurgicalKit = 1;
 
-force ace_medical_treatment_timeCoefficientPAK = 0.1;
+force force ace_medical_treatment_timeCoefficientPAK = 1.53524;
 
 
 
