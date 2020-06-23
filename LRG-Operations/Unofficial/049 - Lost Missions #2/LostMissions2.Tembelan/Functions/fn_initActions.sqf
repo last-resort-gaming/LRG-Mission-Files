@@ -12,9 +12,9 @@ _action = [
 
 _action = [
 	"CountdownOne",
-	"First Countdown (45min)",
+	"First Countdown (30min)",
 	"",
-	{[2700, "First Contact in"] remoteExec ["LR_LM_fnc_countdown", 2]},
+	{[1800, "First Contact in"] remoteExec ["LR_LM_fnc_countdown", 2]},
 	{true}
 ] call ace_interact_menu_fnc_createAction;
 
@@ -23,9 +23,9 @@ _action = [
 
 _action = [
 	"CountdownTwo",
-	"Second Countdown (120min)",
+	"Second Countdown (90min)",
 	"",
-	{[7200, "Evac Complete in"] remoteExec ["LR_LM_fnc_countdown", 2]},
+	{[5400, "Evac Complete in"] remoteExec ["LR_LM_fnc_countdown", 2]},
 	{true}
 ] call ace_interact_menu_fnc_createAction;
 

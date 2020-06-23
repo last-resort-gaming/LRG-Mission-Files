@@ -426,7 +426,7 @@ force ace_medical_treatment_allowSharedEquipment = 1;
 
 force ace_medical_treatment_clearTraumaAfterBandage = false;
 
-force ace_medical_treatment_consumePAK = 0;
+force ace_medical_treatment_consumePAK = 1;
 
 force ace_medical_treatment_consumeSurgicalKit = 0;
 
@@ -440,7 +440,7 @@ force ace_medical_treatment_litterCleanupDelay = 500;
 
 force ace_medical_treatment_locationEpinephrine = 0;
 
-force ace_medical_treatment_locationPAK = 3;
+force ace_medical_treatment_locationPAK = 0;
 
 force ace_medical_treatment_locationsBoostTraining = false;
 
