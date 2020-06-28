@@ -227,7 +227,7 @@ force force ace_medical_treatment_medicEpinephrine = 0;
 force ace_medical_treatment_medicIV = 1;
 force force ace_medical_treatment_medicPAK = 1;
 force force ace_medical_treatment_medicSurgicalKit = 1;
-force force ace_medical_treatment_timeCoefficientPAK = 1.5;
+force force ace_medical_treatment_timeCoefficientPAK = 0.5;
 
 // ACE Name Tags
 ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
