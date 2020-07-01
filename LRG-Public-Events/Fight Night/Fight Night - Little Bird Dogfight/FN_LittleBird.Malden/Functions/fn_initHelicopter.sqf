@@ -1,0 +1,53 @@
+if (!isServer) exitWith {};
+
+params ["_veh", "_side"];
+
+_texture = [
+	"a3\air_f\Heli_Light_01\Data\Skins\Heli_Light_01_ext_vrana_co.paa",
+	"z\LRG Mission Assets\Addons\FightNight\Data\Heli_Light_01_ext_blue_co.paa"
+] select (_side == west);
+
+_veh setObjectTextureGlobal [0, _texture];
+
+_pylonLoadout = getPylonMagazines _veh;
+_heliClass = typeOf _veh;
+
+// Ensure all vehicles have sensor system enabled
+if !(vehicleReportOwnPosition _veh) then {
+ _veh setVehicleReportRemoteTargets true;
+ _veh setVehicleReceiveRemoteTargets true;
+ _veh setVehicleReportOwnPosition true;
+};
+
+// Set vehicle variables
+_veh setVariable ["LRG_FN_startPos", position _veh, true];
+_veh setVariable ["LRG_FN_pylonLoadout", _pylonLoadout, true];
+_veh setVariable ["LRG_FN_className", _heliClass, true];
+_veh setVariable ["LRG_FN_heliSide", _side, true];
+
+_veh addMPEventHandler ["MPKilled", {
+	if (!isServer) exitWith {};
+
+	params ["_unit", "_killer"];
+
+	// get variables
+	_pos = _unit getVariable "LRG_FN_startPos";
+	_pylonLoadout = _unit getVariable "LRG_FN_pylonLoadout";
+	_class = _unit getVariable "LRG_FN_className";
+	_side = _unit getVariable "LRG_FN_heliSide";
+
+	// update score
+	if (_side == west) then {
+		LRG_FN_redscore = LRG_FN_redscore + LRG_FN_HeloValue;
+	} else {
+		LRG_FN_bluscore = LRG_FN_bluscore + LRG_FN_HeloValue;
+	};
+
+	["LRG_FN_ScoreUpdated", [_side, "Helicopter destroyed!", LRG_FN_HeloValue]] call CBA_fnc_globalEvent;
+
+	[
+		{_this call LR_FN_fnc_respawnHelicopter;},
+		[_unit, _pos, _pylonLoadout, _class, _side],
+		30
+	] call CBA_fnc_waitAndExecute;
+}];
