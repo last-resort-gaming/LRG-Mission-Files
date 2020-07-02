@@ -1,12 +1,15 @@
 class CfgFunctions {
-    class LRG_FightNight {
+    class LR_FN {
         tag = "LR_FN";
         class LittleBird {
             file = "Functions";
             class initHelicopter {};
+            class initMERTHeli {};
             class initPlayer {};
+            class initObjective {};
             class respawnHelicopter {};
-            class initScoring { postInit = 1; }
+            class initScoring { postInit = 1; };
+            class startGame {};
         };
     };
 };

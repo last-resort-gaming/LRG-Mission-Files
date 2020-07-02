@@ -2,6 +2,8 @@ if (!isServer) exitWith {};
 
 params ["_veh", "_side"];
 
+if (_side == civilian) exitWith {_this call LR_FN_fnc_initMERTHeli};
+
 _texture = [
 	"a3\air_f\Heli_Light_01\Data\Skins\Heli_Light_01_ext_vrana_co.paa",
 	"z\LRG Mission Assets\Addons\FightNight\Data\Heli_Light_01_ext_blue_co.paa"
@@ -26,9 +28,14 @@ _veh setVariable ["LRG_FN_className", _heliClass, true];
 _veh setVariable ["LRG_FN_heliSide", _side, true];
 
 _veh addMPEventHandler ["MPKilled", {
-	if (!isServer) exitWith {};
 
 	params ["_unit", "_killer"];
+
+	if (hasInterface && {player getUnitTrait "Mission Maker"}) then {
+		systemChat format ["Unit killed: %1, by %2 (%3)", _unit, _killer, side _killer];
+	};
+
+	if (!isServer) exitWith {};
 
 	// get variables
 	_pos = _unit getVariable "LRG_FN_startPos";
@@ -39,11 +46,13 @@ _veh addMPEventHandler ["MPKilled", {
 	// update score
 	if (_side == west) then {
 		LRG_FN_redscore = LRG_FN_redscore + LRG_FN_HeloValue;
-	} else {
+		_antSide = east;
+	} else {if (_side == east) then {
 		LRG_FN_bluscore = LRG_FN_bluscore + LRG_FN_HeloValue;
-	};
+		_antSide = west;
+	};};
 
-	["LRG_FN_ScoreUpdated", [_side, "Helicopter destroyed!", LRG_FN_HeloValue]] call CBA_fnc_globalEvent;
+	["LRG_FN_ScoreUpdated", [_antSide, "Helicopter destroyed!", LRG_FN_HeloValue]] call CBA_fnc_globalEvent;
 
 	[
 		{_this call LR_FN_fnc_respawnHelicopter;},

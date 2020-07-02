@@ -15,4 +15,11 @@ if (allTurrets _newVeh isEqualTo []) then {
     } forEach _pylonLoadout;
 };
 
+if (_side == civilian) then {
+    _newVeh setVariable ["LRG_Equipment_Select", 3, true];
+    [_newVeh, "MERT"] call LR_fnc_MedicalSupplies;
+};
+
+[_newVeh] call ace_zeus_fnc_addObjectToCurator;
+
 [_newVeh, _side] call LR_FN_fnc_initHelicopter;
