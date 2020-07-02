@@ -1368,7 +1368,7 @@ TFAR_default_radioVolume = 8;
 
 TFAR_intercomDucking = 0.2;
 
-TFAR_intercomVolume = 1;
+TFAR_intercomVolume = 0.100458;
 
 TFAR_moveWhileTabbedOut = true;
 
