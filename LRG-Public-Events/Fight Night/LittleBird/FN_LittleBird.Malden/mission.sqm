@@ -8,7 +8,7 @@ class EditorData
 	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=207;
+		nextID=209;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6036.4473,220.21016,9537.4473};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={9892.7168,375.05148,3925.5923};
+		dir[]={-0.51570469,-0.85673362,-0.010711332};
+		up[]={-0.85658306,0.51570851,-0.017791163};
+		aside[]={-0.020766318,-2.8348313e-007,0.9998157};
 	};
 };
 binarizationWanted=0;
@@ -697,7 +697,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=142;
+		items=144;
 		class Item0
 		{
 			dataType="Group";
@@ -1900,7 +1900,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9743,40.629131,4000.0068};
+				position[]={9743,40.629143,4000.0071};
 			};
 			side="Empty";
 			flags=4;
@@ -1911,7 +1911,6 @@ class Mission
 			};
 			id=34;
 			type="B_Heli_Light_01_dynamicLoadout_F";
-			atlOffset=-1.1444092e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9909,7 +9908,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, civilian] call LR_FN_fnc_initHelicopter;}";
+				init="call{[this, civilian] call LR_FN_fnc_initMERTHeli;}";
 			};
 			id=163;
 			type="C_IDAP_Heli_Transport_02_F";
@@ -10350,7 +10349,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7047.4121,175.16168,8160.644};
-				angles[]={-0,0.78539819,0};
+				angles[]={0,0.78539819,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11029,7 +11028,7 @@ class Mission
 			};
 			id=205;
 			type="I_Truck_02_box_F";
-			atlOffset=-0.11067963;
+			atlOffset=-0.110672;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11070,16 +11069,44 @@ class Mission
 			type="Flag_AAF_F";
 			atlOffset=1.1066666;
 		};
+		class Item142
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8063.0894,29.615746,9672.5371};
+				angles[]={0,3.1415927,6.2599902};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=207;
+			type="Land_HelipadSquare_F";
+			atlOffset=-0.70215416;
+		};
+		class Item143
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8061.8833,30.355726,9661.4814};
+			};
+			id=208;
+			type="LRG_ModuleServicing";
+			atlOffset=-1.9073486e-006;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=11;
+			nextID=12;
 		};
 		class Links
 		{
-			items=11;
+			items=12;
 			class Item0
 			{
 				linkID=0;
@@ -11185,6 +11212,16 @@ class Mission
 				linkID=10;
 				item0=162;
 				item1=152;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item11
+			{
+				linkID=11;
+				item0=208;
+				item1=207;
 				class CustomData
 				{
 					type="Sync";

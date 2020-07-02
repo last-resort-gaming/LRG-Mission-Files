@@ -8,16 +8,16 @@ _obj setVariable ["LRG_FN_objMarker", _marker, true];
 [_obj] call ace_zeus_fnc_addObjectToCurator;
 
 // spawn little patrols around the objectives on land
-if !(_obj isKindOf "Boat") then {
+if !(_obj isKindOf "Boat_F") then {
 	[
 		position _obj,
 		_marker,
 		"IND_F",
 		0,
 		[0, 0],
-		ROAD,
+		"RANDOM",
 		200,
-		[1, 5],
+		[1, 3],
 		[0, 0],
 		[0, 0],
 		[0, 0],

@@ -11,7 +11,9 @@ LRG_FN_Duration = 5400;
 ["LRG_FN_ScoreUpdated", {
 	params ["_side", "_msg", "_weight"];
 
-	_antName = if (_side == west) then {"Blue"} else {if (_side == east) then {"Red"};};
+	private ["_antName"];
+
+	_antName = if (_side == west) then {"Blue"} else {"Red"};
 
 	_scoremsg = if (_weight > 0) then {
 		format ["%1 Team has scored %2 points(s)", _antName, _weight]

@@ -43,14 +43,16 @@ _veh addMPEventHandler ["MPKilled", {
 	_class = _unit getVariable "LRG_FN_className";
 	_side = _unit getVariable "LRG_FN_heliSide";
 
+	private ["_antSide"];
+
 	// update score
 	if (_side == west) then {
 		LRG_FN_redscore = LRG_FN_redscore + LRG_FN_HeloValue;
 		_antSide = east;
-	} else {if (_side == east) then {
+	} else {
 		LRG_FN_bluscore = LRG_FN_bluscore + LRG_FN_HeloValue;
 		_antSide = west;
-	};};
+	};
 
 	["LRG_FN_ScoreUpdated", [_antSide, "Helicopter destroyed!", LRG_FN_HeloValue]] call CBA_fnc_globalEvent;
 
