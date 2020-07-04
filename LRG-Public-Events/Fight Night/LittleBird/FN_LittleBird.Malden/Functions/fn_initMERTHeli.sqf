@@ -19,17 +19,6 @@ _veh addMPEventHandler ["MPKilled", {
 	_pos = _unit getVariable "LRG_FN_startPos";
 	_class = _unit getVariable "LRG_FN_className";
 
-	_side = side _killer;
-
-	// update score
-	if (_side == west) then {
-		LRG_FN_bluscore = LRG_FN_bluscore + LRG_FN_MedicalPunish;
-	} else {if (_side == east) then {
-		LRG_FN_redscore = LRG_FN_redscore + LRG_FN_MedicalPunish;
-	};};
-
-	["LRG_FN_ScoreUpdated", [_side, "Medical Vehicle destroyed!", LRG_FN_MedicalPunish]] call CBA_fnc_globalEvent;
-
 	[
 		{_this call LR_FN_fnc_respawnHelicopter;},
 		[_unit, _pos, [], _class, civilian],
