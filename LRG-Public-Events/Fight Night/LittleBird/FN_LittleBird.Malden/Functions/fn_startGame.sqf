@@ -13,7 +13,7 @@ _endTime = time + LRG_FN_Duration;
 		if (_timeLeft < 0) then {
 			_timeLeft = "Game Over";
 		} else {
-			_timeLeft = [_timeLeft,"MM:SS"] call BIS_fnc_secondsToString;
+			_timeLeft = [_timeLeft,"HH:MM:SS"] call BIS_fnc_secondsToString;
 		};
 
 		[

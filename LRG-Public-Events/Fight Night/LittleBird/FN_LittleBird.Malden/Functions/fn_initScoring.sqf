@@ -6,7 +6,7 @@ LRG_FN_RedScore = 0;
 LRG_FN_HeloValue = 1;
 LRG_FN_MedicalPunish = -6;
 
-LRG_FN_Duration = 5400;
+LRG_FN_Duration = 7200;
 
 ["LRG_FN_ScoreUpdated", {
 	params ["_side", "_msg", "_weight"];
