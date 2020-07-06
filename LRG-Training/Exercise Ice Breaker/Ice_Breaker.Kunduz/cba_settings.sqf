@@ -134,9 +134,9 @@ force ace_cookoff_probabilityCoef = 0.4;
 
 // ACE Crew Served Weapons
 
-force ace_csw_ammoHandling = 2;
+force ace_csw_ammoHandling = 1;
 
-force ace_csw_defaultAssemblyMode = false;
+force ace_csw_defaultAssemblyMode = true;
 
 force ace_csw_dragAfterDeploy = false;
 
@@ -358,7 +358,7 @@ ace_maptools_rotateModifierKey = 1;
 
 force ace_medical_ai_enabledFor = 2;
 
-force ace_medical_AIDamageThreshold = 1;
+force ace_medical_AIDamageThreshold = 0.8;
 
 force ace_medical_bleedingCoefficient = 0.1;
 
@@ -368,7 +368,7 @@ force ace_medical_blood_enabledFor = 2;
 
 force ace_medical_blood_maxBloodObjects = 500;
 
-force ace_medical_fatalDamageSource = 0;
+force ace_medical_fatalDamageSource = 1;
 
 ace_medical_feedback_bloodVolumeEffectType = 0;
 
@@ -394,15 +394,15 @@ force ace_medical_limping = 1;
 
 force ace_medical_painCoefficient = 1;
 
-force ace_medical_playerDamageThreshold = 2;
+force ace_medical_playerDamageThreshold = 1.8;
 
-force ace_medical_spontaneousWakeUpChance = 0.2;
+force ace_medical_spontaneousWakeUpChance = 0.15;
 
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
 force ace_medical_statemachine_AIUnconsciousness = false;
 
-force ace_medical_statemachine_cardiacArrestTime = 900;
+force ace_medical_statemachine_cardiacArrestTime = 1200;
 
 force ace_medical_statemachine_fatalInjuriesAI = 0;
 
@@ -432,7 +432,7 @@ force ace_medical_treatment_consumeSurgicalKit = 0;
 
 force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.20;
+force ace_medical_treatment_cprSuccessChance = 0.30;
 
 force ace_medical_treatment_holsterRequired = 0;
 
@@ -888,15 +888,15 @@ force acex_viewrestriction_preserveView = false;
 
 // ACEX Volume
 
-force acex_volume_enabled = false;
+force acex_volume_enabled = true;
 
 force acex_volume_fadeDelay = 1;
 
 force acex_volume_lowerInVehicles = true;
 
-force acex_volume_reduction = 6;
+force acex_volume_reduction = 7;
 
-force acex_volume_remindIfLowered = false;
+force acex_volume_remindIfLowered = true;
 
 force acex_volume_showNotification = true;
 
@@ -904,23 +904,25 @@ force acex_volume_showNotification = true;
 
 // ADV - ACE CPR
 
-force adv_aceCPR_addTime = 20;
+force force adv_aceCPR_addTime = 20;
 
-force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
+force force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
 
-force adv_aceCPR_chance_0 = 3;
+force force adv_aceCPR_chance_0 = 3;
 
-force adv_aceCPR_chance_1 = 12;
+force force adv_aceCPR_chance_1 = 12;
 
-force adv_aceCPR_chance_2 = 35;
+force force adv_aceCPR_chance_2 = 35;
 
-force adv_aceCPR_chance_aed = 60;
+force force adv_aceCPR_chance_aed = 60;
 
-force adv_aceCPR_enable = false;
+force force adv_aceCPR_enable = true;
 
-force adv_aceCPR_maxTime = 1200;
+force force adv_aceCPR_maxTime = 600;
 
-force adv_aceCPR_useLocation_AED = 3;
+force force adv_aceCPR_onlyDoctors = 2;
+
+force force adv_aceCPR_useLocation_AED = 3;
 
 
 
@@ -1357,6 +1359,136 @@ STHud_Settings_SquadBar = false;
 STHud_Settings_TextShadow = 1;
 
 STHud_Settings_UnconsciousFadeEnabled = true;
+
+
+
+// TFAR - Clientside settings
+
+TFAR_default_radioVolume = 8;
+
+TFAR_intercomDucking = 0.2;
+
+TFAR_intercomVolume = 0.100458;
+
+TFAR_moveWhileTabbedOut = true;
+
+TFAR_oldVolumeHint = true;
+
+TFAR_pluginTimeout = 4;
+
+TFAR_PosUpdateMode = 0;
+
+TFAR_showChannelChangedHint = true;
+
+TFAR_ShowDiaryRecord = true;
+
+TFAR_showTransmittingHint = true;
+
+TFAR_ShowVolumeHUD = false;
+
+TFAR_tangentReleaseDelay = 0;
+
+TFAR_VolumeHudTransparency = 0;
+
+TFAR_volumeModifier_forceSpeech = true;
+
+
+
+// TFAR - Global settings
+
+force TFAR_AICanHearPlayer = true;
+
+force TFAR_AICanHearSpeaker = true;
+
+force TFAR_allowDebugging = true;
+
+force TFAR_curatorCamEars = true;
+
+force TFAR_defaultIntercomSlot = 0;
+
+force TFAR_enableIntercom = true;
+
+force TFAR_experimentalVehicleIsolation = true;
+
+force TFAR_fullDuplex = true;
+
+force TFAR_giveLongRangeRadioToGroupLeaders = false;
+
+force TFAR_giveMicroDagrToSoldier = false;
+
+force TFAR_givePersonalRadioToRegularSoldier = true;
+
+force TFAR_globalRadioRangeCoef = 1;
+
+force TFAR_instantiate_instantiateAtBriefing = false;
+
+force TFAR_noAutomoveSpectator = false;
+
+force TFAR_objectInterceptionEnabled = true;
+
+force TFAR_objectInterceptionStrength = 400;
+
+force tfar_radiocode_east = "_opfor";
+
+force tfar_radiocode_independent = "_independent";
+
+force tfar_radiocode_west = "_bluefor";
+
+force tfar_radioCodesDisabled = true;
+
+force TFAR_SameLRFrequenciesForSide = false;
+
+force TFAR_SameSRFrequenciesForSide = false;
+
+force TFAR_setting_defaultFrequencies_lr_east = "";
+
+force TFAR_setting_defaultFrequencies_lr_independent = "";
+
+force TFAR_setting_defaultFrequencies_lr_west = "";
+
+force TFAR_setting_defaultFrequencies_sr_east = "";
+
+force TFAR_setting_defaultFrequencies_sr_independent = "";
+
+force TFAR_setting_defaultFrequencies_sr_west = "";
+
+force TFAR_setting_DefaultRadio_Airborne_east = "";
+
+force TFAR_setting_DefaultRadio_Airborne_Independent = "";
+
+force TFAR_setting_DefaultRadio_Airborne_West = "";
+
+force TFAR_setting_DefaultRadio_Backpack_east = "";
+
+force TFAR_setting_DefaultRadio_Backpack_Independent = "";
+
+force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g";
+
+force TFAR_setting_DefaultRadio_Personal_east = "";
+
+force TFAR_setting_DefaultRadio_Personal_Independent = "";
+
+force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";
+
+force TFAR_setting_DefaultRadio_Rifleman_East = "";
+
+force TFAR_setting_DefaultRadio_Rifleman_Independent = "";
+
+force TFAR_setting_DefaultRadio_Rifleman_West = "TFAR_anprc152";
+
+force TFAR_spectatorCanHearEnemyUnits = true;
+
+force TFAR_spectatorCanHearFriendlies = true;
+
+force TFAR_takingRadio = 0;
+
+force TFAR_Teamspeak_Channel_Name = "LRG Operations";
+
+force TFAR_Teamspeak_Channel_Password = "LRGOps";
+
+force tfar_terrain_interception_coefficient = 7;
+
+force TFAR_voiceCone = true;
 
 
 
