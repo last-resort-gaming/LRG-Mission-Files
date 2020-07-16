@@ -1502,7 +1502,11 @@ force zen_camera_fastSpeedCoef = 1;
 
 force zen_camera_followTerrain = true;
 
+force zen_common_ascensionMessages = false;
+
 force zen_common_autoAddObjects = true;
+
+force zen_common_cameraBird = false;
 
 force zen_common_darkMode = false;
 
@@ -1510,7 +1514,11 @@ force zen_common_disableGearAnim = false;
 
 force zen_common_preferredArsenal = 1;
 
+force zen_compat_ace_hideModules = true;
+
 force zen_context_menu_enabled = 2;
+
+force zen_editor_addGroupIcons = true;
 
 force zen_editor_declutterEmptyTree = true;
 
@@ -1522,9 +1530,13 @@ force zen_editor_parachuteSounds = true;
 
 force zen_editor_previews_enabled = true;
 
+force zen_editor_randomizeCopyPaste = true;
+
 force zen_editor_removeWatermark = true;
 
 force zen_editor_unitRadioMessages = 2;
+
+force zen_placement_enabled = true;
 
 force zen_visibility_enabled = false;
 
