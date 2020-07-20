@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=330;
+		nextID=335;
 	};
 	class Camera
 	{
-		pos[]={809.06445,56.542797,12134.054};
-		dir[]={-0.61056948,-0.66078377,-0.43662465};
-		up[]={-0.53752196,0.75054675,-0.38438734};
-		aside[]={-0.58170599,1.3504177e-007,0.81344938};
+		pos[]={849.49286,135.61734,12220.331};
+		dir[]={0.23902297,-0.73025054,-0.64007765};
+		up[]={0.2554799,0.68313384,-0.68414885};
+		aside[]={-0.93686116,2.0404696e-007,-0.34984991};
 	};
 };
 binarizationWanted=0;
@@ -745,7 +745,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=120;
+		items=121;
 		class Item0
 		{
 			dataType="Object";
@@ -31645,7 +31645,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=20;
+							value=10;
 						};
 					};
 				};
@@ -31702,7 +31702,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=10;
+							value=5;
 						};
 					};
 				};
@@ -31797,7 +31797,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=2;
 						};
 					};
 				};
@@ -31854,7 +31854,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=6;
+							value=4;
 						};
 					};
 				};
@@ -31930,7 +31930,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=2;
 						};
 					};
 				};
@@ -34312,7 +34312,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=10;
+							value=5;
 						};
 					};
 				};
@@ -34464,7 +34464,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=20;
+							value=10;
 						};
 					};
 				};
@@ -34559,7 +34559,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=10;
+							value=3;
 						};
 					};
 				};
@@ -34711,7 +34711,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=20;
+							value=10;
 						};
 					};
 				};
@@ -34801,16 +34801,17 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={6023.0137,125.12,8630.6475};
+				position[]={653.37402,28.92,12157.475};
 			};
-			id=326;
-			type="LRG_ModuleAISpawns";
+			name="oliv3";
+			id=330;
+			type="ModuleCurator_F";
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
+					property="QUOTE(LRG_Config_Zeus)";
+					expression="if (_value isequalto true) then {[_this] call LR_fnc_ConfigZeus;}";
 					class Value
 					{
 						class data
@@ -34819,435 +34820,17 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
-								};
-							};
-							value=100;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_GarrisonedGroupsMin";
-					expression="_this setVariable ['GarrisonedGroupsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=10;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_EnemyType";
-					expression="_this setVariable ['EnemyType',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="OPF_F";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_EISniperMax";
-					expression="_this setVariable ['EISniperMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_VehAAMax";
-					expression="_this setVariable ['VehAAMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_EIAAMax";
-					expression="_this setVariable ['EIAAMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=4;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_EISniperMin";
-					expression="_this setVariable ['EISniperMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_PatrolMethod";
-					expression="_this setVariable ['PatrolMethod',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="RANDOM";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_VehAAMin";
-					expression="_this setVariable ['VehAAMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
+									"BOOL"
 								};
 							};
 							value=1;
 						};
 					};
 				};
-				class Attribute9
+				class Attribute1
 				{
-					property="LR_AI_EIPatrolsMax";
-					expression="_this setVariable ['EIPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=20;
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_EIAAMin";
-					expression="_this setVariable ['EIAAMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_VehRandomMax";
-					expression="_this setVariable ['VehRandomMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_VehMRAPMax";
-					expression="_this setVariable ['VehMRAPMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=10;
-						};
-					};
-				};
-				class Attribute13
-				{
-					property="LR_AI_VehHeavyMax";
-					expression="_this setVariable ['VehHeavyMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute14
-				{
-					property="LR_AI_EIPatrolsMin";
-					expression="_this setVariable ['EIPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=5;
-						};
-					};
-				};
-				class Attribute15
-				{
-					property="LR_AI_VehLightMax";
-					expression="_this setVariable ['VehLightMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute16
-				{
-					property="LR_AI_VehRandomMin";
-					expression="_this setVariable ['VehRandomMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute17
-				{
-					property="LR_AI_VehMRAPMin";
-					expression="_this setVariable ['VehMRAPMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=5;
-						};
-					};
-				};
-				class Attribute18
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1500;
-						};
-					};
-				};
-				class Attribute19
-				{
-					property="LR_AI_VehHeavyMin";
-					expression="_this setVariable ['VehHeavyMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute20
-				{
-					property="LR_AI_EIATMax";
-					expression="_this setVariable ['EIATMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=6;
-						};
-					};
-				};
-				class Attribute21
-				{
-					property="LR_AI_VehLightMin";
-					expression="_this setVariable ['VehLightMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute22
-				{
-					property="LR_AI_GarrisonedGroupsMax";
-					expression="_this setVariable ['GarrisonedGroupsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=20;
-						};
-					};
-				};
-				class Attribute23
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
 					class Value
 					{
 						class data
@@ -35259,14 +34842,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Objective 1";
+							value="76561198051988609";
 						};
 					};
 				};
-				class Attribute24
+				class Attribute2
 				{
-					property="LR_AI_EIATMin";
-					expression="_this setVariable ['EIATMin',_value,true];";
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
 					class Value
 					{
 						class data
@@ -35278,11 +34861,68 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=0;
 						};
 					};
 				};
-				nAttributes=25;
+				class Attribute3
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zeus";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=6;
 			};
 		};
 		class Item117
@@ -35290,9 +34930,9 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3581.6394,128.96707,8529.0352};
+				position[]={6029.1313,125.12,8631.7822};
 			};
-			id=327;
+			id=331;
 			type="LRG_ModuleAISpawns";
 			class CustomAttributes
 			{
@@ -35482,7 +35122,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=20;
+							value=10;
 						};
 					};
 				};
@@ -35539,7 +35179,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=10;
+							value=5;
 						};
 					};
 				};
@@ -35634,7 +35274,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=2;
 						};
 					};
 				};
@@ -35691,7 +35331,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=6;
+							value=4;
 						};
 					};
 				};
@@ -35767,7 +35407,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=2;
 						};
 					};
 				};
@@ -35779,9 +35419,9 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7910.7085,31.040001,9529.373};
+				position[]={7936.2173,31.040001,9488.5713};
 			};
-			id=328;
+			id=332;
 			type="LRG_ModuleAISpawns";
 			class CustomAttributes
 			{
@@ -35971,7 +35611,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=20;
+							value=10;
 						};
 					};
 				};
@@ -36028,7 +35668,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=10;
+							value=5;
 						};
 					};
 				};
@@ -36123,7 +35763,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=2;
 						};
 					};
 				};
@@ -36180,7 +35820,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=6;
+							value=4;
 						};
 					};
 				};
@@ -36256,7 +35896,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=2;
 						};
 					};
 				};
@@ -36268,9 +35908,9 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7920.7725,30.57,10784.319};
+				position[]={7923.4238,30.57,10794.554};
 			};
-			id=329;
+			id=333;
 			type="LRG_ModuleAISpawns";
 			class CustomAttributes
 			{
@@ -36460,7 +36100,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=20;
+							value=10;
 						};
 					};
 				};
@@ -36517,7 +36157,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=10;
+							value=5;
 						};
 					};
 				};
@@ -36612,7 +36252,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=2;
 						};
 					};
 				};
@@ -36669,7 +36309,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=6;
+							value=4;
 						};
 					};
 				};
@@ -36745,7 +36385,496 @@ class Mission
 									"SCALAR"
 								};
 							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=25;
+			};
+		};
+		class Item120
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3588.2405,127.90423,8528.1445};
+			};
+			id=334;
+			type="LRG_ModuleAISpawns";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_AI_GarRadius";
+					expression="_this setVariable ['GarrRadius',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=100;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LR_AI_GarrisonedGroupsMin";
+					expression="_this setVariable ['GarrisonedGroupsMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="LR_AI_EnemyType";
+					expression="_this setVariable ['EnemyType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="OPF_F";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="LR_AI_EISniperMax";
+					expression="_this setVariable ['EISniperMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="LR_AI_VehAAMax";
+					expression="_this setVariable ['VehAAMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="LR_AI_EIAAMax";
+					expression="_this setVariable ['EIAAMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=4;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="LR_AI_EISniperMin";
+					expression="_this setVariable ['EISniperMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="LR_AI_PatrolMethod";
+					expression="_this setVariable ['PatrolMethod',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="RANDOM";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="LR_AI_VehAAMin";
+					expression="_this setVariable ['VehAAMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="LR_AI_EIPatrolsMax";
+					expression="_this setVariable ['EIPatrolsMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="LR_AI_EIAAMin";
+					expression="_this setVariable ['EIAAMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="LR_AI_VehRandomMax";
+					expression="_this setVariable ['VehRandomMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="LR_AI_VehMRAPMax";
+					expression="_this setVariable ['VehMRAPMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
 							value=5;
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="LR_AI_VehHeavyMax";
+					expression="_this setVariable ['VehHeavyMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="LR_AI_EIPatrolsMin";
+					expression="_this setVariable ['EIPatrolsMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=5;
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="LR_AI_VehLightMax";
+					expression="_this setVariable ['VehLightMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute16
+				{
+					property="LR_AI_VehRandomMin";
+					expression="_this setVariable ['VehRandomMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute17
+				{
+					property="LR_AI_VehMRAPMin";
+					expression="_this setVariable ['VehMRAPMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute18
+				{
+					property="LR_AI_Radius";
+					expression="_this setVariable ['Radius',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1500;
+						};
+					};
+				};
+				class Attribute19
+				{
+					property="LR_AI_VehHeavyMin";
+					expression="_this setVariable ['VehHeavyMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute20
+				{
+					property="LR_AI_EIATMax";
+					expression="_this setVariable ['EIATMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=4;
+						};
+					};
+				};
+				class Attribute21
+				{
+					property="LR_AI_VehLightMin";
+					expression="_this setVariable ['VehLightMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute22
+				{
+					property="LR_AI_GarrisonedGroupsMax";
+					expression="_this setVariable ['GarrisonedGroupsMax',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=20;
+						};
+					};
+				};
+				class Attribute23
+				{
+					property="LR_AI_ObjName";
+					expression="_this setVariable ['ObjName',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Objective 1";
+						};
+					};
+				};
+				class Attribute24
+				{
+					property="LR_AI_EIATMin";
+					expression="_this setVariable ['EIATMin',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
 						};
 					};
 				};
@@ -36757,11 +36886,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=2;
+			nextID=3;
 		};
 		class Links
 		{
-			items=2;
+			items=3;
 			class Item0
 			{
 				linkID=0;
@@ -36777,6 +36906,16 @@ class Mission
 				linkID=1;
 				item0=75;
 				item1=7;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=330;
+				item1=4;
 				class CustomData
 				{
 					type="Sync";
