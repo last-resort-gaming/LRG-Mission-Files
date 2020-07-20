@@ -400,11 +400,11 @@ force ace_medical_spontaneousWakeUpChance = 0.15;
 
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
-force ace_medical_statemachine_AIUnconsciousness = false;
+force ace_medical_statemachine_AIUnconsciousness = true;
 
 force ace_medical_statemachine_cardiacArrestTime = 1200;
 
-force ace_medical_statemachine_fatalInjuriesAI = 0;
+force ace_medical_statemachine_fatalInjuriesAI = 2;
 
 force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 
