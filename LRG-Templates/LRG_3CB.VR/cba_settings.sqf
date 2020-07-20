@@ -1200,15 +1200,19 @@ force LRG_Channels_VehicleVoice = false;
 
 
 
-// LRG Main
+// LRG Creator Actions
 
-force LRG_Main_AISRevive = false;
+force LRG_CreatorActions_Master = true;
+
+force LRG_CreatorActions_Channels = true;
+
+force LRG_CreatorActions_EndMission = true;
+
+// LRG Main
 
 force LRG_Main_ArsenalSaveLoad = false;
 
 force LRG_Main_CHViewDistance = true;
-
-force LRG_Main_CreatorActions = true;
 
 force LRG_Main_CueCards = true;
 
@@ -1229,6 +1233,8 @@ force LRG_Main_FPSCounter = true;
 force LRG_Main_LockCamVehicle = false;
 
 force LRG_Main_Logging = true;
+
+force LRG_Main_MapIcons = true;
 
 force LRG_Main_PilotCheck = true;
 
@@ -1335,6 +1341,20 @@ force LRG_Weather_RealTime = true;
 force LRG_Weather_StartWeather = 0;
 
 force LRG_Weather_SyncTime = 60;
+
+
+
+// LRG Zeus
+
+force LRG_Zeus_Module_AISpawnsEast = true;
+
+force LRG_Zeus_Module_AISpawnsIndep = true;
+
+force LRG_Zeus_Module_AISpawnsWest = true;
+
+force LRG_Zeus_Module_CivilianSpawns = true;
+
+force LRG_Zeus_Module_SafeZone = true;
 
 
 
