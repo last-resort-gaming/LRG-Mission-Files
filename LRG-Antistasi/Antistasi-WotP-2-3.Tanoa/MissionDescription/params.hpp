@@ -12,7 +12,7 @@ class Params
           title = "Game Mode - Do NOT change this mid mission";
           values[] = {1,2,3,4};
           texts[] = {"Reb vs Gov vs Inv","Reb vs Gov & Inv","Reb vs Gov","Reb vs Inv"};
-          default = 1;
+          default = 4;
      };
      class autoSave
      {
@@ -26,14 +26,14 @@ class Params
           title = "Time between autosaves (in minutes)";
           values[] = {600,1200,1800,3600,5400};
           texts[] = {"10","20","30","60","90"};
-          default = 3600;
+          default = 1200;
      };
      class membership
      {
           title = "Enable Server Membership";
           texts[] = {"Yes","No"};
           values[] = {1,0};
-          default = 1;
+          default = 0;
      };
      class switchComm
      {
@@ -100,7 +100,7 @@ class Params
           title = "Percentage of Reserved Slots for Members";
           values[] = {0,20,40,60,80,100};
           texts[] = {"None","20%","40%","60%","80%","All"};
-          default = 20;
+          default = 0;
      };
      class memberDistance
      {
@@ -121,7 +121,7 @@ class Params
           title = "Max personal garage slots";
           texts[] = {"Unlimited", "2", "5", "10"};
           values[] = {0,2,5,10};
-          default = 2;
+          default = 0;
      };
      class allowFT
      {
@@ -156,14 +156,14 @@ class Params
           title = "Should Guided Launchers become unlocked?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class allowUnlockedExplosives
      {
           title = "Should Explosives become unlocked?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class startWithLongRangeRadio
      {
@@ -275,7 +275,7 @@ class Params
 		  title = "Logging Level (Amount of detail in .rpt file)";
 		  values[] = {1,2,3};
 		  texts[] = {"Error", "Info", "Debug"};
-		  default = 3;
+		  default = 1;
 	 };
      class CrateOptions
      {
