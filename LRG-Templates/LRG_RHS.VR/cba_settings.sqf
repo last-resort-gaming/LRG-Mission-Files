@@ -1236,6 +1236,8 @@ force LRG_Main_Logging = true;
 
 force LRG_Main_MapIcons = true;
 
+force LRG_Main_MaydayAccess = 1;
+
 force LRG_Main_PilotCheck = true;
 
 force LRG_Main_QSMagRepack = false;
