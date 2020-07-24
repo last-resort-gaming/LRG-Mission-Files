@@ -17,14 +17,19 @@ _endTime = time + LRG_FN_Duration;
 		};
 
 		[
-			format [
-				"<t size='0.8' color='#00ff00'>- %3 -</t><br/><t size='0.8' color='#0000ff'>%1</t><t size='0.8'> - </t><t color='#ff0000' size='0.8'>%2</t>",
-				LRG_FN_BluScore, LRG_FN_RedScore, _timeLeft
+			format ["<t size='0.8' color='#ffffff'>- %7 -</t><br/><t size='0.8' color='#0000ff'>%1</t><t size='0.8'> - </t><t color='#ff0000' size='0.8'>%2</t><t size='0.8'> - </t><t color='#00ff00' size='0.8'>%3</t><br/>%8<br/><t size='0.5' color='#0000ff'>%4</t><t size='0.5'> - </t><t color='#ff0000' size='0.5'>%5</t><t size='0.5'> - </t><t color='#00ff00' size='0.5'>%6</t>",
+				LRG_FN_BluScore, LRG_FN_RedScore, LRG_FN_GreScore,
+				[LRG_FN_Blu_TTL,"MM:SS"] call BIS_fnc_secondsToString,
+				[LRG_FN_Red_TTL,"MM:SS"] call BIS_fnc_secondsToString,
+				[LRG_FN_Gre_TTL,"MM:SS"] call BIS_fnc_secondsToString,
+				_timeLeft, LRG_FN_ZoneContest
 			],
 			-1, -0.4, 1,
-			0, 0, 789
+			0, 0, 1232
 		] remoteExec ["BIS_fnc_dynamicText", 0];
 	},
 	1,
 	[_endTime]
 ] call CBA_fnc_addPerFrameHandler;
+
+call LR_FN_fnc_initZone;

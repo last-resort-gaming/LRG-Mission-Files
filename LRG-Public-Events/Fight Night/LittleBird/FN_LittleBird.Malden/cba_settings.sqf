@@ -306,13 +306,13 @@ force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Map
 
-force ace_map_BFT_Enabled = false;
+force ace_map_BFT_Enabled = true;
 
 force ace_map_BFT_HideAiGroups = true;
 
-force ace_map_BFT_Interval = 30;
+force ace_map_BFT_Interval = 5;
 
-force ace_map_BFT_ShowPlayerNames = false;
+force ace_map_BFT_ShowPlayerNames = true;
 
 force ace_map_DefaultChannel = 1;
 
@@ -544,7 +544,7 @@ force ace_finger_maxRange = 50;
 
 force ace_pylons_enabledForZeus = true;
 
-force ace_pylons_enabledFromAmmoTrucks = true;
+force ace_pylons_enabledFromAmmoTrucks = false;
 
 force ace_pylons_rearmNewPylons = false;
 

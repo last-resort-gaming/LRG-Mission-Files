@@ -2,27 +2,57 @@ LRG_FN_GameStarted = false;
 
 LRG_FN_BluScore = 0;
 LRG_FN_RedScore = 0;
+LRG_FN_GreScore = 0;
+
+LRG_FN_BluSpawn = "blu_zone";
+LRG_FN_RedSpawn = "red_zone";
+LRG_FN_GreSpawn = "gre_zone";
 
 LRG_FN_HeloValue = 1;
-LRG_FN_MedicalPunish = -6;
 
-LRG_FN_Duration = 7200;
+LRG_FN_Duration = 90*60;
+
+LRG_FN_ZoneTTL = 90;
+LRG_FN_ZoneRadius = 750;
+LRG_FN_ZoneStartPos = [5523.32,7012,0];
+LRG_FN_ZonePos = LRG_FN_ZoneStartPos;
+LRG_FN_ZoneMarker = "";
+LRG_FN_ZoneValue = round (2 * (LRG_FN_ZoneTTL / 60));
+LRG_FN_ZoneContest = "<t size='0.5'>Zone Contested!</t>";
+
+LRG_FN_Blu_TTL = LRG_FN_ZoneTTL;
+LRG_FN_Red_TTL = LRG_FN_ZoneTTL;
+LRG_FN_Gre_TTL = LRG_FN_ZoneTTL;
 
 ["LRG_FN_ScoreUpdated", {
 	params ["_side", "_msg", "_weight"];
 
-	private ["_antName"];
+	private ["_sideName", "_sideColour"];
 
-	_antName = if (_side == west) then {"Blue"} else {"Red"};
+	switch (_side) do {
+		case west: {
+			_sideName = "Blue";
+			_sideColour = "#0000ff";
+		};
+		case east: {
+			_sideName = "Red";
+			_sideColour = "#ff0000";
+		};
+		case independent: {
+			_sideName = "Green";
+			_sideColour = "#00ff00";
+		};
+		default { _sideName = "" };
+	};
 
 	_scoremsg = if (_weight > 0) then {
-		format ["%1 Team has scored %2 points(s)", _antName, _weight]
+		format ["%1 Team has scored %2 points(s)", _sideName, _weight]
 	} else {
-		format ["%1 Team has lost %2 point(s)", _antName, _weight]
+		format ["%1 Team has lost %2 point(s)", _sideName, _weight]
 	};
 
 	hintSilent parseText (format [
-		"<t size='2' color='#00ff00'>Score Updated</t><br/><br/>%2:<br/>%1", _msg, _scoremsg
+		"<t size='2' color='#3'>Score Updated</t><br/><br/>%2:<br/>%1", _msg, _scoremsg, _sideColour
 	]);
 
 	if (player getUnitTrait "Mission Maker") then {

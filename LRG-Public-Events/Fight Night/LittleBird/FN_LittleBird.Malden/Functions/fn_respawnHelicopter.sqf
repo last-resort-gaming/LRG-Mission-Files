@@ -23,3 +23,6 @@ if (_side == civilian) then {
 [_newVeh] call ace_zeus_fnc_addObjectToCurator;
 
 [_newVeh, _side] call LR_FN_fnc_initHelicopter;
+
+// cleanup
+deleteVehicle _unit;
