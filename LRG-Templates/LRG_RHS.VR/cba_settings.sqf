@@ -808,7 +808,7 @@ force ace_winddeflection_vehicleEnabled = true;
 
 force ace_zeus_autoAddObjects = true;
 
-force ace_zeus_canCreateZeus = -1;
+force ace_zeus_canCreateZeus = 0;
 
 force ace_zeus_radioOrdnance = false;
 
