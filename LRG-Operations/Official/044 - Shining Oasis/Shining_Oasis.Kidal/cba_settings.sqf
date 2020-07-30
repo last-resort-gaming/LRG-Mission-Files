@@ -808,7 +808,7 @@ force ace_winddeflection_vehicleEnabled = true;
 
 force ace_zeus_autoAddObjects = true;
 
-force ace_zeus_canCreateZeus = -1;
+force ace_zeus_canCreateZeus = 0;
 
 force ace_zeus_radioOrdnance = false;
 
@@ -1236,6 +1236,8 @@ force LRG_Main_Logging = true;
 
 force LRG_Main_MapIcons = true;
 
+force LRG_Main_MaydayAccess = 1;
+
 force LRG_Main_PilotCheck = true;
 
 force LRG_Main_QSMagRepack = false;
@@ -1565,3 +1567,48 @@ force zen_vision_enableRedHotCold = false;
 force zen_vision_enableWhiteHot = true;
 
 force zen_vision_enableWhiteHotRedCold = false;
+
+
+
+// DUI - Squad Radar - Indicators
+
+force diwako_dui_indicators_icon_buddy = true;
+
+force diwako_dui_indicators_icon_leader = true;
+
+force diwako_dui_indicators_icon_medic = true;
+
+force force diwako_dui_indicators_range = 20;
+
+force diwako_dui_indicators_show = true;
+
+force diwako_dui_indicators_useACENametagsRange = true;
+
+
+
+// DUI - Squad Radar - Radar
+
+force force diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
+
+force force diwako_dui_compassRange = 30;
+
+force force diwako_dui_distanceWarning = 5;
+
+force force diwako_dui_enable_occlusion = true;
+
+diwako_dui_namelist_size = 1;
+
+force force diwako_dui_radar_leadingZeroes = true;
+
+diwako_dui_radar_namelist_vertical_spacing = 1;
+
+force force diwako_dui_radar_sortType = "fireteam2";
+
+force force diwako_dui_radar_sqlFirst = true;
+
+
+
+// GRAD slingHelmet
+
+force GRAD_slingHelmet_additionalList = """VSM_Mich2000_AOR1"", ""VSM_Mich2000_M81"", ""VSM_Mich2000_MulticamTropic"", ""VSM_Mich2000_Multicam"", ""VSM_Mich2000_ocp"", ""VSM_Mich2000_CamoSprayOD"", ""VSM_Mich2000_OGA_OD"", ""VSM_Mich2000_OGA"", ""VSM_Mich2000_ProjectHonor"", ""VSM_Mich2000_CamoSprayTAN"", ""VSM_Mich2000_2_aor1"", ""VSM_Mich2000_2_M81"", ""VSM_Mich2000_2_MulticamTropic"", ""VSM_Mich2000_2_Multicam"", ""VSM_Mich2000_2_OCP"", ""VSM_Mich2000_2_CamoSprayOD"", ""VSM_Mich2000_2_OGA_OD"", ""VSM_Mich2000_2_OGA"", ""VSM_Mich2000_2_ProjectHonor"", ""VSM_Mich2000_2_CamoSprayTAN"", ""VSM_OGA_Helmet1"", ""VSM_OGA_OD_Helmet1"", ""VSM_OGA_Helmet2"", ""VSM_OGA_OD_Helmet2"", ""VSM_OPS"", ""VSM_OPS_aor1"", ""VSM_Black_OPS"", ""VSM_M81_OPS"", ""VSM_OPS_multicam"", ""VSM_MulticamTropic_OPS"", ""VSM_OPS_ocp"", ""VSM_OD_spray_OPS"", ""VSM_OGA_OD_OPS"", ""VSM_oga_OPS"", ""VSM_ProjectHonor_OPS"", ""VSM_Tan_spray_OPS"", ""VSM_OPS_2"", ""VSM_OPS_2_AOR1"", ""VSM_Black_OPS_2"", ""VSM_M81_OPS_2"", ""VSM_OPS_2_multicam"", ""VSM_MulticamTropic_OPS_2"", ""VSM_OPS_2_ocp"", ""VSM_OD_Spray_OPS_2"", ""VSM_oga_OPS_2"", ""VSM_OGA_OD_OPS_2"", ""VSM_ProjectHonor_OPS_2"", ""VSM_Tan_spray_OPS_2"", ""H_mas_nor_opscore"", ""H_mas_nor_opscorn"", ""H_mas_nor_opscore_gog"", ""H_mas_nor_opscorn_gog"", ""H_mas_nor_opscore_g"", ""H_mas_nor_opscore_gog_g"", ""H_mas_nor_opscore_b"", ""H_mas_nor_opscore_gog_b"", ""H_mas_nor_opscore_t"", ""H_mas_nor_opscore_gog_t"", ""H_mas_nor_opscore_aor1"", ""H_mas_nor_opscore_gog_aor1"", ""H_mas_nor_opscore_aor2"", ""H_mas_nor_opscore_gog_aor2"", ""H_mas_nor_opscore_w"", ""H_mas_nor_opscore_gog_w"", ""H_mas_nor_ach"", ""H_mas_nor_ach_gog"", ""H_mas_nor_ach_aor1"", ""H_mas_nor_ach_gog_aor1"", ""H_mas_nor_ach_aor2"", ""H_mas_nor_ach_gog_aor2"", ""H_mas_nor_ach_b"", ""H_mas_nor_ach_gog_b"", ""Surpat_Helmet"", ""WRUS_H_6b7_camo"", ""WRUS_H_6b7_camo_ess"", ""WRUS_H_6b7_Plain"", ""WRUS_H_6b7_Plain_ESS"", ""SURPAT_Helmet3"", ""SURPAT_Helmet1"", ""SURPAT_Helmet2"", ""H_HelmetB_TI_tna_Fx""";
+
