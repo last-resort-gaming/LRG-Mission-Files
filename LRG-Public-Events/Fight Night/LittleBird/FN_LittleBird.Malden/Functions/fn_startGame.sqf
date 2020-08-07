@@ -1,5 +1,10 @@
 if (!isServer) exitWith {};
 
+// reset scores just to be sure c:
+LRG_FN_BluScore = 0;
+LRG_FN_RedScore = 0;
+LRG_FN_GreScore = 0;
+
 LRG_FN_GameStarted = true;
 _endTime = time + LRG_FN_Duration;
 
