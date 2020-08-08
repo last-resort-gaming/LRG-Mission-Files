@@ -1,6 +1,6 @@
 if (!isServer) exitWith {};
 
-params ["_unit", "_pos", "_pylonLoadout", "_class", "_side"];
+params ["_unit", "_pos", "_dir", "_pylonLoadout", "_class", "_side"];
 
 _newVeh = _class createVehicle _pos;
 
@@ -11,7 +11,7 @@ if (allTurrets _newVeh isEqualTo []) then {
     } forEach _pylonLoadout;
 } else {
     {
-        _newVeh setPylonLoadout [_forEachIndex + 1, _x, true, [0]];
+        _newVeh setPylonLoadout [_forEachIndex + 1, _x, true, [-1]];
     } forEach _pylonLoadout;
 };
 

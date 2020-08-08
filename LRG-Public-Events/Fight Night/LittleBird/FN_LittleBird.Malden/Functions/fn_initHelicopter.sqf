@@ -30,6 +30,7 @@ _veh setVariable ["LRG_FN_startPos", position _veh, true];
 _veh setVariable ["LRG_FN_pylonLoadout", _pylonLoadout, true];
 _veh setVariable ["LRG_FN_className", _heliClass, true];
 _veh setVariable ["LRG_FN_heliSide", _side, true];
+_veh setVariable ["LRG_FN_HeliDir", getDir _veh, true];
 
 _veh addMPEventHandler ["MPKilled", {
 
@@ -43,6 +44,7 @@ _veh addMPEventHandler ["MPKilled", {
 
 	// get variables
 	_pos = _unit getVariable "LRG_FN_startPos";
+	_dir = _unit getVariable "LRG_FN_HeliDir";
 	_pylonLoadout = _unit getVariable "LRG_FN_pylonLoadout";
 	_class = _unit getVariable "LRG_FN_className";
 	_heliSide = _unit getVariable "LRG_FN_heliSide";
@@ -69,7 +71,7 @@ _veh addMPEventHandler ["MPKilled", {
 
 	[
 		{_this call LR_FN_fnc_respawnHelicopter;},
-		[_unit, _pos, _pylonLoadout, _class, _heliSide],
+		[_unit, _pos, _dir, _pylonLoadout, _class, _heliSide],
 		30
 	] call CBA_fnc_waitAndExecute;
 }];
