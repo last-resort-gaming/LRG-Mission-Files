@@ -3,6 +3,8 @@ if (!isServer) exitWith {};
 params ["_unit", "_pos", "_dir", "_pylonLoadout", "_class", "_side"];
 
 _newVeh = _class createVehicle _pos;
+_newVeh setDir _dir;
+_newVeh setPos _pos;
 
 // Reload the same pylons as before
 if (allTurrets _newVeh isEqualTo []) then {
