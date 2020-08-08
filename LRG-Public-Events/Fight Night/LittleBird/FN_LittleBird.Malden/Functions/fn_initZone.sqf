@@ -16,6 +16,11 @@ LRG_FN_ZoneMarker setMarkerColor "ColorOrange";
 
 [
 	{
+		if (LRG_FN_Zone_GraceCur > 0) exitWith {
+			LRG_FN_ZoneContest = format ["<t size='0.5'>New Zone will spawn in: %1</t>", LRG_FN_Zone_GraceCur];
+			LRG_FN_Zone_GraceCur = LRG_FN_Zone_GraceCur - 1;
+		};
+
 		// count heli by side
 		// decrement ttl counter for team with most helis in zone
 		// if a team's ttl is <= 0, update scores and move zone
@@ -61,7 +66,7 @@ LRG_FN_ZoneMarker setMarkerColor "ColorOrange";
 			LRG_FN_ZoneContest = "<t size='0.5' color='#00ff00'>Green Team</t><t size='0.5'> is capturing the Zone!</t>";
 		};
 
-		if (LRG_FN_Blu_TTL < 0) then {
+		if (LRG_FN_Blu_TTL <= 0) then {
 			//update score
 			LRG_FN_BluScore = LRG_FN_BluScore + LRG_FN_ZoneValue;
 			["LRG_FN_ScoreUpdated", [west, "Zone Captured!", LRG_FN_ZoneValue]] call CBA_fnc_globalEvent;
@@ -69,7 +74,7 @@ LRG_FN_ZoneMarker setMarkerColor "ColorOrange";
 			_moveZone = true;
 		};
 
-		if (LRG_FN_Red_TTL < 0) then {
+		if (LRG_FN_Red_TTL <= 0) then {
 			//update score
 			LRG_FN_RedScore = LRG_FN_RedScore + LRG_FN_ZoneValue;
 			["LRG_FN_ScoreUpdated", [east, "Zone Captured!", LRG_FN_ZoneValue]] call CBA_fnc_globalEvent;
@@ -77,7 +82,7 @@ LRG_FN_ZoneMarker setMarkerColor "ColorOrange";
 			_moveZone = true;
 		};
 
-		if (LRG_FN_Gre_TTL < 0) then {
+		if (LRG_FN_Gre_TTL <= 0) then {
 			//update score
 			LRG_FN_GreScore = LRG_FN_GreScore + LRG_FN_ZoneValue;
 			["LRG_FN_ScoreUpdated", [independent, "Zone Captured!", LRG_FN_ZoneValue]] call CBA_fnc_globalEvent;
@@ -87,49 +92,63 @@ LRG_FN_ZoneMarker setMarkerColor "ColorOrange";
 
 		// check if we need to move the zone
 		if (_moveZone) then {
-			// side with lowest score
-			_minScore = selectMin [LRG_FN_BluScore, LRG_FN_RedScore, LRG_FN_GreScore];
 
-			private _minSides = [];
+			LRG_FN_Zone_GraceCur = LRG_FN_Zone_Grace;
+			deleteMarker LRG_FN_ZoneMarker;
 
-			if (_minScore == LRG_FN_BluScore) then { _minSides pushBack west };
-			if (_minScore == LRG_FN_RedScore) then { _minSides pushBack east };
-			if (_minScore == LRG_FN_GreScore) then { _minSides pushBack independent };
+			[
+				{LRG_FN_Zone_GraceCur <= 0},
+				{
+					// side with lowest score
+					_minScore = selectMin [LRG_FN_BluScore, LRG_FN_RedScore, LRG_FN_GreScore];
 
-			_side = selectRandom _minSides;
+					private _minSides = [];
 
-			private _spawnPos = [0, 0];
+					if (_minScore == LRG_FN_BluScore) then { _minSides pushBack west };
+					if (_minScore == LRG_FN_RedScore) then { _minSides pushBack east };
+					if (_minScore == LRG_FN_GreScore) then { _minSides pushBack independent };
 
-			switch (_side) do {
-				case west: { _spawnPos = getMarkerPos LRG_FN_BluSpawn };
-				case east: { _spawnPos = getMarkerPos LRG_FN_RedSpawn };
-				case independent: { _spawnPos = getMarkerPos LRG_FN_GreSpawn };
-				default { };
-			};
+					_side = selectRandom _minSides;
 
-			_distance = LRG_FN_ZonePos distance2D _spawnPos;
-			_dir = LRG_FN_ZonePos getDir _spawnPos;
+					private _spawnPos = [0, 0];
 
-			if (_distance < 3000) then {
-				_dir = _dir + selectRandom [-120, -90, 90, 120];
-				_distance = 4000;
-			};
+					switch (_side) do {
+						case west: { _spawnPos = getMarkerPos LRG_FN_BluSpawn };
+						case east: { _spawnPos = getMarkerPos LRG_FN_RedSpawn };
+						case independent: { _spawnPos = getMarkerPos LRG_FN_GreSpawn };
+						default { };
+					};
 
-			// move zone about a fourth of the way to the worst team's spawn
-			_factor = 0.2 + (random [0, 0.05, 0.1]);
-			_newDistance = _factor * _distance;
+					_distance = LRG_FN_ZonePos distance2D _spawnPos;
+					_dir = LRG_FN_ZonePos getDir _spawnPos;
 
-			LRG_FN_ZonePos = LRG_FN_ZonePos getPos [_newDistance, _dir];
+					// move zone about a fourth of the way to the worst team's spawn
+					_factor = 0.4 + (random 0.1);
+					_newDistance = _factor * _distance;
 
-			// move the marker
-			LRG_FN_ZoneMarker setMarkerPos LRG_FN_ZonePos;
+					while {_newDistance < (LRG_FN_ZoneRadius * 2)} do {
+						_rPos = [nil, ["water", [getMarkerPos LRG_FN_BluSpawn, 3000], [getMarkerPos LRG_FN_RedSpawn, 3000], [getMarkerPos LRG_FN_GreSpawn, 3000], [getMarkerPos "demil_zone", 3000]]] call BIS_fnc_randomPos;
+						_newDistance = LRG_FN_ZonePos distance2D _rPos;
+						_dir = LRG_FN_ZonePos getDir _rPos;
+					};
 
-			// reset team TTLs
-			LRG_FN_Blu_TTL = LRG_FN_ZoneTTL;
-			LRG_FN_Red_TTL = LRG_FN_ZoneTTL;
-			LRG_FN_Gre_TTL = LRG_FN_ZoneTTL;
+					LRG_FN_ZonePos = LRG_FN_ZonePos getPos [_newDistance, _dir];
 
-			["LRG_FN_ZoneTask", LRG_FN_ZonePos] call BIS_fnc_taskSetDestination;
+					// move the marker
+					LRG_FN_ZoneMarker = createMarker [format ["LRG_FN_ZoneMarker_%1", time], LRG_FN_ZonePos];
+					LRG_FN_ZoneMarker setMarkerShape "ELLIPSE";
+					LRG_FN_ZoneMarker setMarkerSize [LRG_FN_ZoneRadius, LRG_FN_ZoneRadius];
+					LRG_FN_ZoneMarker setMarkerAlpha 0.75;
+					LRG_FN_ZoneMarker setMarkerColor "ColorOrange";
+
+					// reset team TTLs
+					LRG_FN_Blu_TTL = LRG_FN_ZoneTTL;
+					LRG_FN_Red_TTL = LRG_FN_ZoneTTL;
+					LRG_FN_Gre_TTL = LRG_FN_ZoneTTL;
+
+					["LRG_FN_ZoneTask", LRG_FN_ZonePos] call BIS_fnc_taskSetDestination;
+				}
+			] call CBA_fnc_waitUntilAndExecute;
 		};
 	},
 	1,

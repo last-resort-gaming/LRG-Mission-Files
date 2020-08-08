@@ -14,15 +14,18 @@ LRG_FN_Duration = 90*60;
 
 LRG_FN_ZoneTTL = 90;
 LRG_FN_ZoneRadius = 750;
-LRG_FN_ZoneStartPos = [5523.32,7012,0];
+LRG_FN_ZoneStartPos = [3500,6500,0];
 LRG_FN_ZonePos = LRG_FN_ZoneStartPos;
 LRG_FN_ZoneMarker = "";
-LRG_FN_ZoneValue = round (2 * (LRG_FN_ZoneTTL / 60));
+LRG_FN_ZoneValue = 1 max (round (2 * (LRG_FN_ZoneTTL / 60)));
 LRG_FN_ZoneContest = "<t size='0.5'>Zone Contested!</t>";
 
 LRG_FN_Blu_TTL = LRG_FN_ZoneTTL;
 LRG_FN_Red_TTL = LRG_FN_ZoneTTL;
 LRG_FN_Gre_TTL = LRG_FN_ZoneTTL;
+
+LRG_FN_Zone_Grace = 15;
+LRG_FN_Zone_GraceCur = 0;
 
 ["LRG_FN_ScoreUpdated", {
 	params ["_side", "_msg", "_weight"];
@@ -66,5 +69,5 @@ LRG_FN_Gre_TTL = LRG_FN_ZoneTTL;
 	"Start Mission",
 	"",
 	{remoteExec ["LR_FN_fnc_startGame", 2]},
-	{true}
+	{not LRG_FN_GameStarted}
 ] call LR_fnc_AddCreatorAction;
