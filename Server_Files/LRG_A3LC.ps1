@@ -42,6 +42,7 @@ If ($Server -eq 3) {
 }
 
 $ServerMods = $ServerMods +";" +$ServerLocalMods
+$HCMods = $ClientMods +";C:\Mods\@LAMBS_RPG;C:\Mods\@LAMBS_Suppression;C:\Mods\@LAMBS_Turrets"
 
 $Server_mpmissions=Join-Path -Path $Server_Dir -ChildPath "\mpmissions"
 $Server_Profiles=Join-Path -Path $Server_Dir -ChildPath "\Profiles"
@@ -157,5 +158,5 @@ for ($i=1; $i -le $Headless_Clients; $i++)
 {
 	Write-Host "Booting HC in 30 seconds." -ForegroundColor red -BackgroundColor white
 	sleep -seconds 30
-    Start-Process -FilePath "$Server_Dir\arma3server_x64.exe" -ArgumentList "-profiles=`"$Server_Profiles`" -client -connect=127.0.0.1 -port=$Server_port -password=$Password `"-Mod=$ClientMods`""
+    Start-Process -FilePath "$Server_Dir\arma3server_x64.exe" -ArgumentList "-profiles=`"$Server_Profiles`" -client -connect=127.0.0.1 -port=$Server_port -password=$Password `"-Mod=$HCMods`""
 }
