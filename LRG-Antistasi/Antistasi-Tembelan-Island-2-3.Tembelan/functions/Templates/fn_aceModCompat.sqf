@@ -20,8 +20,7 @@ aceItems = [
 	"ACE_UAVBattery",
 	"ACE_SpareBarrel",
 	"ACE_Flashlight_XL50",
-	"ACE_HandFlare_White",
-	"ACE_DeadManSwitch"
+	"ACE_HandFlare_White"
 ];
 
 aceMedItems = [
