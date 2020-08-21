@@ -60,7 +60,7 @@ class Params
           title = "Allow PvP Slots";
           values[] = {1,0};
           texts[] = {"Yes","No"};
-          default = 1;
+          default = 0;
      };
      class pMarkers
      {
@@ -205,7 +205,7 @@ class Params
           title = "Allow Items and Vehicles from Heli DLC?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class Expansion
      {
@@ -219,21 +219,21 @@ class Params
           title = "Allow Items and Vehicles from Jets DLC?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class Orange
      {
           title = "Allow Items and Vehicles from Laws of War DLC?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class Tanks
      {
           title = "Allow Items and Vehicles from Tanks DLC?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class GlobMob
      {
@@ -275,7 +275,7 @@ class Params
 		  title = "Logging Level (Amount of detail in .rpt file)";
 		  values[] = {1,2,3};
 		  texts[] = {"Error", "Info", "Debug"};
-		  default = 1;
+		  default = 2;
 	 };
      class CrateOptions
      {
@@ -303,7 +303,7 @@ class Params
           title = "Maximum Weapon Types in Crates";
           values[] = {0,2,4,6,8,12,16};
           texts[] = {"1","3","5","7","9","13","17"};
-          default = 9;
+          default = 8;
      };
      class crateWepNumMax
      {
