@@ -521,6 +521,8 @@ else
 	player setVariable ["canSave", true];
 };
 
+player enableFatigue false;
+player enableStamina false;
 
 //Move the player to HQ now they're initialised.
 player setPos (getMarkerPos respawnTeamPlayer);

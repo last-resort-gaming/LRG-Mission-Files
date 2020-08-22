@@ -97,9 +97,9 @@ breachingExplosivesTank = [["rhs_ec400_mag", 1], ["rhs_ec400_sand_mag", 1], ["rh
 
 //Starting Unlocks
 initialRebelEquipment append ["rhs_weap_type94_new","rhs_weap_tt33","rhs_weap_Izh18","rhs_weap_kar98k", "rhs_weap_makarov_pm", "rhs_weap_akm", "rhs_weap_akmn"];
-initialRebelEquipment append ["rhs_weap_rpg75", "rhs_ec75_sand_mag", "IEDLandSmall_Remote_Mag", "IEDUrbanSmall_Remote_Mag"];
+initialRebelEquipment append ["rhs_weap_rpg7", "rhs_rpg7_PG7V_mag", "rhs_ec75_sand_mag", "IEDLandSmall_Remote_Mag", "IEDUrbanSmall_Remote_Mag"];
 initialRebelEquipment append ["rhs_mag_9x18_8_57N181S", "rhs_30Rnd_762x39mm_bakelite", "rhs_30Rnd_762x39mm_bakelite_tracer", "rhs_mag_6x8mm_mhp","rhs_mag_762x25_8","rhsgref_1Rnd_00Buck","rhsgref_1Rnd_Slug","rhsgref_5Rnd_792x57_kar98k","rhs_grenade_mkii_mag","rhs_grenade_mki_mag","rhs_mag_rdg2_black","rhs_grenade_m15_mag"];
-initialRebelEquipment append ["B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_ocamo","B_FieldPack_oucamo","B_FieldPack_cbr"];
+initialRebelEquipment append ["B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_ocamo","B_FieldPack_oucamo","B_FieldPack_cbr", "B_Carryall_cbr", "B_Carryall_green_F", "B_Carryall_khk", "B_Carryall_mcamo", "B_Carryall_oli", "B_Carryall_oncam", "UK3CB_B_Hiker"];
 initialRebelEquipment append ["rhsgref_chestrig","rhsgref_chicom","rhs_vydra_3m","rhs_vest_pistol_holster","rhs_vest_commander","rhs_6sh46","rhsgref_alice_webbing"];
 initialRebelEquipment append ["rhs_acc_2dpZenit","Binocular"];
 //TAFR Unlocks

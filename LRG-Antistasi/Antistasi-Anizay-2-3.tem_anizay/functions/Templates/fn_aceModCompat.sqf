@@ -5,7 +5,6 @@ diag_log format ["%1: [Antistasi] | INFO | initVar | Creating ACE Items List",se
 aceItems = [
 	"ACE_EarPlugs",
 	"ACE_RangeCard",
-	"ACE_Clacker",
 	"ACE_DefusalKit",
 	"ACE_MapTools",
 	"ACE_Flashlight_MX991",
