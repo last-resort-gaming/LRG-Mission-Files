@@ -8,7 +8,7 @@ class EditorData
 	toggles=1029;
 	class ItemIDProvider
 	{
-		nextID=2801;
+		nextID=2802;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=413;
+		nextID=438;
 	};
 	class Camera
 	{
@@ -79,13 +79,14 @@ addons[]=
 	"A3_Weapons_F",
 	"A3_Ui_F_Exp",
 	"A3_Structures_F_Exp_Military_Flags",
-	"ace_explosives"
+	"ace_explosives",
+	"task_force_radio_items"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=32;
+		items=33;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -294,6 +295,13 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item32
+		{
+			className="task_force_radio_items";
+			name="task_force_radio_items";
+			author="[TF]Nkey";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
 	};
 };
 randomSeed=10030831;
@@ -357,7 +365,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=872;
+		items=873;
 		class Item0
 		{
 			dataType="Layer";
@@ -413,7 +421,7 @@ class Mission
 					colorName="ColorGreen";
 					a=10.743834;
 					b=5.5253859;
-					angle=339.52753;
+					angle=339.5275;
 					id=783;
 					atlOffset=-4.6454468;
 				};
@@ -454,7 +462,7 @@ class Mission
 					colorName="ColorGreen";
 					a=22.499552;
 					b=10.184525;
-					angle=171.74922;
+					angle=171.74921;
 					id=789;
 					atlOffset=-0.51271057;
 				};
@@ -598,7 +606,7 @@ class Mission
 					colorName="ColorGreen";
 					a=10.743834;
 					b=5.5253859;
-					angle=159.18231;
+					angle=159.1823;
 					id=2728;
 					atlOffset=-4.6316681;
 				};
@@ -799,7 +807,7 @@ class Mission
 					colorName="ColorGreen";
 					a=9.4041376;
 					b=6.3964081;
-					angle=273.38559;
+					angle=273.38556;
 					id=821;
 					atlOffset=0.0599823;
 				};
@@ -934,7 +942,7 @@ class Mission
 					colorName="ColorGreen";
 					a=12.487929;
 					b=4.7173686;
-					angle=91.191093;
+					angle=91.191086;
 					id=841;
 				};
 				class Item24
@@ -1251,7 +1259,7 @@ class Mission
 					colorName="ColorGreen";
 					a=10;
 					b=6;
-					angle=22.194046;
+					angle=22.194044;
 					id=897;
 					atlOffset=1.0401154;
 				};
@@ -24923,6 +24931,153 @@ class Mission
 					};
 				};
 				nAttributes=5;
+			};
+		};
+		class Item872
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4492.1162,187.446,3604.178};
+			};
+			id=2801;
+			type="tfar_ModuleTaskForceRadioEnforceUsage";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
+					expression="_this setVariable ['radio_channel_password',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="LRGPublicTFAR";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
+					expression="_this setVariable ['RiflemanRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
+					expression="_this setVariable ['radio_channel_name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="LRG Public TFAR";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
+					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
+					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
+					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
+					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				nAttributes=7;
 			};
 		};
 	};
