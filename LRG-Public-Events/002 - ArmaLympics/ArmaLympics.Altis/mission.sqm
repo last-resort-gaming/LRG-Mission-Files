@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=525;
+	toggles=521;
 	class ItemIDProvider
 	{
 		nextID=9306;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=68;
+		nextID=80;
 	};
 	class Camera
 	{
-		pos[]={6252.0171,193.55792,16212.533};
-		dir[]={-0.39611694,-0.90724039,0.1414953};
-		up[]={-0.85439193,0.42055693,0.30519393};
-		aside[]={0.33639091,6.5134373e-008,0.94172889};
+		pos[]={3648.7612,15.95368,17582.131};
+		dir[]={-0.62527519,-0.69694865,-0.35113239};
+		up[]={-0.60768604,0.71712077,-0.34125483};
+		aside[]={-0.4896414,-2.0954758e-009,0.8719238};
 	};
 };
 binarizationWanted=0;
@@ -7378,7 +7378,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10703.462,37.001804,9180.5859};
+						position[]={10703.462,36.95602,9180.5859};
 						angles[]={6.2645216,4.784616,0.012000273};
 					};
 					side="Empty";
@@ -7390,6 +7390,7 @@ class Mission
 					};
 					id=2095;
 					type="PlasticBarrier_03_blue_F";
+					atlOffset=-0.045783997;
 				};
 				class Item224
 				{
@@ -10235,10 +10236,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10700.131,37.198833,9160.6982};
-						angles[]={0,4.9141636,0};
+						position[]={10700.131,36.813908,9160.6982};
+						angles[]={6.2791886,4.9141636,0};
 					};
 					side="Empty";
+					flags=4;
 					class Attributes
 					{
 						createAsSimpleObject=1;
@@ -10246,7 +10248,7 @@ class Mission
 					};
 					id=2609;
 					type="PlasticBarrier_03_blue_F";
-					atlOffset=0.37683487;
+					atlOffset=-0.0080909729;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -113290,7 +113292,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{player in thisList}";
-				onActivation="call{[""Triathlon"", ""Switch to Running""] call LR_AL_fnc_checkpoint;if !(vehicle player isEqualTo player) then {deleteVehicle (vehicle player)}}";
+				onActivation="call{[""Triathlon"", ""Switch to Running""] call LR_AL_fnc_checkpoint;player action [""Eject"", vehicle player];}";
 				sizeA=10;
 				sizeB=2;
 				sizeC=0;
@@ -115697,8 +115699,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3637.9036,4.1730967,17572.85};
-				angles[]={6.1795578,0.16251168,0.022662206};
+				position[]={3637.9041,4.1729221,17572.848};
+				angles[]={6.179565,0.16250761,0.022654373};
 			};
 			side="Empty";
 			flags=4;
@@ -115707,6 +115709,96 @@ class Mission
 			};
 			id=8944;
 			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=1;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="B_UavTerminal";
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item409
 		{
@@ -125173,7 +125265,7 @@ class Mission
 			};
 			id=9188;
 			type="Sign_Circle_F";
-			atlOffset=35.73999;
+			atlOffset=35.739983;
 		};
 		class Item477
 		{
@@ -126103,7 +126195,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={4378,258.00049,21295};
-					angle=3.7871354;
+					angle=3.7871351;
 					class Attributes
 					{
 						condition="call{(getConnectedUAV player) in thisList}";
@@ -126263,7 +126355,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={4586,301.03735,21479};
-					angle=3.7054362;
+					angle=3.705436;
 					class Attributes
 					{
 						condition="call{(getConnectedUAV player) in thisList}";
@@ -126303,7 +126395,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={4698,325.00043,21801};
-					angle=3.9612322;
+					angle=3.9612319;
 					class Attributes
 					{
 						condition="call{(getConnectedUAV player) in thisList}";
@@ -126383,7 +126475,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5066,269.99982,22539};
-					angle=3.543524;
+					angle=3.5435238;
 					class Attributes
 					{
 						condition="call{(getConnectedUAV player) in thisList}";
@@ -126402,7 +126494,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5215,206.99992,22857};
-					angle=3.543524;
+					angle=3.5435238;
 					class Attributes
 					{
 						condition="call{(getConnectedUAV player) in thisList}";
