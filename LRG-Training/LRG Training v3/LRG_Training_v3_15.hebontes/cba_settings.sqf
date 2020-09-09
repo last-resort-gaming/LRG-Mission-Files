@@ -358,7 +358,7 @@ ace_maptools_rotateModifierKey = 1;
 
 force ace_medical_ai_enabledFor = 2;
 
-force ace_medical_AIDamageThreshold = 0.8;
+force ace_medical_AIDamageThreshold = 1;
 
 force ace_medical_bleedingCoefficient = 0.1;
 
@@ -808,7 +808,7 @@ force ace_winddeflection_vehicleEnabled = true;
 
 force ace_zeus_autoAddObjects = true;
 
-force ace_zeus_canCreateZeus = -1;
+force ace_zeus_canCreateZeus = 0;
 
 force ace_zeus_radioOrdnance = false;
 
