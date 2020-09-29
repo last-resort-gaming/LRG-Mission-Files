@@ -358,7 +358,7 @@ ace_maptools_rotateModifierKey = 1;
 
 force ace_medical_ai_enabledFor = 2;
 
-force ace_medical_AIDamageThreshold = 1;
+force ace_medical_AIDamageThreshold = 0.8;
 
 force ace_medical_bleedingCoefficient = 0.1;
 
@@ -400,11 +400,11 @@ force ace_medical_spontaneousWakeUpChance = 0.15;
 
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
-force ace_medical_statemachine_AIUnconsciousness = true;
+force ace_medical_statemachine_AIUnconsciousness = false;
 
 force ace_medical_statemachine_cardiacArrestTime = 1200;
 
-force ace_medical_statemachine_fatalInjuriesAI = 2;
+force ace_medical_statemachine_fatalInjuriesAI = 0;
 
 force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 
@@ -1200,15 +1200,19 @@ force LRG_Channels_VehicleVoice = false;
 
 
 
-// LRG Main
+// LRG Creator Actions
 
-force LRG_Main_AISRevive = false;
+force LRG_CreatorActions_Master = true;
+
+force LRG_CreatorActions_Channels = true;
+
+force LRG_CreatorActions_EndMission = true;
+
+// LRG Main
 
 force LRG_Main_ArsenalSaveLoad = false;
 
 force LRG_Main_CHViewDistance = true;
-
-force LRG_Main_CreatorActions = true;
 
 force LRG_Main_CueCards = true;
 
@@ -1229,6 +1233,10 @@ force LRG_Main_FPSCounter = true;
 force LRG_Main_LockCamVehicle = false;
 
 force LRG_Main_Logging = true;
+
+force LRG_Main_MapIcons = true;
+
+force LRG_Main_MaydayAccess = 1;
 
 force LRG_Main_PilotCheck = true;
 
@@ -1335,6 +1343,20 @@ force LRG_Weather_RealTime = true;
 force LRG_Weather_StartWeather = 0;
 
 force LRG_Weather_SyncTime = 60;
+
+
+
+// LRG Zeus
+
+force LRG_Zeus_Module_AISpawnsEast = true;
+
+force LRG_Zeus_Module_AISpawnsIndep = true;
+
+force LRG_Zeus_Module_AISpawnsWest = true;
+
+force LRG_Zeus_Module_CivilianSpawns = true;
+
+force LRG_Zeus_Module_SafeZone = true;
 
 
 
@@ -1545,3 +1567,47 @@ force zen_vision_enableRedHotCold = false;
 force zen_vision_enableWhiteHot = true;
 
 force zen_vision_enableWhiteHotRedCold = false;
+
+
+
+// DUI - Squad Radar - Indicators
+
+force diwako_dui_indicators_icon_buddy = true;
+
+force diwako_dui_indicators_icon_leader = true;
+
+force diwako_dui_indicators_icon_medic = true;
+
+force force diwako_dui_indicators_range = 20;
+
+force diwako_dui_indicators_show = true;
+
+force diwako_dui_indicators_useACENametagsRange = true;
+
+
+
+// DUI - Squad Radar - Radar
+
+force force diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
+
+force force diwako_dui_compassRange = 30;
+
+force force diwako_dui_distanceWarning = 5;
+
+force force diwako_dui_enable_occlusion = true;
+
+diwako_dui_namelist_size = 1;
+
+force force diwako_dui_radar_leadingZeroes = true;
+
+diwako_dui_radar_namelist_vertical_spacing = 1;
+
+force force diwako_dui_radar_sortType = "fireteam2";
+
+force force diwako_dui_radar_sqlFirst = true;
+
+
+
+// GRAD slingHelmet
+
+force GRAD_slingHelmet_additionalList = """VSM_Mich2000_AOR1"", ""VSM_Mich2000_M81"", ""VSM_Mich2000_MulticamTropic"", ""VSM_Mich2000_Multicam"", ""VSM_Mich2000_ocp"", ""VSM_Mich2000_CamoSprayOD"", ""VSM_Mich2000_OGA_OD"", ""VSM_Mich2000_OGA"", ""VSM_Mich2000_ProjectHonor"", ""VSM_Mich2000_CamoSprayTAN"", ""VSM_Mich2000_2_aor1"", ""VSM_Mich2000_2_M81"", ""VSM_Mich2000_2_MulticamTropic"", ""VSM_Mich2000_2_Multicam"", ""VSM_Mich2000_2_OCP"", ""VSM_Mich2000_2_CamoSprayOD"", ""VSM_Mich2000_2_OGA_OD"", ""VSM_Mich2000_2_OGA"", ""VSM_Mich2000_2_ProjectHonor"", ""VSM_Mich2000_2_CamoSprayTAN"", ""VSM_OGA_Helmet1"", ""VSM_OGA_OD_Helmet1"", ""VSM_OGA_Helmet2"", ""VSM_OGA_OD_Helmet2"", ""VSM_OPS"", ""VSM_OPS_aor1"", ""VSM_Black_OPS"", ""VSM_M81_OPS"", ""VSM_OPS_multicam"", ""VSM_MulticamTropic_OPS"", ""VSM_OPS_ocp"", ""VSM_OD_spray_OPS"", ""VSM_OGA_OD_OPS"", ""VSM_oga_OPS"", ""VSM_ProjectHonor_OPS"", ""VSM_Tan_spray_OPS"", ""VSM_OPS_2"", ""VSM_OPS_2_AOR1"", ""VSM_Black_OPS_2"", ""VSM_M81_OPS_2"", ""VSM_OPS_2_multicam"", ""VSM_MulticamTropic_OPS_2"", ""VSM_OPS_2_ocp"", ""VSM_OD_Spray_OPS_2"", ""VSM_oga_OPS_2"", ""VSM_OGA_OD_OPS_2"", ""VSM_ProjectHonor_OPS_2"", ""VSM_Tan_spray_OPS_2"", ""H_mas_nor_opscore"", ""H_mas_nor_opscorn"", ""H_mas_nor_opscore_gog"", ""H_mas_nor_opscorn_gog"", ""H_mas_nor_opscore_g"", ""H_mas_nor_opscore_gog_g"", ""H_mas_nor_opscore_b"", ""H_mas_nor_opscore_gog_b"", ""H_mas_nor_opscore_t"", ""H_mas_nor_opscore_gog_t"", ""H_mas_nor_opscore_aor1"", ""H_mas_nor_opscore_gog_aor1"", ""H_mas_nor_opscore_aor2"", ""H_mas_nor_opscore_gog_aor2"", ""H_mas_nor_opscore_w"", ""H_mas_nor_opscore_gog_w"", ""H_mas_nor_ach"", ""H_mas_nor_ach_gog"", ""H_mas_nor_ach_aor1"", ""H_mas_nor_ach_gog_aor1"", ""H_mas_nor_ach_aor2"", ""H_mas_nor_ach_gog_aor2"", ""H_mas_nor_ach_b"", ""H_mas_nor_ach_gog_b"", ""Surpat_Helmet"", ""WRUS_H_6b7_camo"", ""WRUS_H_6b7_camo_ess"", ""WRUS_H_6b7_Plain"", ""WRUS_H_6b7_Plain_ESS"", ""SURPAT_Helmet3"", ""SURPAT_Helmet1"", ""SURPAT_Helmet2"", ""H_HelmetB_TI_tna_Fx""";
