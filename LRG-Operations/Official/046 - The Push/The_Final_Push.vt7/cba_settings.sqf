@@ -140,7 +140,7 @@ force ace_csw_defaultAssemblyMode = true;
 
 force ace_csw_dragAfterDeploy = false;
 
-force ace_csw_handleExtraMagazines = true;
+force ace_csw_handleExtraMagazines = false;
 
 force ace_csw_progressBarTimeCoefficent = 1;
 
