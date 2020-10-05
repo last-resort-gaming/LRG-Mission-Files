@@ -70,7 +70,7 @@ force ace_arsenal_fontHeight = 4.5;
 
 force ace_artillerytables_advancedCorrections = false;
 
-force ace_artillerytables_disableArtilleryComputer = false;
+force ace_artillerytables_disableArtilleryComputer = true;
 
 force ace_mk6mortar_airResistanceEnabled = false;
 
@@ -140,7 +140,7 @@ force ace_csw_defaultAssemblyMode = true;
 
 force ace_csw_dragAfterDeploy = false;
 
-force ace_csw_handleExtraMagazines = true;
+force ace_csw_handleExtraMagazines = false;
 
 force ace_csw_progressBarTimeCoefficent = 1;
 
@@ -1133,6 +1133,16 @@ force L_Suppress_intensity = 1;
 force L_Suppress_playerSwabEnabled = false;
 
 force L_Suppress_recovery = 1.25;
+
+
+
+// Freestyle's Crash Landing
+
+force fscl_captiveSystem = true;
+
+force fscl_damageTreshold = 99;
+
+force fscl_stateThreshold = 50;
 
 
 
