@@ -151,12 +151,12 @@ set-location "C:\Program Files (x86)\Mikero\DePboTools\bin"
 
 #Boot the Server
 Write-Host "Booting the Server." -ForegroundColor red -BackgroundColor white
-Start-Process -FilePath "$Server_Dir\arma3server_x64.exe" -ArgumentList "-profiles=`"$Server_Profiles`" -port=$Server_port -name=LRGServer `"-config=$Server_Config`" -autoinit `"-ServerMod=$ServerMods`" `"-Mod=$ClientMods`""
+Start-Process -FilePath "$Server_Dir\arma3server_x64.exe" -ArgumentList "-profiles=`"$Server_Profiles`" -port=$Server_port -name=LRGServer `"-config=$Server_Config`" -autoinit -limitFPS=150 `"-ServerMod=$ServerMods`" `"-Mod=$ClientMods`""
 
 #Boot Headless Client/s
 for ($i=1; $i -le $Headless_Clients; $i++)
 {
 	Write-Host "Booting HC in 30 seconds." -ForegroundColor red -BackgroundColor white
 	sleep -seconds 30
-    Start-Process -FilePath "$Server_Dir\arma3server_x64.exe" -ArgumentList "-profiles=`"$Server_Profiles`" -client -connect=127.0.0.1 -port=$Server_port -password=$Password `"-Mod=$HCMods`""
+    Start-Process -FilePath "$Server_Dir\arma3server_x64.exe" -ArgumentList "-profiles=`"$Server_Profiles`" -client -connect=127.0.0.1 -port=$Server_port -password=$Password -limitFPS=150 `"-Mod=$HCMods`""
 }
