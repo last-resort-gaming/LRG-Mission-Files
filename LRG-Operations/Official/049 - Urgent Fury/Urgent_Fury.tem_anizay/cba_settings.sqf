@@ -1577,3 +1577,179 @@ force zen_vision_enableRedHotCold = false;
 force zen_vision_enableWhiteHot = true;
 
 force zen_vision_enableWhiteHotRedCold = false;
+
+
+
+// DUI - Squad Radar - Indicators
+
+force diwako_dui_indicators_crew_range_enabled = true;
+
+force diwako_dui_indicators_fov_scale = true;
+
+force diwako_dui_indicators_icon_buddy = true;
+
+force diwako_dui_indicators_icon_leader = true;
+
+force diwako_dui_indicators_icon_medic = true;
+
+force diwako_dui_indicators_range = 30;
+
+force diwako_dui_indicators_range_crew = 300;
+
+force diwako_dui_indicators_range_scale = true;
+
+force diwako_dui_indicators_show = true;
+
+force diwako_dui_indicators_size = 1;
+
+diwako_dui_indicators_style = "standard";
+
+
+
+// DUI - Squad Radar - Main
+
+diwako_dui_colors = "standard";
+
+diwako_dui_font = "RobotoCondensed";
+
+diwako_dui_icon_style = "standard";
+
+diwako_dui_main_hide_ui_by_default = false;
+
+diwako_dui_main_squadBlue = [0,0,1,1];
+
+diwako_dui_main_squadGreen = [0,1,0,1];
+
+diwako_dui_main_squadMain = [1,1,1,1];
+
+diwako_dui_main_squadRed = [1,0,0,1];
+
+diwako_dui_main_squadYellow = [1,1,0,1];
+
+diwako_dui_main_trackingColor = [0.93,0.26,0.93,1];
+
+diwako_dui_reset_ui_pos = false;
+
+
+
+// DUI - Squad Radar - Nametags
+
+diwako_dui_nametags_deadColor = [0.2,0.2,0.2,1];
+
+force diwako_dui_nametags_deadRenderDistance = 3.5;
+
+force diwako_dui_nametags_drawRank = false;
+
+force diwako_dui_nametags_enabled = true;
+
+force diwako_dui_nametags_enableFOVBoost = true;
+
+force diwako_dui_nametags_enableOcclusion = true;
+
+force diwako_dui_nametags_fadeInTime = 0.05;
+
+force diwako_dui_nametags_fadeOutTime = 0.5;
+
+diwako_dui_nametags_fontGroup = "RobotoCondensedLight";
+
+diwako_dui_nametags_fontGroupNameSize = 8;
+
+diwako_dui_nametags_fontName = "RobotoCondensedBold";
+
+diwako_dui_nametags_fontNameSize = 10;
+
+diwako_dui_nametags_groupColor = [1,1,1,1];
+
+diwako_dui_nametags_groupFontShadow = 1;
+
+diwako_dui_nametags_groupNameOtherGroupColor = [0.6,0.85,0.6,1];
+
+diwako_dui_nametags_nameFontShadow = 1;
+
+diwako_dui_nametags_nameOtherGroupColor = [0.2,1,0,1];
+
+force diwako_dui_nametags_renderDistance = 40;
+
+force diwako_dui_nametags_showUnconAsDead = true;
+
+force diwako_dui_nametags_useSideIsFriendly = true;
+
+
+
+// DUI - Squad Radar - Radar
+
+force diwako_dui_compass_hide_alone_group = false;
+
+force diwako_dui_compass_hide_blip_alone_group = false;
+
+diwako_dui_compass_icon_scale = 1;
+
+diwako_dui_compass_opacity = 1;
+
+diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass_limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass.paa"];
+
+force diwako_dui_compassRange = 35;
+
+force diwako_dui_compassRefreshrate = 0;
+
+force diwako_dui_dir_showMildot = false;
+
+force diwako_dui_dir_size = 1.25;
+
+force diwako_dui_distanceWarning = 3;
+
+force diwako_dui_enable_compass = true;
+
+force diwako_dui_enable_compass_dir = 1;
+
+diwako_dui_enable_occlusion = true;
+
+diwako_dui_enable_occlusion_cone = 360;
+
+diwako_dui_hudScaling = 1;
+
+force diwako_dui_namelist = true;
+
+force diwako_dui_namelist_bg = 0;
+
+diwako_dui_namelist_only_buddy_icon = false;
+
+force diwako_dui_namelist_size = 1;
+
+diwako_dui_namelist_text_shadow = 2;
+
+diwako_dui_namelist_width = 215;
+
+force diwako_dui_radar_compassRangeCrew = 500;
+
+force diwako_dui_radar_dir_padding = 25;
+
+force diwako_dui_radar_group_by_vehicle = true;
+
+diwako_dui_radar_icon_opacity = 1;
+
+force diwako_dui_radar_icon_opacity_no_player = true;
+
+diwako_dui_radar_icon_scale_crew = 6;
+
+force diwako_dui_radar_leadingZeroes = false;
+
+diwako_dui_radar_namelist_hideWhenLeader = false;
+
+diwako_dui_radar_namelist_vertical_spacing = 1;
+
+diwako_dui_radar_occlusion_fade_in_time = 1;
+
+diwako_dui_radar_occlusion_fade_time = 10;
+
+force diwako_dui_radar_show_cardinal_points = true;
+
+force diwako_dui_radar_sortType = "fireteam";
+
+force diwako_dui_radar_sqlFirst = true;
+
+force diwako_dui_radar_vehicleCompassEnabled = true;
+
+diwako_dui_show_squadbar = false;
+
+diwako_dui_use_layout_editor = false;
