@@ -27,13 +27,20 @@ KPLIB_objectInits = [
     // Set KP logo on white flag
     [
         ["Flag_White_F"],
-        {_this setFlagTexture "res\flag_kp_co.paa";}
+        {_this setFlagTexture "\z\LRG Fundamentals\Addons\Media\images\LRG_Flag_Black.paa";}
     ],
 
     // Add helipads to zeus, as they can't be recycled after built
     [
         ["Helipad_base_F", "LAND_uns_Heli_pad", "Helipad", "LAND_uns_evac_pad", "LAND_uns_Heli_H"],
         {{[_x, [[_this], true]] remoteExecCall ["addCuratorEditableObjects", 2]} forEach allCurators;},
+        true
+    ],
+
+    // Make supply crates draggable with ACE
+    [
+        ["CargoNet_01_box_F", "B_CargoNet_01_ammo_F", "CargoNet_01_barrels_F"],
+        {[_this, true, [0, 2, 0], 0] call ace_dragging_fnc_setDraggable;},
         true
     ],
 
