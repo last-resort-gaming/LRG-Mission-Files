@@ -8,18 +8,18 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=3272;
+		nextID=3274;
 	};
 	class LayerIndexProvider
 	{
-		nextID=39;
+		nextID=43;
 	};
 	class Camera
 	{
-		pos[]={106.50334,164.65907,115.08521};
-		dir[]={0.22258487,-0.95570081,0.19275789};
-		up[]={0.72243965,0.29439208,0.62562978};
-		aside[]={0.65466017,-6.2980689e-008,-0.75596255};
+		pos[]={4142.9253,392.00967,821.78723};
+		dir[]={0.90001941,-0.39095426,0.19273584};
+		up[]={0.38238573,0.92036515,0.081885867};
+		aside[]={0.20940214,4.5855995e-007,-0.97784209};
 	};
 };
 binarizationWanted=0;
@@ -113,13 +113,15 @@ addons[]=
 	"A3_Structures_F_Ind_AirPort",
 	"A3_Structures_F_EPB_Civ_Dead",
 	"A3_Structures_F_Civ_Accessories",
-	"A3_Signs_F"
+	"A3_Signs_F",
+	"tfar_antennas",
+	"LRG_Medical"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=52;
+		items=54;
 		class Item0
 		{
 			className="afghan_houses_old";
@@ -447,6 +449,19 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item52
+		{
+			className="tfar_antennas";
+			name="tfar_antennas";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
+		class Item53
+		{
+			className="LRG_Medical";
+			name="LRG Fundamentals";
+			author="Last Resort Gaming";
+			url="http:";
+		};
 	};
 };
 randomSeed=10137750;
@@ -540,7 +555,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2045;
+		items=2047;
 		class Item0
 		{
 			dataType="Object";
@@ -1347,7 +1362,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={114.54104,141.99213,136.13547};
-			angle=6.9856191;
+			angle=6.9856181;
 			class Attributes
 			{
 				condition="true";
@@ -1382,7 +1397,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={134.67917,141.66544,114.75529};
-			angle=6.9856191;
+			angle=6.9856181;
 			class Attributes
 			{
 				condition="GRLIB_endgame == 1";
@@ -34799,7 +34814,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						class Attribute4
+						{
+							property="QUOTE(LRG_Pilot)";
+							expression="_this setUnitTrait ['Pilot', _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 				class Item1
@@ -35068,7 +35102,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={118.41381,141.85526,109.23965};
+						position[]={118.414,141.85551,109.24001};
 						angles[]={0,0.79164648,0};
 					};
 					side="West";
@@ -35081,7 +35115,7 @@ class Mission
 					};
 					id=3269;
 					type="B_Helipilot_F";
-					atlOffset=0.012710571;
+					atlOffset=0.012985229;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35141,7 +35175,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -35311,16 +35364,43 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item2045
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4166.1421,375.14557,795.6131};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3272;
+			type="TFAR_Land_Communication_F";
+			atlOffset=0.021942139;
+		};
+		class Item2046
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4205.4287,343.60825,855.47998};
+			};
+			id=3273;
+			type="LRG_ModuleMedical";
+			atlOffset=-14.987183;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=5;
+			nextID=6;
 		};
 		class Links
 		{
-			items=5;
+			items=6;
 			class Item0
 			{
 				linkID=0;
@@ -35366,6 +35446,16 @@ class Mission
 				linkID=4;
 				item0=3244;
 				item1=3245;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item5
+			{
+				linkID=5;
+				item0=3273;
+				item1=198;
 				class CustomData
 				{
 					type="Sync";
