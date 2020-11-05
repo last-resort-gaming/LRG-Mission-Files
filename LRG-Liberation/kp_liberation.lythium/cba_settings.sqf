@@ -280,7 +280,7 @@ force ace_repair_engineerSetting_repair = 1;
 
 force ace_repair_engineerSetting_wheel = 0;
 
-force ace_repair_fullRepairLocation = 1;
+force ace_repair_fullRepairLocation = 0;
 
 force ace_repair_fullRepairRequiredItems = ["ToolKit"];
 
@@ -924,7 +924,7 @@ force force adv_aceCPR_maxTime = 600;
 
 force force adv_aceCPR_onlyDoctors = 2;
 
-force force adv_aceCPR_useLocation_AED = 3;
+force force adv_aceCPR_useLocation_AED = 0;
 
 
 
