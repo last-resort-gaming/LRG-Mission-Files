@@ -70,7 +70,7 @@ force ace_arsenal_fontHeight = 4.5;
 
 force ace_artillerytables_advancedCorrections = false;
 
-force ace_artillerytables_disableArtilleryComputer = false;
+force ace_artillerytables_disableArtilleryComputer = true;
 
 force ace_mk6mortar_airResistanceEnabled = false;
 
@@ -140,7 +140,7 @@ force ace_csw_defaultAssemblyMode = true;
 
 force ace_csw_dragAfterDeploy = false;
 
-force ace_csw_handleExtraMagazines = true;
+force ace_csw_handleExtraMagazines = false;
 
 force ace_csw_progressBarTimeCoefficent = 1;
 
@@ -274,13 +274,13 @@ force ace_repair_consumeItem_toolKit = 0;
 
 force ace_repair_displayTextOnRepair = true;
 
-force ace_repair_engineerSetting_fullRepair = 1;
+force ace_repair_engineerSetting_fullRepair = 2;
 
 force ace_repair_engineerSetting_repair = 1;
 
 force ace_repair_engineerSetting_wheel = 0;
 
-force ace_repair_fullRepairLocation = 0;
+force ace_repair_fullRepairLocation = 3;
 
 force ace_repair_fullRepairRequiredItems = ["ToolKit"];
 
@@ -306,13 +306,13 @@ force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Map
 
-force ace_map_BFT_Enabled = true;
+force ace_map_BFT_Enabled = false;
 
 force ace_map_BFT_HideAiGroups = true;
 
-force ace_map_BFT_Interval = 5;
+force ace_map_BFT_Interval = 30;
 
-force ace_map_BFT_ShowPlayerNames = true;
+force ace_map_BFT_ShowPlayerNames = false;
 
 force ace_map_DefaultChannel = 1;
 
@@ -356,107 +356,109 @@ ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 
-force ace_medical_ai_enabledFor = 2;
+force force ace_medical_ai_enabledFor = 2;
 
-force ace_medical_AIDamageThreshold = 0.8;
+force force ace_medical_AIDamageThreshold = 0.8;
 
-force ace_medical_bleedingCoefficient = 0.1;
+force force ace_medical_bleedingCoefficient = 0.1;
 
-force ace_medical_blood_bloodLifetime = 600;
+force force ace_medical_blood_bloodLifetime = 600;
 
-force ace_medical_blood_enabledFor = 2;
+force force ace_medical_blood_enabledFor = 2;
 
-force ace_medical_blood_maxBloodObjects = 500;
+force force ace_medical_blood_maxBloodObjects = 500;
 
-force ace_medical_fatalDamageSource = 1;
+force force ace_medical_fatalDamageSource = 1;
 
-ace_medical_feedback_bloodVolumeEffectType = 0;
+force force ace_medical_feedback_bloodVolumeEffectType = 0;
 
-ace_medical_feedback_painEffectType = 0;
+force force ace_medical_feedback_painEffectType = 0;
 
-force ace_medical_fractureChance = 0.8;
+force force ace_medical_fractureChance = 0.8;
 
-force ace_medical_fractures = 0;
+force force ace_medical_fractures = 0;
 
-force ace_medical_gui_enableActions = 0;
+force force ace_medical_gui_enableActions = 0;
 
-force ace_medical_gui_enableMedicalMenu = 1;
+force force ace_medical_gui_enableMedicalMenu = 1;
 
-force ace_medical_gui_enableSelfActions = true;
+force force ace_medical_gui_enableSelfActions = true;
 
-force ace_medical_gui_maxDistance = 3;
+force force ace_medical_gui_maxDistance = 3;
 
-force ace_medical_gui_openAfterTreatment = true;
+force force ace_medical_gui_openAfterTreatment = true;
 
-force ace_medical_ivFlowRate = 2.5;
+force force ace_medical_ivFlowRate = 3;
 
-force ace_medical_limping = 1;
+force force ace_medical_limping = 1;
 
-force ace_medical_painCoefficient = 1;
+force force ace_medical_painCoefficient = 1;
 
-force ace_medical_playerDamageThreshold = 1.8;
+force force ace_medical_playerDamageThreshold = 1.8;
 
-force ace_medical_spontaneousWakeUpChance = 0.15;
+force force ace_medical_spontaneousWakeUpChance = 0.350605;
 
-force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
+force force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
-force ace_medical_statemachine_AIUnconsciousness = false;
+force force ace_medical_statemachine_AIUnconsciousness = false;
 
-force ace_medical_statemachine_cardiacArrestTime = 1200;
+force force ace_medical_statemachine_cardiacArrestTime = 900;
 
-force ace_medical_statemachine_fatalInjuriesAI = 0;
+force force ace_medical_statemachine_fatalInjuriesAI = 0;
 
-force ace_medical_statemachine_fatalInjuriesPlayer = 2;
+force force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 
-force ace_medical_treatment_advancedBandages = 2;
+force force ace_medical_treatment_advancedBandages = 2;
 
-force ace_medical_treatment_advancedDiagnose = true;
+force force ace_medical_treatment_advancedDiagnose = true;
 
-force ace_medical_treatment_advancedMedication = false;
+force force ace_medical_treatment_advancedMedication = false;
 
-force ace_medical_treatment_allowLitterCreation = true;
+force force ace_medical_treatment_allowLitterCreation = true;
 
-force ace_medical_treatment_allowSelfIV = 1;
+force force ace_medical_treatment_allowSelfIV = 1;
 
-force ace_medical_treatment_allowSelfPAK = 1;
+force force ace_medical_treatment_allowSelfPAK = 1;
 
-force ace_medical_treatment_allowSelfStitch = 1;
+force force ace_medical_treatment_allowSelfStitch = 1;
 
-force ace_medical_treatment_allowSharedEquipment = 1;
+force force ace_medical_treatment_allowSharedEquipment = 1;
 
-force ace_medical_treatment_clearTraumaAfterBandage = false;
+force force ace_medical_treatment_clearTraumaAfterBandage = false;
 
-force ace_medical_treatment_consumePAK = 0;
+force force ace_medical_treatment_consumePAK = 0;
 
-force ace_medical_treatment_consumeSurgicalKit = 0;
+force force ace_medical_treatment_consumeSurgicalKit = 0;
 
-force ace_medical_treatment_convertItems = 0;
+force force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.30;
+force force ace_medical_treatment_cprSuccessChance = 0.3;
 
-force ace_medical_treatment_holsterRequired = 0;
+force force ace_medical_treatment_holsterRequired = 0;
 
-force ace_medical_treatment_litterCleanupDelay = 500;
+force force ace_medical_treatment_litterCleanupDelay = 500;
 
-force ace_medical_treatment_locationEpinephrine = 0;
+force force ace_medical_treatment_locationEpinephrine = 0;
 
-force ace_medical_treatment_locationPAK = 3;
+force force ace_medical_treatment_locationPAK = 3;
 
-force ace_medical_treatment_locationsBoostTraining = false;
+force force ace_medical_treatment_locationsBoostTraining = false;
 
-force ace_medical_treatment_locationSurgicalKit = 0;
+force force ace_medical_treatment_locationSurgicalKit = 0;
 
-force ace_medical_treatment_maxLitterObjects = 500;
+force force ace_medical_treatment_maxLitterObjects = 500;
 
-force ace_medical_treatment_medicEpinephrine = 0;
+force force ace_medical_treatment_medicEpinephrine = 0;
 
-force ace_medical_treatment_medicIV = 1;
+force force ace_medical_treatment_medicIV = 1;
 
-force ace_medical_treatment_medicPAK = 2;
+force force ace_medical_treatment_medicPAK = 1;
 
-force ace_medical_treatment_medicSurgicalKit = 1;
+force force ace_medical_treatment_medicSurgicalKit = 1;
 
-force ace_medical_treatment_timeCoefficientPAK = 0.1;
+force force ace_medical_treatment_timeCoefficientPAK = 0.1;
+
+force force ace_medical_treatment_woundReopenChance = 1;
 
 
 
@@ -544,7 +546,7 @@ force ace_finger_maxRange = 50;
 
 force ace_pylons_enabledForZeus = true;
 
-force ace_pylons_enabledFromAmmoTrucks = false;
+force ace_pylons_enabledFromAmmoTrucks = true;
 
 force ace_pylons_rearmNewPylons = false;
 
@@ -908,13 +910,13 @@ force force adv_aceCPR_addTime = 20;
 
 force force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
 
-force force adv_aceCPR_chance_0 = 3;
+force force adv_aceCPR_chance_0 = 15;
 
-force force adv_aceCPR_chance_1 = 12;
+force force adv_aceCPR_chance_1 = 35;
 
-force force adv_aceCPR_chance_2 = 35;
+force force adv_aceCPR_chance_2 = 50;
 
-force force adv_aceCPR_chance_aed = 60;
+force force adv_aceCPR_chance_aed = 80;
 
 force force adv_aceCPR_enable = true;
 
@@ -1136,6 +1138,16 @@ force L_Suppress_recovery = 1.25;
 
 
 
+// Freestyle's Crash Landing
+
+force fscl_captiveSystem = true;
+
+force fscl_damageTreshold = 99;
+
+force fscl_stateThreshold = 50;
+
+
+
 // LRG AI
 
 force LRG_AI_AimingAccuracy = 0.1;
@@ -1150,7 +1162,7 @@ force LRG_AI_Courage = 1;
 
 force LRG_AI_General = 1;
 
-force LRG_AI_InitialAI = true;
+force LRG_AI_InitialAI = false;
 
 force LRG_AI_ReloadSpeed = 0.5;
 
@@ -1164,29 +1176,29 @@ force LRG_AI_SpotTime = 0.2;
 
 force LRG_Channels_CommandDuration = 0;
 
-force LRG_Channels_CommandText = false;
+force LRG_Channels_CommandText = true;
 
 force LRG_Channels_CommandVoice = false;
 
 force LRG_Channels_DirectDuration = 0;
 
-force LRG_Channels_DirectText = false;
+force LRG_Channels_DirectText = true;
 
 force LRG_Channels_DirectVoice = false;
 
 force LRG_Channels_GlobalDuration = 0;
 
-force LRG_Channels_GlobalText = true;
+force LRG_Channels_GlobalText = false;
 
 force LRG_Channels_GlobalVoice = false;
 
 force LRG_Channels_GroupDuration = 0;
 
-force LRG_Channels_GroupText = false;
+force LRG_Channels_GroupText = true;
 
 force LRG_Channels_GroupVoice = false;
 
-force LRG_Channels_SideDuration = 90;
+force LRG_Channels_SideDuration = 0;
 
 force LRG_Channels_SideText = true;
 
@@ -1194,21 +1206,25 @@ force LRG_Channels_SideVoice = false;
 
 force LRG_Channels_VehicleDuration = 0;
 
-force LRG_Channels_VehicleText = false;
+force LRG_Channels_VehicleText = true;
 
 force LRG_Channels_VehicleVoice = false;
 
 
 
-// LRG Main
+// LRG Creator Actions
 
-force LRG_Main_AISRevive = false;
+force LRG_CreatorActions_Master = true;
+
+force LRG_CreatorActions_Channels = true;
+
+force LRG_CreatorActions_EndMission = false;
+
+// LRG Main
 
 force LRG_Main_ArsenalSaveLoad = false;
 
 force LRG_Main_CHViewDistance = true;
-
-force LRG_Main_CreatorActions = true;
 
 force LRG_Main_CueCards = true;
 
@@ -1226,9 +1242,13 @@ force LRG_Main_FlipVehicle = false;
 
 force LRG_Main_FPSCounter = true;
 
-force LRG_Main_LockCamVehicle = false;
+force LRG_Main_LockCamVehicle = true;
 
 force LRG_Main_Logging = true;
+
+force LRG_Main_MapIcons = true;
+
+force LRG_Main_MaydayAccess = 1;
 
 force LRG_Main_PilotCheck = true;
 
@@ -1335,6 +1355,20 @@ force LRG_Weather_RealTime = true;
 force LRG_Weather_StartWeather = 0;
 
 force LRG_Weather_SyncTime = 60;
+
+
+
+// LRG Zeus
+
+force LRG_Zeus_Module_AISpawnsEast = true;
+
+force LRG_Zeus_Module_AISpawnsIndep = true;
+
+force LRG_Zeus_Module_AISpawnsWest = true;
+
+force LRG_Zeus_Module_CivilianSpawns = true;
+
+force LRG_Zeus_Module_SafeZone = true;
 
 
 
@@ -1482,9 +1516,9 @@ force TFAR_spectatorCanHearFriendlies = true;
 
 force TFAR_takingRadio = 0;
 
-force TFAR_Teamspeak_Channel_Name = "LRG Operations";
+force TFAR_Teamspeak_Channel_Name = "LRG Public TFAR";
 
-force TFAR_Teamspeak_Channel_Password = "LRGOps";
+force TFAR_Teamspeak_Channel_Password = "LRGPublic";
 
 force tfar_terrain_interception_coefficient = 7;
 
@@ -1545,3 +1579,179 @@ force zen_vision_enableRedHotCold = false;
 force zen_vision_enableWhiteHot = true;
 
 force zen_vision_enableWhiteHotRedCold = false;
+
+
+
+// DUI - Squad Radar - Indicators
+
+force diwako_dui_indicators_crew_range_enabled = true;
+
+force diwako_dui_indicators_fov_scale = true;
+
+force diwako_dui_indicators_icon_buddy = true;
+
+force diwako_dui_indicators_icon_leader = true;
+
+force diwako_dui_indicators_icon_medic = true;
+
+force diwako_dui_indicators_range = 30;
+
+force diwako_dui_indicators_range_crew = 300;
+
+force diwako_dui_indicators_range_scale = true;
+
+force diwako_dui_indicators_show = true;
+
+force diwako_dui_indicators_size = 1;
+
+diwako_dui_indicators_style = "standard";
+
+
+
+// DUI - Squad Radar - Main
+
+diwako_dui_colors = "standard";
+
+diwako_dui_font = "RobotoCondensed";
+
+diwako_dui_icon_style = "standard";
+
+diwako_dui_main_hide_ui_by_default = false;
+
+diwako_dui_main_squadBlue = [0,0,1,1];
+
+diwako_dui_main_squadGreen = [0,1,0,1];
+
+diwako_dui_main_squadMain = [1,1,1,1];
+
+diwako_dui_main_squadRed = [1,0,0,1];
+
+diwako_dui_main_squadYellow = [1,1,0,1];
+
+diwako_dui_main_trackingColor = [0.93,0.26,0.93,1];
+
+diwako_dui_reset_ui_pos = false;
+
+
+
+// DUI - Squad Radar - Nametags
+
+diwako_dui_nametags_deadColor = [0.2,0.2,0.2,1];
+
+force diwako_dui_nametags_deadRenderDistance = 3.5;
+
+force diwako_dui_nametags_drawRank = false;
+
+force diwako_dui_nametags_enabled = true;
+
+force diwako_dui_nametags_enableFOVBoost = true;
+
+force diwako_dui_nametags_enableOcclusion = true;
+
+force diwako_dui_nametags_fadeInTime = 0.05;
+
+force diwako_dui_nametags_fadeOutTime = 0.5;
+
+diwako_dui_nametags_fontGroup = "RobotoCondensedLight";
+
+diwako_dui_nametags_fontGroupNameSize = 8;
+
+diwako_dui_nametags_fontName = "RobotoCondensedBold";
+
+diwako_dui_nametags_fontNameSize = 10;
+
+diwako_dui_nametags_groupColor = [1,1,1,1];
+
+diwako_dui_nametags_groupFontShadow = 1;
+
+diwako_dui_nametags_groupNameOtherGroupColor = [0.6,0.85,0.6,1];
+
+diwako_dui_nametags_nameFontShadow = 1;
+
+diwako_dui_nametags_nameOtherGroupColor = [0.2,1,0,1];
+
+force diwako_dui_nametags_renderDistance = 40;
+
+force diwako_dui_nametags_showUnconAsDead = true;
+
+force diwako_dui_nametags_useSideIsFriendly = true;
+
+
+
+// DUI - Squad Radar - Radar
+
+force diwako_dui_compass_hide_alone_group = false;
+
+force diwako_dui_compass_hide_blip_alone_group = false;
+
+diwako_dui_compass_icon_scale = 1;
+
+diwako_dui_compass_opacity = 1;
+
+diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass_limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass.paa"];
+
+force diwako_dui_compassRange = 35;
+
+force diwako_dui_compassRefreshrate = 0;
+
+force diwako_dui_dir_showMildot = false;
+
+force diwako_dui_dir_size = 1.25;
+
+force diwako_dui_distanceWarning = 3;
+
+force diwako_dui_enable_compass = true;
+
+force diwako_dui_enable_compass_dir = 1;
+
+diwako_dui_enable_occlusion = true;
+
+diwako_dui_enable_occlusion_cone = 360;
+
+diwako_dui_hudScaling = 1;
+
+force diwako_dui_namelist = true;
+
+force diwako_dui_namelist_bg = 0;
+
+diwako_dui_namelist_only_buddy_icon = false;
+
+force diwako_dui_namelist_size = 1;
+
+diwako_dui_namelist_text_shadow = 2;
+
+diwako_dui_namelist_width = 215;
+
+force diwako_dui_radar_compassRangeCrew = 500;
+
+force diwako_dui_radar_dir_padding = 25;
+
+force diwako_dui_radar_group_by_vehicle = true;
+
+diwako_dui_radar_icon_opacity = 1;
+
+force diwako_dui_radar_icon_opacity_no_player = true;
+
+diwako_dui_radar_icon_scale_crew = 6;
+
+force diwako_dui_radar_leadingZeroes = false;
+
+diwako_dui_radar_namelist_hideWhenLeader = false;
+
+diwako_dui_radar_namelist_vertical_spacing = 1;
+
+diwako_dui_radar_occlusion_fade_in_time = 1;
+
+diwako_dui_radar_occlusion_fade_time = 10;
+
+force diwako_dui_radar_show_cardinal_points = true;
+
+force diwako_dui_radar_sortType = "fireteam";
+
+force diwako_dui_radar_sqlFirst = true;
+
+force diwako_dui_radar_vehicleCompassEnabled = true;
+
+diwako_dui_show_squadbar = false;
+
+diwako_dui_use_layout_editor = false;
