@@ -1176,29 +1176,29 @@ force LRG_AI_SpotTime = 0.2;
 
 force LRG_Channels_CommandDuration = 0;
 
-force LRG_Channels_CommandText = true;
+force LRG_Channels_CommandText = false;
 
 force LRG_Channels_CommandVoice = false;
 
 force LRG_Channels_DirectDuration = 0;
 
-force LRG_Channels_DirectText = true;
+force LRG_Channels_DirectText = false;
 
 force LRG_Channels_DirectVoice = false;
 
 force LRG_Channels_GlobalDuration = 0;
 
-force LRG_Channels_GlobalText = false;
+force LRG_Channels_GlobalText = true;
 
 force LRG_Channels_GlobalVoice = false;
 
 force LRG_Channels_GroupDuration = 0;
 
-force LRG_Channels_GroupText = true;
+force LRG_Channels_GroupText = false;
 
 force LRG_Channels_GroupVoice = false;
 
-force LRG_Channels_SideDuration = 0;
+force LRG_Channels_SideDuration = 60;
 
 force LRG_Channels_SideText = true;
 
@@ -1206,7 +1206,7 @@ force LRG_Channels_SideVoice = false;
 
 force LRG_Channels_VehicleDuration = 0;
 
-force LRG_Channels_VehicleText = true;
+force LRG_Channels_VehicleText = false;
 
 force LRG_Channels_VehicleVoice = false;
 
