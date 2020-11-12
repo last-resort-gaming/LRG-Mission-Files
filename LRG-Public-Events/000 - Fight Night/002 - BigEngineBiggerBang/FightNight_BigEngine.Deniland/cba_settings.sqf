@@ -1242,15 +1242,15 @@ force LRG_Main_FlipVehicle = false;
 
 force LRG_Main_FPSCounter = true;
 
-force LRG_Main_LockCamVehicle = true;
+force LRG_Main_LockCamVehicle = false;
 
 force LRG_Main_Logging = true;
 
 force LRG_Main_MapIcons = true;
 
-force LRG_Main_MaydayAccess = 1;
+force LRG_Main_MaydayAccess = 2;
 
-force LRG_Main_PilotCheck = true;
+force LRG_Main_PilotCheck = false;
 
 force LRG_Main_QSMagRepack = false;
 
@@ -1306,7 +1306,7 @@ force LRG_QS_ST_iconUpdatePulseDelay = 60;
 
 force LRG_QS_ST_map_enableUnitIcons = true;
 
-force LRG_QS_ST_MasterEnable = true;
+force LRG_QS_ST_MasterEnable = false;
 
 force LRG_QS_ST_MedicalIconColor = [1,0.41,0,1];
 
