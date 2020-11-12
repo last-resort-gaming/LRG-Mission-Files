@@ -306,13 +306,13 @@ force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Map
 
-force ace_map_BFT_Enabled = true;
+force ace_map_BFT_Enabled = false;
 
 force ace_map_BFT_HideAiGroups = true;
 
-force ace_map_BFT_Interval = 5;
+force ace_map_BFT_Interval = 30;
 
-force ace_map_BFT_ShowPlayerNames = true;
+force ace_map_BFT_ShowPlayerNames = false;
 
 force ace_map_DefaultChannel = 1;
 
@@ -544,7 +544,7 @@ force ace_finger_maxRange = 50;
 
 force ace_pylons_enabledForZeus = true;
 
-force ace_pylons_enabledFromAmmoTrucks = false;
+force ace_pylons_enabledFromAmmoTrucks = true;
 
 force ace_pylons_rearmNewPylons = false;
 
@@ -808,7 +808,7 @@ force ace_winddeflection_vehicleEnabled = true;
 
 force ace_zeus_autoAddObjects = true;
 
-force ace_zeus_canCreateZeus = 0;
+force ace_zeus_canCreateZeus = -1;
 
 force ace_zeus_radioOrdnance = false;
 
@@ -1176,7 +1176,7 @@ force LRG_Channels_DirectVoice = false;
 
 force LRG_Channels_GlobalDuration = 0;
 
-force LRG_Channels_GlobalText = true;
+force LRG_Channels_GlobalText = false;
 
 force LRG_Channels_GlobalVoice = false;
 
@@ -1216,7 +1216,7 @@ force LRG_Main_Diary = true;
 
 force LRG_Main_DynamicGroups = false;
 
-force LRG_Main_DynamicSim = false;
+force LRG_Main_DynamicSim = true;
 
 force LRG_Main_Earplugs = false;
 
