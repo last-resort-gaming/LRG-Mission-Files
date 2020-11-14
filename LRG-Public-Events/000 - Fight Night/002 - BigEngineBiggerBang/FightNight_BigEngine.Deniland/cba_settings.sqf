@@ -1218,7 +1218,7 @@ force LRG_CreatorActions_Master = true;
 
 force LRG_CreatorActions_Channels = true;
 
-force LRG_CreatorActions_EndMission = false;
+force LRG_CreatorActions_EndMission = true;
 
 // LRG Main
 
@@ -1468,7 +1468,7 @@ force tfar_radiocode_independent = "_independent";
 
 force tfar_radiocode_west = "_bluefor";
 
-force tfar_radioCodesDisabled = true;
+force tfar_radioCodesDisabled = false;
 
 force TFAR_SameLRFrequenciesForSide = false;
 
