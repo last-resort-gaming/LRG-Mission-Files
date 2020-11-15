@@ -140,7 +140,7 @@ force ace_csw_defaultAssemblyMode = true;
 
 force ace_csw_dragAfterDeploy = false;
 
-force ace_csw_handleExtraMagazines = true;
+force ace_csw_handleExtraMagazines = false;
 
 force ace_csw_progressBarTimeCoefficent = 1;
 
@@ -498,15 +498,15 @@ force ace_nametags_tagSize = 2;
 
 // ACE Nightvision
 
-force ace_nightvision_aimDownSightsBlur = 0.2;
+force ace_nightvision_aimDownSightsBlur = 0.18;
 
 force ace_nightvision_disableNVGsWithSights = false;
 
-force ace_nightvision_effectScaling = 0.2;
+force ace_nightvision_effectScaling = 0.18;
 
-force ace_nightvision_fogScaling = 0.2;
+force ace_nightvision_fogScaling = 0.18;
 
-force ace_nightvision_noiseScaling = 0.2;
+force ace_nightvision_noiseScaling = 0.18;
 
 force ace_nightvision_shutterEffects = true;
 
@@ -1610,7 +1610,118 @@ force force diwako_dui_radar_sqlFirst = true;
 
 
 
-// GRAD slingHelmet
+// DUI - Squad Radar - Radar
 
-force GRAD_slingHelmet_additionalList = """VSM_Mich2000_AOR1"", ""VSM_Mich2000_M81"", ""VSM_Mich2000_MulticamTropic"", ""VSM_Mich2000_Multicam"", ""VSM_Mich2000_ocp"", ""VSM_Mich2000_CamoSprayOD"", ""VSM_Mich2000_OGA_OD"", ""VSM_Mich2000_OGA"", ""VSM_Mich2000_ProjectHonor"", ""VSM_Mich2000_CamoSprayTAN"", ""VSM_Mich2000_2_aor1"", ""VSM_Mich2000_2_M81"", ""VSM_Mich2000_2_MulticamTropic"", ""VSM_Mich2000_2_Multicam"", ""VSM_Mich2000_2_OCP"", ""VSM_Mich2000_2_CamoSprayOD"", ""VSM_Mich2000_2_OGA_OD"", ""VSM_Mich2000_2_OGA"", ""VSM_Mich2000_2_ProjectHonor"", ""VSM_Mich2000_2_CamoSprayTAN"", ""VSM_OGA_Helmet1"", ""VSM_OGA_OD_Helmet1"", ""VSM_OGA_Helmet2"", ""VSM_OGA_OD_Helmet2"", ""VSM_OPS"", ""VSM_OPS_aor1"", ""VSM_Black_OPS"", ""VSM_M81_OPS"", ""VSM_OPS_multicam"", ""VSM_MulticamTropic_OPS"", ""VSM_OPS_ocp"", ""VSM_OD_spray_OPS"", ""VSM_OGA_OD_OPS"", ""VSM_oga_OPS"", ""VSM_ProjectHonor_OPS"", ""VSM_Tan_spray_OPS"", ""VSM_OPS_2"", ""VSM_OPS_2_AOR1"", ""VSM_Black_OPS_2"", ""VSM_M81_OPS_2"", ""VSM_OPS_2_multicam"", ""VSM_MulticamTropic_OPS_2"", ""VSM_OPS_2_ocp"", ""VSM_OD_Spray_OPS_2"", ""VSM_oga_OPS_2"", ""VSM_OGA_OD_OPS_2"", ""VSM_ProjectHonor_OPS_2"", ""VSM_Tan_spray_OPS_2"", ""H_mas_nor_opscore"", ""H_mas_nor_opscorn"", ""H_mas_nor_opscore_gog"", ""H_mas_nor_opscorn_gog"", ""H_mas_nor_opscore_g"", ""H_mas_nor_opscore_gog_g"", ""H_mas_nor_opscore_b"", ""H_mas_nor_opscore_gog_b"", ""H_mas_nor_opscore_t"", ""H_mas_nor_opscore_gog_t"", ""H_mas_nor_opscore_aor1"", ""H_mas_nor_opscore_gog_aor1"", ""H_mas_nor_opscore_aor2"", ""H_mas_nor_opscore_gog_aor2"", ""H_mas_nor_opscore_w"", ""H_mas_nor_opscore_gog_w"", ""H_mas_nor_ach"", ""H_mas_nor_ach_gog"", ""H_mas_nor_ach_aor1"", ""H_mas_nor_ach_gog_aor1"", ""H_mas_nor_ach_aor2"", ""H_mas_nor_ach_gog_aor2"", ""H_mas_nor_ach_b"", ""H_mas_nor_ach_gog_b"", ""Surpat_Helmet"", ""WRUS_H_6b7_camo"", ""WRUS_H_6b7_camo_ess"", ""WRUS_H_6b7_Plain"", ""WRUS_H_6b7_Plain_ESS"", ""SURPAT_Helmet3"", ""SURPAT_Helmet1"", ""SURPAT_Helmet2"", ""H_HelmetB_TI_tna_Fx""";
+force diwako_dui_compass_hide_alone_group = false;
 
+force diwako_dui_compass_hide_blip_alone_group = false;
+
+diwako_dui_compass_icon_scale = 1;
+
+diwako_dui_compass_opacity = 1;
+
+diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass_limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass.paa"];
+
+force diwako_dui_compassRange = 35;
+
+force diwako_dui_compassRefreshrate = 0;
+
+force diwako_dui_dir_showMildot = false;
+
+force diwako_dui_dir_size = 1.25;
+
+force diwako_dui_distanceWarning = 3;
+
+force diwako_dui_enable_compass = true;
+
+force diwako_dui_enable_compass_dir = 1;
+
+diwako_dui_enable_occlusion = true;
+
+diwako_dui_enable_occlusion_cone = 360;
+
+diwako_dui_hudScaling = 1;
+
+force diwako_dui_namelist = true;
+
+force diwako_dui_namelist_bg = 0;
+
+diwako_dui_namelist_only_buddy_icon = false;
+
+diwako_dui_namelist_size = 1;
+
+diwako_dui_namelist_text_shadow = 2;
+
+diwako_dui_namelist_width = 215;
+
+force diwako_dui_radar_compassRangeCrew = 500;
+
+force diwako_dui_radar_dir_padding = 25;
+
+force diwako_dui_radar_group_by_vehicle = true;
+
+diwako_dui_radar_icon_opacity = 1;
+
+force diwako_dui_radar_icon_opacity_no_player = true;
+
+diwako_dui_radar_icon_scale_crew = 6;
+
+force diwako_dui_radar_leadingZeroes = false;
+
+diwako_dui_radar_namelist_hideWhenLeader = false;
+
+diwako_dui_radar_namelist_vertical_spacing = 1;
+
+diwako_dui_radar_occlusion_fade_in_time = 1;
+
+diwako_dui_radar_occlusion_fade_time = 10;
+
+force diwako_dui_radar_show_cardinal_points = true;
+
+force diwako_dui_radar_sortType = "fireteam";
+
+force diwako_dui_radar_sqlFirst = true;
+
+force diwako_dui_radar_vehicleCompassEnabled = true;
+
+diwako_dui_show_squadbar = false;
+
+diwako_dui_use_layout_editor = false;
+
+
+
+// GRAD Trenches
+
+force grad_trenches_functions_allowBigEnvelope = true;
+
+force grad_trenches_functions_allowCamouflage = true;
+
+force grad_trenches_functions_allowDigging = true;
+
+force grad_trenches_functions_allowGiantEnvelope = true;
+
+force grad_trenches_functions_allowLongEnvelope = true;
+
+force grad_trenches_functions_allowShortEnvelope = true;
+
+force grad_trenches_functions_allowSmallEnvelope = true;
+
+force grad_trenches_functions_allowVehicleEnvelope = true;
+
+force grad_trenches_functions_bigEnvelopeDigTime = 40;
+
+force grad_trenches_functions_buildFatigueFactor = 1;
+
+force grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
+
+force grad_trenches_functions_giantEnvelopeDigTime = 90;
+
+force grad_trenches_functions_LongEnvelopeDigTime = 100;
+
+force grad_trenches_functions_shortEnvelopeDigTime = 15;
+
+force grad_trenches_functions_smallEnvelopeDigTime = 30;
+
+force grad_trenches_functions_stopBuildingAtFatigueMax = true;
+
+force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
