@@ -1160,7 +1160,7 @@ force LRG_AI_Courage = 1;
 
 force LRG_AI_General = 1;
 
-force LRG_AI_InitialAI = true;
+force LRG_AI_InitialAI = false;
 
 force LRG_AI_ReloadSpeed = 0.5;
 
@@ -1218,6 +1218,8 @@ force LRG_CreatorActions_Channels = true;
 
 force LRG_CreatorActions_EndMission = true;
 
+
+
 // LRG Main
 
 force LRG_Main_ArsenalSaveLoad = false;
@@ -1230,7 +1232,7 @@ force LRG_Main_Diary = true;
 
 force LRG_Main_DynamicGroups = false;
 
-force LRG_Main_DynamicSim = true;
+force LRG_Main_DynamicSim = false;
 
 force LRG_Main_Earplugs = false;
 
