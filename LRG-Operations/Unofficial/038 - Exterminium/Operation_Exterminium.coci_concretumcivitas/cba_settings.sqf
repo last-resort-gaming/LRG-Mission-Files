@@ -356,109 +356,129 @@ ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 
-force force ace_medical_ai_enabledFor = 2;
+force ace_medical_ai_enabledFor = 2;
 
-force force ace_medical_AIDamageThreshold = 0.8;
+force ace_medical_AIDamageThreshold = 0.8;
 
-force force ace_medical_bleedingCoefficient = 0.1;
+force ace_medical_bleedingCoefficient = 0.1;
 
-force force ace_medical_blood_bloodLifetime = 600;
+force ace_medical_blood_bloodLifetime = 600;
 
-force force ace_medical_blood_enabledFor = 2;
+force ace_medical_blood_enabledFor = 2;
 
-force force ace_medical_blood_maxBloodObjects = 500;
+force ace_medical_blood_maxBloodObjects = 500;
 
-force force ace_medical_fatalDamageSource = 1;
+force ace_medical_fatalDamageSource = 1;
 
-force force ace_medical_feedback_bloodVolumeEffectType = 0;
+force ace_medical_feedback_bloodVolumeEffectType = 0;
 
-force force ace_medical_feedback_painEffectType = 0;
+force ace_medical_feedback_painEffectType = 0;
 
-force force ace_medical_fractureChance = 0.8;
+force ace_medical_fractureChance = 0.8;
 
-force force ace_medical_fractures = 0;
+force ace_medical_fractures = 0;
 
-force force ace_medical_gui_enableActions = 0;
+force ace_medical_gui_enableActions = 0;
 
-force force ace_medical_gui_enableMedicalMenu = 1;
+force ace_medical_gui_enableMedicalMenu = 1;
 
-force force ace_medical_gui_enableSelfActions = true;
+force ace_medical_gui_enableSelfActions = true;
 
-force force ace_medical_gui_maxDistance = 3;
+ace_medical_gui_interactionMenuShowTriage = 1;
 
-force force ace_medical_gui_openAfterTreatment = true;
+force ace_medical_gui_maxDistance = 3;
 
-force force ace_medical_ivFlowRate = 3;
+force ace_medical_gui_openAfterTreatment = true;
 
-force force ace_medical_limping = 1;
+force ace_medical_ivFlowRate = 3;
 
-force force ace_medical_painCoefficient = 1;
+force ace_medical_limping = 1;
 
-force force ace_medical_playerDamageThreshold = 1.8;
+force ace_medical_painCoefficient = 1;
 
-force force ace_medical_spontaneousWakeUpChance = 0.350605;
+force ace_medical_playerDamageThreshold = 1.8;
 
-force force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
+force ace_medical_spontaneousWakeUpChance = 0.350605;
 
-force force ace_medical_statemachine_AIUnconsciousness = false;
+force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
-force force ace_medical_statemachine_cardiacArrestTime = 900;
+force ace_medical_statemachine_AIUnconsciousness = false;
 
-force force ace_medical_statemachine_fatalInjuriesAI = 0;
+force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 
-force force ace_medical_statemachine_fatalInjuriesPlayer = 2;
+force ace_medical_statemachine_cardiacArrestTime = 900;
 
-force force ace_medical_treatment_advancedBandages = 2;
+force ace_medical_statemachine_fatalInjuriesAI = 0;
 
-force force ace_medical_treatment_advancedDiagnose = true;
+force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 
-force force ace_medical_treatment_advancedMedication = false;
+force ace_medical_treatment_advancedBandages = 2;
 
-force force ace_medical_treatment_allowLitterCreation = true;
+force ace_medical_treatment_advancedDiagnose = true;
 
-force force ace_medical_treatment_allowSelfIV = 1;
+force ace_medical_treatment_advancedMedication = false;
 
-force force ace_medical_treatment_allowSelfPAK = 1;
+force ace_medical_treatment_allowBodyBagUnconscious = false;
 
-force force ace_medical_treatment_allowSelfStitch = 1;
+force ace_medical_treatment_allowLitterCreation = true;
 
-force force ace_medical_treatment_allowSharedEquipment = 1;
+force ace_medical_treatment_allowSelfIV = 1;
 
-force force ace_medical_treatment_clearTraumaAfterBandage = false;
+force ace_medical_treatment_allowSelfPAK = 1;
 
-force force ace_medical_treatment_consumePAK = 0;
+force ace_medical_treatment_allowSelfStitch = 1;
 
-force force ace_medical_treatment_consumeSurgicalKit = 0;
+force ace_medical_treatment_allowSharedEquipment = 1;
 
-force force ace_medical_treatment_convertItems = 0;
+force ace_medical_treatment_clearTraumaAfterBandage = false;
 
-force force ace_medical_treatment_cprSuccessChance = 0.3;
+force ace_medical_treatment_consumePAK = 0;
 
-force force ace_medical_treatment_holsterRequired = 0;
+force ace_medical_treatment_consumeSurgicalKit = 0;
 
-force force ace_medical_treatment_litterCleanupDelay = 500;
+force ace_medical_treatment_convertItems = 0;
 
-force force ace_medical_treatment_locationEpinephrine = 0;
+force ace_medical_treatment_cprSuccessChance = 0.3;
 
-force force ace_medical_treatment_locationPAK = 0;
+force ace_medical_treatment_holsterRequired = 0;
 
-force force ace_medical_treatment_locationsBoostTraining = false;
+force ace_medical_treatment_litterCleanupDelay = 500;
 
-force force ace_medical_treatment_locationSurgicalKit = 0;
+force ace_medical_treatment_locationEpinephrine = 0;
 
-force force ace_medical_treatment_maxLitterObjects = 500;
+force ace_medical_treatment_locationPAK = 0;
 
-force force ace_medical_treatment_medicEpinephrine = 0;
+force ace_medical_treatment_locationsBoostTraining = false;
 
-force force ace_medical_treatment_medicIV = 1;
+force ace_medical_treatment_locationSurgicalKit = 0;
 
-force force ace_medical_treatment_medicPAK = 0;
+force ace_medical_treatment_maxLitterObjects = 500;
 
-force force ace_medical_treatment_medicSurgicalKit = 1;
+force ace_medical_treatment_medicEpinephrine = 0;
 
-force force ace_medical_treatment_timeCoefficientPAK = 0.1;
+force ace_medical_treatment_medicIV = 0;
 
-force force ace_medical_treatment_woundReopenChance = 1;
+force ace_medical_treatment_medicPAK = 0;
+
+force ace_medical_treatment_medicSurgicalKit = 1;
+
+force ace_medical_treatment_timeCoefficientPAK = 0.1;
+
+force ace_medical_treatment_treatmentTimeAutoinjector = 5;
+
+force ace_medical_treatment_treatmentTimeBodyBag = 15;
+
+force ace_medical_treatment_treatmentTimeCPR = 15;
+
+force ace_medical_treatment_treatmentTimeIV = 12;
+
+force ace_medical_treatment_treatmentTimeSplint = 7;
+
+force ace_medical_treatment_treatmentTimeTourniquet = 7;
+
+force ace_medical_treatment_woundReopenChance = 1;
+
+force ace_medical_treatment_woundStitchTime = 5;
 
 
 
