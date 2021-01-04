@@ -1160,7 +1160,7 @@ force LRG_AI_Courage = 1;
 
 force LRG_AI_General = 1;
 
-force LRG_AI_InitialAI = true;
+force LRG_AI_InitialAI = false;
 
 force LRG_AI_ReloadSpeed = 0.5;
 
@@ -1790,3 +1790,232 @@ force grad_trenches_functions_smallEnvelopeDigTime = 30;
 force grad_trenches_functions_stopBuildingAtFatigueMax = true;
 
 force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+
+
+// ZaD - ACE integration
+
+force zad_ace_int_pillHeal_enable = false;
+
+
+// ZAD Abilities
+
+force LRG_ZAD_AbilitySettings_Feeding = true;
+
+force LRG_ZAD_AbilitySettings_FeedingDemons = true;
+
+force LRG_ZAD_AbilitySettings_Jumping = false;
+
+force LRG_ZAD_AbilitySettings_JumpingDemons = true;
+
+force LRG_ZAD_AbilitySettings_JumpingStrength = 0;
+
+force LRG_ZAD_AbilitySettings_JumpingStrengthDemons = 0;
+
+force LRG_ZAD_AbilitySettings_Roaming = true;
+
+force LRG_ZAD_AbilitySettings_RoamingDemons = true;
+
+force LRG_ZAD_AbilitySettings_Throwing = false;
+
+force LRG_ZAD_AbilitySettings_ThrowingCarAlarm = true;
+
+force LRG_ZAD_AbilitySettings_ThrowingDemons = true;
+
+force LRG_ZAD_AbilitySettings_ThrowingDistance = 500;
+
+force LRG_ZAD_AbilitySettings_ThrowingDistanceDemons = 500;
+
+force LRG_ZAD_AbilitySettings_ThrowingDistanceTank = 50;
+
+force LRG_ZAD_AbilitySettings_ThrowingDistanceTankDemons = 100;
+
+force LRG_ZAD_AbilitySettings_ThrowingStrength = -1;
+
+force LRG_ZAD_AbilitySettings_ThrowingStrengthDemon = -1;
+
+force LRG_ZAD_AbilitySettings_ThrowingStrengthTank = -1;
+
+force LRG_ZAD_AbilitySettings_ThrowingStrengthTankDemon = -1;
+
+force LRG_ZAD_AbilitySettings_ThrowingTank = false;
+
+force LRG_ZAD_AbilitySettings_ThrowingTankDemons = false;
+
+
+// ZAD Deletion
+
+force LRG_ZAD_DeletionSettings_CheckTime = 30;
+
+force LRG_ZAD_DeletionSettings_Condition = 0.9;
+
+force LRG_ZAD_DeletionSettings_Condition2 = 0.9;
+
+force LRG_ZAD_DeletionSettings_ConditionDemons = 0.9;
+
+force LRG_ZAD_DeletionSettings_ConditionDemons2 = 0.9;
+
+force LRG_ZAD_DeletionSettings_Radius = 1000;
+
+force LRG_ZAD_DeletionSettings_RadiusDemons = 1000;
+
+
+// ZAD General
+
+force LRG_ZAD_GeneralSettings_Bleeding = true;
+
+force LRG_ZAD_GeneralSettings_CivilianAttacks = false;
+
+force LRG_ZAD_GeneralSettings_DeleteBodies = false;
+
+force LRG_ZAD_GeneralSettings_DetectionDistance = 5000;
+
+force LRG_ZAD_GeneralSettings_ExplodingHeads = 1.6;
+
+force LRG_ZAD_GeneralSettings_GlowingEyes = false;
+
+force LRG_ZAD_GeneralSettings_GlowingEyesDemons = true;
+
+force LRG_ZAD_GeneralSettings_HeadshotKill = false;
+
+force LRG_ZAD_GeneralSettings_Invincibility = false;
+
+force LRG_ZAD_GeneralSettings_InvincibilityDemons = false;
+
+force LRG_ZAD_GeneralSettings_JumpingSound = 0;
+
+force LRG_ZAD_GeneralSettings_SoundsAggressive = false;
+
+force LRG_ZAD_GeneralSettings_SoundsMoaning = false;
+
+force LRG_ZAD_GeneralSettings_StartingAnim = 0;
+
+force LRG_ZAD_GeneralSettings_ZombieScript = true;
+
+
+// ZAD Health
+
+force LRG_ZAD_HealthSettings_Demons = 1.7;
+
+force LRG_ZAD_HealthSettings_Zombies = 0.7;
+
+
+// ZAD Infections
+
+force LRG_ZAD_InfectionSettings_AntivirusDuration = 300;
+
+force LRG_ZAD_InfectionSettings_Chance = 50;
+
+force LRG_ZAD_InfectionSettings_DeathSound = 0.9;
+
+force LRG_ZAD_InfectionSettings_Immunity = "[]";
+
+force LRG_ZAD_InfectionSettings_Master = false;
+
+force LRG_ZAD_InfectionSettings_Rate = 0.1;
+
+force LRG_ZAD_InfectionSettings_Symptoms = 0.9;
+
+
+// ZAD Movement Speed
+
+force LRG_ZAD_MovementSpeedSettings_Crawler = 1;
+
+force LRG_ZAD_MovementSpeedSettings_Demon = 1;
+
+force LRG_ZAD_MovementSpeedSettings_Fast = 1;
+
+force LRG_ZAD_MovementSpeedSettings_Medium = 1;
+
+force LRG_ZAD_MovementSpeedSettings_Player = 1;
+
+force LRG_ZAD_MovementSpeedSettings_Slow = 1;
+
+force LRG_ZAD_MovementSpeedSettings_Spider = 1;
+
+force LRG_ZAD_MovementSpeedSettings_Walker = 1;
+
+
+// ZAD Player Zombies
+
+force LRG_ZAD_PlayerZombieSettings_AttackDistance = 2.35;
+
+force LRG_ZAD_PlayerZombieSettings_AttackSpeed = 0.8;
+
+force LRG_ZAD_PlayerZombieSettings_Damage = 0.15;
+
+force LRG_ZAD_PlayerZombieSettings_DamageAir = 0.01;
+
+force LRG_ZAD_PlayerZombieSettings_DamageCar = 0.02;
+
+force LRG_ZAD_PlayerZombieSettings_DamageTank = 0.002;
+
+force LRG_ZAD_PlayerZombieSettings_Jumping = false;
+
+force LRG_ZAD_PlayerZombieSettings_JumpingStrength = -1;
+
+force LRG_ZAD_PlayerZombieSettings_Knockback = 1.5;
+
+force LRG_ZAD_PlayerZombieSettings_KnockbackAir = 1;
+
+
+force LRG_ZAD_PlayerZombieSettings_KnockbackCar = 1.5;
+
+force LRG_ZAD_PlayerZombieSettings_KnockbackTank = 0.4;
+
+force LRG_ZAD_PlayerZombieSettings_PPEffects = true;
+
+
+// ZAD Resurrection
+
+force LRG_ZAD_ResurrectionSettings_ResurrectAs = 0.7;
+
+force LRG_ZAD_ResurrectionSettings_Timer = 30;
+
+force LRG_ZAD_ResurrectionSettings_Uniform = false;
+
+
+// ZAD Spawners
+
+force LRG_ZAD_SpawnerSettings_Activation = 0.9;
+
+force LRG_ZAD_SpawnerSettings_ActivationRadius = 100;
+
+force LRG_ZAD_SpawnerSettings_Amount = 50;
+
+force LRG_ZAD_SpawnerSettings_Delay = 0.5;
+
+force LRG_ZAD_SpawnerSettings_Density = 0;
+
+force LRG_ZAD_SpawnerSettings_Frequency = 60;
+
+force LRG_ZAD_SpawnerSettings_HordeSize = 14;
+
+force LRG_ZAD_SpawnerSettings_Start = 5;
+
+force LRG_ZAD_SpawnerSettings_TotalAmount = 100;
+
+
+// ZAD Spawners (Demons)
+
+force LRG_ZAD_SpawnerSettingsDemon_Activation = 0.9;
+
+force LRG_ZAD_SpawnerSettingsDemon_ActivationRadius = 100;
+
+force LRG_ZAD_SpawnerSettingsDemon_Amount = 20;
+
+force LRG_ZAD_SpawnerSettingsDemon_Delay = 0.5;
+
+force LRG_ZAD_SpawnerSettingsDemon_Density = 0;
+
+force LRG_ZAD_SpawnerSettingsDemon_Frequency = 60;
+
+force LRG_ZAD_SpawnerSettingsDemon_HordeSize = 14;
+
+force LRG_ZAD_SpawnerSettingsDemon_Start = 5;
+
+force LRG_ZAD_SpawnerSettingsDemon_TotalAmount = 40;
+
+
+// ZAD Zeus Modules
+
+force LRG_ZAD_Module_Spawner = true;
