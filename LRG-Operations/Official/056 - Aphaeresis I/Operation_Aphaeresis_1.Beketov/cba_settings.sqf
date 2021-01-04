@@ -1216,7 +1216,7 @@ force LRG_CreatorActions_Master = true;
 
 force LRG_CreatorActions_Channels = true;
 
-force LRG_CreatorActions_EndMission = true;
+force LRG_CreatorActions_EndMission = false;
 
 // LRG Main
 
