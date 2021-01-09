@@ -108,7 +108,7 @@ class SCRT
         class outpost_createAaDistance {};
         class outpost_createAt {};
         class outpost_createAtDistance {};
-    }
+    };
 
     class Quest
     {
