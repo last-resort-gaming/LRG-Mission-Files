@@ -255,7 +255,7 @@ class Params
           title = "Enable Mag Repack";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 1;
+          default = 0;
      };
      class traderOnBase
      {
