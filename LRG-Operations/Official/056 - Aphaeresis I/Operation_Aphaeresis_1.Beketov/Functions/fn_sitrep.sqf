@@ -1,4 +1,4 @@
-params ["_location"];
+params ["_location", "_track"];
 
 _rawDate = date;
 _currentDate = format ["%1-%2%3-%4%5 %6%7:%8%9",
@@ -15,3 +15,7 @@ _currentDate = format ["%1-%2%3-%4%5 %6%7:%8%9",
 _currentGrid = mapGridPosition player;
 
 [[_location,1,2,3],[_currentDate,1,2,3],[format ["%1 - %2",profileName,_currentGrid],1,2,3]] spawn BIS_fnc_EXP_camp_SITREP;
+
+if (_track isEqualTo "") exitWith {};
+
+playMusic _track;
