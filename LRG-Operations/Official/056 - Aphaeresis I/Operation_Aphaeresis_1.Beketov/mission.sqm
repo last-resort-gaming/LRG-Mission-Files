@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=17546;
+		nextID=17560;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4091;
+		nextID=4143;
 	};
 	class Camera
 	{
-		pos[]={10747.589,179.26532,720.66138};
-		dir[]={0.24140839,-0.65956366,-0.71186149};
-		up[]={0.21182801,0.75163442,-0.62463397};
-		aside[]={-0.94704568,3.1468517e-007,-0.32116291};
+		pos[]={10831.087,123.4339,761.52063};
+		dir[]={-0.28003606,-0.33912441,-0.89813852};
+		up[]={-0.10095623,0.94072777,-0.32379159};
+		aside[]={-0.95470876,7.2643161e-007,0.29767224};
 	};
 };
 binarizationWanted=0;
@@ -1379,7 +1379,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1013;
+		items=1014;
 		class Item0
 		{
 			dataType="Object";
@@ -114981,7 +114981,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{(vehicle player) in thisList}";
-				onActivation="call{[""General Lyovkin's Mansion"", ""CUP_A2_Chernarussian_Anthem""] call LR_Aph_fnc_sitrep;}";
+				onActivation="call{[""General Lyovkin's Mansion"", """"] call LR_Aph_fnc_sitrep;}";
 				sizeA=200;
 				sizeB=200;
 				sizeC=40;
@@ -146985,6 +146985,203 @@ class Mission
 			id=17539;
 			type="Flag_NATO_F";
 			atlOffset=-1.9073486e-006;
+		};
+		class Item1013
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9508.749,35.982281,4261.0049};
+						angles[]={0,6.064024,0};
+					};
+					side="East";
+					flags=1;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+					};
+					id=17549;
+					type="rhs_msv_emr_efreitor";
+					atlOffset=0.33177948;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9513.5586,40.257057,4236.1738};
+						angles[]={0,2.9224315,0};
+					};
+					side="East";
+					flags=3;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+					};
+					id=17550;
+					type="rhs_msv_emr_driver_armored";
+					atlOffset=0.272995;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9513.0605,40.257057,4238.4067};
+						angles[]={0,2.9224315,0};
+					};
+					side="East";
+					flags=1;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+					};
+					id=17551;
+					type="rhs_msv_emr_medic";
+					atlOffset=0.27757263;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9510.7295,35.982281,4231.209};
+						angles[]={0,2.9224315,0};
+					};
+					side="East";
+					flags=1;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+						stance="Middle";
+					};
+					id=17552;
+					type="rhs_msv_emr_sergeant";
+					atlOffset=0.33177948;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9507.8799,35.982281,4248.3984};
+						angles[]={0,1.351635,0};
+					};
+					side="East";
+					flags=1;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+					};
+					id=17553;
+					type="rhs_msv_emr_driver";
+					atlOffset=0.33177948;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9508.6357,40.192032,4244.6641};
+						angles[]={0,3.707829,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+					};
+					id=17554;
+					type="rhs_msv_emr_aa";
+					atlOffset=0.20505142;
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9518.4404,40.257057,4239.8555};
+						angles[]={0,3.707829,0};
+					};
+					side="East";
+					flags=1;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+					};
+					id=17555;
+					type="rhs_msv_emr_machinegunner";
+					atlOffset=0.27425766;
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9506.8154,35.982281,4239.2271};
+						angles[]={0,3.707829,0};
+					};
+					side="East";
+					flags=1;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+					};
+					id=17556;
+					type="rhs_msv_emr_machinegunner_assistant";
+					atlOffset=0.33177948;
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9507.6006,40.257057,4235.7007};
+						angles[]={0,1.351635,0};
+					};
+					side="East";
+					flags=1;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+					};
+					id=17557;
+					type="rhs_msv_emr_strelok_rpg_assist";
+					atlOffset=0.2728157;
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9509.8467,35.982281,4234.5859};
+						angles[]={0,3.707829,0};
+					};
+					side="East";
+					flags=1;
+					class Attributes
+					{
+						init="this disableAI 'PATH';";
+					};
+					id=17558;
+					type="rhs_msv_emr_driver_armored";
+					atlOffset=0.33177948;
+				};
+			};
+			class Attributes
+			{
+				garbageCollect=1;
+				dynamicSimulation=1;
+			};
+			id=17547;
+			atlOffset=0.272995;
 		};
 	};
 	class Connections
