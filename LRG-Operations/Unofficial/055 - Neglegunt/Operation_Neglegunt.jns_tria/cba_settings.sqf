@@ -368,7 +368,7 @@ force ace_medical_blood_enabledFor = 2;
 
 force ace_medical_blood_maxBloodObjects = 500;
 
-force ace_medical_fatalDamageSource = 1;
+force ace_medical_fatalDamageSource = 0;
 
 force ace_medical_feedback_bloodVolumeEffectType = 0;
 
@@ -438,7 +438,7 @@ force ace_medical_treatment_consumeSurgicalKit = 0;
 
 force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.4;
+force ace_medical_treatment_cprSuccessChance = 0.35;
 
 force ace_medical_treatment_holsterRequired = 0;
 
