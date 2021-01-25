@@ -1220,7 +1220,7 @@ force LRG_CreatorActions_EndMission = true;
 
 // LRG Main
 
-force LRG_Main_ArsenalSaveLoad = false;
+force LRG_Main_ArsenalSaveLoad = true;
 
 force LRG_Main_CHViewDistance = true;
 
@@ -1248,7 +1248,7 @@ force LRG_Main_MapIcons = true;
 
 force LRG_Main_MaydayAccess = 1;
 
-force LRG_Main_PilotCheck = true;
+force LRG_Main_PilotCheck = false;
 
 force LRG_Main_QSMagRepack = false;
 
