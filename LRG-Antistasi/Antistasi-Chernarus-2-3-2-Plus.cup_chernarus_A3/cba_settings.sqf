@@ -1180,7 +1180,7 @@ force LRG_Channels_CommandVoice = false;
 
 force LRG_Channels_DirectDuration = 0;
 
-force LRG_Channels_DirectText = false;
+force LRG_Channels_DirectText = true;
 
 force LRG_Channels_DirectVoice = false;
 
@@ -1192,11 +1192,11 @@ force LRG_Channels_GlobalVoice = false;
 
 force LRG_Channels_GroupDuration = 0;
 
-force LRG_Channels_GroupText = false;
+force LRG_Channels_GroupText = true;
 
 force LRG_Channels_GroupVoice = false;
 
-force LRG_Channels_SideDuration = 90;
+force LRG_Channels_SideDuration = 0;
 
 force LRG_Channels_SideText = true;
 
