@@ -8,7 +8,7 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=2670;
+		nextID=2719;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7651.4497,31.266529,2688.4553};
-		dir[]={0.11281613,-0.50402278,-0.85642821};
-		up[]={0.065853842,0.86334974,-0.49992368};
-		aside[]={-0.9914667,-1.7715211e-006,-0.13059489};
+		pos[]={7621.2729,32.948051,2645.4082};
+		dir[]={-0.099789277,-0.61297143,0.78392935};
+		up[]={-0.077422075,0.78975093,0.60822058};
+		aside[]={0.99202746,-6.6624489e-007,0.12626916};
 	};
 };
 binarizationWanted=0;
@@ -35,6 +35,7 @@ addons[]=
 	"ace_cargo",
 	"UK3CB_BAF_Weapons_Ammo",
 	"A3_Ui_F",
+	"LRG_Colours",
 	"UK3CB_BAF_Vehicles_Bulldog",
 	"UK3CB_BAF_Vehicles_LandRover",
 	"UK3CB_BAF_Vehicles_Coyote_Jackal",
@@ -116,13 +117,26 @@ addons[]=
 	"A3_Drones_F_Air_F_Gamma_UAV_01",
 	"A3_Characters_F_Jets",
 	"ace_artillerytables",
-	"A3_Armor_F_Exp_MBT_01"
+	"A3_Armor_F_Exp_MBT_01",
+	"A3_Structures_F_Enoch_Military_Camps",
+	"A3_Props_F_Enoch_Military_Equipment",
+	"A3_Props_F_Exp_Military_Camps",
+	"A3_Structures_F_Items_Electronics",
+	"A3_Structures_F_Bootcamp_Items_Electronics",
+	"acex_field_rations",
+	"A3_Structures_F_Heli_Items_Electronics",
+	"A3_Props_F_Enoch_Military_Camps",
+	"A3_Supplies_F_Exp_Ammoboxes",
+	"LRG_CommandCentre",
+	"A3_Props_F_Argo_Items_Electronics",
+	"cba_xeh",
+	"LRG_FOBs"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=83;
+		items=94;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -186,510 +200,587 @@ class AddonsMetaData
 		};
 		class Item9
 		{
+			className="LRG_Colours";
+			name="LRG Colours";
+			author="Last Resort Gaming";
+			url="http:";
+		};
+		class Item10
+		{
 			className="UK3CB_BAF_Vehicles_Bulldog";
 			name="3CB BAF Vehicles - Bulldog";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item10
+		class Item11
 		{
 			className="UK3CB_BAF_Vehicles_LandRover";
 			name="3CB BAF Vehicles - Land Rover";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item11
+		class Item12
 		{
 			className="UK3CB_BAF_Vehicles_Coyote_Jackal";
 			name="3CB BAF Vehicles - Coyote and Jackal";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item12
+		class Item13
 		{
 			className="UK3CB_BAF_Vehicles_Panther";
 			name="3CB BAF Vehicles - Panther";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item13
+		class Item14
 		{
 			className="UK3CB_BAF_Units_ACE";
 			name="3CB BAF Units - Ace3";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="tfar_handhelds";
 			name="tfar_handhelds";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item16
+		class Item17
 		{
 			className="UK3CB_BAF_Equipment_Boonies";
 			name="3CB BAF Equipment - Boonies";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="UK3CB_BAF_Equipment_Uniforms";
 			name="3CB BAF Equipment - Uniforms";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item20
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item21
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item21
+		class Item22
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item23
 		{
 			className="UK3CB_BAF_Equipment_Vests";
 			name="3CB BAF Equipment - Vests";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item25
 		{
 			className="UK3CB_BAF_Equipment_NVG";
 			name="3CB BAF Equipment - NVG";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item25
+		class Item26
 		{
 			className="tfw_radios_rf3080";
 			name="tfw_radios_rf3080";
 			author="Raspu";
 		};
-		class Item26
+		class Item27
 		{
 			className="UK3CB_BAF_Equipment_Berets";
 			name="3CB BAF Equipment - Berets";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="UK3CB_BAF_Weapons_L119";
 			name="3CB BAF Weapons - L119";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="RKSL_LDS";
 			name="RKSL_LDS";
 			author="RKSL Studios";
 		};
-		class Item29
+		class Item30
 		{
 			className="UK3CB_BAF_Weapons_Accessories";
 			name="3CB BAF Weapons - Accessories";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item30
+		class Item31
 		{
 			className="UK3CB_BAF_Weapons_L131A1";
 			name="3CB BAF Weapons - L131A1";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item31
+		class Item32
 		{
 			className="UK3CB_BAF_Equipment_Soflam";
 			name="3CB BAF Equipment - Soflam";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item32
+		class Item33
 		{
 			className="cTab";
 			name="cTab";
 		};
-		class Item33
+		class Item34
 		{
 			className="UK3CB_BAF_Equipment_Helmets";
 			name="3CB BAF Equipment - Helmets";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item34
+		class Item35
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item35
+		class Item36
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item36
+		class Item37
 		{
 			className="UK3CB_BAF_Weapons_Launchers";
 			name="3CB BAF Weapons - Launchers";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item37
+		class Item38
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item38
+		class Item39
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item39
+		class Item40
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item40
+		class Item41
 		{
 			className="UK3CB_BAF_Equipment_ACE";
 			name="3CB BAF Equipment - Ace3";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item41
+		class Item42
 		{
 			className="ace_minedetector";
 			name="ACE3 - Mine Detector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item42
+		class Item43
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item43
+		class Item44
 		{
 			className="UK3CB_BAF_Weapons_L110";
 			name="3CB BAF Weapons - L110";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item44
+		class Item45
 		{
 			className="UK3CB_BAF_Weapons_L129";
 			name="3CB BAF Weapons - L129";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item45
+		class Item46
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item46
+		class Item47
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item47
+		class Item48
 		{
 			className="UK3CB_BAF_Weapons_L85A3";
 			name="3CB BAF Weapons - L85A3";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item48
+		class Item49
 		{
 			className="UK3CB_BAF_Units_Temperate";
 			name="3CB BAF Units - Temperate";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item49
+		class Item50
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item50
+		class Item51
 		{
 			className="UK3CB_BAF_Weapons_SmallArms";
 			name="3CB BAF Weapons - Small Arms";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item51
+		class Item52
 		{
 			className="ace_yardage450";
 			name="ACE3 - Yardage 450";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item52
+		class Item53
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item53
+		class Item54
 		{
 			className="adv_aceCPR";
 			name="adv_aceCPR";
 			author="[SeL] Belbo // Adrian";
 		};
-		class Item54
+		class Item55
 		{
 			className="UK3CB_BAF_Weapons_L115";
 			name="3CB BAF Weapons - L115";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item55
+		class Item56
 		{
 			className="RKSL_PMII_525";
 			name="RKSL_PMII_525";
 			author="RKSL Studios";
 		};
-		class Item56
+		class Item57
 		{
 			className="ace_tripod";
 			name="ACE3 - Tripod";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item57
+		class Item58
 		{
 			className="ace_atragmx";
 			name="ACE3 - ATragMX";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item58
+		class Item59
 		{
 			className="ace_dagr";
 			name="ACE3 - DAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item59
+		class Item60
 		{
 			className="ace_kestrel4500";
 			name="ACE3 - Kestrel 4500";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item60
+		class Item61
 		{
 			className="RKSL_PMII";
 			name="RKSL_PMII";
 			author="RKSL Studios";
 		};
-		class Item61
+		class Item62
 		{
 			className="ace_spottingscope";
 			name="ACE3 - Spotting Scope";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item62
+		class Item63
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item63
+		class Item64
 		{
 			className="LRG_Medical";
 			name="LRG Fundamentals";
 			author="Last Resort Gaming";
 			url="http:";
 		};
-		class Item64
+		class Item65
 		{
 			className="LRG_SafeZone";
 			name="LRG Fundamentals";
 			author="Last Resort Gaming";
 			url="http:";
 		};
-		class Item65
+		class Item66
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item66
+		class Item67
 		{
 			className="UK3CB_BAF_Weapons_Static";
 			name="3CB BAF Weapons - Statics";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item67
+		class Item68
 		{
 			className="ace_mk6mortar";
 			name="ACE3 - Mk6 Mortar";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item68
+		class Item69
 		{
 			className="UK3CB_BAF_Vehicles_Weapons";
 			name="3CB BAF Vehicles - Weapons";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item69
+		class Item70
 		{
 			className="UK3CB_BAF_Units_Tropical";
 			name="3CB BAF Units - Tropical";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item70
+		class Item71
 		{
 			className="acex_fortify";
 			name="acex_fortify";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item71
+		class Item72
 		{
 			className="tfar_backpacks";
 			name="tfar_backpacks";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item72
+		class Item73
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item73
+		class Item74
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item74
+		class Item75
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item75
+		class Item76
 		{
 			className="UK3CB_BAF_Vehicles_MAN";
 			name="3CB BAF Vehicles - MAN Truck";
 			author="AUTHOR_3CB";
 			url="www.3commandobrigade.com";
 		};
-		class Item76
+		class Item77
 		{
 			className="UK3CB_BAF_Units_Woodland";
 			name="3CB BAF Units - Woodland";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item77
+		class Item78
 		{
 			className="ace_scopes";
 			name="ACE3 - Scopes";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item78
+		class Item79
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item79
+		class Item80
 		{
 			className="UK3CB_BAF_Vehicles_Weapons_Editor";
 			name="UK3CB_BAF_Vehicles_Weapons_Editor";
 		};
-		class Item80
+		class Item81
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item81
+		class Item82
 		{
 			className="ace_artillerytables";
 			name="ACE3 - ArtilleryTables";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item82
+		class Item83
 		{
 			className="A3_Armor_F_Exp";
 			name="Arma 3 Apex - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item84
+		{
+			className="A3_Structures_F_Enoch_Military";
+			name="Arma 3 Contact Platform - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item85
+		{
+			className="A3_Props_F_Enoch";
+			name="Arma 3 Contact Platform - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item86
+		{
+			className="A3_Props_F_Exp";
+			name="Arma 3 Apex - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item87
+		{
+			className="A3_Structures_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item88
+		{
+			className="acex_field_rations";
+			name="ACEX - Field Rations";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item89
+		{
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item90
+		{
+			className="A3_Supplies_F_Exp";
+			name="Arma 3 Apex - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item91
+		{
+			className="LRG_CommandCentre";
+			name="LRG Fundamentals";
+			author="Last Resort Gaming";
+			url="http:";
+		};
+		class Item92
+		{
+			className="A3_Props_F_Argo";
+			name="Arma 3 Malden - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item93
+		{
+			className="LRG_FOBs";
+			name="LRG Fundamentals";
+			author="Last Resort Gaming";
+			url="http:";
 		};
 	};
 };
@@ -736,7 +827,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -777,7 +868,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -25937,7 +26028,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=120;
+		items=169;
 		class Item0
 		{
 			dataType="Object";
@@ -54631,7 +54722,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7775,5.2840548,2684};
-				angles[]={-0,4.712389,0};
+				angles[]={0,4.712389,0};
 			};
 			side="Empty";
 			flags=4;
@@ -54671,7 +54762,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7777,5.2840548,2684};
-				angles[]={-0,4.712389,0};
+				angles[]={0,4.712389,0};
 			};
 			side="Empty";
 			flags=4;
@@ -54868,7 +54959,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7776,7.5107951,2696};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56144,7 +56235,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7776,5.2840548,2708.5};
-				angles[]={-0,4.712389,0};
+				angles[]={0,4.712389,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56184,7 +56275,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7774,5.2840548,2708.5};
-				angles[]={-0,4.7102246,0};
+				angles[]={0,4.7102246,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56323,7 +56414,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7770.5,6.6262865,2711};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56460,7 +56551,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7775,5,2709.5};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56500,7 +56591,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7774,5.2840548,2709.5};
-				angles[]={-0,4.7102246,0};
+				angles[]={0,4.7102246,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56559,7 +56650,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7773,5.2840548,2709.5};
-				angles[]={-0,4.712389,0};
+				angles[]={0,4.712389,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56599,7 +56690,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7773,5.2840548,2708.5};
-				angles[]={-0,4.712389,0};
+				angles[]={0,4.712389,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56733,7 +56824,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7772.5,5.1867056,2710.5};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56773,7 +56864,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7772.5,5.1867056,2711.5};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56813,7 +56904,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7772.5,5.1867056,2712.5};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56853,7 +56944,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7771.5,5,2708.5};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56893,7 +56984,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7771.5,5,2709.5};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56933,7 +57024,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7770,5.2840548,2708.5};
-				angles[]={-0,4.7102246,0};
+				angles[]={0,4.7102246,0};
 			};
 			side="Empty";
 			flags=4;
@@ -56992,7 +57083,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7770,5.2840548,2709.5};
-				angles[]={-0,4.7102246,0};
+				angles[]={0,4.7102246,0};
 			};
 			side="Empty";
 			flags=4;
@@ -57168,7 +57259,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7782,7.8645678,2716};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -57985,7 +58076,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7777.8862,5.0014391,2706.062};
-						angles[]={-0,3.1741605,0};
+						angles[]={0,3.1741605,0};
 					};
 					side="West";
 					flags=4;
@@ -59015,7 +59106,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7775,5.0014391,2688.05};
-						angles[]={-0,3.1415927,0};
+						angles[]={0,3.1415927,0};
 					};
 					side="West";
 					flags=4;
@@ -59365,7 +59456,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7777,5.0014391,2688.05};
-						angles[]={-0,3.1415927,0};
+						angles[]={0,3.1415927,0};
 					};
 					side="West";
 					flags=4;
@@ -61414,7 +61505,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7787,7.0150433,2683};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -61563,7 +61654,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7794,8.083312,2682};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -61762,16 +61853,1702 @@ class Mission
 				nAttributes=2;
 			};
 		};
+		class Item120
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7623.8496,6.3745632,2678.9614};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this animate [""door1_hide"", 0,1]}";
+				dynamicSimulation=1;
+			};
+			id=2670;
+			type="Land_MedicalTent_01_NATO_generic_open_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="SolarPanel2_Hide";
+					expression="_this animateSource ['SolarPanel2_Hide',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="SolarPanel1_Hide";
+					expression="_this animateSource ['SolarPanel1_Hide',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item121
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.7129,5.9409113,2677.5017};
+				angles[]={-0,1.7305827,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2671;
+			type="Land_Computer_01_olive_F";
+		};
+		class Item122
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7626.9448,5.9325929,2677.7515};
+				angles[]={-0,1.483355,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2672;
+			type="Land_IPPhone_01_olive_F";
+		};
+		class Item123
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7626.9463,6.054348,2678.5261};
+				angles[]={-0,1.4989734,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2673;
+			type="Land_Laptop_03_olive_F";
+		};
+		class Item124
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7621.7119,6.0431652,2675.0789};
+				angles[]={-0,0.55642462,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2674;
+			type="Land_TripodScreen_01_large_F";
+		};
+		class Item125
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.8125,5.1730704,2675.8396};
+				angles[]={-0,1.0789027,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2675;
+			type="Land_PortableServer_01_olive_F";
+		};
+		class Item126
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.7036,6.1944718,2677.5034};
+				angles[]={-0,1.7204003,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2676;
+			type="Land_Router_01_olive_F";
+			atlOffset=0.091268063;
+		};
+		class Item127
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7626.9302,6.076479,2676.8916};
+				angles[]={-0,1.553493,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2677;
+			type="Land_SatellitePhone_F";
+		};
+		class Item128
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7626.9639,5.7320728,2676.2407};
+				angles[]={-0,1.4729543,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2678;
+			type="Land_WaterCooler_01_new_F";
+		};
+		class Item129
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7627.0322,5.9189124,2677.2295};
+				angles[]={-0,6.283185,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2679;
+			type="Land_PortableSpeakers_01_F";
+		};
+		class Item130
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7626.9775,5.4438882,2677.7334};
+				angles[]={-0,1.5707965,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2680;
+			type="Land_PortableDesk_01_olive_F";
+		};
+		class Item131
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7622.3857,5.4179478,2674.7368};
+				angles[]={-0,3.3149216,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2681;
+			type="Land_PortableCabinet_01_bookcase_olive_F";
+		};
+		class Item132
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.6875,5.4438882,2677.6714};
+				angles[]={-0,4.712389,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2682;
+			type="Land_PortableDesk_01_olive_F";
+		};
+		class Item133
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.7183,6.1370201,2676.9617};
+				angles[]={-0,4.6582699,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2683;
+			type="Land_MultiScreenComputer_01_olive_F";
+		};
+		class Item134
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7626.9619,5.3815289,2675.2563};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2684;
+			type="Box_NATO_Uniforms_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item135
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7623.8643,6.0431652,2682.968};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2685;
+			type="Land_TripodScreen_01_large_F";
+		};
+		class Item136
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.8096,5.1490936,2674.9912};
+				angles[]={-0,0.78539801,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2686;
+			type="Land_BatteryPack_01_closed_olive_F";
+		};
+		class Item137
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7626.208,6.0431652,2682.1382};
+				angles[]={-0,3.9269907,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2687;
+			type="Land_TripodScreen_01_large_F";
+		};
+		class Item138
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7621.4971,6.0431652,2682.147};
+				angles[]={-0,2.3561959,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2688;
+			type="Land_TripodScreen_01_large_F";
+		};
+		class Item139
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7627.0796,6.0431652,2679.9729};
+				angles[]={-0,4.712389,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2689;
+			type="Land_TripodScreen_01_large_F";
+		};
+		class Item140
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.584,6.0431652,2679.9792};
+				angles[]={-0,1.5707965,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2690;
+			type="Land_TripodScreen_01_large_F";
+		};
+		class Item141
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7623.7891,5,2678.9373};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2691;
+			type="Land_MedicalTent_01_floor_light_F";
+		};
+		class Item142
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.5669,5.9189124,2678.198};
+				angles[]={-0,3.1415925,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2692;
+			type="Land_PortableSpeakers_01_F";
+		};
+		class Item143
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.6689,6.076479,2678.5359};
+				angles[]={-0,4.695086,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2693;
+			type="Land_SatellitePhone_F";
+		};
+		class Item144
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7620.7139,5.9325929,2677.8337};
+				angles[]={-0,4.6249475,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2694;
+			type="Land_IPPhone_01_olive_F";
+		};
+		class Item145
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7618,5,2679};
+				angles[]={-0,3.1415927,0};
+			};
+			id=2695;
+			type="LRG_ModuleStationaryRadio";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_StationaryRadioOn";
+					expression="_this setVariable ['StationaryRadioOn',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LR_StationaryRadioClass";
+					expression="_this setVariable ['StationaryRadioClass',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TFAR_anarc210";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="LR_StationaryRadioVol";
+					expression="_this setVariable ['StationaryRadioVol',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="LR_StationaryRadioCode";
+					expression="_this setVariable ['StationaryRadioCode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="_bluefor";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="LR_StationaryRadioCh1";
+					expression="_this setVariable ['StationaryRadioCh1',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=30;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="LR_StationaryRadioCh2";
+					expression="_this setVariable ['StationaryRadioCh2',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=32;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item146
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7630,5,2677};
+				angles[]={-0,3.1415927,0};
+			};
+			id=2696;
+			type="LRG_ModuleStationaryRadio";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_StationaryRadioOn";
+					expression="_this setVariable ['StationaryRadioOn',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LR_StationaryRadioClass";
+					expression="_this setVariable ['StationaryRadioClass',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TFAR_anarc210";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="LR_StationaryRadioVol";
+					expression="_this setVariable ['StationaryRadioVol',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="LR_StationaryRadioCode";
+					expression="_this setVariable ['StationaryRadioCode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="_bluefor";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="LR_StationaryRadioCh1";
+					expression="_this setVariable ['StationaryRadioCh1',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=40;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="LR_StationaryRadioCh2";
+					expression="_this setVariable ['StationaryRadioCh2',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=50;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item147
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7630,7.0414591,2674};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2697;
+			type="OmniDirectionalAntenna_01_olive_F";
+		};
+		class Item148
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7624,5,2673};
+				angles[]={-0,3.1415927,0};
+			};
+			id=2698;
+			type="LRG_ModuleSingleScreen";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_SingleScreenDrone";
+					expression="_this setVariable ['SingleScreenDrone',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LR_SingleScreenSat";
+					expression="_this setVariable ['SingleScreenSat',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="LR_SingleScreenCam";
+					expression="_this setVariable ['SingleScreenCam',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="LR_SingleScreenSelection";
+					expression="_this setVariable ['SingleScreenSelection',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item149
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7618,5,2677};
+				angles[]={-0,3.1415927,0};
+			};
+			id=2699;
+			type="LRG_ModuleMultiScreen";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_MultiScreenSelections";
+					expression="_this setVariable ['MultiScreenSelections',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1,2,3";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LR_MultiScreenDrone";
+					expression="_this setVariable ['MultiScreenDrone',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="LR_MultiScreenSat";
+					expression="_this setVariable ['MultiScreenSat',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="LR_MultiScreenCam";
+					expression="_this setVariable ['MultiScreenCam',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item150
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7630,5,2679};
+				angles[]={-0,3.1415927,0};
+			};
+			id=2700;
+			type="LRG_ModuleSingleScreen";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_SingleScreenDrone";
+					expression="_this setVariable ['SingleScreenDrone',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LR_SingleScreenSat";
+					expression="_this setVariable ['SingleScreenSat',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="LR_SingleScreenCam";
+					expression="_this setVariable ['SingleScreenCam',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="LR_SingleScreenSelection";
+					expression="_this setVariable ['SingleScreenSelection',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item151
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7630,5,2675};
+				angles[]={-0,3.1415927,0};
+			};
+			id=2701;
+			type="LRG_ModuleCommsTower";
+		};
+		class Item152
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7624,5,2669};
+				angles[]={-0,3.1415927,0};
+			};
+			id=2702;
+			type="LRG_ModuleVehicleCam";
+		};
+		class Item153
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7624,5,2668};
+			};
+			title="Sync Aircrafts and Important Vehicles to this module to make them available permanently in the Command Centre screens";
+			id=2703;
+		};
+		class Item154
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7624,5,2672};
+			};
+			title="The Command Centre:  Add and remove screens and radios as you see fit";
+			id=2704;
+		};
+		class Item155
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7616,5,2675};
+			};
+			title="Alternative Multi-Screen (looks a bit buggy)";
+			id=2705;
+		};
+		class Item156
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7616,5.8096552,2677};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2706;
+			type="Land_TripodScreen_01_dual_v1_F";
+		};
+		class Item157
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7616,5,2676};
+				angles[]={-0,3.1415927,0};
+			};
+			id=2707;
+			type="LRG_ModuleMultiScreen";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_MultiScreenSelections";
+					expression="_this setVariable ['MultiScreenSelections',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0,1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LR_MultiScreenDrone";
+					expression="_this setVariable ['MultiScreenDrone',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="LR_MultiScreenSat";
+					expression="_this setVariable ['MultiScreenSat',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="LR_MultiScreenCam";
+					expression="_this setVariable ['MultiScreenCam',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item158
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7614,5.2546797,2677};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2708;
+			type="Land_PCSet_01_screen_F";
+		};
+		class Item159
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7613,5,2676};
+				angles[]={-0,3.1415927,0};
+			};
+			id=2709;
+			type="LRG_ModuleSingleScreen";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_SingleScreenDrone";
+					expression="_this setVariable ['SingleScreenDrone',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LR_SingleScreenSat";
+					expression="_this setVariable ['SingleScreenSat',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="LR_SingleScreenCam";
+					expression="_this setVariable ['SingleScreenCam',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="LR_SingleScreenSelection";
+					expression="_this setVariable ['SingleScreenSelection',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item160
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7614,5,2675};
+			};
+			title="Alternative Single-Screens";
+			id=2710;
+		};
+		class Item161
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7612,5.1560721,2677};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2711;
+			type="Land_Laptop_unfolded_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#(argb,8,8,3)color(0,0,0,0,co)";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item162
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7613,5.1295619,2677};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=2712;
+			type="Land_Laptop_02_unfolded_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#(argb,8,8,3)color(0,0,0,0,co)";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item163
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7629,5.8253026,2691};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				ammo=0.2565293;
+				init="call{[this, true, [0, 1.8, 0], 0] call ace_dragging_fnc_setDraggable;}";
+				dynamicSimulation=1;
+			};
+			id=2713;
+			type="B_CargoNet_01_ammo_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="QUOTE(LRG_Arsenal_Select)";
+					expression="if (_value > -1) then {[_this, _value] call LR_fnc_FullArsenal;}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=-1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item164
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7627,5,2690};
+			};
+			id=2714;
+			type="LRG_ModulePortableFOB_Camp";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_FOBs_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ANY_CAMP";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item165
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7631,5,2690};
+			};
+			id=2715;
+			type="LRG_ModulePortableFOB_Large";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_FOBs_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ANY_LARGE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item166
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7630,5,2690};
+			};
+			id=2716;
+			type="LRG_ModulePortableFOB_Medium";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_FOBs_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ANY_MEDIUM";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item167
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7628,5,2690};
+			};
+			id=2717;
+			type="LRG_ModulePortableFOB_Small";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LR_FOBs_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ANY_SMALL";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item168
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7629,5,2689};
+			};
+			title="Sync one of these module to the crate to turn into a Portalble FOB. Make sure to select the FOB you want to deploy";
+			id=2718;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=4;
+			nextID=19;
 		};
 		class Links
 		{
-			items=4;
+			items=19;
 			class Item0
 			{
 				linkID=0;
@@ -61807,6 +63584,156 @@ class Mission
 				linkID=3;
 				item0=2656;
 				item1=430;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=2695;
+				item1=2693;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item5
+			{
+				linkID=5;
+				item0=2696;
+				item1=2677;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item6
+			{
+				linkID=6;
+				item0=2698;
+				item1=2687;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item7
+			{
+				linkID=7;
+				item0=2698;
+				item1=2689;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item8
+			{
+				linkID=8;
+				item0=2698;
+				item1=2685;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item9
+			{
+				linkID=9;
+				item0=2698;
+				item1=2688;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item10
+			{
+				linkID=10;
+				item0=2698;
+				item1=2690;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item11
+			{
+				linkID=11;
+				item0=2699;
+				item1=2683;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item12
+			{
+				linkID=12;
+				item0=2698;
+				item1=2674;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item13
+			{
+				linkID=13;
+				item0=2700;
+				item1=2673;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item14
+			{
+				linkID=14;
+				item0=2701;
+				item1=2697;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item15
+			{
+				linkID=15;
+				item0=2707;
+				item1=2706;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item16
+			{
+				linkID=16;
+				item0=2709;
+				item1=2708;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item17
+			{
+				linkID=17;
+				item0=2709;
+				item1=2711;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item18
+			{
+				linkID=18;
+				item0=2712;
+				item1=2709;
 				class CustomData
 				{
 					type="Sync";
