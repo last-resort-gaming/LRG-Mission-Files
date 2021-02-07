@@ -1160,7 +1160,7 @@ force LRG_AI_Courage = 1;
 
 force LRG_AI_General = 1;
 
-force LRG_AI_InitialAI = true;
+force LRG_AI_InitialAI = false;
 
 force LRG_AI_ReloadSpeed = 0.5;
 
