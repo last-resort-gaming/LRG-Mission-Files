@@ -1,4 +1,4 @@
-if !(hasInterface) exitWith {};
+if (!isServer) exitWith {};
 
 private _doors = [
 	[1,2,3],
@@ -34,6 +34,6 @@ private _doors = [
 	if (isNil "_house") exitWith {format ["House %1 could not be found!", _forEachIndex]};
 
 	{
-		_house setVariable [format ["bis_disabled_door_%1", _x], 1];
+		_house setVariable [format ["bis_disabled_door_%1", _x], 1, true];
 	} forEach _x;
 } forEach _doors;
