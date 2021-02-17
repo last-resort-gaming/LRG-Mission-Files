@@ -31,7 +31,7 @@ private _doors = [
 	private _house = missionNamespace getVariable format ["lockedhouse_%1", _forEachIndex];
 	
 	if (isServer) then {
-		[missionNameSpace, [_house, format ["lockedhouse_%1", _forEachIndex]]] remoteExec ["setVariable", 0, true];
+		[missionNameSpace, [format ["lockedhouse_%1", _forEachIndex], _house]] remoteExec ["setVariable", 0, true];
 	};
 
 	if (isNil "_house") exitWith {systemChat format ["House %1 could not be found!", _forEachIndex]};
