@@ -31,6 +31,7 @@ private _doors = [
 
 {
 	private _house = missionNamespace getVariable format ["lockedhouse_%1", _forEachIndex];
+	missionNamespace setVariable [format ["lockedhouse_%1", _forEachIndex], _house, true];
 	if (isNil "_house") exitWith {format ["House %1 could not be found!", _forEachIndex]};
 
 	{
