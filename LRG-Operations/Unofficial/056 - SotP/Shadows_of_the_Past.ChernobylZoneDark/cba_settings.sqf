@@ -850,19 +850,24 @@ force acex_field_rations_affectAdvancedFatigue = true;
 
 force acex_field_rations_enabled = true;
 
-force acex_field_rations_hudShowLevel = 1;
+acex_field_rations_hudShowLevel = 0;
 
-force acex_field_rations_hudTransparency = -1;
+force acex_field_rations_hudTransparency = 0;
 
 force acex_field_rations_hudType = 0;
 
 force acex_field_rations_hungerSatiated = 1;
+
+force acex_field_rations_terrainObjectActions = true;
 
 force acex_field_rations_thirstQuenched = 1;
 
 force acex_field_rations_timeWithoutFood = 2;
 
 force acex_field_rations_timeWithoutWater = 2;
+
+force acex_field_rations_waterSourceActions = 2;
+
 
 
 
@@ -1041,6 +1046,23 @@ force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 
 cba_optics_usePipOptics = true;
+
+
+
+// Diwako Stalker Anomalien
+
+force ANOMALY_DEBUG = false;
+
+force ANOMALY_DETECTION_RANGE = 20;
+
+force ANOMALY_DETECTOR_ITEM = "AnomalyDetector";
+
+force ANOMALY_GAS_MASKS = "GP5_RaspiratorPS,GP5Filter_RaspiratorPS,GP7_RaspiratorPS,GP21_GasmaskPS,SE_S10,G_Respirator_white_F,MASK_M40_OD,MASK_M40,MASK_M50";
+force ANOMALY_IDLE_DISTANCE = 350;
+
+force ANOMALY_TRIGGER_DISTANCE = 300;
+
+force diwako_anomalies_enable = true;
 
 
 
