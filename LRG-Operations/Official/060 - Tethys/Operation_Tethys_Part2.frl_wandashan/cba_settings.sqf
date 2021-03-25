@@ -1192,7 +1192,7 @@ force LRG_Channels_GlobalVoice = false;
 
 force LRG_Channels_GroupDuration = 0;
 
-force LRG_Channels_GroupText = false;
+force LRG_Channels_GroupText = true;
 
 force LRG_Channels_GroupVoice = false;
 
@@ -1244,7 +1244,7 @@ force LRG_Main_LockCamVehicle = false;
 
 force LRG_Main_Logging = true;
 
-force LRG_Main_MapIcons = true;
+force LRG_Main_MapIcons = false;
 
 force LRG_Main_MaydayAccess = 1;
 
@@ -1304,7 +1304,7 @@ force LRG_QS_ST_iconUpdatePulseDelay = 60;
 
 force LRG_QS_ST_map_enableUnitIcons = true;
 
-force LRG_QS_ST_MasterEnable = true;
+force LRG_QS_ST_MasterEnable = false;
 
 force LRG_QS_ST_MedicalIconColor = [1,0.41,0,1];
 
