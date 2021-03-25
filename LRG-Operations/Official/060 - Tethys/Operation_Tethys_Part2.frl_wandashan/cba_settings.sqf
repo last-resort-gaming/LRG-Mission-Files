@@ -1244,7 +1244,7 @@ force LRG_Main_LockCamVehicle = false;
 
 force LRG_Main_Logging = true;
 
-force LRG_Main_MapIcons = false;
+force LRG_Main_MapIcons = true;
 
 force LRG_Main_MaydayAccess = 1;
 
