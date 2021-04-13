@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=928;
+		nextID=933;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4071.1865,206.10544,4010.5898};
-		dir[]={0.37763071,-0.92592931,0.014231277};
-		up[]={0.92524981,0.3777495,0.034869406};
-		aside[]={0.037664741,-1.2173259e-006,-0.99936748};
+		pos[]={7360.04,99.851295,5417.563};
+		dir[]={0.51436037,-0.65152824,0.55777925};
+		up[]={0.44171736,0.75857806,0.47900468};
+		aside[]={0.73520684,6.5006316e-007,-0.67797315};
 	};
 };
 binarizationWanted=0;
@@ -658,210 +658,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="ENH_dynamicSkill";
-			expression="if (!is3DEN && _value # 0 && isServer) then      {        _value params        [          '_enable',          '_skillMinBLUFOR',          '_skillAimMinBLUFOR',          '_skillMaxBLUFOR',          '_skillAimMaxBlUFOR',          '_skillMinOPFOR',          '_skillAimMinOPFOR',          '_skillMaxOPFOR',          '_skillAimMaxOPFOR',          '_skillMinINDFOR',          '_skillAimMinINDFOR',          '_skillMaxINDFOR',          '_skillAimMaxINDFOR'        ];        [          true,          [            [WEST, _skillMinBLUFOR, _skillAimMinBLUFOR, _skillMaxBLUFOR, _skillAimMaxBlUFOR],            [EAST, _skillMinOPFOR, _skillAimMinOPFOR, _skillMaxOPFOR, _skillAimMaxOPFOR],            [INDEPENDENT, _skillMinINDFOR, _skillAimMinINDFOR, _skillMaxINDFOR, _skillAimMaxINDFOR]          ]        ] call BIS_fnc_EXP_camp_dynamicAISkill;      }";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-					class value
-					{
-						items=13;
-						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.30000001;
-							};
-						};
-						class Item3
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.80000001;
-							};
-						};
-						class Item4
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item5
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item6
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.30000001;
-							};
-						};
-						class Item7
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.80000001;
-							};
-						};
-						class Item8
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item9
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item10
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.30000001;
-							};
-						};
-						class Item11
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.80000001;
-							};
-						};
-						class Item12
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -910,7 +706,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		nAttributes=1;
 	};
 	class Category1
 	{
@@ -963,7 +759,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=205;
+		items=210;
 		class Item0
 		{
 			dataType="Object";
@@ -1665,8 +1461,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7434.5439,30.118872,5414.7407};
-				angles[]={6.2551923,1.51835,0.10758356};
+				position[]={7127.7856,31.055824,4872.3203};
+				angles[]={0.0039967569,1.51835,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1680,7 +1476,6 @@ class Mission
 			};
 			id=12;
 			type="UK3CB_BAF_Merlin_HC3_CSAR_MTP";
-			atlOffset=-0.024820328;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24711,8 +24506,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7390.4282,27.213528,5461.7515};
-				angles[]={6.2452021,4.6921825,0.059928458};
+				position[]={7083.6699,28.961866,4919.3311};
+				angles[]={0.0099949092,4.6921825,0.029989703};
 			};
 			side="Empty";
 			flags=4;
@@ -24721,7 +24516,7 @@ class Mission
 			};
 			id=161;
 			type="UK3CB_BAF_Merlin_HC3_18_GPMG_DPMT";
-			atlOffset=-0.2748909;
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24900,8 +24695,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7383.5352,24.593113,5412.1138};
-				angles[]={6.247201,4.6719589,0.039979152};
+				position[]={7076.7769,28.910696,4869.6934};
+				angles[]={0.059927464,4.6719589,0.067895547};
 			};
 			side="Empty";
 			flags=4;
@@ -24914,7 +24709,6 @@ class Mission
 			};
 			id=278;
 			type="UK3CB_BAF_Wildcat_AH1_HEL_6A_MTP";
-			atlOffset=-0.15758705;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25115,8 +24909,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7403.4673,26.027611,5412.5498};
-				angles[]={6.2631893,4.6719589,0.055941612};
+				position[]={7096.709,29.429045,4870.1294};
+				angles[]={0.059927464,4.6719589,0};
 			};
 			side="Empty";
 			flags=4;
@@ -25129,7 +24923,7 @@ class Mission
 			};
 			id=281;
 			type="UK3CB_BAF_Wildcat_AH1_HEL_6A_MTP";
-			atlOffset=-0.0014801025;
+			atlOffset=0.00022697449;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25216,8 +25010,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7390.4067,27.371073,5436.7939};
-				angles[]={6.2651882,4.6921825,0.077842705};
+				position[]={7083.6484,29.858673,4894.3735};
+				angles[]={0.10955995,4.6921825,0.0039967569};
 			};
 			side="Empty";
 			flags=4;
@@ -25226,7 +25020,6 @@ class Mission
 			};
 			id=282;
 			type="UK3CB_BAF_Merlin_HC3_18_GPMG_DPMT";
-			atlOffset=-0.0017051697;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27303,45 +27096,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="ENH_addGunLight";
-							expression="if (!is3DEN) then {_this addPrimaryWeaponItem 'acc_flashlight'; _this enableGunLights 'forceOn'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ENH_disableAI_lights";
-							expression="if (_value) then {_this disableAI 'LIGHTS'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=4;
+						nAttributes=2;
 					};
 				};
 			};
@@ -27391,67 +27146,6 @@ class Mission
 			id=315;
 			type="CUP_O_SearchLight_static_SLA";
 			atlOffset=3.1631317;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item60
 		{
@@ -27524,67 +27218,6 @@ class Mission
 			id=319;
 			type="CUP_O_SearchLight_static_SLA";
 			atlOffset=5.1376343;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item62
 		{
@@ -28501,45 +28134,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="ENH_addGunLight";
-							expression="if (!is3DEN) then {_this addPrimaryWeaponItem 'acc_flashlight'; _this enableGunLights 'forceOn'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ENH_disableAI_lights";
-							expression="if (_value) then {_this disableAI 'LIGHTS'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=4;
+						nAttributes=2;
 					};
 				};
 			};
@@ -28588,67 +28183,6 @@ class Mission
 			id=361;
 			type="CUP_O_SearchLight_static_SLA";
 			atlOffset=0.0050964355;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item74
 		{
@@ -28719,67 +28253,6 @@ class Mission
 			id=364;
 			type="CUP_O_SearchLight_static_SLA";
 			atlOffset=0.52703094;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item76
 		{
@@ -29957,45 +29430,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="ENH_addGunLight";
-							expression="if (!is3DEN) then {_this addPrimaryWeaponItem 'acc_flashlight'; _this enableGunLights 'forceOn'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ENH_disableAI_lights";
-							expression="if (_value) then {_this disableAI 'LIGHTS'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=4;
+						nAttributes=2;
 					};
 				};
 			};
@@ -30045,67 +29480,6 @@ class Mission
 			id=417;
 			type="CUP_O_SearchLight_static_SLA";
 			atlOffset=0.04132843;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item89
 		{
@@ -30177,67 +29551,6 @@ class Mission
 			id=420;
 			type="CUP_O_SearchLight_static_SLA";
 			atlOffset=0.04132843;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item91
 		{
@@ -32314,45 +31627,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="ENH_addGunLight";
-							expression="if (!is3DEN) then {_this addPrimaryWeaponItem 'acc_flashlight'; _this enableGunLights 'forceOn'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ENH_disableAI_lights";
-							expression="if (_value) then {_this disableAI 'LIGHTS'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=4;
+						nAttributes=2;
 					};
 				};
 			};
@@ -32402,67 +31677,6 @@ class Mission
 			id=502;
 			type="CUP_O_SearchLight_static_SLA";
 			atlOffset=1.7191653;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item111
 		{
@@ -32534,67 +31748,6 @@ class Mission
 			id=505;
 			type="CUP_O_SearchLight_static_SLA";
 			atlOffset=0.011978865;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item113
 		{
@@ -35786,45 +34939,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="ENH_addGunLight";
-							expression="if (!is3DEN) then {_this addPrimaryWeaponItem 'acc_flashlight'; _this enableGunLights 'forceOn'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ENH_disableAI_lights";
-							expression="if (_value) then {_this disableAI 'LIGHTS'}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=4;
+						nAttributes=2;
 					};
 				};
 			};
@@ -35872,67 +34987,6 @@ class Mission
 			};
 			id=664;
 			type="CUP_O_SearchLight_static_SLA";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item155
 		{
@@ -36002,67 +35056,6 @@ class Mission
 			};
 			id=667;
 			type="CUP_O_SearchLight_static_SLA";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_engineOn";
-					expression="_this engineOn _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_allowCrewInImmobile";
-					expression="  _this allowCrewInImmobile _value;  {    _x disableAI 'FSM';    _x setBehaviour 'CARELESS';  } forEach crew _this;  ";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ENH_enableHeadlights";
-					expression="_this setPilotLight _value";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item157
 		{
@@ -39954,6 +38947,7 @@ class Mission
 			};
 			id=924;
 			type="UK3CB_BAF_Apache_AH1_JS_MTP";
+			atlOffset=-0.0036201477;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40157,6 +39151,573 @@ class Mission
 			};
 			id=927;
 			type="Land_HelipadCircle_F";
+		};
+		class Item205
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7122.9297,22.401058,5109.9912};
+				angles[]={0.069885373,4.6921825,6.2551923};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=928;
+			type="UK3CB_BAF_Merlin_HC3_18_GPMG_DPMT";
+			atlOffset=-0.2748909;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="QUOTE(LRG_Equipment_Select)";
+					expression="_this setVariable ['LRG_Equipment_Select',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item206
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7122.9082,23.57818,5085.0337};
+				angles[]={0.017997233,4.6921825,6.2671909};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=929;
+			type="UK3CB_BAF_Merlin_HC3_18_GPMG_DPMT";
+			atlOffset=-0.0017051697;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="QUOTE(LRG_Equipment_Select)";
+					expression="_this setVariable ['LRG_Equipment_Select',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item207
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7135.9688,22.514635,5060.7896};
+				angles[]={0.11153521,4.6719589,6.2631893};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=930;
+			type="UK3CB_BAF_Wildcat_AH1_HEL_6A_MTP";
+			atlOffset=-0.0014801025;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="QUOTE(LRG_Equipment_Select)";
+					expression="_this setVariable ['LRG_Equipment_Select',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_fastroping_equipFRIES";
+					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item208
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7167.0454,23.84837,5062.9805};
+				angles[]={0.031990308,1.51835,0.077842705};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="MerlinGreen";
+				dynamicSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=931;
+			type="UK3CB_BAF_Merlin_HC3_CSAR_MTP";
+			atlOffset=-0.024820328;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=8;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Gun_HRot";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=3.1415927;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="dvere_l";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="dvere_p";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="AddCargoHook_COver";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="QUOTE(LRG_Equipment_Select)";
+					expression="_this setVariable ['LRG_Equipment_Select',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item209
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7116.0366,22.511026,5060.3535};
+				angles[]={0.059927464,4.6719589,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=932;
+			type="UK3CB_BAF_Wildcat_AH1_HEL_6A_MTP";
+			atlOffset=-0.15758705;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="QUOTE(LRG_Equipment_Select)";
+					expression="_this setVariable ['LRG_Equipment_Select',_value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_fastroping_equipFRIES";
+					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
