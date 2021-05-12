@@ -23,6 +23,7 @@ If ($Server -eq 1) {
 	$RCON_Port = 2307
 	$ServerLocalMods = 'C:\Mods\@infiSTAR_A3_vision EU1;'
 	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU1'
+	$Beta = 'creatordlc'
 }
 If ($Server -eq 2) {
 	$Server_Dir='C:\Servers\Arma 3\EU2'
@@ -30,7 +31,8 @@ If ($Server -eq 2) {
 	$Server_Hostname='[LRG] Discord.LastResortGaming.net || EU 2 || Private Server'
 	$RCON_Port = 2407
 	$ServerLocalMods = 'C:\Mods\@infiSTAR_A3_vision EU2;'
-	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU2'	
+	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU2'
+	$Beta = ''	
 }
 If ($Server -eq 3) {
 	$Server_Dir='C:\Servers\Arma 3\EU3'
@@ -39,6 +41,7 @@ If ($Server -eq 3) {
 	$RCON_Port = 2507
 	$ServerLocalMods = ''
 	$LogsDir = 'C:\Servers\Arma 3\Logs Archive\EU3'	
+	$Beta = ''
 }
 
 $ServerMods = $ServerMods +";" +$ServerLocalMods
@@ -63,7 +66,7 @@ $Server_Profile=Join-Path -Path $Server_Profiles -ChildPath "\Users\LRGServer"
 
 # Check for Updates
 Write-Host "Checking for A3 Update" -ForegroundColor red -BackgroundColor white
-Start-Process -NoNewWindow -Wait -Filepath "$steamcmd_Dir\steamcmd.exe" -ArgumentList "+login `"$steamcmd_username`" `"$steamcmd_Password`" +force_install_dir `"$Server_Dir`" +app_update 233780 -beta +quit"
+Start-Process -NoNewWindow -Wait -Filepath "$steamcmd_Dir\steamcmd.exe" -ArgumentList "+login `"$steamcmd_username`" `"$steamcmd_Password`" +force_install_dir `"$Server_Dir`" +app_update 233780 -beta `"$Beta`"  +quit"
 
 #Copy the Keys
 Write-Host "Handling Keys" -ForegroundColor red -BackgroundColor white
