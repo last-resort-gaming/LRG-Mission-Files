@@ -52,6 +52,57 @@ force LRG_AI_SpotTime = 0.2;
 
 
 
+// LRG AIS Revive
+
+force LRG_AIS_ACTION_DISTANCE = 6;
+
+force LRG_AIS_AI_HELP_RADIUS = 100;
+
+force LRG_AIS_BLEEDOUT_MULTIPLIER = 1;
+
+force LRG_AIS_BLEEDOUT_TIME = 400;
+
+force LRG_AIS_CONSUME_FAKS = true;
+
+force LRG_AIS_DAMAGE_TOLLERANCE_FACTOR = 1;
+
+force LRG_AIS_DISABLE_RESPAWN_BUTTON = 30;
+
+force LRG_AIS_IMPACT_EFFECTS = true;
+
+force LRG_AIS_MASTER_ENABLE = false;
+
+force LRG_AIS_MEDICAL_EDUCATION = 2;
+
+force LRG_AIS_NO_CHAT = true;
+
+force LRG_AIS_REQUIRE_MEDIKIT = true;
+
+force LRG_AIS_RESTORE_LOADOUT = true;
+
+force LRG_AIS_REVIVE_GUARANTY = true;
+
+force LRG_AIS_REVIVE_HEAL = true;
+
+force LRG_AIS_REVIVE_INIT_UNITS = 0;
+
+force LRG_AIS_REVIVETIME = 20;
+
+force LRG_AIS_SHOW_COUNTDOWN = true;
+
+LRG_AIS_SHOW_DIARYINFO = true;
+
+force LRG_AIS_SHOW_UNC_3D_MARKERS = true;
+
+force LRG_AIS_SHOW_UNC_MARKERS = false;
+
+force LRG_AIS_SHOW_UNC_MESSAGE_TO = 0;
+
+force LRG_AIS_STABILIZETIME = 15;
+
+force LRG_AIS_TOGGLE_RADIO = true;
+
+
 // LRG Channels
 
 force LRG_Channels_CommandDuration = 0;
@@ -120,7 +171,7 @@ force LRG_Main_Earplugs = false;
 
 force LRG_Main_FatigueVanilla = false;
 
-force LRG_Main_FlipVehicle = false;
+force LRG_Main_FlipVehicle = true;
 
 force LRG_Main_FPSCounter = true;
 
@@ -130,11 +181,11 @@ force LRG_Main_Logging = true;
 
 force LRG_Main_MapIcons = true;
 
-force LRG_Main_MaydayAccess = 1;
+force LRG_Main_MaydayAccess = 0;
 
 force LRG_Main_PilotCheck = false;
 
-force LRG_Main_QSMagRepack = false;
+force LRG_Main_QSMagRepack = true;
 
 force LRG_Main_TFARTerrainInterference = 0.5;
 
@@ -210,7 +261,7 @@ force LRG_QS_ST_showGroupMapIcons = false;
 
 force LRG_QS_ST_showGroupOnly = true;
 
-force LRG_QS_ST_showMedicalWounded = true;
+force LRG_QS_ST_showMedicalWounded = false;
 
 force LRG_QS_ST_showMOS = true;
 

@@ -19,7 +19,7 @@ class Spacer0
     title = "";
     values[] = {""};
     texts[] = {""};
-    default = ""
+    default = "";
 };
 
 class enable_ranks

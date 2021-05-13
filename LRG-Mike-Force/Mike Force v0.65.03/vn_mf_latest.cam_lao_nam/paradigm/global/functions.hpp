@@ -1,6 +1,6 @@
 //Used to prevent re-including the global function definitions if they've already been included
 #ifndef PARA_GLOBAL
-#define PARA_GLOBAL
+#define PARA_GLOBAL true
 #include "..\common_includes.hpp"
 
 #define PARA_GLOBAL_PATH(PATH) file=QUOTE(CONCAT_3(PARA_PATH,\global\functions,PATH))
