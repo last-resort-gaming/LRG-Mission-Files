@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=7962;
+		nextID=7963;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=680;
+		nextID=704;
 	};
 	class Camera
 	{
-		pos[]={6112.0781,22.232601,1200.916};
-		dir[]={0.61232919,-0.69892979,-0.36955115};
-		up[]={0.59840065,0.71518427,-0.36114496};
-		aside[]={-0.51671225,4.4063199e-007,-0.85616702};
+		pos[]={1164.9058,56.698269,765.96429};
+		dir[]={0.090766586,-0.7191661,0.68888897};
+		up[]={0.09394373,0.69483733,0.71300471};
+		aside[]={0.99143553,-6.009941e-008,-0.13063};
 	};
 };
 binarizationWanted=0;
@@ -133255,7 +133255,7 @@ class Mission
 			name="Zeus Modules";
 			class Entities
 			{
-				items=16;
+				items=17;
 				class Item0
 				{
 					dataType="Logic";
@@ -135295,9 +135295,140 @@ class Mission
 						nAttributes=6;
 					};
 				};
+				class Item16
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={1154.2802,9.595705,803.70789};
+						angles[]={0,4.4240952,0};
+					};
+					name="Mokka";
+					id=7962;
+					type="ModuleCurator_F";
+					atlOffset=4.5770059;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="QUOTE(LRG_Config_Zeus)";
+							expression="if (_value isequalto true) then {[_this] call LR_fnc_ConfigZeus;}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleCurator_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="76561198120665981";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleCurator_F_Forced";
+							expression="_this setVariable ['Forced',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleCurator_F_Name";
+							expression="_this setVariable ['Name',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Zeus";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ModuleInfo";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ModuleCurator_F_Addons";
+							expression="_this setVariable ['Addons',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=3;
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
 			};
 			id=2836;
-			atlOffset=4.5105829;
+			atlOffset=4.4508667;
 		};
 		class Item36
 		{
@@ -173130,11 +173261,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=126;
+			nextID=127;
 		};
 		class Links
 		{
-			items=126;
+			items=127;
 			class Item0
 			{
 				linkID=0;
@@ -174390,6 +174521,16 @@ class Mission
 				linkID=125;
 				item0=7941;
 				item1=7939;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item126
+			{
+				linkID=126;
+				item0=7962;
+				item1=1423;
 				class CustomData
 				{
 					type="Sync";
