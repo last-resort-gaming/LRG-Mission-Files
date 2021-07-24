@@ -148,6 +148,12 @@ force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Explosives
 
+force ace_explosives_customTimerDefault = 30;
+
+force ace_explosives_customTimerMax = 900;
+
+force ace_explosives_customTimerMin = 5;
+
 force ace_explosives_explodeOnDefuse = true;
 
 force ace_explosives_punishNonSpecialists = true;
@@ -170,6 +176,14 @@ force ace_frag_spallEnabled = true;
 
 
 
+// ACE G-Forces
+
+force ace_gforces_coef = 1;
+
+force ace_gforces_enabledFor = 0;
+
+
+
 // ACE Goggles
 
 force ace_goggles_effects = 2;
@@ -177,6 +191,12 @@ force ace_goggles_effects = 2;
 force ace_goggles_showClearGlasses = true;
 
 force ace_goggles_showInThirdPerson = false;
+
+
+
+// ACE Grenades
+
+force ace_grenades_convertExplosives = true;
 
 
 
@@ -204,6 +224,8 @@ force ace_interaction_enableMagazinePassing = true;
 
 force ace_interaction_enableTeamManagement = true;
 
+force ace_interaction_enableWeaponAttachments = true;
+
 
 
 // ACE Interaction Menu
@@ -225,6 +247,8 @@ ace_interact_menu_colorShadowMin = [0,0,0,0.25];
 ace_interact_menu_colorTextMax = [1,1,1,1];
 
 ace_interact_menu_colorTextMin = [1,1,1,0.25];
+
+ace_interact_menu_consolidateSingleChild = false;
 
 ace_interact_menu_cursorKeepCentered = false;
 
@@ -328,9 +352,21 @@ force ace_map_mapShowCursorCoordinates = false;
 
 force ace_markers_moveRestriction = 0;
 
+force ace_markers_timestampEnabled = true;
+
+force ace_markers_timestampFormat = "HH:MM";
+
+force ace_markers_timestampHourFormat = 24;
+
 
 
 // ACE Map Gestures
+
+force ace_map_gestures_allowCurator = true;
+
+force ace_map_gestures_allowSpectator = true;
+
+force ace_map_gestures_briefingMode = 0;
 
 force ace_map_gestures_defaultColor = [1,0.88,0,0.7];
 
@@ -342,7 +378,11 @@ force ace_map_gestures_interval = 0.03;
 
 force ace_map_gestures_maxRange = 50;
 
+force ace_map_gestures_maxRangeCamera = 14;
+
 force ace_map_gestures_nameTextColor = [0.2,0.2,0.2,0.3];
+
+force ace_map_gestures_onlyShowFriendlys = false;
 
 
 
@@ -384,6 +424,8 @@ force ace_medical_gui_enableMedicalMenu = 1;
 
 force ace_medical_gui_enableSelfActions = true;
 
+force ace_medical_gui_interactionMenuShowTriage = 1;
+
 force ace_medical_gui_maxDistance = 3;
 
 force ace_medical_gui_openAfterTreatment = true;
@@ -394,6 +436,8 @@ force ace_medical_limping = 1;
 
 force ace_medical_painCoefficient = 1;
 
+force ace_medical_painUnconsciousChance = 0.1;
+
 force ace_medical_playerDamageThreshold = 1.8;
 
 force ace_medical_spontaneousWakeUpChance = 0.15;
@@ -401,6 +445,8 @@ force ace_medical_spontaneousWakeUpChance = 0.15;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
 force ace_medical_statemachine_AIUnconsciousness = false;
+
+force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 
 force ace_medical_statemachine_cardiacArrestTime = 1200;
 
@@ -413,6 +459,8 @@ force ace_medical_treatment_advancedBandages = 2;
 force ace_medical_treatment_advancedDiagnose = true;
 
 force ace_medical_treatment_advancedMedication = false;
+
+force ace_medical_treatment_allowBodyBagUnconscious = false;
 
 force ace_medical_treatment_allowLitterCreation = true;
 
@@ -432,7 +480,7 @@ force ace_medical_treatment_consumeSurgicalKit = 0;
 
 force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.30;
+force ace_medical_treatment_cprSuccessChance = 0.3;
 
 force ace_medical_treatment_holsterRequired = 0;
 
@@ -440,7 +488,9 @@ force ace_medical_treatment_litterCleanupDelay = 500;
 
 force ace_medical_treatment_locationEpinephrine = 0;
 
-force ace_medical_treatment_locationPAK = 3;
+force ace_medical_treatment_locationIV = 0;
+
+force ace_medical_treatment_locationPAK = 0;
 
 force ace_medical_treatment_locationsBoostTraining = false;
 
@@ -457,6 +507,22 @@ force ace_medical_treatment_medicPAK = 2;
 force ace_medical_treatment_medicSurgicalKit = 1;
 
 force ace_medical_treatment_timeCoefficientPAK = 0.1;
+
+force ace_medical_treatment_treatmentTimeAutoinjector = 5;
+
+force ace_medical_treatment_treatmentTimeBodyBag = 15;
+
+force ace_medical_treatment_treatmentTimeCPR = 15;
+
+force ace_medical_treatment_treatmentTimeIV = 12;
+
+force ace_medical_treatment_treatmentTimeSplint = 7;
+
+force ace_medical_treatment_treatmentTimeTourniquet = 7;
+
+force ace_medical_treatment_woundReopenChance = 1;
+
+force ace_medical_treatment_woundStitchTime = 5;
 
 
 
@@ -636,11 +702,23 @@ force ace_switchunits_switchToWest = false;
 
 
 
+// ACE Trenches
+
+force ace_trenches_bigEnvelopeDigDuration = 25;
+
+force ace_trenches_bigEnvelopeRemoveDuration = 15;
+
+force ace_trenches_smallEnvelopeDigDuration = 20;
+
+force ace_trenches_smallEnvelopeRemoveDuration = 12;
+
+
+
 // ACE Uncategorized
 
 force ace_fastroping_requireRopeItems = false;
 
-force ace_gforces_enabledFor = 0;
+force ace_gunbag_swapGunbagEnabled = true;
 
 force ace_hitreactions_minDamageToTrigger = 0.1;
 
@@ -750,6 +828,8 @@ force ace_vehicles_hideEjectAction = false;
 
 force ace_vehicles_keepEngineRunning = false;
 
+ace_vehicles_speedLimiterStep = 5;
+
 
 
 // ACE View Distance Limiter
@@ -836,11 +916,15 @@ force acex_field_rations_hudType = 0;
 
 force acex_field_rations_hungerSatiated = 1;
 
+force acex_field_rations_terrainObjectActions = true;
+
 force acex_field_rations_thirstQuenched = 1;
 
 force acex_field_rations_timeWithoutFood = 2;
 
 force acex_field_rations_timeWithoutWater = 2;
+
+force acex_field_rations_waterSourceActions = 2;
 
 
 
@@ -904,25 +988,25 @@ force acex_volume_showNotification = true;
 
 // ADV - ACE CPR
 
-force force adv_aceCPR_addTime = 20;
+force adv_aceCPR_addTime = 20;
 
-force force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
+force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
 
-force force adv_aceCPR_chance_0 = 3;
+force adv_aceCPR_chance_0 = 5;
 
-force force adv_aceCPR_chance_1 = 12;
+force adv_aceCPR_chance_1 = 20;
 
-force force adv_aceCPR_chance_2 = 35;
+force adv_aceCPR_chance_2 = 50;
 
-force force adv_aceCPR_chance_aed = 60;
+force adv_aceCPR_chance_aed = 60;
 
-force force adv_aceCPR_enable = true;
+force adv_aceCPR_enable = true;
 
-force force adv_aceCPR_maxTime = 600;
+force adv_aceCPR_maxTime = 600;
 
-force force adv_aceCPR_onlyDoctors = 2;
+force adv_aceCPR_onlyDoctors = 2;
 
-force force adv_aceCPR_useLocation_AED = 3;
+force adv_aceCPR_useLocation_AED = 0;
 
 
 
@@ -1006,6 +1090,8 @@ UPSL_aime_vehicle_seats_setting_turnout_action = true;
 
 // CBA UI
 
+cba_diagnostic_ConsoleIndentType = -1;
+
 cba_ui_notifyLifetime = 4;
 
 cba_ui_StorePasswords = 1;
@@ -1024,6 +1110,12 @@ cba_optics_usePipOptics = true;
 
 
 
+// Community Base Addons - Network
+
+force cba_network_loadoutValidation = 0;
+
+
+
 // Diwako's ACE Ragdolling
 
 force diwako_ragdoll_ai = true;
@@ -1034,71 +1126,301 @@ force diwako_ragdoll_server_only = true;
 
 
 
+// DUI - Squad Radar - Indicators
+
+force diwako_dui_indicators_crew_range_enabled = true;
+
+force diwako_dui_indicators_fov_scale = true;
+
+force diwako_dui_indicators_icon_buddy = true;
+
+force diwako_dui_indicators_icon_leader = true;
+
+force diwako_dui_indicators_icon_medic = true;
+
+force diwako_dui_indicators_range = 30;
+
+force diwako_dui_indicators_range_crew = 300;
+
+force diwako_dui_indicators_range_scale = true;
+
+force diwako_dui_indicators_show = true;
+
+force diwako_dui_indicators_size = 1;
+
+diwako_dui_indicators_style = "standard";
+
+diwako_dui_indicators_useACENametagsRange = true;
+
+
+
+// DUI - Squad Radar - Main
+
+diwako_dui_ace_hide_interaction = true;
+
+diwako_dui_colors = "standard";
+
+diwako_dui_font = "RobotoCondensed";
+
+diwako_dui_icon_style = "standard";
+
+diwako_dui_main_hide_dialog = true;
+
+diwako_dui_main_hide_ui_by_default = false;
+
+diwako_dui_main_squadBlue = [0,0,1,1];
+
+diwako_dui_main_squadGreen = [0,1,0,1];
+
+diwako_dui_main_squadMain = [1,1,1,1];
+
+diwako_dui_main_squadRed = [1,0,0,1];
+
+diwako_dui_main_squadYellow = [1,1,0,1];
+
+diwako_dui_main_trackingColor = [0.93,0.26,0.93,1];
+
+diwako_dui_reset_ui_pos = false;
+
+
+
+// DUI - Squad Radar - Nametags
+
+diwako_dui_nametags_deadColor = [0.2,0.2,0.2,1];
+
+force diwako_dui_nametags_deadRenderDistance = 3.5;
+
+force diwako_dui_nametags_drawRank = false;
+
+force diwako_dui_nametags_enabled = true;
+
+force diwako_dui_nametags_enableFOVBoost = true;
+
+force diwako_dui_nametags_enableOcclusion = true;
+
+force diwako_dui_nametags_fadeInTime = 0.05;
+
+force diwako_dui_nametags_fadeOutTime = 0.5;
+
+diwako_dui_nametags_fontGroup = "RobotoCondensedLight";
+
+diwako_dui_nametags_fontGroupNameSize = 8;
+
+diwako_dui_nametags_fontName = "RobotoCondensedBold";
+
+diwako_dui_nametags_fontNameSize = 10;
+
+diwako_dui_nametags_groupColor = [1,1,1,1];
+
+diwako_dui_nametags_groupFontShadow = 1;
+
+diwako_dui_nametags_groupNameOtherGroupColor = [0.6,0.85,0.6,1];
+
+diwako_dui_nametags_nameFontShadow = 1;
+
+diwako_dui_nametags_nameOtherGroupColor = [0.2,1,0,1];
+
+force diwako_dui_nametags_renderDistance = 40;
+
+force diwako_dui_nametags_showUnconAsDead = true;
+
+diwako_dui_nametags_useLIS = true;
+
+force diwako_dui_nametags_useSideIsFriendly = true;
+
+
+
+// DUI - Squad Radar - Radar
+
+force diwako_dui_compass_hide_alone_group = false;
+
+force diwako_dui_compass_hide_blip_alone_group = false;
+
+diwako_dui_compass_icon_scale = 1;
+
+diwako_dui_compass_opacity = 1;
+
+diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass_limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass.paa"];
+
+force diwako_dui_compassRange = 35;
+
+force diwako_dui_compassRefreshrate = 0;
+
+force diwako_dui_dir_showMildot = false;
+
+force diwako_dui_dir_size = 1.25;
+
+force diwako_dui_distanceWarning = 3;
+
+force diwako_dui_enable_compass = true;
+
+force diwako_dui_enable_compass_dir = 1;
+
+diwako_dui_enable_occlusion = true;
+
+diwako_dui_enable_occlusion_cone = 360;
+
+diwako_dui_hudScaling = 1;
+
+force diwako_dui_namelist = true;
+
+force diwako_dui_namelist_bg = 0;
+
+diwako_dui_namelist_only_buddy_icon = false;
+
+diwako_dui_namelist_size = 1;
+
+diwako_dui_namelist_text_shadow = 2;
+
+diwako_dui_namelist_width = 215;
+
+diwako_dui_radar_ace_finger = true;
+
+diwako_dui_radar_ace_medic = true;
+
+force diwako_dui_radar_compassRangeCrew = 500;
+
+force diwako_dui_radar_dir_padding = 25;
+
+diwako_dui_radar_dir_shadow = 2;
+
+force diwako_dui_radar_group_by_vehicle = true;
+
+diwako_dui_radar_icon_opacity = 1;
+
+force diwako_dui_radar_icon_opacity_no_player = true;
+
+diwako_dui_radar_icon_priority_setting = 1;
+
+diwako_dui_radar_icon_scale_crew = 6;
+
+force diwako_dui_radar_leadingZeroes = false;
+
+diwako_dui_radar_namelist_hideWhenLeader = false;
+
+diwako_dui_radar_namelist_vertical_spacing = 1;
+
+diwako_dui_radar_occlusion_fade_in_time = 1;
+
+diwako_dui_radar_occlusion_fade_time = 10;
+
+diwako_dui_radar_pointer_color = [1,0.5,0,1];
+
+diwako_dui_radar_pointer_style = "standard";
+
+force diwako_dui_radar_show_cardinal_points = true;
+
+diwako_dui_radar_showSpeaking = true;
+
+diwako_dui_radar_showSpeaking_radioOnly = false;
+
+diwako_dui_radar_showSpeaking_replaceIcon = true;
+
+force diwako_dui_radar_sortType = "fireteam";
+
+force diwako_dui_radar_sqlFirst = true;
+
+force diwako_dui_radar_vehicleCompassEnabled = true;
+
+diwako_dui_use_layout_editor = false;
+
+
+
+// Freestyle's Crash Landing
+
+force fscl_captiveSystem = true;
+
+force fscl_damageTreshold = 99;
+
+fscl_debug = false;
+
+force fscl_ejectionProp = 33;
+
+force fscl_ejectionSystem = true;
+
+force fscl_gForceThreshold = 5;
+
+force fscl_ignoreNonPlayerVehicles = true;
+
+force fscl_stateThreshold = 50;
+
+
+
+// GRAD Trenches
+
+force grad_trenches_functions_allowBigEnvelope = true;
+
+force grad_trenches_functions_allowCamouflage = true;
+
+force grad_trenches_functions_allowDigging = true;
+
+force grad_trenches_functions_allowGiantEnvelope = true;
+
+force grad_trenches_functions_allowLongEnvelope = true;
+
+force grad_trenches_functions_allowShortEnvelope = true;
+
+force grad_trenches_functions_allowSmallEnvelope = true;
+
+force grad_trenches_functions_allowTrenchDecay = false;
+
+force grad_trenches_functions_allowVehicleEnvelope = true;
+
+force grad_trenches_functions_bigEnvelopeDigTime = 40;
+
+force grad_trenches_functions_bigEnvelopeRemovalTime = -1;
+
+force grad_trenches_functions_buildFatigueFactor = 1;
+
+force grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
+
+force grad_trenches_functions_decayTime = 1800;
+
+force grad_trenches_functions_giantEnvelopeDigTime = 90;
+
+force grad_trenches_functions_giantEnvelopeRemovalTime = -1;
+
+force grad_trenches_functions_LongEnvelopeDigTime = 100;
+
+force grad_trenches_functions_LongEnvelopeRemovalTime = -1;
+
+force grad_trenches_functions_shortEnvelopeDigTime = 15;
+
+force grad_trenches_functions_shortEnvelopeRemovalTime = -1;
+
+force grad_trenches_functions_smallEnvelopeDigTime = 30;
+
+force grad_trenches_functions_smallEnvelopeRemovalTime = -1;
+
+force grad_trenches_functions_stopBuildingAtFatigueMax = true;
+
+force grad_trenches_functions_timeoutToDecay = 7200;
+
+force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+
+force grad_trenches_functions_vehicleEnvelopeRemovalTime = -1;
+
+
+
 // LAMBS Danger
 
-force lambs_danger_CQB_formations_COLUMN = false;
-
-force lambs_danger_CQB_formations_DIAMOND = true;
-
-force lambs_danger_CQB_formations_ECH LEFT = false;
-
-force lambs_danger_CQB_formations_ECH RIGHT = false;
-
-force lambs_danger_CQB_formations_FILE = true;
-
-force lambs_danger_CQB_formations_LINE = false;
-
-force lambs_danger_CQB_formations_STAG COLUMN = false;
-
-force lambs_danger_CQB_formations_VEE = false;
-
-force lambs_danger_CQB_formations_WEDGE = false;
-
-force lambs_danger_CQB_range = 50;
-
-force lambs_danger_debug_Drawing = false;
-
-force lambs_danger_debug_FSM = false;
-
-force lambs_danger_debug_FSM_civ = false;
-
-force lambs_danger_debug_functions = false;
+force lambs_danger_cqbRange = 60;
 
 force lambs_danger_disableAIAutonomousManoeuvres = false;
 
-force lambs_danger_disableAICallouts = true;
+force lambs_danger_disableAIDeployStaticWeapons = false;
 
-force lambs_danger_disableAIFleeing = true;
-
-force lambs_danger_disableAIGestures = true;
+force lambs_danger_disableAIFindStaticWeapons = false;
 
 force lambs_danger_disableAIHideFromTanksAndAircraft = true;
-
-force lambs_danger_disableAIImediateAction = false;
 
 force lambs_danger_disableAIPlayerGroup = false;
 
 force lambs_danger_disableAIPlayerGroupReaction = false;
 
-force lambs_danger_disableAIPlayerGroupSuppression = false;
+force lambs_danger_disableAutonomousFlares = false;
 
-force lambs_danger_minSuppression_range = 25;
-
-force lambs_danger_panic_chance = 10;
-
-force lambs_danger_radio_backpack = 2000;
-
-force lambs_danger_radio_disabled = false;
-
-force lambs_danger_radio_EAST = 1000;
-
-force lambs_danger_radio_GUER = 1000;
-
-force lambs_danger_radio_shout = 100;
-
-force lambs_danger_radio_WEST = 1000;
-
-force lambs_danger_RenderExpectedDestination = false;
+force lambs_danger_panicChance = 0.1;
 
 
 
@@ -1113,6 +1435,54 @@ force lambs_eventhandlers_ExplosionReactionTime = 10;
 // LAMBS Danger WP
 
 force lambs_wp_autoAddArtillery = false;
+
+
+
+// LAMBS Main
+
+force lambs_main_combatShareRange = 200;
+
+lambs_main_debug_drawAllUnitsInVehicles = false;
+
+lambs_main_debug_Drawing = false;
+
+lambs_main_debug_FSM = false;
+
+lambs_main_debug_FSM_civ = false;
+
+lambs_main_debug_functions = false;
+
+lambs_main_debug_RenderExpectedDestination = false;
+
+force lambs_main_disableAICallouts = false;
+
+force lambs_main_disableAIDodge = false;
+
+force lambs_main_disableAIFleeing = false;
+
+force lambs_main_disableAIGestures = false;
+
+force lambs_main_disablePlayerGroupSuppression = false;
+
+force lambs_main_indoorMove = 0.1;
+
+force lambs_main_maxRevealValue = 1;
+
+force lambs_main_minFriendlySuppressionDistance = 5;
+
+force lambs_main_minSuppressionRange = 50;
+
+force lambs_main_radioBackpack = 2000;
+
+force lambs_main_radioDisabled = false;
+
+force lambs_main_radioEast = 500;
+
+force lambs_main_radioGuer = 500;
+
+force lambs_main_radioShout = 100;
+
+force lambs_main_radioWest = 500;
 
 
 
@@ -1136,16 +1506,6 @@ force L_Suppress_recovery = 1.25;
 
 
 
-// Freestyle's Crash Landing
-
-force fscl_captiveSystem = true;
-
-force fscl_damageTreshold = 99;
-
-force fscl_stateThreshold = 50;
-
-
-
 // LRG AI
 
 force LRG_AI_AimingAccuracy = 0.1;
@@ -1163,6 +1523,8 @@ force LRG_AI_General = 1;
 force LRG_AI_InitialAI = true;
 
 force LRG_AI_ReloadSpeed = 0.5;
+
+force LRG_AI_Reporting = false;
 
 force LRG_AI_SpotDistance = 0.4;
 
@@ -1212,11 +1574,21 @@ force LRG_Channels_VehicleVoice = false;
 
 // LRG Creator Actions
 
-force LRG_CreatorActions_Master = true;
-
 force LRG_CreatorActions_Channels = true;
 
 force LRG_CreatorActions_EndMission = true;
+
+force LRG_CreatorActions_Master = true;
+
+
+
+// LRG Logistics
+
+force LRG_Logistics_axeMaxTime = 40;
+
+force LRG_Logistics_axeTimeFactor = 1;
+
+
 
 // LRG Main
 
@@ -1366,35 +1738,15 @@ force LRG_Zeus_Module_AISpawnsWest = true;
 
 force LRG_Zeus_Module_CivilianSpawns = true;
 
+force LRG_Zeus_Module_MedicalDummy = false;
+
 force LRG_Zeus_Module_SafeZone = true;
 
 
 
-// STUI Settings
-
-STGI_Settings_Enabled = true;
-
-STGI_Settings_UnconsciousFadeEnabled = true;
-
-STHud_Settings_ColourBlindMode = "Normal";
-
-STHud_Settings_Font = "PuristaSemibold";
-
-STHud_Settings_HUDMode = 3;
-
-STHud_Settings_Occlusion = true;
-
-STHud_Settings_RemoveDeadViaProximity = true;
-
-STHud_Settings_SquadBar = false;
-
-STHud_Settings_TextShadow = 1;
-
-STHud_Settings_UnconsciousFadeEnabled = true;
-
-
-
 // TFAR - Clientside settings
+
+force TFAR_curatorCamEars = true;
 
 TFAR_default_radioVolume = 8;
 
@@ -1403,6 +1755,8 @@ TFAR_intercomDucking = 0.2;
 TFAR_intercomVolume = 0.100458;
 
 TFAR_moveWhileTabbedOut = true;
+
+force TFAR_noAutomoveSpectator = false;
 
 TFAR_oldVolumeHint = true;
 
@@ -1434,9 +1788,11 @@ force TFAR_AICanHearSpeaker = true;
 
 force TFAR_allowDebugging = true;
 
-force TFAR_curatorCamEars = true;
+tfar_core_noTSNotConnectedHint = false;
 
 force TFAR_defaultIntercomSlot = 0;
+
+TFAR_disableAutoMute = false;
 
 force TFAR_enableIntercom = true;
 
@@ -1453,8 +1809,6 @@ force TFAR_givePersonalRadioToRegularSoldier = true;
 force TFAR_globalRadioRangeCoef = 1;
 
 force TFAR_instantiate_instantiateAtBriefing = false;
-
-force TFAR_noAutomoveSpectator = false;
 
 force TFAR_objectInterceptionEnabled = true;
 
@@ -1534,7 +1888,11 @@ force zen_camera_fastSpeedCoef = 1;
 
 force zen_camera_followTerrain = true;
 
+force zen_common_ascensionMessages = false;
+
 force zen_common_autoAddObjects = true;
+
+force zen_common_cameraBird = false;
 
 force zen_common_darkMode = false;
 
@@ -1542,7 +1900,13 @@ force zen_common_disableGearAnim = false;
 
 force zen_common_preferredArsenal = 1;
 
+force zen_compat_ace_hideModules = true;
+
 force zen_context_menu_enabled = 2;
+
+force zen_context_menu_overrideWaypoints = false;
+
+force zen_editor_addGroupIcons = false;
 
 force zen_editor_declutterEmptyTree = true;
 
@@ -1554,11 +1918,15 @@ force zen_editor_parachuteSounds = true;
 
 force zen_editor_previews_enabled = true;
 
+force zen_editor_randomizeCopyPaste = false;
+
 force zen_editor_removeWatermark = true;
 
 force zen_editor_unitRadioMessages = 2;
 
-force zen_visibility_enabled = false;
+force zen_placement_enabled = true;
+
+force zen_visibility_enabled = true;
 
 force zen_vision_enableBlackHot = true;
 
@@ -1577,216 +1945,3 @@ force zen_vision_enableRedHotCold = false;
 force zen_vision_enableWhiteHot = true;
 
 force zen_vision_enableWhiteHotRedCold = false;
-
-
-
-// DUI - Squad Radar - Indicators
-
-force diwako_dui_indicators_crew_range_enabled = true;
-
-force diwako_dui_indicators_fov_scale = true;
-
-force diwako_dui_indicators_icon_buddy = true;
-
-force diwako_dui_indicators_icon_leader = true;
-
-force diwako_dui_indicators_icon_medic = true;
-
-force diwako_dui_indicators_range = 30;
-
-force diwako_dui_indicators_range_crew = 300;
-
-force diwako_dui_indicators_range_scale = true;
-
-force diwako_dui_indicators_show = true;
-
-force diwako_dui_indicators_size = 1;
-
-diwako_dui_indicators_style = "standard";
-
-
-
-// DUI - Squad Radar - Main
-
-diwako_dui_colors = "standard";
-
-diwako_dui_font = "RobotoCondensed";
-
-diwako_dui_icon_style = "standard";
-
-diwako_dui_main_hide_ui_by_default = false;
-
-diwako_dui_main_squadBlue = [0,0,1,1];
-
-diwako_dui_main_squadGreen = [0,1,0,1];
-
-diwako_dui_main_squadMain = [1,1,1,1];
-
-diwako_dui_main_squadRed = [1,0,0,1];
-
-diwako_dui_main_squadYellow = [1,1,0,1];
-
-diwako_dui_main_trackingColor = [0.93,0.26,0.93,1];
-
-diwako_dui_reset_ui_pos = false;
-
-
-
-// DUI - Squad Radar - Nametags
-
-diwako_dui_nametags_deadColor = [0.2,0.2,0.2,1];
-
-force diwako_dui_nametags_deadRenderDistance = 3.5;
-
-force diwako_dui_nametags_drawRank = false;
-
-force diwako_dui_nametags_enabled = true;
-
-force diwako_dui_nametags_enableFOVBoost = true;
-
-force diwako_dui_nametags_enableOcclusion = true;
-
-force diwako_dui_nametags_fadeInTime = 0.05;
-
-force diwako_dui_nametags_fadeOutTime = 0.5;
-
-diwako_dui_nametags_fontGroup = "RobotoCondensedLight";
-
-diwako_dui_nametags_fontGroupNameSize = 8;
-
-diwako_dui_nametags_fontName = "RobotoCondensedBold";
-
-diwako_dui_nametags_fontNameSize = 10;
-
-diwako_dui_nametags_groupColor = [1,1,1,1];
-
-diwako_dui_nametags_groupFontShadow = 1;
-
-diwako_dui_nametags_groupNameOtherGroupColor = [0.6,0.85,0.6,1];
-
-diwako_dui_nametags_nameFontShadow = 1;
-
-diwako_dui_nametags_nameOtherGroupColor = [0.2,1,0,1];
-
-force diwako_dui_nametags_renderDistance = 40;
-
-force diwako_dui_nametags_showUnconAsDead = true;
-
-force diwako_dui_nametags_useSideIsFriendly = true;
-
-
-
-// DUI - Squad Radar - Radar
-
-force diwako_dui_compass_hide_alone_group = false;
-
-force diwako_dui_compass_hide_blip_alone_group = false;
-
-diwako_dui_compass_icon_scale = 1;
-
-diwako_dui_compass_opacity = 1;
-
-diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass_limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass.paa"];
-
-force diwako_dui_compassRange = 35;
-
-force diwako_dui_compassRefreshrate = 0;
-
-force diwako_dui_dir_showMildot = false;
-
-force diwako_dui_dir_size = 1.25;
-
-force diwako_dui_distanceWarning = 3;
-
-force diwako_dui_enable_compass = true;
-
-force diwako_dui_enable_compass_dir = 1;
-
-diwako_dui_enable_occlusion = true;
-
-diwako_dui_enable_occlusion_cone = 360;
-
-diwako_dui_hudScaling = 1;
-
-force diwako_dui_namelist = true;
-
-force diwako_dui_namelist_bg = 0;
-
-diwako_dui_namelist_only_buddy_icon = false;
-
-diwako_dui_namelist_size = 1;
-
-diwako_dui_namelist_text_shadow = 2;
-
-diwako_dui_namelist_width = 215;
-
-force diwako_dui_radar_compassRangeCrew = 500;
-
-force diwako_dui_radar_dir_padding = 25;
-
-force diwako_dui_radar_group_by_vehicle = true;
-
-diwako_dui_radar_icon_opacity = 1;
-
-force diwako_dui_radar_icon_opacity_no_player = true;
-
-diwako_dui_radar_icon_scale_crew = 6;
-
-force diwako_dui_radar_leadingZeroes = false;
-
-diwako_dui_radar_namelist_hideWhenLeader = false;
-
-diwako_dui_radar_namelist_vertical_spacing = 1;
-
-diwako_dui_radar_occlusion_fade_in_time = 1;
-
-diwako_dui_radar_occlusion_fade_time = 10;
-
-force diwako_dui_radar_show_cardinal_points = true;
-
-force diwako_dui_radar_sortType = "fireteam";
-
-force diwako_dui_radar_sqlFirst = true;
-
-force diwako_dui_radar_vehicleCompassEnabled = true;
-
-diwako_dui_show_squadbar = false;
-
-diwako_dui_use_layout_editor = false;
-
-
-// GRAD Trenches
-
-force grad_trenches_functions_allowBigEnvelope = true;
-
-force grad_trenches_functions_allowCamouflage = true;
-
-force grad_trenches_functions_allowDigging = true;
-
-force grad_trenches_functions_allowGiantEnvelope = true;
-
-force grad_trenches_functions_allowLongEnvelope = true;
-
-force grad_trenches_functions_allowShortEnvelope = true;
-
-force grad_trenches_functions_allowSmallEnvelope = true;
-
-force grad_trenches_functions_allowVehicleEnvelope = true;
-
-force grad_trenches_functions_bigEnvelopeDigTime = 40;
-
-force grad_trenches_functions_buildFatigueFactor = 1;
-
-force grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
-
-force grad_trenches_functions_giantEnvelopeDigTime = 90;
-
-force grad_trenches_functions_LongEnvelopeDigTime = 100;
-
-force grad_trenches_functions_shortEnvelopeDigTime = 15;
-
-force grad_trenches_functions_smallEnvelopeDigTime = 30;
-
-force grad_trenches_functions_stopBuildingAtFatigueMax = true;
-
-force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
