@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=159;
+		nextID=261;
 	};
 	class Camera
 	{
-		pos[]={4572.2256,184.10306,6070.7134};
-		dir[]={0.17726156,-0.78357452,-0.59557521};
-		up[]={0.2235294,0.62127525,-0.75103104};
-		aside[]={-0.9585073,4.4281478e-007,-0.28528318};
+		pos[]={4560.2471,226.89186,6092.5425};
+		dir[]={0.17725094,-0.78352731,-0.59553933};
+		up[]={0.2235122,0.62135732,-0.75097096};
+		aside[]={-0.95844901,1.4901161e-008,-0.28526407};
 	};
 };
 binarizationWanted=0;
@@ -1061,6 +1061,98 @@ class CustomAttributes
 	{
 		name="Scenario";
 		class Attribute0
+		{
+			property="ENH_introText";
+			expression="        if (!is3DEN && (_value # 0) > 0 && hasInterface) then        {          _value spawn          {            scriptName 'ENH_Attribute_IntroText';            params ['_delay', '_l1', '_l2', '_l3', '_type'];            _l1 = _l1 call BIS_fnc_localize;            _l2 = _l2 call BIS_fnc_localize;            _l3 = _l3 call BIS_fnc_localize;            uiSleep _delay;            switch (_type) do            {              case 0:              {                private _text = parseText format                [                  ""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",                  _l1,                  _l2,                  _l3                ];                [_text, true] spawn BIS_fnc_textTiles;              };              case 1:              {                [_l1, _l2, _l3] spawn BIS_fnc_infoText;              };              case 2:              {                [_l1, _l2, _l3] spawn BIS_fnc_EXP_camp_SITREP;              };            };          };        }";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=5;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="The Pass";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="by LCpl. Oray65";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="12:00";
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="cba_settings_hash";
 			expression="false";
@@ -19729,7 +19821,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
+		class Attribute2
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -19748,7 +19840,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute2
+		class Attribute3
 		{
 			property="cba_settings_hasSettingsFile";
 			expression="false";
@@ -19767,7 +19859,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=3;
+		nAttributes=4;
 	};
 };
 class Mission
@@ -19776,7 +19868,7 @@ class Mission
 	class Intel
 	{
 		briefingName="The Pass";
-		overviewText="LRG RHS Mission Template";
+		overviewText="The Pass";
 		resistanceWest=0;
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
