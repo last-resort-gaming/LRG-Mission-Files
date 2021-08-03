@@ -142,7 +142,7 @@ class Params
         title = "Max personal garage slots";
         values[] = {9999,0,2,5,10};
         texts[] = {"Default (2)","Unlimited","2","5","10"};
-        default = 5;
+        default = 10;
     };
     class allowFT
     {
