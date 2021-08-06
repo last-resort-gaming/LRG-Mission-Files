@@ -1,14 +1,25 @@
+// 3AS
+
+force TAS_jetcoolset = 5;
+
+force TAS_jetfuelset = 0.0901926;
+
+force TAS_jetheatset = 0.0620057;
+
+force TAS_jetsoundvol = 0.6;
+
+
 // ACE Advanced Ballistics
 
 force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 
-force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
+force ace_advanced_ballistics_barrelLengthInfluenceEnabled = false;
 
-force ace_advanced_ballistics_bulletTraceEnabled = true;
+force ace_advanced_ballistics_bulletTraceEnabled = false;
 
-force ace_advanced_ballistics_enabled = true;
+force ace_advanced_ballistics_enabled = false;
 
-force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
+force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;
 
 force ace_advanced_ballistics_simulationInterval = 0.05;
 
@@ -28,7 +39,7 @@ force ace_advanced_fatigue_performanceFactor = 5;
 
 force ace_advanced_fatigue_recoveryFactor = 5;
 
-force ace_advanced_fatigue_swayFactor = 0.5;
+force ace_advanced_fatigue_swayFactor = 0.2;
 
 force ace_advanced_fatigue_terrainGradientFactor = 0.2;
 
@@ -204,7 +215,7 @@ force ace_grenades_convertExplosives = true;
 
 force ace_hearing_autoAddEarplugsToUnits = false;
 
-force ace_hearing_disableEarRinging = false;
+force ace_hearing_disableEarRinging = true;
 
 force ace_hearing_earplugsVolume = 0.5;
 
@@ -400,7 +411,7 @@ force ace_medical_ai_enabledFor = 2;
 
 force ace_medical_AIDamageThreshold = 0.8;
 
-force ace_medical_bleedingCoefficient = 0.1;
+force ace_medical_bleedingCoefficient = 0.2;
 
 force ace_medical_blood_bloodLifetime = 600;
 
@@ -438,9 +449,9 @@ force ace_medical_painCoefficient = 1;
 
 force ace_medical_painUnconsciousChance = 0.1;
 
-force ace_medical_playerDamageThreshold = 1.8;
+force ace_medical_playerDamageThreshold = 2;
 
-force ace_medical_spontaneousWakeUpChance = 0.15;
+force ace_medical_spontaneousWakeUpChance = 0.20;
 
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
@@ -522,7 +533,7 @@ force ace_medical_treatment_treatmentTimeTourniquet = 7;
 
 force ace_medical_treatment_woundReopenChance = 1;
 
-force ace_medical_treatment_woundStitchTime = 5;
+force ace_medical_treatment_woundStitchTime = 4;
 
 
 
@@ -654,7 +665,7 @@ force ace_scopes_deduceBarometricPressureFromTerrainAltitude = false;
 
 force ace_scopes_defaultZeroRange = 100;
 
-force ace_scopes_enabled = true;
+force ace_scopes_enabled = false;
 
 force ace_scopes_forceUseOfAdjustmentTurrets = false;
 
@@ -992,13 +1003,13 @@ force adv_aceCPR_addTime = 20;
 
 force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
 
-force adv_aceCPR_chance_0 = 5;
+force adv_aceCPR_chance_0 = 10;
 
-force adv_aceCPR_chance_1 = 20;
+force adv_aceCPR_chance_1 = 25;
 
-force adv_aceCPR_chance_2 = 50;
+force adv_aceCPR_chance_2 = 55;
 
-force adv_aceCPR_chance_aed = 60;
+force adv_aceCPR_chance_aed = 80;
 
 force adv_aceCPR_enable = true;
 
@@ -1113,16 +1124,6 @@ cba_optics_usePipOptics = true;
 // Community Base Addons - Network
 
 force cba_network_loadoutValidation = 0;
-
-
-
-// Diwako's ACE Ragdolling
-
-force diwako_ragdoll_ai = true;
-
-force diwako_ragdoll_ragdolling = true;
-
-force diwako_ragdoll_server_only = true;
 
 
 
@@ -1520,7 +1521,7 @@ force LRG_AI_Courage = 1;
 
 force LRG_AI_General = 1;
 
-force LRG_AI_InitialAI = true;
+force LRG_AI_InitialAI = false;
 
 force LRG_AI_ReloadSpeed = 0.5;
 
@@ -1602,7 +1603,7 @@ force LRG_Main_Diary = true;
 
 force LRG_Main_DynamicGroups = false;
 
-force LRG_Main_DynamicSim = true;
+force LRG_Main_DynamicSim = false;
 
 force LRG_Main_Earplugs = false;
 
