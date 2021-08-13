@@ -61,7 +61,7 @@ class A3A
         class undercover {file="undercover.sqf";};
         class unlockVehicle {file="unlockVehicle.sqf";};
         class zoneCheck {file="zoneCheck.sqf";};
-    }
+    };
 
 	class AI
 	{
@@ -128,7 +128,7 @@ class A3A
         class digIn {file="AI\digIn.sqf";};
         //class AAthreatEval {file="AI\AAthreatEval.sqf";};
         //class hayLOS {file="AI\hayLOS.sqf";};
-	}
+	};
 	
 	class CREATE
 	{
@@ -169,12 +169,12 @@ class A3A
         class VEHdespawner {file="CREATE\VEHdespawner.sqf";};
         class wavedCA {file="CREATE\wavedCA.sqf";};
         class vehGarrisonCrew {file="CREATE\vehGarrisonCrew.sqf";};
-	}
+	};
 	
 	class Dialogs
 	{
 		class mineDialog {file="Dialogs\mineDialog.sqf";};
-	}
+	};
 	
 	class Missions
 	{
@@ -184,7 +184,7 @@ class A3A
         class missionRequestAUTO {file="Missions\missionrequestAUTO.sqf";};
         class taskUpdate {file="Missions\taskUpdate.sqf";};
         class underAttack {file="Missions\underAttack.sqf";};
-	}
+	};
 
 	class Municion
 	{
@@ -198,7 +198,7 @@ class A3A
         class randomRifle {file="Municion\randomRifle.sqf";};
         class RHSdress {file="Municion\RHSdress.sqf";};
         class vaciar {file="Municion\vaciar.sqf";};
-	}
+	};
 
 	class OrgPlayers
 	{
@@ -213,7 +213,7 @@ class A3A
         class theBossInit {file="orgPlayers\stavrosInit.sqf";};
         class theBossSteal {file="orgPlayers\stavrosSteal.sqf";};
         class tierCheck {file="orgPlayers\tierCheck.sqf";};
-	}
+	};
 
 	class REINF
 	{
@@ -236,7 +236,7 @@ class A3A
         class reinfPlayer {file="REINF\reinfplayer.sqf";};
         class vehiclePrice {file="REINF\vehiclePrice.sqf";};
         class vehStats {file="REINF\vehStats.sqf";};
-	}
+	};
 
 	class Revive
 	{
@@ -250,5 +250,5 @@ class A3A
         class initRevive {file="Revive\initRevive.sqf";};
         class isMedic {file="Revive\isMedic.sqf";};
         class respawn {file="Revive\respawn.sqf";};
-	}
+	};
 }
