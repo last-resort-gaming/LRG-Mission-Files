@@ -1592,7 +1592,7 @@ force LRG_Logistics_axeTimeFactor = 1;
 
 // LRG Main
 
-force LRG_Main_ArsenalSaveLoad = false;
+force LRG_Main_ArsenalSaveLoad = true;
 
 force LRG_Main_CHViewDistance = true;
 

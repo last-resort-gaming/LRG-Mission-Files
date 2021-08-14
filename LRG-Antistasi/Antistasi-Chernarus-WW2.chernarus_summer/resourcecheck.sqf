@@ -212,7 +212,7 @@ while {true} do
 			_cuentaSave = _cuentaSave - 600;
 			if (_cuentaSave <= 0) then
 				{
-				_cuentaSave = 3600;
+				_cuentaSave = 1200;
 				_nul = [] execVM "statSave\saveLoop.sqf";
 				};
 			};

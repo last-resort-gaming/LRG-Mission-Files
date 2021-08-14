@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=670;
+		nextID=674;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8374.9619,354.37543,5908.6821};
-		dir[]={0.13592026,-0.80344796,0.57970476};
-		up[]={0.18341067,0.59535569,0.78224999};
-		aside[]={0.97362804,6.7113433e-007,-0.22828308};
+		pos[]={8375.627,357.70364,5931.5996};
+		dir[]={0.30165708,-0.88312942,0.35940036};
+		up[]={0.56776756,0.46910879,0.67644912};
+		aside[]={0.76598775,8.5821375e-007,-0.64292097};
 	};
 };
 binarizationWanted=0;
@@ -44,17 +44,27 @@ addons[]=
 	"ace_dragging",
 	"A3_Characters_F",
 	"A3_Structures_F_Exp_Military_Flags",
-	"CUP_Editor_Buildings_Config",
-	"WW2_Objects_c_Misc_WW2_SimpleObjects_c_CUP",
 	"A3_Weapons_F_Ammoboxes",
 	"WW2_Core_c_WW2_Core_c",
-	"A3_Modules_F_Curator_Curator"
+	"WW2_Assets_c_Weapons_Recoil_c",
+	"WW2_Assets_c_Weapons_InfantryWeapons_c",
+	"WW2_Assets_s_Megagoth1702_Sounds_Config_CfgWeapons",
+	"WW2_Assets_c_Weapons_Sounds_c",
+	"IFA3_COMP_ACE_main",
+	"A3_Weapons_F",
+	"WW2_Assets_c_Characters_Polish_c_GUER_PolishTroops_Gear",
+	"A3_Weapons_F_Items",
+	"ace_medical_engine",
+	"ace_medical_treatment",
+	"WW2_Core_c_WW2_Core_c_Eventhandlers",
+	"A3_Modules_F_Curator_Curator",
+	"A3_Structures_F_EPA_Mil_Scrapyard"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=26;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -142,30 +152,79 @@ class AddonsMetaData
 		};
 		class Item13
 		{
-			className="CUP_Editor_Buildings_Config";
-			name="CUP_Editor_Buildings_Config";
-		};
-		class Item14
-		{
-			className="WW2_Objects_c_Misc_WW2_SimpleObjects_c_CUP";
-			name="WW2_Objects_c_Misc_WW2_SimpleObjects_c_CUP";
-		};
-		class Item15
-		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item14
 		{
 			className="WW2_Core_c_WW2_Core_c";
 			name="WW2_Core_c_WW2_Core_c";
 		};
+		class Item15
+		{
+			className="WW2_Assets_c_Weapons_Recoil_c";
+			name="WW2_Assets_c_Weapons_Recoil_c";
+		};
+		class Item16
+		{
+			className="WW2_Assets_c_Weapons_InfantryWeapons_c";
+			name="WW2_Assets_c_Weapons_InfantryWeapons_c";
+		};
 		class Item17
+		{
+			className="WW2_Assets_s_Megagoth1702_Sounds_Config_CfgWeapons";
+			name="WW2_Assets_s_Megagoth1702_Sounds_Config_CfgWeapons";
+		};
+		class Item18
+		{
+			className="WW2_Assets_c_Weapons_Sounds_c";
+			name="WW2_Assets_c_Weapons_Sounds_c";
+			author="LAxemann";
+		};
+		class Item19
+		{
+			className="IFA3_COMP_ACE_main";
+			name="IFA3_COMP_ACE_main";
+			author="IFA3 team";
+			url="https://github.com/bux578/IFA3_ACE_COMPAT";
+		};
+		class Item20
+		{
+			className="WW2_Assets_c_Characters_Polish_c_GUER_PolishTroops_Gear";
+			name="WW2_Assets_c_Characters_Polish_c_GUER_PolishTroops_Gear";
+		};
+		class Item21
+		{
+			className="ace_medical_engine";
+			name="ACE3 - Medical Engine";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item22
+		{
+			className="ace_medical_treatment";
+			name="ACE3 - Medical Treatment";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item23
+		{
+			className="WW2_Core_c_WW2_Core_c_Eventhandlers";
+			name="WW2_Core_c_WW2_Core_c_Eventhandlers";
+		};
+		class Item24
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item25
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -208,7 +267,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -453,7 +512,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -609,6 +668,8 @@ class Mission
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
 		year=1944;
 		month=10;
 		day=11;
@@ -619,7 +680,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=163;
+		items=164;
 		class Item0
 		{
 			dataType="Marker";
@@ -653,7 +714,7 @@ class Mission
 			type="rectangle";
 			a=200;
 			b=100;
-			angle=28.489862;
+			angle=28.489861;
 			id=6;
 		};
 		class Item3
@@ -2109,46 +2170,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8399.792,291.99213,5956.5918};
-				angles[]={6.2818937,0,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="cajaVeh";
-			};
-			id=243;
-			type="CUP_hromada_beden_dekorativniX";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item107
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={8399.9658,292.8862,5952.1558};
 				angles[]={0.0012918708,0,0};
 			};
@@ -2184,7 +2205,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item108
+		class Item107
 		{
 			dataType="Marker";
 			position[]={4994.9111,338.98999,9944.5459};
@@ -2196,7 +2217,7 @@ class Mission
 			angle=239.93896;
 			id=251;
 		};
-		class Item109
+		class Item108
 		{
 			dataType="Marker";
 			position[]={2006.2531,546.06097,15795.008};
@@ -2205,7 +2226,7 @@ class Mission
 			id=252;
 			atlOffset=-0.00054931641;
 		};
-		class Item110
+		class Item109
 		{
 			dataType="Marker";
 			position[]={-342.49301,81.709999,1623.696};
@@ -2214,7 +2235,7 @@ class Mission
 			id=253;
 			atlOffset=-0.00051879883;
 		};
-		class Item111
+		class Item110
 		{
 			dataType="Marker";
 			position[]={24.003765,5.4127431,1591.2986};
@@ -2222,7 +2243,7 @@ class Mission
 			type="LIB_Faction_WEHRMACHT";
 			id=254;
 		};
-		class Item112
+		class Item111
 		{
 			dataType="Marker";
 			position[]={2294.031,512.60645,15317.179};
@@ -2231,7 +2252,7 @@ class Mission
 			id=255;
 			atlOffset=-5.895752;
 		};
-		class Item113
+		class Item112
 		{
 			dataType="Marker";
 			position[]={258.70099,5.3889999,1621.2531};
@@ -2241,7 +2262,7 @@ class Mission
 			id=256;
 			atlOffset=-0.00031852722;
 		};
-		class Item114
+		class Item113
 		{
 			dataType="Marker";
 			position[]={939.92346,5.7131801,2027.6239};
@@ -2251,7 +2272,7 @@ class Mission
 			id=257;
 			atlOffset=-0.00031852722;
 		};
-		class Item115
+		class Item114
 		{
 			dataType="Marker";
 			position[]={1598.9821,5.891304,2241.0452};
@@ -2261,7 +2282,7 @@ class Mission
 			id=258;
 			atlOffset=-1.4724927;
 		};
-		class Item116
+		class Item115
 		{
 			dataType="Marker";
 			position[]={3345.2864,5.6333976,2305.1523};
@@ -2271,7 +2292,7 @@ class Mission
 			id=259;
 			atlOffset=-0.00031852722;
 		};
-		class Item117
+		class Item116
 		{
 			dataType="Marker";
 			position[]={4090.6475,6.0570912,2612.2219};
@@ -2281,7 +2302,7 @@ class Mission
 			id=260;
 			atlOffset=-0.00031852722;
 		};
-		class Item118
+		class Item117
 		{
 			dataType="Marker";
 			position[]={2662.3796,121.82533,2974.5503};
@@ -2291,7 +2312,7 @@ class Mission
 			id=261;
 			atlOffset=-0.00032043457;
 		};
-		class Item119
+		class Item118
 		{
 			dataType="Marker";
 			position[]={1957.3148,140.93176,3838.4729};
@@ -2301,7 +2322,7 @@ class Mission
 			id=262;
 			atlOffset=-0.00032043457;
 		};
-		class Item120
+		class Item119
 		{
 			dataType="Marker";
 			position[]={2059.2329,200.65611,4674.1206};
@@ -2311,7 +2332,7 @@ class Mission
 			id=263;
 			atlOffset=-0.00032043457;
 		};
-		class Item121
+		class Item120
 		{
 			dataType="Marker";
 			position[]={2683.6555,231.61018,5758.2173};
@@ -2321,7 +2342,7 @@ class Mission
 			id=264;
 			atlOffset=-0.00032043457;
 		};
-		class Item122
+		class Item121
 		{
 			dataType="Marker";
 			position[]={2721.6721,362.37604,6704.5928};
@@ -2331,7 +2352,7 @@ class Mission
 			id=265;
 			atlOffset=-0.00030517578;
 		};
-		class Item123
+		class Item122
 		{
 			dataType="Marker";
 			position[]={3195.0691,290.06183,8138.4082};
@@ -2341,7 +2362,7 @@ class Mission
 			id=266;
 			atlOffset=-0.00030517578;
 		};
-		class Item124
+		class Item123
 		{
 			dataType="Marker";
 			position[]={2198.103,483.35318,15009.752};
@@ -2351,7 +2372,7 @@ class Mission
 			id=267;
 			atlOffset=-0.00030517578;
 		};
-		class Item125
+		class Item124
 		{
 			dataType="Marker";
 			position[]={1401.7804,410.37631,14147.957};
@@ -2361,7 +2382,7 @@ class Mission
 			id=268;
 			atlOffset=-0.00030517578;
 		};
-		class Item126
+		class Item125
 		{
 			dataType="Marker";
 			position[]={608.33936,374.29495,13812.72};
@@ -2371,7 +2392,7 @@ class Mission
 			id=269;
 			atlOffset=-0.00030517578;
 		};
-		class Item127
+		class Item126
 		{
 			dataType="Marker";
 			position[]={1703.2456,280.41479,12664.974};
@@ -2381,7 +2402,7 @@ class Mission
 			id=270;
 			atlOffset=-5.0085754;
 		};
-		class Item128
+		class Item127
 		{
 			dataType="Marker";
 			position[]={2122.0762,252.93306,11368.781};
@@ -2390,7 +2411,7 @@ class Mission
 			angle=152.50713;
 			id=271;
 		};
-		class Item129
+		class Item128
 		{
 			dataType="Marker";
 			position[]={2394.7847,273.40186,10390.532};
@@ -2400,7 +2421,7 @@ class Mission
 			id=272;
 			atlOffset=-0.00030517578;
 		};
-		class Item130
+		class Item129
 		{
 			dataType="Marker";
 			position[]={4460.8945,323.60547,8903.4063};
@@ -2410,7 +2431,7 @@ class Mission
 			id=273;
 			atlOffset=-0.00030517578;
 		};
-		class Item131
+		class Item130
 		{
 			dataType="Marker";
 			position[]={5525.1362,335.08444,8358.3604};
@@ -2420,7 +2441,7 @@ class Mission
 			id=274;
 			atlOffset=-0.00030517578;
 		};
-		class Item132
+		class Item131
 		{
 			dataType="Marker";
 			position[]={6894.6445,289.19427,7629.083};
@@ -2430,7 +2451,7 @@ class Mission
 			id=275;
 			atlOffset=-0.00030517578;
 		};
-		class Item133
+		class Item132
 		{
 			dataType="Marker";
 			position[]={5533.5454,5.7996817,2071.8228};
@@ -2440,7 +2461,7 @@ class Mission
 			id=276;
 			atlOffset=-0.00031852722;
 		};
-		class Item134
+		class Item133
 		{
 			dataType="Marker";
 			position[]={6643.0728,6.0210361,2931.645};
@@ -2450,7 +2471,7 @@ class Mission
 			id=277;
 			atlOffset=-0.00031852722;
 		};
-		class Item135
+		class Item134
 		{
 			dataType="Marker";
 			position[]={8412.9277,5.9941444,2937.2261};
@@ -2460,7 +2481,7 @@ class Mission
 			id=278;
 			atlOffset=-0.00031852722;
 		};
-		class Item136
+		class Item135
 		{
 			dataType="Marker";
 			position[]={9978.6836,5.9995394,2060.1489};
@@ -2470,7 +2491,7 @@ class Mission
 			id=279;
 			atlOffset=-0.00031852722;
 		};
-		class Item137
+		class Item136
 		{
 			dataType="Marker";
 			position[]={7092.5332,255.47208,6494.1597};
@@ -2480,7 +2501,7 @@ class Mission
 			id=280;
 			atlOffset=-0.00032043457;
 		};
-		class Item138
+		class Item137
 		{
 			dataType="Marker";
 			position[]={7521.0562,210.89975,5020.7319};
@@ -2490,7 +2511,7 @@ class Mission
 			id=281;
 			atlOffset=-0.00032043457;
 		};
-		class Item139
+		class Item138
 		{
 			dataType="Marker";
 			position[]={9039.4492,114.40299,4929.6533};
@@ -2500,7 +2521,7 @@ class Mission
 			id=282;
 			atlOffset=-0.00032043457;
 		};
-		class Item140
+		class Item139
 		{
 			dataType="Marker";
 			position[]={10161.726,69.612511,4084.5254};
@@ -2510,7 +2531,7 @@ class Mission
 			id=283;
 			atlOffset=-0.00032043457;
 		};
-		class Item141
+		class Item140
 		{
 			dataType="Marker";
 			position[]={11236.721,5.5773349,3253.1726};
@@ -2520,7 +2541,7 @@ class Mission
 			id=284;
 			atlOffset=-0.00031852722;
 		};
-		class Item142
+		class Item141
 		{
 			dataType="Marker";
 			position[]={13271.227,5.4616613,4017.5564};
@@ -2530,7 +2551,7 @@ class Mission
 			id=285;
 			atlOffset=-0.00031852722;
 		};
-		class Item143
+		class Item142
 		{
 			dataType="Marker";
 			position[]={13415.135,5.6989894,5928.4902};
@@ -2540,7 +2561,7 @@ class Mission
 			id=286;
 			atlOffset=-0.00031852722;
 		};
-		class Item144
+		class Item143
 		{
 			dataType="Marker";
 			position[]={13045.818,5.7396812,7838.7095};
@@ -2550,7 +2571,7 @@ class Mission
 			id=287;
 			atlOffset=-0.00031852722;
 		};
-		class Item145
+		class Item144
 		{
 			dataType="Marker";
 			position[]={11176.414,197.88971,12129.997};
@@ -2560,7 +2581,7 @@ class Mission
 			id=288;
 			atlOffset=-0.00032043457;
 		};
-		class Item146
+		class Item145
 		{
 			dataType="Marker";
 			position[]={10815.897,169.952,11012.247};
@@ -2570,7 +2591,7 @@ class Mission
 			id=289;
 			atlOffset=-0.00032043457;
 		};
-		class Item147
+		class Item146
 		{
 			dataType="Marker";
 			position[]={10475.061,114.88372,10000.765};
@@ -2580,7 +2601,7 @@ class Mission
 			id=290;
 			atlOffset=-0.00032043457;
 		};
-		class Item148
+		class Item147
 		{
 			dataType="Marker";
 			position[]={10389.865,164.69736,9223.4395};
@@ -2589,7 +2610,7 @@ class Mission
 			angle=152.52263;
 			id=291;
 		};
-		class Item149
+		class Item148
 		{
 			dataType="Marker";
 			position[]={9664.209,294.83313,8796.6426};
@@ -2599,7 +2620,7 @@ class Mission
 			id=292;
 			atlOffset=-0.00030517578;
 		};
-		class Item150
+		class Item149
 		{
 			dataType="Marker";
 			position[]={11262.418,101.19296,9363.6436};
@@ -2609,7 +2630,7 @@ class Mission
 			id=293;
 			atlOffset=-0.00032043457;
 		};
-		class Item151
+		class Item150
 		{
 			dataType="Marker";
 			position[]={12241.645,18.431227,9482.9922};
@@ -2619,7 +2640,7 @@ class Mission
 			id=294;
 			atlOffset=0.07661438;
 		};
-		class Item152
+		class Item151
 		{
 			dataType="Marker";
 			position[]={2190.8621,265.35001,10795.169};
@@ -2632,7 +2653,7 @@ class Mission
 			id=295;
 			atlOffset=0.00045776367;
 		};
-		class Item153
+		class Item152
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2649,7 +2670,7 @@ class Mission
 			type="LIB_FlagCarrier_SU";
 			atlOffset=0.062927246;
 		};
-		class Item154
+		class Item153
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2666,7 +2687,7 @@ class Mission
 			type="LIB_FlagCarrier_GER";
 			atlOffset=-0.098999023;
 		};
-		class Item155
+		class Item154
 		{
 			dataType="Group";
 			side="Independent";
@@ -2686,6 +2707,111 @@ class Mission
 					{
 						description="Officer @Rygor 1-1";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class handgun
+							{
+								name="LIB_FLARE_PISTOL";
+								class primaryMuzzleMag
+								{
+									name="LIB_1Rnd_flare_white";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=1;
+										ammoLeft=32;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MP40Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=5;
+										ammoLeft=32;
+									};
+									class Item1
+									{
+										name="LIB_M39";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="LIB_1Rnd_flare_white";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="LIB_1Rnd_flare_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="LIB_1Rnd_flare_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="LIB_1Rnd_flare_yellow";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=430;
 					type="LIB_WP_Sierzant";
@@ -2842,6 +2968,66 @@ class Mission
 					{
 						description="Radio Man";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_3";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=7;
+										ammoLeft=5;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_Kar98Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=4;
+										ammoLeft=5;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=432;
 					type="LIB_WP_Radioman";
@@ -2920,6 +3106,46 @@ class Mission
 					{
 						description="Machinegunner";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MGVest";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=433;
 					type="LIB_WP_Mgunner";
@@ -3155,6 +3381,62 @@ class Mission
 					{
 						description="Rifleman";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_STGVest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="LIB_Shg24";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=436;
 					type="LIB_WP_Stggunner";
@@ -3233,6 +3515,69 @@ class Mission
 					{
 						description="Sniper";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="LIB_M1908";
+								class primaryMuzzleMag
+								{
+									name="LIB_8Rnd_9x19_P08";
+									ammoLeft=8;
+								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_PL";
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_SniperBela";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_8Rnd_9x19_P08";
+										count=4;
+										ammoLeft=8;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=437;
 					type="LIB_WP_Sniper";
@@ -3328,7 +3673,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item156
+		class Item155
 		{
 			dataType="Group";
 			side="Independent";
@@ -3348,6 +3693,111 @@ class Mission
 					{
 						description="Officer @Rygor 1-2";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class handgun
+							{
+								name="LIB_FLARE_PISTOL";
+								class primaryMuzzleMag
+								{
+									name="LIB_1Rnd_flare_white";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=1;
+										ammoLeft=32;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MP40Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=5;
+										ammoLeft=32;
+									};
+									class Item1
+									{
+										name="LIB_M39";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="LIB_1Rnd_flare_white";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="LIB_1Rnd_flare_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="LIB_1Rnd_flare_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="LIB_1Rnd_flare_yellow";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=439;
 					type="LIB_WP_Sierzant";
@@ -3505,6 +3955,66 @@ class Mission
 					{
 						description="Radio Man";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_3";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=7;
+										ammoLeft=5;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_Kar98Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=4;
+										ammoLeft=5;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=441;
 					type="LIB_WP_Radioman";
@@ -3584,6 +4094,46 @@ class Mission
 					{
 						description="Machinegunner";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MGVest";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=442;
 					type="LIB_WP_Mgunner";
@@ -3821,6 +4371,62 @@ class Mission
 					{
 						description="Rifleman";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_STGVest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="LIB_Shg24";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=445;
 					type="LIB_WP_Stggunner";
@@ -3900,6 +4506,69 @@ class Mission
 					{
 						description="Sniper";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="LIB_M1908";
+								class primaryMuzzleMag
+								{
+									name="LIB_8Rnd_9x19_P08";
+									ammoLeft=8;
+								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_PL";
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_SniperBela";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_8Rnd_9x19_P08";
+										count=4;
+										ammoLeft=8;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=446;
 					type="LIB_WP_Sniper";
@@ -3995,7 +4664,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item157
+		class Item156
 		{
 			dataType="Group";
 			side="Independent";
@@ -4015,6 +4684,111 @@ class Mission
 					{
 						description="Officer @Rygor 1-3";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class handgun
+							{
+								name="LIB_FLARE_PISTOL";
+								class primaryMuzzleMag
+								{
+									name="LIB_1Rnd_flare_white";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=1;
+										ammoLeft=32;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MP40Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=5;
+										ammoLeft=32;
+									};
+									class Item1
+									{
+										name="LIB_M39";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="LIB_1Rnd_flare_white";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="LIB_1Rnd_flare_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="LIB_1Rnd_flare_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="LIB_1Rnd_flare_yellow";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=448;
 					type="LIB_WP_Sierzant";
@@ -4171,6 +4945,66 @@ class Mission
 					{
 						description="Radio Man";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_3";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=7;
+										ammoLeft=5;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_Kar98Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=4;
+										ammoLeft=5;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=450;
 					type="LIB_WP_Radioman";
@@ -4250,6 +5084,46 @@ class Mission
 					{
 						description="Machinegunner";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MGVest";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=451;
 					type="LIB_WP_Mgunner";
@@ -4484,6 +5358,62 @@ class Mission
 					{
 						description="Rifleman";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_STGVest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="LIB_Shg24";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=454;
 					type="LIB_WP_Stggunner";
@@ -4562,6 +5492,69 @@ class Mission
 					{
 						description="Sniper";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="LIB_M1908";
+								class primaryMuzzleMag
+								{
+									name="LIB_8Rnd_9x19_P08";
+									ammoLeft=8;
+								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_PL";
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_SniperBela";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_8Rnd_9x19_P08";
+										count=4;
+										ammoLeft=8;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=455;
 					type="LIB_WP_Sniper";
@@ -4656,7 +5649,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item158
+		class Item157
 		{
 			dataType="Group";
 			side="Independent";
@@ -4676,6 +5669,111 @@ class Mission
 					{
 						description="Officer @Rygor 1-4";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class handgun
+							{
+								name="LIB_FLARE_PISTOL";
+								class primaryMuzzleMag
+								{
+									name="LIB_1Rnd_flare_white";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=1;
+										ammoLeft=32;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MP40Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=5;
+										ammoLeft=32;
+									};
+									class Item1
+									{
+										name="LIB_M39";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="LIB_1Rnd_flare_white";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="LIB_1Rnd_flare_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="LIB_1Rnd_flare_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="LIB_1Rnd_flare_yellow";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=457;
 					type="LIB_WP_Sierzant";
@@ -4832,6 +5930,66 @@ class Mission
 					{
 						description="Radio Man";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_3";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=7;
+										ammoLeft=5;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_Kar98Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=4;
+										ammoLeft=5;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=459;
 					type="LIB_WP_Radioman";
@@ -4910,6 +6068,46 @@ class Mission
 					{
 						description="Machinegunner";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MGVest";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=460;
 					type="LIB_WP_Mgunner";
@@ -5144,6 +6342,62 @@ class Mission
 					{
 						description="Rifleman";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_STGVest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="LIB_Shg24";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=463;
 					type="LIB_WP_Stggunner";
@@ -5222,6 +6476,69 @@ class Mission
 					{
 						description="Sniper";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="LIB_M1908";
+								class primaryMuzzleMag
+								{
+									name="LIB_8Rnd_9x19_P08";
+									ammoLeft=8;
+								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_PL";
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_SniperBela";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_8Rnd_9x19_P08";
+										count=4;
+										ammoLeft=8;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=464;
 					type="LIB_WP_Sniper";
@@ -5316,7 +6633,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item159
+		class Item158
 		{
 			dataType="Group";
 			side="Independent";
@@ -5336,6 +6653,111 @@ class Mission
 					{
 						description="Officer @Rygor 1-5";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class handgun
+							{
+								name="LIB_FLARE_PISTOL";
+								class primaryMuzzleMag
+								{
+									name="LIB_1Rnd_flare_white";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=1;
+										ammoLeft=32;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MP40Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=5;
+										ammoLeft=32;
+									};
+									class Item1
+									{
+										name="LIB_M39";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="LIB_1Rnd_flare_white";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="LIB_1Rnd_flare_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="LIB_1Rnd_flare_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="LIB_1Rnd_flare_yellow";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=474;
 					type="LIB_WP_Sierzant";
@@ -5493,6 +6915,66 @@ class Mission
 					{
 						description="Radio Man";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_3";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=7;
+										ammoLeft=5;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_Kar98Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=4;
+										ammoLeft=5;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=476;
 					type="LIB_WP_Radioman";
@@ -5571,6 +7053,46 @@ class Mission
 					{
 						description="Machinegunner";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MGVest";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=477;
 					type="LIB_WP_Mgunner";
@@ -5805,6 +7327,62 @@ class Mission
 					{
 						description="Rifleman";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_STGVest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="LIB_Shg24";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=480;
 					type="LIB_WP_Stggunner";
@@ -5883,6 +7461,69 @@ class Mission
 					{
 						description="Sniper";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="LIB_M1908";
+								class primaryMuzzleMag
+								{
+									name="LIB_8Rnd_9x19_P08";
+									ammoLeft=8;
+								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_PL";
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_SniperBela";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_8Rnd_9x19_P08";
+										count=4;
+										ammoLeft=8;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=481;
 					type="LIB_WP_Sniper";
@@ -5977,7 +7618,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item160
+		class Item159
 		{
 			dataType="Group";
 			side="Independent";
@@ -5997,6 +7638,111 @@ class Mission
 					{
 						description="Officer @Rygor 1-6";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class handgun
+							{
+								name="LIB_FLARE_PISTOL";
+								class primaryMuzzleMag
+								{
+									name="LIB_1Rnd_flare_white";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=1;
+										ammoLeft=32;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MP40Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="LIB_32Rnd_9x19";
+										count=5;
+										ammoLeft=32;
+									};
+									class Item1
+									{
+										name="LIB_M39";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="LIB_1Rnd_flare_white";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="LIB_1Rnd_flare_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="LIB_1Rnd_flare_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="LIB_1Rnd_flare_yellow";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=483;
 					type="LIB_WP_Sierzant";
@@ -6153,6 +7899,66 @@ class Mission
 					{
 						description="Radio Man";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_3";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=7;
+										ammoLeft=5;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_Kar98Vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_5Rnd_792x57";
+										count=4;
+										ammoLeft=5;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=485;
 					type="LIB_WP_Radioman";
@@ -6231,6 +8037,46 @@ class Mission
 					{
 						description="Machinegunner";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_1";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_MGVest";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=486;
 					type="LIB_WP_Mgunner";
@@ -6387,6 +8233,69 @@ class Mission
 					{
 						description="Sniper";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_K98";
+								class primaryMuzzleMag
+								{
+									name="LIB_5Rnd_792x57";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="LIB_M1908";
+								class primaryMuzzleMag
+								{
+									name="LIB_8Rnd_9x19_P08";
+									ammoLeft=8;
+								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_PL";
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_SniperBela";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="LIB_8Rnd_9x19_P08";
+										count=4;
+										ammoLeft=8;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Cap";
+						};
 					};
 					id=488;
 					type="LIB_WP_Sniper";
@@ -6543,6 +8452,62 @@ class Mission
 					{
 						description="Rifleman";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="LIB_MP40";
+								class primaryMuzzleMag
+								{
+									name="LIB_32Rnd_9x19";
+									ammoLeft=32;
+								};
+							};
+							class uniform
+							{
+								typeName="U_LIB_WP_Soldier_camo_2";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="LIB_ACC_K98_Bayo";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_LIB_WP_STGVest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="LIB_Shg24";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="LIB_NB39";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_LIB_WP_Helmet";
+						};
 					};
 					id=490;
 					type="LIB_WP_Stggunner";
@@ -6637,7 +8602,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item161
+		class Item160
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6721,7 +8686,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Zeus";
+							value="Zeus (Mokka)";
 						};
 					};
 				};
@@ -6747,7 +8712,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item162
+		class Item161
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6800,16 +8765,166 @@ class Mission
 				nAttributes=2;
 			};
 		};
+		class Item162
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8378.7314,291.98999,5958.3828};
+				angles[]={0.0012915437,0,0};
+			};
+			id=670;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="QUOTE(LRG_Config_Zeus)";
+					expression="if (_value isequalto true) then {[_this] call LR_fnc_ConfigZeus;}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198068482436";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zeus (Tippers)";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item163
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8399.792,292.63531,5956.5918};
+				angles[]={6.2818937,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="cajaVeh";
+			};
+			id=671;
+			type="Land_PaperBox_closed_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=2;
+			nextID=3;
 		};
 		class Links
 		{
-			items=2;
+			items=3;
 			class Item0
 			{
 				linkID=0;
@@ -6825,6 +8940,16 @@ class Mission
 				linkID=1;
 				item0=669;
 				item1=668;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=670;
+				item1=669;
 				class CustomData
 				{
 					type="Sync";

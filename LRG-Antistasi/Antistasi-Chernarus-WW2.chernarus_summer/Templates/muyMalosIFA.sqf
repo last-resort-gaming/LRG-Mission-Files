@@ -46,7 +46,7 @@ vehCSATBike = "O_T_Quadbike_01_ghex_F";
 
 CSATFlag = "LIB_FlagCarrier_SU";
 CSATFlagTexture = "ww2\core_t\if_decals_t\ussr\flag_su_co.paa";
-CSATAmmoBox = "LIB_WeaponsBox_Big_SU";
+CSATAmmoBox = "LIB_SOV_MediumAmmoBox_Munitions";
 //cfgCSATInf = (configfile >> "CfgGroups" >> "East" >> "OPF_T_F" >> "Infantry");
 gruposCSATSentry = ["LIB_SOV_LC_rifleman_summer","LIB_SOV_rifleman"];///"O_T_InfSentry";///
 gruposCSATSniper = ["LIB_SOV_scout_sniper_autumn","LIB_SOV_scout_sergeant"];
