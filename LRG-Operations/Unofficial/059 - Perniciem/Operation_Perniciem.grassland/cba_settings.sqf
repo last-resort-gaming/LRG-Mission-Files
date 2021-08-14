@@ -580,7 +580,7 @@ force ace_nightvision_shutterEffects = true;
 
 force ace_overheating_displayTextOnJam = true;
 
-force ace_overheating_enabled = true;
+force ace_overheating_enabled = false;
 
 force ace_overheating_overheatingDispersion = true;
 
@@ -1326,26 +1326,6 @@ diwako_dui_use_layout_editor = false;
 
 
 
-// Freestyle's Crash Landing
-
-force fscl_captiveSystem = true;
-
-force fscl_damageTreshold = 99;
-
-fscl_debug = false;
-
-force fscl_ejectionProp = 33;
-
-force fscl_ejectionSystem = true;
-
-force fscl_gForceThreshold = 5;
-
-force fscl_ignoreNonPlayerVehicles = true;
-
-force fscl_stateThreshold = 50;
-
-
-
 // GRAD Trenches
 
 force grad_trenches_functions_allowBigEnvelope = false;
@@ -1501,26 +1481,6 @@ force lambs_main_radioGuer = 500;
 force lambs_main_radioShout = 100;
 
 force lambs_main_radioWest = 500;
-
-
-
-// LAxemann's Suppress
-
-force L_Suppress_buildup = 0.75;
-
-force L_Suppress_enabled = true;
-
-force L_Suppress_flyByEffects = true;
-
-force L_Suppress_flyByIntensity = 0.5;
-
-force L_Suppress_halting = true;
-
-force L_Suppress_intensity = 1;
-
-force L_Suppress_playerSwabEnabled = false;
-
-force L_Suppress_recovery = 1.25;
 
 
 
