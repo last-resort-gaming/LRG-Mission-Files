@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=674;
+		nextID=675;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8375.627,357.70364,5931.5996};
+		pos[]={8403.0664,348.96799,5916.7002};
 		dir[]={0.30165708,-0.88312942,0.35940036};
 		up[]={0.56776756,0.46910879,0.67644912};
 		aside[]={0.76598775,8.5821375e-007,-0.64292097};
@@ -58,13 +58,14 @@ addons[]=
 	"ace_medical_treatment",
 	"WW2_Core_c_WW2_Core_c_Eventhandlers",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Structures_F_EPA_Mil_Scrapyard"
+	"A3_Structures_F_EPA_Mil_Scrapyard",
+	"L_Suppress_Suppress_sys"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=26;
+		items=27;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -228,6 +229,12 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item26
+		{
+			className="L_Suppress_Suppress_sys";
+			name="L_Suppress_Suppress_sys";
+			author="LAxemann and jokoho482";
+		};
 	};
 };
 class DynamicSimulation
@@ -267,7 +274,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -489,30 +496,12 @@ class CustomAttributes
 							"ARRAY"
 						};
 					};
-					class value
-					{
-						items=1;
-						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="LRG_RespawnOnStartPosition";
-							};
-						};
-					};
 				};
 			};
 		};
 		nAttributes=2;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -680,7 +669,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=164;
+		items=165;
 		class Item0
 		{
 			dataType="Marker";
@@ -714,7 +703,7 @@ class Mission
 			type="rectangle";
 			a=200;
 			b=100;
-			angle=28.489861;
+			angle=28.489859;
 			id=6;
 		};
 		class Item3
@@ -8914,6 +8903,17 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item164
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8379.7158,292,5947.5093};
+				angles[]={0.0012918708,0,0};
+			};
+			id=674;
+			type="L_ModuleSuppress";
 		};
 	};
 	class Connections
