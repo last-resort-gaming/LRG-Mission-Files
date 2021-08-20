@@ -490,7 +490,7 @@ force ace_medical_treatment_locationEpinephrine = 0;
 
 force ace_medical_treatment_locationIV = 0;
 
-force ace_medical_treatment_locationPAK = 0;
+force ace_medical_treatment_locationPAK = 2;
 
 force ace_medical_treatment_locationsBoostTraining = false;
 
@@ -996,7 +996,7 @@ force adv_aceCPR_chance_0 = 5;
 
 force adv_aceCPR_chance_1 = 20;
 
-force adv_aceCPR_chance_2 = 50;
+force adv_aceCPR_chance_2 = 40;
 
 force adv_aceCPR_chance_aed = 60;
 
