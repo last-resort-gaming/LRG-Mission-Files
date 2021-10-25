@@ -1,0 +1,14 @@
+class CfgFunctions {
+    class LR_H {
+        tag = "LR_H";
+        class Main {
+            file = "Functions";
+
+            class preInit { preInit = 1;};
+            class initActions { postInit = 1;};
+            class borkNVGs {};
+            class borkNVGEH {};
+            class initBorkNVGs { postInit = 1; };
+        };
+    };
+};
