@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2624;
+		nextID=2655;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=104;
+		nextID=112;
 	};
 	class Camera
 	{
-		pos[]={9140.5215,16.789814,7613.7144};
-		dir[]={-0.051088814,-0.99092376,0.12437855};
-		up[]={-0.37649986,0.13443983,0.91660953};
-		aside[]={0.92501146,-2.4656765e-007,0.37995124};
+		pos[]={15965.914,125.35511,18429.412};
+		dir[]={-0.17532018,-0.98448825,0.0068069138};
+		up[]={-0.98374826,0.17544703,0.038194552};
+		aside[]={0.03879616,-1.5599653e-008,0.99924815};
 	};
 };
 binarizationWanted=0;
@@ -1091,7 +1091,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -1355,7 +1355,7 @@ class CustomAttributes
 		};
 		nAttributes=3;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -1942,7 +1942,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=969;
+		items=970;
 		class Item0
 		{
 			dataType="Logic";
@@ -49336,7 +49336,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[ " \n "    this, " \n "    [ " \n "         ""images\console_1.paa"" " \n "        ,""images\console_1.paa"" " \n "        ,[ " \n "             ""Ambrosia Message #1"" " \n "            ,""Brothers, it is time to act and drive out the filthy treacherous maggot<br/> that dares lives near our all precious homes. The time to act is now,<br/> for he is not privy to our all Master's revelations,  which are soon<br/> " \n "upon us.<br/> So I call upon you to take action, meet at the residence and set out in<br/> direction of the accursed wretch, strangle him and bring him here.<br/> Do not yet let him expire, for he will be of some use as a blood<br/> sacrifice to our great Master.<br/> Set forth and carry out His will, may Ambrosia envelop you."" " \n "        ] " \n "        ,""Brothers, it is time to act and drive out the filthy treacherous maggot<br/>that dares lives near our all precious homes. The time to act is now,<br/> for he is not privy to our all Master's revelations,  which are soon<br/> upon us.<br/> So I call upon you to take action, meet at the residence and set out in<br/> direction of the accursed wretch, strangle him and bring him here.<br/> Do not yet let him expire, for he will be of some use as a blood<br/> sacrifice to our great Master.<br/> Set forth and carry out His will, may Ambrosia envelop you."" " \n "        ,""Read Message"" " \n "        ,west " \n "        ,true " \n "    ] " \n "] call LR_fnc_initInspectableIntel;";
+				init="[ " \n "    this, " \n "    [ " \n "         ""images\console_1.paa"" " \n "        ,""images\console_1.paa"" " \n "        ,[ " \n "             ""Ambrosia Message #1"" " \n "            ,""Brothers, it is time to act and drive out the filthy treacherous maggot<br/> that dares lives near our all precious homes. The time to act is now,<br/> for he is not privy to our all Master's revelations,  which are soon<br/> upon us.<br/> So I call upon you to take action, meet at the residence and set out in<br/> direction of the accursed wretch, strangle him and bring him here.<br/> Do not yet let him expire, for he will be of some use as a blood<br/> sacrifice to our great Master.<br/> Set forth and carry out His will, may Ambrosia envelop you."" " \n "        ] " \n "        ,""Brothers, it is time to act and drive out the filthy treacherous maggot<br/>that dares lives near our all precious homes. The time to act is now,<br/> for he is not privy to our all Master's revelations,  which are soon<br/> upon us.<br/> So I call upon you to take action, meet at the residence and set out in<br/> direction of the accursed wretch, strangle him and bring him here.<br/> Do not yet let him expire, for he will be of some use as a blood<br/> sacrifice to our great Master.<br/> Set forth and carry out His will, may Ambrosia envelop you."" " \n "        ,""Read Message"" " \n "        ,west " \n "        ,true " \n "    ] " \n "] call LR_fnc_initInspectableIntel;";
 				dynamicSimulation=1;
 			};
 			id=1717;
@@ -73809,6 +73809,24 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item969
+		{
+			dataType="Trigger";
+			position[]={15977.052,18.387209,18486.1};
+			class Attributes
+			{
+				condition="player in thisList";
+				onActivation="[true] call LR_H_fnc_borkNVGs;";
+				onDeactivation="[false] call LR_H_fnc_borkNVGs;";
+				sizeA=750;
+				sizeB=750;
+				timeout[]={0,5,20};
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=2654;
+			type="EmptyDetector";
 		};
 	};
 	class Connections

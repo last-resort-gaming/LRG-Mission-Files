@@ -1056,7 +1056,7 @@ dev_parasite_specialChance = 0.5;
 
 // Necroplague Mutants
 force dev_cba_damageMultiplier = 1;
-dev_cba_friendly = "[""bis_unit1_f"", ""bis_unit2_f"", ""etc""]";
+dev_cba_friendly = "[""DSA_411"", ""DSA_Abomination"", ""DSA_Crazy"", ""DSA_ActiveIdol"", ""DSA_ActiveIdol2"", ""DSA_Hatman"", ""DSA_Mindflayer"", ""DSA_Rake"", ""DSA_Shadowman"", ""DSA_Snatcher"", ""DSA_Vampire"", ""DSA_Wendigo"", ""C_man_polo_1_F_euro"", ""C_Soldier_VR_F""]";
 dev_cba_friendlySide = false;
 dev_cba_infection = true;
 dev_cba_infection_prolongTime = 900;
