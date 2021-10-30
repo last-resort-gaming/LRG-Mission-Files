@@ -6,7 +6,7 @@ if (_bork) then {
 
 	LR_NVGsBorked = true;
 
-	systemChat "NVGs Borked!";
+	//systemChat "NVGs Borked!";
 
 	_nul = [] spawn {
 
@@ -26,7 +26,7 @@ if (not _bork) then {
 
 	LR_NVGsBorked = false;
 
-	systemChat "NVGs unborked!";
+	//systemChat "NVGs unborked!";
 
 	_nul = [] spawn {
 

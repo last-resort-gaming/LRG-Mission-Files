@@ -962,7 +962,7 @@ dev_zombie_attack_launchVeh = "[0,1,1]";
 dev_zombie_attackDistanceMan = 3.5;
 dev_zombie_attackDistanceVeh = 5.5;
 dev_zombie_attackTimeout = 0.5;
-dev_zombie_damageMan = 0.125;
+dev_zombie_damageMan = 0.25;
 dev_zombie_damageVeh = 0.001;
 dev_zombie_greenEyes = true;
 dev_zombie_healthModifier = 1;
@@ -1055,7 +1055,7 @@ dev_parasite_maxDistance = 2000;
 dev_parasite_specialChance = 0.5;
 
 // Necroplague Mutants
-force dev_cba_damageMultiplier = 0.7;
+force dev_cba_damageMultiplier = 1;
 dev_cba_friendly = "[""bis_unit1_f"", ""bis_unit2_f"", ""etc""]";
 dev_cba_friendlySide = false;
 dev_cba_infection = true;
