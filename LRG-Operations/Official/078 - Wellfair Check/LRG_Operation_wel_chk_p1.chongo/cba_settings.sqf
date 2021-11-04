@@ -614,11 +614,21 @@ force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
 
+force ace_overheating_cookoffCoef = 0;
+
 force ace_overheating_displayTextOnJam = true;
 
 force ace_overheating_enabled = true;
 
+force ace_overheating_heatCoef = 1;
+
+force ace_overheating_jamChanceCoef = 1;
+
 force ace_overheating_overheatingDispersion = true;
+
+force ace_overheating_overheatingRateOfFire = true;
+
+ace_overheating_particleEffectsAndDispersionDistance = 3000;
 
 force ace_overheating_showParticleEffects = true;
 
@@ -627,6 +637,8 @@ force ace_overheating_showParticleEffectsForEveryone = false;
 force ace_overheating_unJamFailChance = 0.1;
 
 force ace_overheating_unJamOnreload = false;
+
+force ace_overheating_unJamOnSwapBarrel = false;
 
 
 
@@ -925,6 +937,7 @@ force ace_zeus_revealMines = 0;
 force ace_zeus_zeusAscension = false;
 
 force ace_zeus_zeusBird = false;
+
 
 
 // ACE Field Rations
@@ -1580,7 +1593,7 @@ force LRG_Channels_GlobalVoice = false;
 
 force LRG_Channels_GroupDuration = 0;
 
-force LRG_Channels_GroupText = false;
+force LRG_Channels_GroupText = true;
 
 force LRG_Channels_GroupVoice = false;
 
