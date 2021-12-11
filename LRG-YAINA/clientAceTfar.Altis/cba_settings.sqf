@@ -472,9 +472,9 @@ force force ace_medical_painCoefficient = 0.4;
 
 force force ace_medical_painUnconsciousChance = 0.1;
 
-force force ace_medical_playerDamageThreshold = 2.5;
+force force ace_medical_playerDamageThreshold = 2.0;
 
-force force ace_medical_spontaneousWakeUpChance = 0.7;
+force force ace_medical_spontaneousWakeUpChance = 0.6;
 
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 2.5;
 
