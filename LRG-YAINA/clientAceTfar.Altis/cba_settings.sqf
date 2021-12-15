@@ -388,7 +388,7 @@ force force ace_medical_ai_enabledFor = 2;
 
 force force ace_medical_AIDamageThreshold = 0.1;
 
-force force ace_medical_bleedingCoefficient = 0.3;
+force force ace_medical_bleedingCoefficient = 0.2;
 
 force force ace_medical_blood_bloodLifetime = 300;
 
@@ -408,7 +408,7 @@ force force ace_medical_feedback_enableHUDIndicators = true;
 
 force force ace_medical_feedback_painEffectType = 2;
 
-force force ace_medical_fractureChance = 0.8;
+force force ace_medical_fractureChance = 0.0;
 
 force force ace_medical_fractures = 0;
 
@@ -474,7 +474,7 @@ force force ace_medical_painUnconsciousChance = 0.1;
 
 force force ace_medical_playerDamageThreshold = 2.0;
 
-force force ace_medical_spontaneousWakeUpChance = 0.6;
+force force ace_medical_spontaneousWakeUpChance = 0.5;
 
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 2.5;
 
