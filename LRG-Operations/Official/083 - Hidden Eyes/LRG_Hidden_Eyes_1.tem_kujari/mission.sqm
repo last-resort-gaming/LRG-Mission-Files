@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=10984;
+		nextID=11018;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2268;
+		nextID=2348;
 	};
 	class Camera
 	{
-		pos[]={12140.314,40.345375,15115.774};
-		dir[]={-0.74638832,-0.44585833,-0.49416479};
-		up[]={-0.37179235,0.89507931,-0.24615374};
-		aside[]={-0.55206722,-4.4936314e-008,0.83384478};
+		pos[]={10401.767,36.712505,7228.1118};
+		dir[]={-0.38899174,-0.38968584,0.83476418};
+		up[]={-0.16459629,0.92094713,0.35321838};
+		aside[]={0.90641809,-3.9697625e-008,0.42238158};
 	};
 };
 binarizationWanted=0;
@@ -275,13 +275,15 @@ addons[]=
 	"CUP_Creatures_Military_TakiInsurgents",
 	"CUP_WheeledVehicles_Datsun",
 	"CUP_WheeledVehicles_Pickup",
-	"tfar_antennas"
+	"tfar_antennas",
+	"po_factions_eu",
+	"CUP_Creatures_Military_USMC"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=153;
+		items=155;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -1265,6 +1267,17 @@ class AddonsMetaData
 			name="tfar_antennas";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
+		class Item153
+		{
+			className="po_factions_eu";
+			name="po_factions_eu";
+			author="Leight, Keeway";
+		};
+		class Item154
+		{
+			className="CUP_Creatures_Military_USMC";
+			name="CUP_Creatures_Military_USMC";
+		};
 	};
 };
 class DynamicSimulation
@@ -1331,7 +1344,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -1372,7 +1385,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -1446,7 +1459,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=396;
+		items=388;
 		class Item0
 		{
 			dataType="Logic";
@@ -28564,7 +28577,6 @@ class Mission
 											flags=4;
 											class Attributes
 											{
-												init="call{this setObjectTexture [0,""images\recruit.paa""]; this addAction[""<t color='#ff9900'>Squad Management</t>"", ""bon_recruit_units\open_dialog.sqf""];}";
 												dynamicSimulation=1;
 											};
 											id=6994;
@@ -114933,7 +114945,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11779.181,22.134563,15086.618};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115012,7 +115024,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11776.098,21.692593,15087.861};
-				angles[]={-0,4.635828,0};
+				angles[]={0,4.635828,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115029,7 +115041,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11776.088,21.814348,15087.087};
-				angles[]={-0,4.6514463,0};
+				angles[]={0,4.6514463,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115046,7 +115058,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11781.359,21.803165,15090.478};
-				angles[]={-0,3.7088976,0};
+				angles[]={0,3.7088976,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115063,7 +115075,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11782.251,20.933071,15089.707};
-				angles[]={-0,4.2313757,0};
+				angles[]={0,4.2313757,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115080,7 +115092,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11782.342,22.137009,15088.041};
-				angles[]={-0,4.8728733,0};
+				angles[]={0,4.8728733,0};
 			};
 			side="Empty";
 			class Attributes
@@ -115097,7 +115109,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11776.122,21.836479,15088.722};
-				angles[]={-0,4.705966,0};
+				angles[]={0,4.705966,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115114,7 +115126,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11776.095,21.492073,15089.372};
-				angles[]={-0,4.6254272,0};
+				angles[]={0,4.6254272,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115148,7 +115160,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11776.065,21.203888,15087.88};
-				angles[]={-0,4.7232695,0};
+				angles[]={0,4.7232695,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115165,7 +115177,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11780.689,21.177948,15090.826};
-				angles[]={-0,0.18420933,0};
+				angles[]={0,0.18420933,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115182,7 +115194,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11782.356,21.203888,15087.873};
-				angles[]={-0,1.5816765,0};
+				angles[]={0,1.5816765,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115199,7 +115211,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11782.333,21.89702,15088.584};
-				angles[]={-0,1.5275574,0};
+				angles[]={0,1.5275574,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115216,7 +115228,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11776.107,21.141529,15090.356};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115256,7 +115268,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11779.121,21.803165,15082.611};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115273,7 +115285,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11782.263,20.909094,15090.555};
-				angles[]={-0,3.937871,0};
+				angles[]={0,3.937871,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115290,7 +115302,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11776.786,21.803165,15083.467};
-				angles[]={-0,0.79627848,0};
+				angles[]={0,0.79627848,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115307,7 +115319,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11781.497,21.803165,15083.407};
-				angles[]={-0,5.5086689,0};
+				angles[]={0,5.5086689,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115324,7 +115336,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11775.939,21.803165,15085.642};
-				angles[]={-0,1.5816765,0};
+				angles[]={0,1.5816765,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115341,7 +115353,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11782.435,21.803165,15085.564};
-				angles[]={-0,4.7232695,0};
+				angles[]={0,4.7232695,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115358,7 +115370,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11779.241,20.76,15086.642};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115375,7 +115387,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11782.471,21.678911,15087.346};
-				angles[]={-0,0.010879993,0};
+				angles[]={0,0.010879993,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115392,7 +115404,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11782.364,21.836479,15087.009};
-				angles[]={-0,1.5643735,0};
+				angles[]={0,1.5643735,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115409,7 +115421,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11782.327,21.692593,15087.712};
-				angles[]={-0,1.494235,0};
+				angles[]={0,1.494235,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115426,7 +115438,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11785.029,20.76,15086.516};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			id=10256;
 			type="LRG_ModuleStationaryRadio";
@@ -115555,7 +115567,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11773.052,20.76,15088.646};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			id=10257;
 			type="LRG_ModuleStationaryRadio";
@@ -115684,7 +115696,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11773.084,22.801458,15091.646};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			side="Empty";
 			flags=4;
@@ -115701,7 +115713,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11779.095,20.76,15092.581};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			id=10259;
 			type="LRG_ModuleSingleScreen";
@@ -115792,7 +115804,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11785.051,20.76,15088.516};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			id=10260;
 			type="LRG_ModuleMultiScreen";
@@ -115883,7 +115895,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11773.03,20.76,15086.646};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			id=10261;
 			type="LRG_ModuleSingleScreen";
@@ -115974,7 +115986,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11773.073,20.76,15090.646};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			id=10262;
 			type="LRG_ModuleCommsTower";
@@ -115985,7 +115997,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11779.206,20.76,15094.567};
-				angles[]={-0,0.01088047,0};
+				angles[]={0,0.01088047,0};
 			};
 			id=10263;
 			type="LRG_ModuleVehicleCam";
@@ -143017,6272 +143029,6 @@ class Mission
 		};
 		class Item211
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={6693.877,11.670372,6358.5181};
-			};
-			id=10727;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item212
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8991.0283,13.084211,6185.5557};
-			};
-			id=10728;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item213
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10038.861,13.208035,7978.5615};
-			};
-			id=10729;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item214
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={9088.0674,12.256792,9053.7051};
-			};
-			id=10730;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item215
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={6661.793,10.972265,8879.3164};
-			};
-			id=10731;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item216
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={5754.5684,17.951147,9227.3984};
-			};
-			id=10732;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item217
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={3944.0171,24.141407,8701.4043};
-			};
-			id=10733;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item218
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4155.8643,13.123733,6635.8467};
-			};
-			id=10734;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item219
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={7036.3413,23.128483,11569.489};
-			};
-			id=10735;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item220
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={11263.741,22.905405,5401.4282};
-				angles[]={6.218699,0,6.2654653};
-			};
-			id=10736;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item221
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={6749.1016,21.641739,10312.814};
-			};
-			id=10737;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item222
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={6022.4526,23.677687,10533.374};
-			};
-			id=10738;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item223
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={5318.0317,19.188639,10653.057};
-			};
-			id=10739;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item224
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={5829.2495,17.210726,11849.89};
-			};
-			id=10740;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item225
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8951.2744,18.923557,12058.48};
-			};
-			id=10741;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item226
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={9056.252,19.32412,14368.169};
-			};
-			id=10742;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item227
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={5555.4033,16.034512,14384.748};
-			};
-			id=10743;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item228
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12910.779,12.978728,14105.675};
-			};
-			id=10744;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item229
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={13105.922,13.671224,14155.626};
-			};
-			id=10745;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item230
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={11825.311,5.7214308,13642.697};
-			};
-			id=10746;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item231
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={15071.115,10.395733,10869.912};
-			};
-			id=10747;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item232
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={15090.159,10.389915,10790.564};
-			};
-			id=10748;
-			type="LRG_ModuleCivilianSpawns";
-			atlOffset=9.5367432e-007;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item233
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12650.824,14.379365,5708.2334};
-			};
-			id=10750;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item234
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={11338.327,15.799299,5402.6328};
-			};
-			id=10751;
-			type="LRG_ModuleCivilianSpawns";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LR_AI_CivVehPaarkedMax";
-					expression="_this setVariable ['CivVehParkedMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="LR_AI_CivVehPatrolsMin";
-					expression="_this setVariable ['CivVehPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="LR_AI_Radius";
-					expression="_this setVariable ['Radius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=200;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="LR_AI_CivPedPatrolsMax";
-					expression="_this setVariable ['CivPedPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LR_AI_GarRadius";
-					expression="_this setVariable ['GarrRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LR_AI_CivPedPatrolsMin";
-					expression="_this setVariable ['CivPedPatrolsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LR_AI_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="civilian";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="LR_AI_GarrisonedUnitsMax";
-					expression="_this setVariable ['GarrisonedUnitsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="LR_AI_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CFP_C_AFRCHRISTIAN";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="LR_AI_ObjName";
-					expression="_this setVariable ['ObjName',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Objective 1";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="LR_AI_CivVehPatrolsMax";
-					expression="_this setVariable ['CivVehPatrolsMax',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="LR_AI_GarrisonedUnitsMin";
-					expression="_this setVariable ['GarrisonedUnitsMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="LR_AI_CivVehParkedMin";
-					expression="_this setVariable ['CivVehParkedMin',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item235
-		{
 			dataType="Marker";
 			position[]={1724.2531,1.987,6975.1431};
 			name="marker_45";
@@ -149292,7 +143038,7 @@ class Mission
 			id=10752;
 			atlOffset=-0.00026071072;
 		};
-		class Item236
+		class Item212
 		{
 			dataType="Marker";
 			position[]={2359.7668,-3.7095528,6778.9619};
@@ -149303,7 +143049,7 @@ class Mission
 			id=10753;
 			atlOffset=-0.00026082993;
 		};
-		class Item237
+		class Item213
 		{
 			dataType="Marker";
 			position[]={1948.0645,0.62422484,6088.1846};
@@ -149314,7 +143060,7 @@ class Mission
 			id=10754;
 			atlOffset=-0.00026071072;
 		};
-		class Item238
+		class Item214
 		{
 			dataType="Marker";
 			position[]={1832.0139,5.6553354,5477.5391};
@@ -149325,7 +143071,7 @@ class Mission
 			id=10755;
 			atlOffset=-0.00026082993;
 		};
-		class Item239
+		class Item215
 		{
 			dataType="Marker";
 			position[]={2238.1907,-1.6678016,5176.3604};
@@ -149336,7 +143082,7 @@ class Mission
 			id=10756;
 			atlOffset=-0.00026071072;
 		};
-		class Item240
+		class Item216
 		{
 			dataType="Marker";
 			position[]={2652.6563,3.7102513,5643.3252};
@@ -149347,7 +143093,7 @@ class Mission
 			id=10757;
 			atlOffset=-0.00026059151;
 		};
-		class Item241
+		class Item217
 		{
 			dataType="Marker";
 			position[]={3169.3567,-4.3261428,5458.1973};
@@ -149358,7 +143104,7 @@ class Mission
 			id=10758;
 			atlOffset=-0.00026082993;
 		};
-		class Item242
+		class Item218
 		{
 			dataType="Marker";
 			position[]={3719.2153,-6.0334225,5093.4668};
@@ -149369,7 +143115,7 @@ class Mission
 			id=10759;
 			atlOffset=-0.00026082993;
 		};
-		class Item243
+		class Item219
 		{
 			dataType="Marker";
 			position[]={4327.0981,5.5946608,5060.3096};
@@ -149380,7 +143126,7 @@ class Mission
 			id=10760;
 			atlOffset=-0.00026082993;
 		};
-		class Item244
+		class Item220
 		{
 			dataType="Marker";
 			position[]={4918.4023,-1.777534,5430.5654};
@@ -149391,7 +143137,7 @@ class Mission
 			id=10761;
 			atlOffset=-0.00026071072;
 		};
-		class Item245
+		class Item221
 		{
 			dataType="Marker";
 			position[]={5584.312,-1.3341891,5831.2158};
@@ -149402,7 +143148,7 @@ class Mission
 			id=10762;
 			atlOffset=1.1612123;
 		};
-		class Item246
+		class Item222
 		{
 			dataType="Marker";
 			position[]={6573.5024,-2.6401095,5687.5342};
@@ -149413,7 +143159,7 @@ class Mission
 			id=10763;
 			atlOffset=-0.00026059151;
 		};
-		class Item247
+		class Item223
 		{
 			dataType="Marker";
 			position[]={7275.3311,-3.7531843,5259.252};
@@ -149424,7 +143170,7 @@ class Mission
 			id=10764;
 			atlOffset=-0.00026059151;
 		};
-		class Item248
+		class Item224
 		{
 			dataType="Marker";
 			position[]={8153.999,1.7375591,5043.7295};
@@ -149435,7 +143181,7 @@ class Mission
 			id=10765;
 			atlOffset=-0.00026071072;
 		};
-		class Item249
+		class Item225
 		{
 			dataType="Marker";
 			position[]={9317.2676,-2.5653729,4770.1816};
@@ -149446,7 +143192,7 @@ class Mission
 			id=10766;
 			atlOffset=-0.00026082993;
 		};
-		class Item250
+		class Item226
 		{
 			dataType="Marker";
 			position[]={10187.646,-1.0753955,5098.9912};
@@ -149457,7 +143203,7 @@ class Mission
 			id=10767;
 			atlOffset=-0.00027620792;
 		};
-		class Item251
+		class Item227
 		{
 			dataType="Marker";
 			position[]={11212.758,-0.19885689,4924.915};
@@ -149468,7 +143214,7 @@ class Mission
 			id=10768;
 			atlOffset=-0.00026071072;
 		};
-		class Item252
+		class Item228
 		{
 			dataType="Marker";
 			position[]={12182.608,4.7434158,4419.2666};
@@ -149479,7 +143225,7 @@ class Mission
 			id=10769;
 			atlOffset=-0.00026082993;
 		};
-		class Item253
+		class Item229
 		{
 			dataType="Marker";
 			position[]={12826.411,4.7682328,3916.3818};
@@ -149490,7 +143236,7 @@ class Mission
 			id=10770;
 			atlOffset=-0.00026082993;
 		};
-		class Item254
+		class Item230
 		{
 			dataType="Marker";
 			position[]={13155.221,-1.5430635,3369.2871};
@@ -149501,7 +143247,7 @@ class Mission
 			id=10771;
 			atlOffset=-0.00026071072;
 		};
-		class Item255
+		class Item231
 		{
 			dataType="Marker";
 			position[]={13660.87,1.8349053,3590.335};
@@ -149512,7 +143258,7 @@ class Mission
 			id=10772;
 			atlOffset=-0.00026071072;
 		};
-		class Item256
+		class Item232
 		{
 			dataType="Marker";
 			position[]={14097.44,6.0194459,4234.1387};
@@ -149523,7 +143269,7 @@ class Mission
 			id=10773;
 			atlOffset=-0.00026082993;
 		};
-		class Item257
+		class Item233
 		{
 			dataType="Marker";
 			position[]={14299.146,4.6619611,4789.5234};
@@ -149534,7 +143280,7 @@ class Mission
 			id=10774;
 			atlOffset=-0.00026082993;
 		};
-		class Item258
+		class Item234
 		{
 			dataType="Marker";
 			position[]={13857.05,0.60336405,5593.5869};
@@ -149545,7 +143291,7 @@ class Mission
 			id=10775;
 			atlOffset=-0.00026071072;
 		};
-		class Item259
+		class Item235
 		{
 			dataType="Marker";
 			position[]={13605.608,16.761129,6455.6748};
@@ -149556,7 +143302,7 @@ class Mission
 			id=10776;
 			atlOffset=-0.00026130676;
 		};
-		class Item260
+		class Item236
 		{
 			dataType="Marker";
 			position[]={13351.402,18.540365,7254.2119};
@@ -149567,7 +143313,7 @@ class Mission
 			id=10777;
 			atlOffset=-0.00026130676;
 		};
-		class Item261
+		class Item237
 		{
 			dataType="Marker";
 			position[]={13439.821,9.2727766,7862.0957};
@@ -149578,7 +143324,7 @@ class Mission
 			id=10778;
 			atlOffset=-0.00026035309;
 		};
-		class Item262
+		class Item238
 		{
 			dataType="Marker";
 			position[]={13937.181,15.552879,8113.5381};
@@ -149589,7 +143335,7 @@ class Mission
 			id=10779;
 			atlOffset=-0.00026035309;
 		};
-		class Item263
+		class Item239
 		{
 			dataType="Marker";
 			position[]={14553.353,9.0789137,7917.3574};
@@ -149600,7 +143346,7 @@ class Mission
 			id=10780;
 			atlOffset=-0.00026035309;
 		};
-		class Item264
+		class Item240
 		{
 			dataType="Marker";
 			position[]={15047.949,16.445284,7618.9424};
@@ -149611,7 +143357,7 @@ class Mission
 			id=10781;
 			atlOffset=-0.00026130676;
 		};
-		class Item265
+		class Item241
 		{
 			dataType="Marker";
 			position[]={15034.134,0,8201.958};
@@ -149622,7 +143368,7 @@ class Mission
 			id=10782;
 			atlOffset=1.5487517;
 		};
-		class Item266
+		class Item242
 		{
 			dataType="Marker";
 			position[]={15433.485,4.2201905,8827.7617};
@@ -149633,7 +143379,7 @@ class Mission
 			id=10783;
 			atlOffset=-0.00026082993;
 		};
-		class Item267
+		class Item243
 		{
 			dataType="Marker";
 			position[]={15886.572,-3.3263545,9294.5273};
@@ -149644,7 +143390,7 @@ class Mission
 			id=10784;
 			atlOffset=-0.00026082993;
 		};
-		class Item268
+		class Item244
 		{
 			dataType="Marker";
 			position[]={15783.478,2.3039289,10619.176};
@@ -149655,7 +143401,7 @@ class Mission
 			id=10785;
 			atlOffset=-0.00026059151;
 		};
-		class Item269
+		class Item245
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -150144,7 +143890,7 @@ class Mission
 				nAttributes=25;
 			};
 		};
-		class Item270
+		class Item246
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -150633,7 +144379,7 @@ class Mission
 				nAttributes=25;
 			};
 		};
-		class Item271
+		class Item247
 		{
 			dataType="Marker";
 			position[]={5806.4727,0,5921.5107};
@@ -150644,7 +144390,7 @@ class Mission
 			id=10788;
 			atlOffset=0.15676239;
 		};
-		class Item272
+		class Item248
 		{
 			dataType="Marker";
 			position[]={3012.7185,2.6375308,5517.6191};
@@ -150655,7 +144401,7 @@ class Mission
 			id=10789;
 			atlOffset=0.15676236;
 		};
-		class Item273
+		class Item249
 		{
 			dataType="Object";
 			class PositionInfo
@@ -150793,7 +144539,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item274
+		class Item250
 		{
 			dataType="Object";
 			class PositionInfo
@@ -150893,7 +144639,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item275
+		class Item251
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151031,7 +144777,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item276
+		class Item252
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151072,7 +144818,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item277
+		class Item253
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -151128,7 +144874,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item278
+		class Item254
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151169,7 +144915,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item279
+		class Item255
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151211,7 +144957,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item280
+		class Item256
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151253,7 +144999,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item281
+		class Item257
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151294,7 +145040,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item282
+		class Item258
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151335,7 +145081,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item283
+		class Item259
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151377,7 +145123,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item284
+		class Item260
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151419,7 +145165,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item285
+		class Item261
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151460,7 +145206,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item286
+		class Item262
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151501,7 +145247,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item287
+		class Item263
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151543,7 +145289,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item288
+		class Item264
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151584,7 +145330,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item289
+		class Item265
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151625,7 +145371,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item290
+		class Item266
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151666,7 +145412,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item291
+		class Item267
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151708,7 +145454,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item292
+		class Item268
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151724,7 +145470,7 @@ class Mission
 			id=10821;
 			type="LOP_BH_Landrover";
 		};
-		class Item293
+		class Item269
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151741,7 +145487,7 @@ class Mission
 			type="CUP_I_UAZ_Open_UN";
 			atlOffset=-2.2888184e-005;
 		};
-		class Item294
+		class Item270
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151758,7 +145504,7 @@ class Mission
 			type="CUP_I_SUV_ION";
 			atlOffset=-9.3460083e-005;
 		};
-		class Item295
+		class Item271
 		{
 			dataType="Group";
 			side="Civilian";
@@ -151881,7 +145627,7 @@ class Mission
 			};
 			id=10840;
 		};
-		class Item296
+		class Item272
 		{
 			dataType="Group";
 			side="Civilian";
@@ -151984,7 +145730,7 @@ class Mission
 			};
 			id=10842;
 		};
-		class Item297
+		class Item273
 		{
 			dataType="Group";
 			side="Civilian";
@@ -152087,7 +145833,7 @@ class Mission
 			};
 			id=10844;
 		};
-		class Item298
+		class Item274
 		{
 			dataType="Group";
 			side="Civilian";
@@ -152191,7 +145937,7 @@ class Mission
 			};
 			id=10846;
 		};
-		class Item299
+		class Item275
 		{
 			dataType="Object";
 			class PositionInfo
@@ -152207,7 +145953,7 @@ class Mission
 			id=10848;
 			type="Land_CampingTable_small_F";
 		};
-		class Item300
+		class Item276
 		{
 			dataType="Object";
 			class PositionInfo
@@ -152249,7 +145995,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item301
+		class Item277
 		{
 			dataType="Object";
 			class PositionInfo
@@ -152291,7 +146037,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item302
+		class Item278
 		{
 			dataType="Object";
 			class PositionInfo
@@ -152308,7 +146054,7 @@ class Mission
 			type="Land_PlasticCase_01_small_black_F";
 			atlOffset=-2.4795532e-005;
 		};
-		class Item303
+		class Item279
 		{
 			dataType="Trigger";
 			position[]={11263.627,22.923639,5401.6792};
@@ -152324,7 +146070,7 @@ class Mission
 			type="EmptyDetectorArea10x10";
 			atlOffset=1.9073486e-006;
 		};
-		class Item304
+		class Item280
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -152548,7 +146294,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item305
+		class Item281
 		{
 			dataType="Group";
 			side="East";
@@ -152635,7 +146381,7 @@ class Mission
 			};
 			id=10864;
 		};
-		class Item306
+		class Item282
 		{
 			dataType="Object";
 			class PositionInfo
@@ -152651,7 +146397,7 @@ class Mission
 			type="lop_Flag_isis_F";
 			atlOffset=-5;
 		};
-		class Item307
+		class Item283
 		{
 			dataType="Object";
 			class PositionInfo
@@ -152667,7 +146413,7 @@ class Mission
 			type="lop_Flag_isis_F";
 			atlOffset=-5;
 		};
-		class Item308
+		class Item284
 		{
 			dataType="Object";
 			class PositionInfo
@@ -152684,7 +146430,7 @@ class Mission
 			type="Camera1";
 			atlOffset=-2.8610229e-005;
 		};
-		class Item309
+		class Item285
 		{
 			dataType="Group";
 			side="Civilian";
@@ -152757,7 +146503,7 @@ class Mission
 			};
 			id=10876;
 		};
-		class Item310
+		class Item286
 		{
 			dataType="Group";
 			side="Civilian";
@@ -152829,7 +146575,7 @@ class Mission
 			};
 			id=10878;
 		};
-		class Item311
+		class Item287
 		{
 			dataType="Group";
 			side="East";
@@ -153097,7 +146843,7 @@ class Mission
 			};
 			id=10880;
 		};
-		class Item312
+		class Item288
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153113,7 +146859,7 @@ class Mission
 			id=10882;
 			type="BloodPool_01_Large_New_F";
 		};
-		class Item313
+		class Item289
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153129,7 +146875,7 @@ class Mission
 			id=10883;
 			type="BloodPool_01_Large_New_F";
 		};
-		class Item314
+		class Item290
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153145,7 +146891,7 @@ class Mission
 			id=10884;
 			type="BloodSplatter_01_Medium_New_F";
 		};
-		class Item315
+		class Item291
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153161,7 +146907,7 @@ class Mission
 			id=10885;
 			type="BloodPool_01_Medium_New_F";
 		};
-		class Item316
+		class Item292
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153177,7 +146923,7 @@ class Mission
 			id=10886;
 			type="BloodTrail_01_Old_F";
 		};
-		class Item317
+		class Item293
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153193,7 +146939,7 @@ class Mission
 			id=10887;
 			type="BloodTrail_01_Old_F";
 		};
-		class Item318
+		class Item294
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153209,7 +146955,7 @@ class Mission
 			id=10888;
 			type="BloodTrail_01_Old_F";
 		};
-		class Item319
+		class Item295
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153225,7 +146971,7 @@ class Mission
 			id=10889;
 			type="BloodTrail_01_Old_F";
 		};
-		class Item320
+		class Item296
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153242,7 +146988,7 @@ class Mission
 			type="BloodTrail_01_Old_F";
 			atlOffset=-4.3869019e-005;
 		};
-		class Item321
+		class Item297
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153258,7 +147004,7 @@ class Mission
 			id=10891;
 			type="BloodTrail_01_Old_F";
 		};
-		class Item322
+		class Item298
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153274,7 +147020,7 @@ class Mission
 			id=10892;
 			type="BloodPool_01_Medium_Old_F";
 		};
-		class Item323
+		class Item299
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153290,7 +147036,7 @@ class Mission
 			id=10893;
 			type="BloodSplatter_01_Medium_New_F";
 		};
-		class Item324
+		class Item300
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153307,7 +147053,7 @@ class Mission
 			type="BloodPool_01_Large_Old_F";
 			atlOffset=0.0044488907;
 		};
-		class Item325
+		class Item301
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153324,7 +147070,7 @@ class Mission
 			type="BloodPool_01_Large_Old_F";
 			atlOffset=0.0044460297;
 		};
-		class Item326
+		class Item302
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153340,7 +147086,7 @@ class Mission
 			type="BloodPool_01_Large_Old_F";
 			atlOffset=0.38546944;
 		};
-		class Item327
+		class Item303
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153357,7 +147103,7 @@ class Mission
 			type="BloodPool_01_Large_Old_F";
 			atlOffset=0.0044498444;
 		};
-		class Item328
+		class Item304
 		{
 			dataType="Group";
 			side="Civilian";
@@ -153430,7 +147176,7 @@ class Mission
 			id=10899;
 			atlOffset=0.0041913986;
 		};
-		class Item329
+		class Item305
 		{
 			dataType="Group";
 			side="Civilian";
@@ -153503,7 +147249,7 @@ class Mission
 			id=10901;
 			atlOffset=0.34000015;
 		};
-		class Item330
+		class Item306
 		{
 			dataType="Group";
 			side="Civilian";
@@ -153576,7 +147322,7 @@ class Mission
 			id=10903;
 			atlOffset=0.0045948029;
 		};
-		class Item331
+		class Item307
 		{
 			dataType="Group";
 			side="Civilian";
@@ -153649,7 +147395,7 @@ class Mission
 			id=10905;
 			atlOffset=0.28499985;
 		};
-		class Item332
+		class Item308
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153666,7 +147412,7 @@ class Mission
 			type="CUP_IED_V4";
 			atlOffset=4.6730042e-005;
 		};
-		class Item333
+		class Item309
 		{
 			dataType="Group";
 			side="East";
@@ -153778,7 +147524,7 @@ class Mission
 			id=10911;
 			atlOffset=0.00017929077;
 		};
-		class Item334
+		class Item310
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -153831,7 +147577,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item335
+		class Item311
 		{
 			dataType="Group";
 			side="Civilian";
@@ -153925,7 +147671,7 @@ class Mission
 			id=10914;
 			atlOffset=0.0014190674;
 		};
-		class Item336
+		class Item312
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153942,7 +147688,7 @@ class Mission
 			type="LOP_AFR_Civ_Ural_open";
 			atlOffset=0.0014190674;
 		};
-		class Item337
+		class Item313
 		{
 			dataType="Object";
 			class PositionInfo
@@ -153958,7 +147704,7 @@ class Mission
 			id=10919;
 			type="Land_bags_stack_EP1";
 		};
-		class Item338
+		class Item314
 		{
 			dataType="Trigger";
 			position[]={7613.3042,14.953337,6970.5361};
@@ -153969,7 +147715,7 @@ class Mission
 			id=10920;
 			type="EmptyDetectorAreaR50";
 		};
-		class Item339
+		class Item315
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -154192,7 +147938,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item340
+		class Item316
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154294,7 +148040,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item341
+		class Item317
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154434,7 +148180,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item342
+		class Item318
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154536,7 +148282,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item343
+		class Item319
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154676,7 +148422,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item344
+		class Item320
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154693,7 +148439,7 @@ class Mission
 			type="CUP_IED_V4";
 			atlOffset=-0.00015974045;
 		};
-		class Item345
+		class Item321
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154710,7 +148456,7 @@ class Mission
 			type="CUP_IED_V2";
 			atlOffset=0.00011348724;
 		};
-		class Item346
+		class Item322
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154726,7 +148472,7 @@ class Mission
 			id=10931;
 			type="CUP_IED_V4";
 		};
-		class Item347
+		class Item323
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154743,7 +148489,7 @@ class Mission
 			type="CUP_IED_V4";
 			atlOffset=0.00014686584;
 		};
-		class Item348
+		class Item324
 		{
 			dataType="Group";
 			side="East";
@@ -154814,7 +148560,7 @@ class Mission
 			};
 			id=10933;
 		};
-		class Item349
+		class Item325
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154830,7 +148576,7 @@ class Mission
 			id=10935;
 			type="ACE_IEDLandSmall_Range";
 		};
-		class Item350
+		class Item326
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154846,7 +148592,7 @@ class Mission
 			id=10936;
 			type="CUP_IED_V3";
 		};
-		class Item351
+		class Item327
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154863,7 +148609,7 @@ class Mission
 			type="CUP_IED_V3";
 			atlOffset=-3.8146973e-006;
 		};
-		class Item352
+		class Item328
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154880,7 +148626,7 @@ class Mission
 			type="CUP_C_Datsun_4seat";
 			atlOffset=-0.012033939;
 		};
-		class Item353
+		class Item329
 		{
 			dataType="Group";
 			side="Civilian";
@@ -154931,7 +148677,7 @@ class Mission
 			};
 			id=10939;
 		};
-		class Item354
+		class Item330
 		{
 			dataType="Object";
 			class PositionInfo
@@ -154971,7 +148717,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item355
+		class Item331
 		{
 			dataType="Marker";
 			position[]={7645.2944,14.284579,6993.4609};
@@ -154979,10 +148725,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=30;
-			angle=291.73596;
+			angle=291.7359;
 			id=10942;
 		};
-		class Item356
+		class Item332
 		{
 			dataType="Marker";
 			position[]={7596.6865,14.584785,6945.6191};
@@ -154990,10 +148736,11 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=20;
-			angle=291.73596;
+			angle=291.7359;
 			id=10943;
+			atlOffset=9.5367432e-007;
 		};
-		class Item357
+		class Item333
 		{
 			dataType="Marker";
 			position[]={7647.7617,12.227677,6925.9541};
@@ -155001,10 +148748,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=20;
-			angle=291.73593;
+			angle=291.7359;
 			id=10944;
 		};
-		class Item358
+		class Item334
 		{
 			dataType="Marker";
 			position[]={7631.3325,12.552076,6925.6992};
@@ -155015,7 +148762,7 @@ class Mission
 			angle=20.862;
 			id=10945;
 		};
-		class Item359
+		class Item335
 		{
 			dataType="Marker";
 			position[]={7616.2656,13.251623,6930.9756};
@@ -155026,7 +148773,7 @@ class Mission
 			angle=20.862;
 			id=10946;
 		};
-		class Item360
+		class Item336
 		{
 			dataType="Marker";
 			position[]={7580.5981,15.859315,6967.0693};
@@ -155034,10 +148781,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=15;
-			angle=3.4779997;
+			angle=3.4779985;
 			id=10947;
 		};
-		class Item361
+		class Item337
 		{
 			dataType="Marker";
 			position[]={7598.731,16.260466,6994.0557};
@@ -155045,10 +148792,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=20;
-			angle=236.0069;
+			angle=236.00685;
 			id=10948;
 		};
-		class Item362
+		class Item338
 		{
 			dataType="Marker";
 			position[]={7677.6416,13.23982,6974.3052};
@@ -155056,10 +148803,11 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=10;
-			angle=156.80298;
+			angle=156.80293;
 			id=10949;
+			atlOffset=-9.5367432e-007;
 		};
-		class Item363
+		class Item339
 		{
 			dataType="Marker";
 			position[]={7678.1509,12.965798,6958.1318};
@@ -155067,10 +148815,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=10;
-			angle=199.07037;
+			angle=199.07031;
 			id=10950;
 		};
-		class Item364
+		class Item340
 		{
 			dataType="Marker";
 			position[]={7668.873,12.18814,6928.4238};
@@ -155078,10 +148826,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=10;
-			angle=199.07036;
+			angle=199.07031;
 			id=10951;
 		};
-		class Item365
+		class Item341
 		{
 			dataType="Marker";
 			position[]={7725.0601,13.031428,6907.6104};
@@ -155089,10 +148837,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=10;
-			angle=334.58807;
+			angle=334.58801;
 			id=10952;
 		};
-		class Item366
+		class Item342
 		{
 			dataType="Marker";
 			position[]={7741.6533,13.807232,6897.1182};
@@ -155100,10 +148848,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=10;
-			angle=272.62851;
+			angle=272.62845;
 			id=10953;
 		};
-		class Item367
+		class Item343
 		{
 			dataType="Marker";
 			position[]={7748.3643,13.023378,6948.1191};
@@ -155111,10 +148859,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=10;
-			angle=272.62848;
+			angle=272.62845;
 			id=10954;
 		};
-		class Item368
+		class Item344
 		{
 			dataType="Marker";
 			position[]={7763.1274,12.926366,6938.7217};
@@ -155122,10 +148870,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=10;
-			angle=337.29404;
+			angle=337.29391;
 			id=10955;
 		};
-		class Item369
+		class Item345
 		{
 			dataType="Marker";
 			position[]={7681.063,12.812781,6951.272};
@@ -155136,7 +148884,7 @@ class Mission
 			angle=291.41196;
 			id=10956;
 		};
-		class Item370
+		class Item346
 		{
 			dataType="Marker";
 			position[]={7675.9858,12.415502,6935.1846};
@@ -155147,7 +148895,7 @@ class Mission
 			angle=291.41196;
 			id=10957;
 		};
-		class Item371
+		class Item347
 		{
 			dataType="Marker";
 			position[]={7634.3237,15.571049,4718.5449};
@@ -155155,10 +148903,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=5;
-			angle=235.78484;
+			angle=235.78479;
 			id=10958;
 		};
-		class Item372
+		class Item348
 		{
 			dataType="Marker";
 			position[]={7612.9648,16.756977,4703.0596};
@@ -155166,10 +148914,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=5;
-			angle=235.78481;
+			angle=235.78479;
 			id=10959;
 		};
-		class Item373
+		class Item349
 		{
 			dataType="Marker";
 			position[]={7604.8872,17.022257,4701.5762};
@@ -155180,7 +148928,7 @@ class Mission
 			angle=280.20081;
 			id=10960;
 		};
-		class Item374
+		class Item350
 		{
 			dataType="Marker";
 			position[]={7599.7803,17.208916,4697.5352};
@@ -155191,7 +148939,7 @@ class Mission
 			angle=189.31093;
 			id=10961;
 		};
-		class Item375
+		class Item351
 		{
 			dataType="Marker";
 			position[]={7596.5132,17.084513,4680.7285};
@@ -155199,10 +148947,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=5;
-			angle=235.78481;
+			angle=235.78479;
 			id=10962;
 		};
-		class Item376
+		class Item352
 		{
 			dataType="Marker";
 			position[]={7599.6606,17.124146,4687.8564};
@@ -155210,10 +148958,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=5;
-			angle=357.71127;
+			angle=357.71118;
 			id=10963;
 		};
-		class Item377
+		class Item353
 		{
 			dataType="Marker";
 			position[]={7589.4458,17.094124,4675.9189};
@@ -155224,7 +148972,7 @@ class Mission
 			angle=235.78479;
 			id=10964;
 		};
-		class Item378
+		class Item354
 		{
 			dataType="Marker";
 			position[]={7613.0107,15.90328,4630.9302};
@@ -155232,10 +148980,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=50;
-			angle=328.13672;
+			angle=328.13663;
 			id=10965;
 		};
-		class Item379
+		class Item355
 		{
 			dataType="Marker";
 			position[]={7643.3643,14.960349,4592.0127};
@@ -155246,7 +148994,7 @@ class Mission
 			angle=235.78479;
 			id=10966;
 		};
-		class Item380
+		class Item356
 		{
 			dataType="Marker";
 			position[]={7638.6499,15.135205,4598.3711};
@@ -155257,7 +149005,7 @@ class Mission
 			angle=235.78479;
 			id=10967;
 		};
-		class Item381
+		class Item357
 		{
 			dataType="Marker";
 			position[]={7645.2939,15.12688,4598.0684};
@@ -155268,7 +149016,7 @@ class Mission
 			angle=327.13589;
 			id=10968;
 		};
-		class Item382
+		class Item358
 		{
 			dataType="Marker";
 			position[]={7647.1812,14.820768,4584.1025};
@@ -155279,7 +149027,7 @@ class Mission
 			angle=235.78479;
 			id=10969;
 		};
-		class Item383
+		class Item359
 		{
 			dataType="Marker";
 			position[]={7645.5962,14.82,4577.5332};
@@ -155287,10 +149035,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="";
 			b=5;
-			angle=144.59396;
+			angle=144.59389;
 			id=10970;
 		};
-		class Item384
+		class Item360
 		{
 			dataType="Marker";
 			position[]={7652.3901,14.799272,4570.5127};
@@ -155301,7 +149049,7 @@ class Mission
 			angle=124.85569;
 			id=10971;
 		};
-		class Item385
+		class Item361
 		{
 			dataType="Marker";
 			position[]={7661.5259,14.558039,4569.4551};
@@ -155312,7 +149060,7 @@ class Mission
 			angle=235.78479;
 			id=10972;
 		};
-		class Item386
+		class Item362
 		{
 			dataType="Marker";
 			position[]={7669.0757,14.353107,4574.9658};
@@ -155323,7 +149071,7 @@ class Mission
 			angle=235.78479;
 			id=10973;
 		};
-		class Item387
+		class Item363
 		{
 			dataType="Marker";
 			position[]={7676.5508,14.154854,4581.2334};
@@ -155334,7 +149082,7 @@ class Mission
 			angle=36.16695;
 			id=10974;
 		};
-		class Item388
+		class Item364
 		{
 			dataType="Marker";
 			position[]={7686.5908,14.365517,4603.8823};
@@ -155345,7 +149093,7 @@ class Mission
 			angle=20.632;
 			id=10975;
 		};
-		class Item389
+		class Item365
 		{
 			dataType="Marker";
 			position[]={7695.1226,14.937818,4627.5127};
@@ -155356,7 +149104,7 @@ class Mission
 			angle=17.39769;
 			id=10976;
 		};
-		class Item390
+		class Item366
 		{
 			dataType="Marker";
 			position[]={7668.8354,15.927603,4679.3687};
@@ -155367,7 +149115,7 @@ class Mission
 			angle=144.51122;
 			id=10977;
 		};
-		class Item391
+		class Item367
 		{
 			dataType="Marker";
 			position[]={7697.4722,15.138725,4634.749};
@@ -155378,7 +149126,7 @@ class Mission
 			angle=17.39769;
 			id=10978;
 		};
-		class Item392
+		class Item368
 		{
 			dataType="Marker";
 			position[]={12129.784,20.898001,15126.611};
@@ -155388,7 +149136,7 @@ class Mission
 			id=10979;
 			atlOffset=0.13800049;
 		};
-		class Item393
+		class Item369
 		{
 			dataType="Marker";
 			position[]={12120.228,20.76,15100.438};
@@ -155397,7 +149145,7 @@ class Mission
 			type="b_inf";
 			id=10980;
 		};
-		class Item394
+		class Item370
 		{
 			dataType="Marker";
 			position[]={11816.792,20.76,15085.54};
@@ -155406,7 +149154,7 @@ class Mission
 			type="b_hq";
 			id=10982;
 		};
-		class Item395
+		class Item371
 		{
 			dataType="Object";
 			class PositionInfo
@@ -155420,6 +149168,739 @@ class Mission
 			};
 			id=10983;
 			type="TFAR_Land_Communication_F";
+			atlOffset=1.9073486e-006;
+		};
+		class Item372
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8075.52,18.093164,7444.9546};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10985;
+					type="LOP_AFR_Civ_Man_01";
+					atlOffset=0.0024108887;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10984;
+			atlOffset=0.0024108887;
+		};
+		class Item373
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8085.4766,14.384614,7443.2896};
+						angles[]={0,3.9269652,-0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10989;
+					type="LOP_AFR_Civ_Man_04";
+					atlOffset=7.6293945e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10988;
+			atlOffset=7.6293945e-006;
+		};
+		class Item374
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8067.8496,15.259863,7434.646};
+						angles[]={0.039979152,2.9476683,6.2681832};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=10992;
+					type="LOP_AFR_Civ_Man_01";
+					atlOffset=1.6212463e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=10992;
+						item1=10991;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=10990;
+			atlOffset=1.6212463e-005;
+		};
+		class Item375
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8067.8784,17.16674,7434.6724};
+				angles[]={0.039979152,2.9476683,6.2681832};
+			};
+			side="Civilian";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=10991;
+			type="LOP_AFR_Civ_Ural";
+			atlOffset=1.6212463e-005;
+		};
+		class Item376
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8921.6641,19.073357,6204.7588};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+					};
+					id=10994;
+					type="LOP_AFR_Civ_Man_06_S";
+					atlOffset=1.1337662;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10993;
+			atlOffset=1.1337662;
+		};
+		class Item377
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8933.8721,14.225007,6211.6382};
+						angles[]={0,4.2869959,-0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10996;
+					type="LOP_AFR_Civ_Man_05_S";
+					atlOffset=-9.5367432e-007;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10995;
+			atlOffset=-9.5367432e-007;
+		};
+		class Item378
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8931.5615,14.848884,6194.3882};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10998;
+					type="LOP_AFR_Civ_Man_05";
+					atlOffset=1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10997;
+			atlOffset=1.9073486e-006;
+		};
+		class Item379
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8941.874,14.606074,6194.0068};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=11000;
+					type="LOP_AFR_Civ_Man_06";
+					atlOffset=1.1444092e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10999;
+			atlOffset=1.1444092e-005;
+		};
+		class Item380
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8934.2373,15.166399,6177.1348};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=11002;
+					type="LOP_AFR_Civ_Man_03";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11001;
+		};
+		class Item381
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8957.5332,14.189859,6187.2427};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=11004;
+					type="LOP_AFR_Civ_Man_05";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11003;
+		};
+		class Item382
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8945.1533,13.956777,6209.209};
+						angles[]={0.074860021,1.2045918,6.2332273};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=11007;
+					type="LOP_AFR_Civ_Man_02";
+					atlOffset=-5.8174133e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=11007;
+						item1=11006;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=11005;
+			atlOffset=-5.8174133e-005;
+		};
+		class Item383
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8945.2158,15.195887,6209.2524};
+				angles[]={0.074860021,1.2045918,6.2332273};
+			};
+			side="Civilian";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=11006;
+			type="LOP_AFR_Civ_UAZ";
+			atlOffset=-5.8174133e-005;
+		};
+		class Item384
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9650.3242,17.463942,7417.6465};
+				angles[]={-0,4.624351,0.024993783};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=11011;
+			type="LOP_CHR_Civ_Landrover";
+		};
+		class Item385
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9656.9111,15.769323,7418.6509};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=11013;
+					type="LOP_AFR_Civ_Man_06";
+					atlOffset=9.5367432e-007;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11012;
+			atlOffset=9.5367432e-007;
+		};
+		class Item386
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10053.793,12.561014,7987.5928};
+						angles[]={0,2.7617915,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						description="Walid El-Emami";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_O_TKI_Khet_Jeans_01";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_rgd5";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_OI_TKI_Jacket6_06";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							goggles="G_Aviator";
+							headgear="CUP_H_TKI_Pakol_1_06";
+						};
+					};
+					id=11016;
+					type="LOP_ISTS_OPF_Infantry_SL";
+					atlOffset=0.083001137;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Walid El-Emami";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Curator";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11014;
+			atlOffset=0.083001137;
+		};
+		class Item387
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10051.871,12.528993,7986.5806};
+						angles[]={0,2.7834511,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						description="Reda Yusuf";
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="CUP_O_TKI_Khet_Partug_08";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							radio="ItemRadio";
+							goggles="CUP_FR_NeckScarf5";
+							headgear="CUP_H_TKI_SkullCap_05";
+						};
+					};
+					id=11015;
+					type="LOP_BH_Infantry_SL";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03FRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Reda Yusuf";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_07";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11017;
 		};
 	};
 	class Connections
