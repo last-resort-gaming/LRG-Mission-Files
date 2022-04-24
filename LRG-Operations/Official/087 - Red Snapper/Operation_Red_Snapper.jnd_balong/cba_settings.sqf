@@ -1,3 +1,13 @@
+// ACE Advanced Vehicle Damage
+
+force ace_vehicle_damage_enableCarDamage = false;
+
+force ace_vehicle_damage_enabled = true;
+
+force ace_vehicle_damage_removeAmmoDuringCookoff = true;
+
+
+
 // ACE Advanced Ballistics
 
 force ace_advanced_ballistics_ammoTemperatureEnabled = true;
@@ -70,7 +80,7 @@ force ace_arsenal_fontHeight = 4.5;
 
 force ace_artillerytables_advancedCorrections = false;
 
-force ace_artillerytables_disableArtilleryComputer = false;
+force ace_artillerytables_disableArtilleryComputer = true;
 
 force ace_mk6mortar_airResistanceEnabled = false;
 
@@ -108,13 +118,15 @@ force ace_common_displayTextColor = [0,0,0,0.1];
 
 force ace_common_displayTextFontColor = [1,1,1,1];
 
+ace_common_epilepsyFriendlyMode = false;
+
+ace_common_progressBarInfo = 2;
+
 force ace_common_settingFeedbackIcons = 1;
 
 force ace_common_settingProgressBarLocation = 0;
 
 force ace_noradio_enabled = true;
-
-force ace_parachute_hideAltimeter = false;
 
 
 
@@ -148,17 +160,19 @@ force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Explosives
 
-force ace_explosives_customTimerDefault = 30;
-
-force ace_explosives_customTimerMax = 900;
-
-force ace_explosives_customTimerMin = 5;
-
 force ace_explosives_explodeOnDefuse = true;
 
 force ace_explosives_punishNonSpecialists = true;
 
 force ace_explosives_requireSpecialist = false;
+
+
+
+// ACE Fire
+
+force ace_fire_enabled = false;
+
+force ace_fire_enableFlare = false;
 
 
 
@@ -194,17 +208,11 @@ force ace_goggles_showInThirdPerson = false;
 
 
 
-// ACE Grenades
-
-force ace_grenades_convertExplosives = true;
-
-
-
 // ACE Hearing
 
 force ace_hearing_autoAddEarplugsToUnits = false;
 
-force ace_hearing_disableEarRinging = true;
+force ace_hearing_disableEarRinging = false;
 
 force ace_hearing_earplugsVolume = 0.5;
 
@@ -223,8 +231,6 @@ force ace_interaction_disableNegativeRating = true;
 force ace_interaction_enableMagazinePassing = true;
 
 force ace_interaction_enableTeamManagement = true;
-
-force ace_interaction_enableWeaponAttachments = true;
 
 
 
@@ -247,8 +253,6 @@ ace_interact_menu_colorShadowMin = [0,0,0,0.25];
 ace_interact_menu_colorTextMax = [1,1,1,1];
 
 ace_interact_menu_colorTextMin = [1,1,1,0.25];
-
-ace_interact_menu_consolidateSingleChild = false;
 
 ace_interact_menu_cursorKeepCentered = false;
 
@@ -352,21 +356,9 @@ force ace_map_mapShowCursorCoordinates = false;
 
 force ace_markers_moveRestriction = 0;
 
-force ace_markers_timestampEnabled = true;
-
-force ace_markers_timestampFormat = "HH:MM";
-
-force ace_markers_timestampHourFormat = 24;
-
 
 
 // ACE Map Gestures
-
-force ace_map_gestures_allowCurator = true;
-
-force ace_map_gestures_allowSpectator = true;
-
-force ace_map_gestures_briefingMode = 0;
 
 force ace_map_gestures_defaultColor = [1,0.88,0,0.7];
 
@@ -378,11 +370,7 @@ force ace_map_gestures_interval = 0.03;
 
 force ace_map_gestures_maxRange = 50;
 
-force ace_map_gestures_maxRangeCamera = 14;
-
 force ace_map_gestures_nameTextColor = [0.2,0.2,0.2,0.3];
-
-force ace_map_gestures_onlyShowFriendlys = false;
 
 
 
@@ -408,15 +396,61 @@ force ace_medical_blood_enabledFor = 2;
 
 force ace_medical_blood_maxBloodObjects = 500;
 
+force ace_medical_deathChance = 1;
+
+force ace_medical_enableVehicleCrashes = true;
+
 force ace_medical_fatalDamageSource = 1;
 
-force ace_medical_feedback_bloodVolumeEffectType = 0;
+ace_medical_feedback_bloodVolumeEffectType = 0;
 
-force ace_medical_feedback_painEffectType = 0;
+ace_medical_feedback_enableHUDIndicators = true;
+
+ace_medical_feedback_painEffectType = 0;
 
 force ace_medical_fractureChance = 0.8;
 
 force ace_medical_fractures = 0;
+
+ace_medical_gui_bloodLossColor_0 = [1,1,1,1];
+
+ace_medical_gui_bloodLossColor_1 = [1,0.95,0.64,1];
+
+ace_medical_gui_bloodLossColor_2 = [1,0.87,0.46,1];
+
+ace_medical_gui_bloodLossColor_3 = [1,0.8,0.33,1];
+
+ace_medical_gui_bloodLossColor_4 = [1,0.72,0.24,1];
+
+ace_medical_gui_bloodLossColor_5 = [1,0.63,0.15,1];
+
+ace_medical_gui_bloodLossColor_6 = [1,0.54,0.08,1];
+
+ace_medical_gui_bloodLossColor_7 = [1,0.43,0.02,1];
+
+ace_medical_gui_bloodLossColor_8 = [1,0.3,0,1];
+
+ace_medical_gui_bloodLossColor_9 = [1,0,0,1];
+
+ace_medical_gui_damageColor_0 = [1,1,1,1];
+
+ace_medical_gui_damageColor_1 = [0.75,0.95,1,1];
+
+ace_medical_gui_damageColor_2 = [0.62,0.86,1,1];
+
+ace_medical_gui_damageColor_3 = [0.54,0.77,1,1];
+
+ace_medical_gui_damageColor_4 = [0.48,0.67,1,1];
+
+ace_medical_gui_damageColor_5 = [0.42,0.57,1,1];
+
+ace_medical_gui_damageColor_6 = [0.37,0.47,1,1];
+
+ace_medical_gui_damageColor_7 = [0.31,0.36,1,1];
+
+ace_medical_gui_damageColor_8 = [0.22,0.23,1,1];
+
+ace_medical_gui_damageColor_9 = [0,0,1,1];
 
 force ace_medical_gui_enableActions = 0;
 
@@ -430,7 +464,7 @@ force ace_medical_gui_maxDistance = 3;
 
 force ace_medical_gui_openAfterTreatment = true;
 
-force ace_medical_ivFlowRate = 3;
+force ace_medical_ivFlowRate = 2.5;
 
 force ace_medical_limping = 1;
 
@@ -440,7 +474,7 @@ force ace_medical_painUnconsciousChance = 0.1;
 
 force ace_medical_playerDamageThreshold = 1.8;
 
-force ace_medical_spontaneousWakeUpChance = 0.350605;
+force ace_medical_spontaneousWakeUpChance = 0.15;
 
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 4;
 
@@ -448,7 +482,7 @@ force ace_medical_statemachine_AIUnconsciousness = false;
 
 force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 
-force ace_medical_statemachine_cardiacArrestTime = 900;
+force ace_medical_statemachine_cardiacArrestTime = 1200;
 
 force ace_medical_statemachine_fatalInjuriesAI = 0;
 
@@ -456,7 +490,7 @@ force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 
 force ace_medical_treatment_advancedBandages = 2;
 
-force ace_medical_treatment_advancedDiagnose = true;
+force ace_medical_treatment_advancedDiagnose = 1;
 
 force ace_medical_treatment_advancedMedication = false;
 
@@ -472,7 +506,7 @@ force ace_medical_treatment_allowSelfStitch = 1;
 
 force ace_medical_treatment_allowSharedEquipment = 1;
 
-force ace_medical_treatment_clearTraumaAfterBandage = false;
+force ace_medical_treatment_clearTrauma = 0;
 
 force ace_medical_treatment_consumePAK = 0;
 
@@ -480,7 +514,9 @@ force ace_medical_treatment_consumeSurgicalKit = 0;
 
 force ace_medical_treatment_convertItems = 0;
 
-force ace_medical_treatment_cprSuccessChance = 0.2;
+force ace_medical_treatment_cprSuccessChanceMax = 0.4;
+
+force ace_medical_treatment_cprSuccessChanceMin = 0.4;
 
 force ace_medical_treatment_holsterRequired = 0;
 
@@ -490,7 +526,7 @@ force ace_medical_treatment_locationEpinephrine = 0;
 
 force ace_medical_treatment_locationIV = 0;
 
-force ace_medical_treatment_locationPAK = 1;
+force ace_medical_treatment_locationPAK = 3;
 
 force ace_medical_treatment_locationsBoostTraining = false;
 
@@ -502,7 +538,7 @@ force ace_medical_treatment_medicEpinephrine = 0;
 
 force ace_medical_treatment_medicIV = 1;
 
-force ace_medical_treatment_medicPAK = 1;
+force ace_medical_treatment_medicPAK = 2;
 
 force ace_medical_treatment_medicSurgicalKit = 1;
 
@@ -562,15 +598,15 @@ force ace_nametags_tagSize = 2;
 
 // ACE Nightvision
 
-force ace_nightvision_aimDownSightsBlur = 0.18;
+force ace_nightvision_aimDownSightsBlur = 0.2;
 
 force ace_nightvision_disableNVGsWithSights = false;
 
-force ace_nightvision_effectScaling = 0.18;
+force ace_nightvision_effectScaling = 0.2;
 
-force ace_nightvision_fogScaling = 0.18;
+force ace_nightvision_fogScaling = 0.2;
 
-force ace_nightvision_noiseScaling = 0.18;
+force ace_nightvision_noiseScaling = 0.2;
 
 force ace_nightvision_shutterEffects = true;
 
@@ -578,11 +614,21 @@ force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
 
+force ace_overheating_cookoffCoef = 0;
+
 force ace_overheating_displayTextOnJam = true;
 
 force ace_overheating_enabled = true;
 
+force ace_overheating_heatCoef = 1;
+
+force ace_overheating_jamChanceCoef = 1;
+
 force ace_overheating_overheatingDispersion = true;
+
+force ace_overheating_overheatingRateOfFire = true;
+
+ace_overheating_particleEffectsAndDispersionDistance = 3000;
 
 force ace_overheating_showParticleEffects = true;
 
@@ -591,6 +637,8 @@ force ace_overheating_showParticleEffectsForEveryone = false;
 force ace_overheating_unJamFailChance = 0.1;
 
 force ace_overheating_unJamOnreload = false;
+
+force ace_overheating_unJamOnSwapBarrel = false;
 
 
 
@@ -702,18 +750,6 @@ force ace_switchunits_switchToWest = false;
 
 
 
-// ACE Trenches
-
-force ace_trenches_bigEnvelopeDigDuration = 25;
-
-force ace_trenches_bigEnvelopeRemoveDuration = 15;
-
-force ace_trenches_smallEnvelopeDigDuration = 20;
-
-force ace_trenches_smallEnvelopeRemoveDuration = 12;
-
-
-
 // ACE Uncategorized
 
 force ace_fastroping_requireRopeItems = false;
@@ -733,6 +769,10 @@ force ace_microdagr_waypointPrecision = 3;
 force ace_optionsmenu_showNewsOnMainMenu = true;
 
 force ace_overpressure_distanceCoefficient = 1;
+
+force ace_parachute_failureChance = 0;
+
+force ace_parachute_hideAltimeter = false;
 
 force ace_tagging_quickTag = 1;
 
@@ -828,8 +868,6 @@ force ace_vehicles_hideEjectAction = false;
 
 force ace_vehicles_keepEngineRunning = false;
 
-ace_vehicles_speedLimiterStep = 5;
-
 
 
 // ACE View Distance Limiter
@@ -902,7 +940,7 @@ force ace_zeus_zeusBird = false;
 
 
 
-// ACEX Field Rations
+// ACE Field Rations
 
 force acex_field_rations_affectAdvancedFatigue = true;
 
@@ -928,13 +966,13 @@ force acex_field_rations_waterSourceActions = 2;
 
 
 
-// ACEX Fortify
+// ACE Fortify
 
 force acex_fortify_settingHint = 1;
 
 
 
-// ACEX Headless
+// ACE Headless
 
 force acex_headless_delay = 30;
 
@@ -948,29 +986,29 @@ force acex_headless_transferLoadout = 1;
 
 
 
-// ACEX Sitting
+// ACE Sitting
 
 force acex_sitting_enable = true;
 
 
 
-// ACEX View Restriction
+// ACE View Restriction
 
-force acex_viewrestriction_mode = 0;
+force ace_viewdistance_enabled = false;
 
-force acex_viewrestriction_modeSelectiveAir = 0;
+force ace_viewdistance_limitViewDistance = 10000;
 
-force acex_viewrestriction_modeSelectiveFoot = 0;
+force ace_viewdistance_objectViewDistanceCoeff = 3;
 
-force acex_viewrestriction_modeSelectiveLand = 0;
+force ace_viewdistance_viewDistanceAirVehicle = 0;
 
-force acex_viewrestriction_modeSelectiveSea = 0;
+force ace_viewdistance_viewDistanceLandVehicle = 0;
 
-force acex_viewrestriction_preserveView = false;
+force ace_viewdistance_viewDistanceOnFoot = 0;
 
 
 
-// ACEX Volume
+// ACE Volume
 
 force acex_volume_enabled = true;
 
@@ -983,6 +1021,31 @@ force acex_volume_reduction = 7;
 force acex_volume_remindIfLowered = true;
 
 force acex_volume_showNotification = true;
+
+
+
+// ADV - ACE CPR
+
+force force adv_aceCPR_addTime = 20;
+
+force force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
+
+force force adv_aceCPR_chance_0 = 3;
+
+force force adv_aceCPR_chance_1 = 12;
+
+force force adv_aceCPR_chance_2 = 35;
+
+force force adv_aceCPR_chance_aed = 60;
+
+force force adv_aceCPR_enable = true;
+
+force force adv_aceCPR_maxTime = 600;
+
+force force adv_aceCPR_onlyDoctors = 2;
+
+force force adv_aceCPR_useLocation_AED = 3;
+
 
 
 
@@ -1061,50 +1124,6 @@ UPSL_aime_vehicle_seats_setting_getin_action = true;
 UPSL_aime_vehicle_seats_setting_getout_action = true;
 
 UPSL_aime_vehicle_seats_setting_turnout_action = true;
-
-
-
-// ADV - ACE CPR
-
-force force adv_aceCPR_addTime = 20;
-
-force force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
-
-force force adv_aceCPR_chance_0 = 18;
-
-force force adv_aceCPR_chance_1 = 25;
-
-force force adv_aceCPR_chance_2 = 25;
-
-force force adv_aceCPR_chance_aed = 60;
-
-force force adv_aceCPR_enable = true;
-
-force force adv_aceCPR_maxTime = 3600;
-
-force force adv_aceCPR_onlyDoctors = 2;
-
-force force adv_aceCPR_useLocation_AED = 0;
-
-
-
-// LAxemann's Suppress
-
-force L_Suppress_buildup = 0.75;
-
-force L_Suppress_enabled = true;
-
-force L_Suppress_flyByEffects = true;
-
-force L_Suppress_flyByIntensity = 0.5;
-
-force L_Suppress_halting = true;
-
-force L_Suppress_intensity = 1;
-
-force L_Suppress_playerSwabEnabled = false;
-
-force L_Suppress_recovery = 1.25;
 
 
 
@@ -1368,19 +1387,15 @@ force fscl_stateThreshold = 50;
 
 // GRAD Trenches
 
-force grad_trenches_functions_allowBigEnvelope = false;
+force grad_trenches_functions_allowBigEnvelope = true;
 
-force grad_trenches_functions_allowCamouflage = false;
+force grad_trenches_functions_allowCamouflage = true;
 
 force grad_trenches_functions_allowDigging = true;
 
-force grad_trenches_functions_allowDiggingInVehicle = true;
+force grad_trenches_functions_allowGiantEnvelope = true;
 
-force grad_trenches_functions_allowGiantEnvelope = false;
-
-force grad_trenches_functions_allowHitDecay = true;
-
-force grad_trenches_functions_allowLongEnvelope = false;
+force grad_trenches_functions_allowLongEnvelope = true;
 
 force grad_trenches_functions_allowShortEnvelope = true;
 
@@ -1388,9 +1403,7 @@ force grad_trenches_functions_allowSmallEnvelope = true;
 
 force grad_trenches_functions_allowTrenchDecay = false;
 
-force grad_trenches_functions_allowVehicleEnvelope = false;
-
-force grad_trenches_functions_bigEnvelopeDamageMultiplier = 2;
+force grad_trenches_functions_allowVehicleEnvelope = true;
 
 force grad_trenches_functions_bigEnvelopeDigTime = 40;
 
@@ -1400,39 +1413,27 @@ force grad_trenches_functions_buildFatigueFactor = 1;
 
 force grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
 
-force grad_trenches_functions_createTrenchMarker = false;
-
 force grad_trenches_functions_decayTime = 1800;
-
-force grad_trenches_functions_giantEnvelopeDamageMultiplier = 1;
 
 force grad_trenches_functions_giantEnvelopeDigTime = 90;
 
 force grad_trenches_functions_giantEnvelopeRemovalTime = -1;
 
-force grad_trenches_functions_hitDecayMultiplier = 1;
-
 force grad_trenches_functions_LongEnvelopeDigTime = 100;
 
 force grad_trenches_functions_LongEnvelopeRemovalTime = -1;
-
-force grad_trenches_functions_shortEnvelopeDamageMultiplier = 2;
 
 force grad_trenches_functions_shortEnvelopeDigTime = 15;
 
 force grad_trenches_functions_shortEnvelopeRemovalTime = -1;
 
-force grad_trenches_functions_smallEnvelopeDamageMultiplier = 3;
-
 force grad_trenches_functions_smallEnvelopeDigTime = 30;
 
 force grad_trenches_functions_smallEnvelopeRemovalTime = -1;
 
-force grad_trenches_functions_stopBuildingAtFatigueMax = false;
+force grad_trenches_functions_stopBuildingAtFatigueMax = true;
 
 force grad_trenches_functions_timeoutToDecay = 7200;
-
-force grad_trenches_functions_vehicleEnvelopeDamageMultiplier = 1;
 
 force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
 
@@ -1592,7 +1593,7 @@ force LRG_Channels_GlobalVoice = false;
 
 force LRG_Channels_GroupDuration = 0;
 
-force LRG_Channels_GroupText = false;
+force LRG_Channels_GroupText = true;
 
 force LRG_Channels_GroupVoice = false;
 
