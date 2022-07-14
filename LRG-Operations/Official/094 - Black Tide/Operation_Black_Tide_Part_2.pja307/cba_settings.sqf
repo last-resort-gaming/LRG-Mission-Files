@@ -1034,7 +1034,7 @@ force force adv_aceCPR_chance_0 = 3;
 
 force force adv_aceCPR_chance_1 = 12;
 
-force force adv_aceCPR_chance_2 = 35;
+force force adv_aceCPR_chance_2 = 12;
 
 force force adv_aceCPR_chance_aed = 60;
 
