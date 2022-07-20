@@ -1385,14 +1385,6 @@ force fscl_stateThreshold = 50;
 
 
 
-// Backpack On Chest
-
-force bocr_main_disabled = false;
-
-force bocr_main_walk = false;
-
-
-
 // GRAD Trenches
 
 force grad_trenches_functions_allowBigEnvelope = true;
