@@ -1024,6 +1024,14 @@ force acex_volume_showNotification = true;
 
 
 
+// Backpack On Chest
+
+force bocr_main_disabled = false;
+
+force bocr_main_walk = false;
+
+
+
 // ADV - ACE CPR
 
 force force adv_aceCPR_addTime = 20;
