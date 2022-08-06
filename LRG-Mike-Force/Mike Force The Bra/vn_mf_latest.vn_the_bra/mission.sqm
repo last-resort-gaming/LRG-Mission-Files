@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=1665;
 	class ItemIDProvider
 	{
-		nextID=559;
+		nextID=561;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=331;
+		nextID=342;
 	};
 	class Camera
 	{
-		pos[]={3349.2559,50.78791,4392.5313};
-		dir[]={0.11972697,-0.55215997,0.8251121};
-		up[]={0.079291657,0.83373106,0.54644305};
-		aside[]={0.98964697,-9.8749297e-008,-0.14360218};
+		pos[]={3364.6506,58.839779,4371.6265};
+		dir[]={-0.6449604,-0.56380677,0.51589531};
+		up[]={-0.44028339,0.82590669,0.35217687};
+		aside[]={0.62464106,-1.4901161e-008,0.78091186};
 	};
 };
 binarizationWanted=0;
-sourceName="vn_mf_v01_00_01";
+sourceName="vn_mf_latest";
 addons[]=
 {
 	"modules_f_vietnam",
@@ -221,7 +221,10 @@ dlcs[]=
 randomSeed=521005;
 class ScenarioData
 {
-	author="Savage Game Design";
+	author="Updated Sgt. Lex";
+	overviewText="Last Resort Gaming";
+	overviewTextLocked="Last Resort Gaming";
+	onLoadMission="Last Resort Gaming";
 	disabledAI=1;
 	class Header
 	{
@@ -261,6 +264,30 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -268,6 +295,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Mike Force (v1.00.01)";
+		overviewText="Last Resort Gaming";
 		timeOfChanges=1800.0002;
 		startWeather=0.25;
 		startWind=0.1;
@@ -286,7 +314,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=87;
+		items=88;
 		class Item0
 		{
 			dataType="Layer";
@@ -10543,13 +10571,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3349.7568,43.049034,4384.2334};
-						angles[]={0,1.4990039,0};
+						position[]={3349.7571,43.049095,4384.2339};
+						angles[]={0,1.4990109,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						description="RTO-GM";
 						isPlayer=1;
 						isPlayable=1;
 						class Inventory
@@ -10687,7 +10716,6 @@ class Mission
 					};
 					id=487;
 					type="vn_b_men_sf_06";
-					atlOffset=-2.2888184e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10736,7 +10764,6 @@ class Mission
 			{
 			};
 			id=486;
-			atlOffset=-2.2888184e-005;
 		};
 		class Item73
 		{
@@ -10973,16 +11000,106 @@ class Mission
 			id=558;
 			type="Land_vn_object_trashcan_01";
 		};
+		class Item87
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3338.7549,42.990002,4388.938};
+			};
+			id=560;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198052931653";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Lex";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=41;
+			nextID=42;
 		};
 		class Links
 		{
-			items=41;
+			items=42;
 			class Item0
 			{
 				linkID=0;
@@ -11388,6 +11505,16 @@ class Mission
 				linkID=40;
 				item0=509;
 				item1=116;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item41
+			{
+				linkID=41;
+				item0=560;
+				item1=487;
 				class CustomData
 				{
 					type="Sync";
