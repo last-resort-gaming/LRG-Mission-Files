@@ -32,13 +32,13 @@ force ace_advanced_fatigue_enableStaminaBar = true;
 
 force ace_advanced_fatigue_fadeStaminaBar = true;
 
-force ace_advanced_fatigue_loadFactor = 0.5;
+force ace_advanced_fatigue_loadFactor = 0.4;
 
 force ace_advanced_fatigue_performanceFactor = 5;
 
 force ace_advanced_fatigue_recoveryFactor = 5;
 
-force ace_advanced_fatigue_swayFactor = 0.5;
+force ace_advanced_fatigue_swayFactor = 0.2;
 
 force ace_advanced_fatigue_terrainGradientFactor = 0.2;
 
@@ -1525,23 +1525,18 @@ force lambs_main_radioWest = 500;
 
 
 
-// LAxemann's Suppress
+// Simple Suppress
+force simplesuppress_suppress_checkLOS = false;
 
-force L_Suppress_buildup = 0.75;
+force simplesuppress_suppress_overlayFadeoutTime = 10;
 
-force L_Suppress_enabled = true;
+force simplesuppress_suppress_overlayOpacity = 0.9;
 
-force L_Suppress_flyByEffects = true;
+force simplesuppress_suppress_overlayTexture = 2;
 
-force L_Suppress_flyByIntensity = 0.5;
+force simplesuppress_suppress_projectileMaxDistance = 8;
 
-force L_Suppress_halting = true;
-
-force L_Suppress_intensity = 1;
-
-force L_Suppress_playerSwabEnabled = false;
-
-force L_Suppress_recovery = 1.25;
+force simplesuppress_suppress_shooterMinDistance = 0;
 
 
 
