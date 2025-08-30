@@ -1,0 +1,1 @@
+"C:\Users\Mitch\Documents\ASCT Console\asct.exe" -f "C:\Users\Mitch\Documents\Script Collection\Restart Main AOs.sqf" -id EU1
